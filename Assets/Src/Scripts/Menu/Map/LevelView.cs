@@ -3,22 +3,15 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-[RequireComponent(typeof(Button))]
 public class LevelView : MonoBehaviour
 {
     [SerializeField] private Image _image;
+    [SerializeField] private Button _button;
     [SerializeField] private TMP_Text _text;
-
-    private Button _button;
 
     public event Action<Level> LevelSelected;
 
     public Level Level { get;private set; }
-
-    private void Awake()
-    {
-        _button = GetComponent<Button>();
-    }
 
     private void OnEnable()
     {

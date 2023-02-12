@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Map : MonoBehaviour
 {
@@ -8,6 +9,7 @@ public class Map : MonoBehaviour
     [SerializeField] private PlayerLoader _loader;
     [SerializeField] private LevelView _template;
     [SerializeField] private GameObject _container;
+    [SerializeField] private Button _backButton;
 
     private List<LevelView> _levels = new List<LevelView>();
 
@@ -55,5 +57,6 @@ public class Map : MonoBehaviour
     private void OnLevelSelected(Level level)
     {
         CurrentLevelChanged?.Invoke(level);
+        _backButton.onClick.Invoke();
     }
 }
