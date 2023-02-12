@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Level 0
   m_EditorClassIdentifier: 
   _id: 0
-  _title: "\u041E\u0431\u0443\u0447\u0435\u043D\u0438\u0435"
+  _title: "\u043E\u0431\u0443\u0447\u0435\u043D\u0438\u0435"
   _width: 10
   _lenght: 30
   _enemies:
@@ -24,7 +24,7 @@ MonoBehaviour:
     - {fileID: 6271963157667777218, guid: e69e2bfa9cf7e2a498a71ba6cbc3c146, type: 3}
     - {fileID: 6271963157667777218, guid: e69e2bfa9cf7e2a498a71ba6cbc3c146, type: 3}
   _rewardCountInDay: 3
-  _icon: {fileID: 21300000, guid: cac84844f786b9845978de8ae402cb13, type: 3}
+  _icon: {fileID: 21300000, guid: 6b4665737cc93ef4f9623382a510b82a, type: 3}
   _reward:
   - _currencyType: 0
     _count: 50
