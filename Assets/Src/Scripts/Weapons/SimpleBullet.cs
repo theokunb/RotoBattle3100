@@ -7,12 +7,16 @@ public class SimpleBullet : Bullet
         transform.Translate(Vector3.forward * Speed * Time.deltaTime);
     }
 
-    protected override void Hit(Character character)
+    protected override void Hit(Collider other)
     {
-        var health = character.GetComponent<Health>();
-        character.SetWhoAttacked(Owner);
+        if(other.TryGetComponent(out Character character))
+        {
+            var health = character.GetComponent<Health>();
+            character.SetWhoAttacked(Owner);
 
-        health.TakeDamage(Damage);
+            health.TakeDamage(Damage);
+        }
+
         ResetBullet();
     }
 

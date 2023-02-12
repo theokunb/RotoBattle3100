@@ -14,14 +14,21 @@ public class ElectricCharge : Bullet
         transform.Translate(Vector3.forward * Speed * Time.deltaTime);
     }
 
-    protected override void Hit(Character character)
+    protected override void Hit(Collider other)
     {
-        var health = character.GetComponent<Health>();
-        character.SetWhoAttacked(Owner);
+        if(other.TryGetComponent(out Character character))
+        {
+            var health = character.GetComponent<Health>();
+            character.SetWhoAttacked(Owner);
 
-        health.TakeDamage(Damage);
-        StartCoroutine(DisableTask(character));
-        _isHit = true;
+            health.TakeDamage(Damage);
+            StartCoroutine(DisableTask(character));
+            _isHit = true;
+        }
+        else
+        {
+            ResetBullet();
+        }
     }
 
     protected override void LifeTimeExpired()
