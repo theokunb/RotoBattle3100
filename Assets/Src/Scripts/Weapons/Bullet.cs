@@ -22,13 +22,19 @@ public abstract class Bullet : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.TryGetComponent(out Character character))
+        if(other.TryGetComponent(out Detail _))
         {
-            if (character.GetType() != Owner.GetType())
+            return;
+        }
+        else if (other.TryGetComponent(out Character character))
+        {
+            if (character.GetType() != other.GetType())
             {
-                Hit(character);
+                return;
             }
         }
+
+        Hit(other);
     }
 
     public void Initialize(Character owner, int damage, float speed)
@@ -46,6 +52,6 @@ public abstract class Bullet : MonoBehaviour
     }
 
     protected abstract void Fly();
-    protected abstract void Hit(Character character);
+    protected abstract void Hit(Collider other);
     protected abstract void LifeTimeExpired();
 }

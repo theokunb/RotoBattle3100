@@ -23,9 +23,12 @@ public class Grenade : Bullet
         
     }
 
-    protected override void Hit(Character character)
+    protected override void Hit(Collider other)
     {
-        Explode();
+        if(other.TryGetComponent<Character>(out Character _))
+        {
+            Explode();
+        }
     }
 
     protected override void LifeTimeExpired()

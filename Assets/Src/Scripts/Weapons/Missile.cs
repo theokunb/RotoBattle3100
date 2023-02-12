@@ -10,7 +10,7 @@ public class Missile : Bullet
         transform.Translate(Vector3.forward * Speed * Time.deltaTime);
     }
 
-    protected override void Hit(Character character)
+    protected override void Hit(Collider other)
     {
         Explode();
     }

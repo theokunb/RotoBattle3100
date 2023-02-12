@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7220371492508662658}
   - component: {fileID: 7220371492508662685}
   - component: {fileID: 7220371492508662684}
+  - component: {fileID: 712410142845691323}
   m_Layer: 0
   m_Name: Wall 1
   m_TagString: Untagged
@@ -97,6 +98,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &712410142845691323
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7220371492508662686}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &7220371492862020994
 GameObject:
   m_ObjectHideFlags: 0
@@ -168,6 +185,7 @@ GameObject:
   - component: {fileID: 7220371493117533886}
   - component: {fileID: 7220371493117533881}
   - component: {fileID: 7220371493117533880}
+  - component: {fileID: 6971260732371720994}
   m_Layer: 0
   m_Name: Roof
   m_TagString: Untagged
@@ -253,6 +271,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &6971260732371720994
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7220371493117533882}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &7220371493266647938
 GameObject:
   m_ObjectHideFlags: 0
@@ -265,6 +299,7 @@ GameObject:
   - component: {fileID: 7220371493266647942}
   - component: {fileID: 7220371493266647937}
   - component: {fileID: 7220371493266647936}
+  - component: {fileID: 310762698989147392}
   m_Layer: 0
   m_Name: Door
   m_TagString: Untagged
@@ -350,6 +385,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &310762698989147392
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7220371493266647938}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &7220371493393176085
 GameObject:
   m_ObjectHideFlags: 0
@@ -413,6 +464,7 @@ GameObject:
   - component: {fileID: 7220371493979182943}
   - component: {fileID: 7220371493979182942}
   - component: {fileID: 7220371493979182937}
+  - component: {fileID: 5775363355915591371}
   m_Layer: 0
   m_Name: Wall 2
   m_TagString: Untagged
@@ -498,3 +550,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &5775363355915591371
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7220371493979182939}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0

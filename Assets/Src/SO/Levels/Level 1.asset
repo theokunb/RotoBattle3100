@@ -15,7 +15,7 @@ MonoBehaviour:
   _id: 1
   _title: "\u041D\u0430\u0447\u0430\u043B\u043E"
   _width: 10
-  _lenght: 30
+  _lenght: 50
   _enemies:
   - _enemies:
     - {fileID: 6271963157667777218, guid: e69e2bfa9cf7e2a498a71ba6cbc3c146, type: 3}
