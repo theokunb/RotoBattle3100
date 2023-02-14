@@ -67,7 +67,18 @@ public class Enemy : Character
 
     public override int CalculateHealth()
     {
-        return base.CalculateHealth() / 5;
+        return base.CalculateHealth() / 3;
+    }
+
+    public override void SuspendMovement()
+    {
+        _agent.isStopped = true;
+        Leg.Suspend();
+    }
+
+    public override void ResumeMovement()
+    {
+        _agent.isStopped = false;
     }
 
     private void InitializeWeapons(IEnumerable<Weapon> weapons)
@@ -96,7 +107,7 @@ public class Enemy : Character
         {
             Body.transform.LookAt(character.transform);
             _agent.SetDestination(character.transform.position);
-            //Moving?.Invoke(_agent.velocity.sqrMagnitude);
+            Moving?.Invoke(_agent.velocity.sqrMagnitude);
         }
     }
 }

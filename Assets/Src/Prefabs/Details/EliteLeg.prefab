@@ -104,7 +104,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 384fbedb2df7d71449ce05d6a354f625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _isAvailable: 0
+  _isAvailable: 1
   _inShop: 1
 --- !u!114 &3420587107351179765
 MonoBehaviour:
@@ -135,7 +135,7 @@ MonoBehaviour:
   _description: "\u043E\u043F\u0438\u0441\u0430\u043D\u0438\u0435"
   _upperPlaceOfDetail: {fileID: 3420587107458514508}
   _bonusHealth: 800
-  _speed: 3.9
+  _speed: 16
 --- !u!1 &3420587107458514509
 GameObject:
   m_ObjectHideFlags: 0

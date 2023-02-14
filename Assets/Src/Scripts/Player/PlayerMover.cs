@@ -1,20 +1,22 @@
 using System;
 using UnityEngine;
 
+[RequireComponent(typeof(Rigidbody))]
 public class PlayerMover : MonoBehaviour
 {
     private const float DeltaStick = 0.1f;
     private const float RotationTime = 1f;
-    private readonly float DeltaMove = Mathf.Sqrt(1.4f);
 
     private PlayerInput _playerInput;
     private float _speed;
     private Character _character;
+    private Rigidbody _rigidbody;
 
     private void Awake()
     {
         _playerInput = new PlayerInput();
         _character = GetComponent<Character>();
+        _rigidbody= GetComponent<Rigidbody>();
     }
 
     private void OnEnable()
@@ -47,6 +49,17 @@ public class PlayerMover : MonoBehaviour
         Move(value);
     }
 
+    public void Suspend()
+    {
+        _character.Moving?.Invoke(0);
+        _character.enabled = false;
+    }
+
+    public void Resume()
+    {
+        _character.enabled = true;
+    }
+
     private void Rotate(Vector2 value)
     {
         float angle = Mathf.Atan2(value.x, value.y) * Mathf.Rad2Deg;
@@ -55,7 +68,8 @@ public class PlayerMover : MonoBehaviour
 
     private void Move(Vector2 value)
     {
-        Vector3 movement = new Vector3(0, 0, Mathf.Abs(value.y) + Mathf.Abs(value.x)) / DeltaMove;
-        transform.Translate(movement * _speed * Time.deltaTime);
+        Vector3 movement = new Vector3(value.x, 0, value.y);
+
+        _rigidbody.MovePosition(transform.position + movement * _speed * Time.deltaTime);
     }
 }

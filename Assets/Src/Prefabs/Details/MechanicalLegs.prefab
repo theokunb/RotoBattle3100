@@ -774,8 +774,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 2.9051557, z: 1}
-  m_Center: {x: 0, y: 0.9525777, z: 0}
+  m_Size: {x: 1, y: 2.3905964, z: 1}
+  m_Center: {x: 0, y: 1.2098587, z: 0}
 --- !u!114 &6947466201195106687
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -840,7 +840,7 @@ MonoBehaviour:
   _description: "\u043B\u0435\u0433\u043A\u0438\u0435 \u043F\u043E\u0434\u0432\u0438\u0436\u043D\u044B\u0435"
   _upperPlaceOfDetail: {fileID: 605190518635613948}
   _bonusHealth: 200
-  _speed: 3
+  _speed: 10
 --- !u!1 &605190518635613949
 GameObject:
   m_ObjectHideFlags: 0

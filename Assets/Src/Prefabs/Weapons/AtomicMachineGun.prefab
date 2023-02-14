@@ -495,10 +495,10 @@ MonoBehaviour:
   _description: "\u0445\u043E\u0440\u043E\u0448\u0435\u0435 \u043E\u0440\u0443\u0436\u0438\u0435"
   _damage: 50
   _maxDelayBetweenShoot: 0.3
-  _minDelayBetweenShoot: 0.2
+  _minDelayBetweenShoot: 0.25
   _shootPlace: {fileID: 7008777911112941734}
   _template: {fileID: 1090492303719371573, guid: 6dd69cfe8005d4c4a911d65a76ca5cc4, type: 3}
-  _bulletSpeed: 15
+  _bulletSpeed: 70
 --- !u!114 &678180699317177953
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -527,7 +527,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 384fbedb2df7d71449ce05d6a354f625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _isAvailable: 0
+  _isAvailable: 1
   _inShop: 1
 --- !u!114 &7533634894967462693
 MonoBehaviour:

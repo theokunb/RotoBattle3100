@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Weapon : Detail
 {
-    private const int BulletsCount = 8;
+    private const int BulletsCount = 5;
     private const string Label = "оружие";
     private const string DamageLabel = "наносимый урон:";
     private const string SpeedLabel = "скорость:";
@@ -31,7 +31,7 @@ public class Weapon : Detail
 
         for (int i = 0; i < BulletsCount; i++)
         {
-            var newBullet = Instantiate(_template, _shootPlace);
+            var newBullet = Instantiate(_template);
             newBullet.Initialize(_owner, _damage, _bulletSpeed);
             newBullet.gameObject.SetActive(false);
             _bullets.Add(newBullet);
@@ -64,6 +64,7 @@ public class Weapon : Detail
         }
 
         _elapsedTime = 0;
+        _delayBetweenShoot = Random.Range(_minDelayBetweenShoot, _maxDelayBetweenShoot);
     }
 
     public override string GetLabel()

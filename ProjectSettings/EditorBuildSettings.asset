@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Mech_Constructor_LtMed/Demo_scene.unity
     guid: a76a783f04d7fcc4dae10ae1a0b83648
+  - enabled: 1
+    path: Assets/Scenes/TestScene.unity
+    guid: a67961043076c554faa3562f17b1b718
   m_configObjects: {}

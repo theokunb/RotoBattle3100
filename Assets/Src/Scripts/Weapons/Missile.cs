@@ -4,10 +4,11 @@ using UnityEngine;
 public class Missile : Bullet
 {
     [SerializeField] private float _radius;
+    [SerializeField] private ParticleSystem _explosion;
 
     protected override void Fly()
     {
-        transform.Translate(Vector3.forward * Speed * Time.deltaTime);
+        Rigidbody.MovePosition(transform.position + transform.forward * Speed * Time.deltaTime);
     }
 
     protected override void Hit(Collider other)
@@ -22,6 +23,8 @@ public class Missile : Bullet
 
     private void Explode()
     {
+        Instantiate(_explosion, transform.position, Quaternion.identity);
+
         var enemies = Physics.OverlapSphere(transform.position, _radius)
             .Where(collider => collider.TryGetComponent(out Character _) == true)
             .Select(collider => collider.GetComponent<Character>())
