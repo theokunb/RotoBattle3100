@@ -1,5 +1,6 @@
 using UnityEngine;
 
+[RequireComponent(typeof(Rigidbody))]
 public abstract class Bullet : MonoBehaviour
 {
     [SerializeField] private float _lifeTime;
@@ -8,6 +9,12 @@ public abstract class Bullet : MonoBehaviour
     protected int Damage { get; private set; }
     protected float Speed { get; private set; }
     protected float ElapsedTime { get; private set; }
+    protected Rigidbody Rigidbody;
+
+    private void Awake()
+    {
+        Rigidbody = GetComponent<Rigidbody>();
+    }
 
     private void Update()
     {
@@ -26,9 +33,13 @@ public abstract class Bullet : MonoBehaviour
         {
             return;
         }
+        else if(other.TryGetComponent(out Bullet _))
+        {
+            return;
+        }
         else if (other.TryGetComponent(out Character character))
         {
-            if (character.GetType() != other.GetType())
+            if (character.GetType() == Owner.GetType())
             {
                 return;
             }

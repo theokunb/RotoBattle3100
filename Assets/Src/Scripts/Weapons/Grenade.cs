@@ -1,21 +1,14 @@
 using System.Linq;
 using UnityEngine;
 
-[RequireComponent(typeof(Rigidbody))]
 public class Grenade : Bullet
 {
     [SerializeField] private float _radius;
-
-    private Rigidbody _rigidbody;
-
-    private void Awake()
-    {
-        _rigidbody = GetComponent<Rigidbody>();
-    }
+    [SerializeField] private ParticleSystem _explosion;
 
     private void OnEnable()
     {
-        _rigidbody.velocity = transform.forward * Speed * Time.deltaTime;
+        Rigidbody.velocity = transform.forward * Speed * Time.deltaTime;
     }
 
     protected override void Fly()
@@ -38,11 +31,13 @@ public class Grenade : Bullet
 
     private void Explode()
     {
+        Instantiate(_explosion, transform.position, Quaternion.identity);
+
         var enemies = Physics.OverlapSphere(transform.position, _radius)
-            .Where(collider => collider.TryGetComponent(out Character _) == true)
-            .Select(collider => collider.GetComponent<Character>())
-            .Where(character => character.GetType() != Owner.GetType())
-            .ToArray();
+        .Where(collider => collider.TryGetComponent(out Character _) == true).ToList()
+        .Select(collider => collider.GetComponent<Character>()).ToList()
+        .Where(character => character.GetType() != Owner.GetType()).ToList()
+        .ToArray();
 
         foreach (var enemy in enemies)
         {

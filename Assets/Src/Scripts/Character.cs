@@ -88,4 +88,8 @@ public class Character : MonoBehaviour
     public virtual void SetWhoAttacked(Character character)
     {
     }
+
+    public virtual void SuspendMovement() { }
+
+    public virtual void ResumeMovement() { }
 }

@@ -4,7 +4,7 @@ public class SimpleBullet : Bullet
 {
     protected override void Fly()
     {
-        transform.Translate(Vector3.forward * Speed * Time.deltaTime);
+        Rigidbody.MovePosition(transform.position + transform.forward * Speed * Time.deltaTime);
     }
 
     protected override void Hit(Collider other)

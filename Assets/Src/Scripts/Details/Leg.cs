@@ -6,7 +6,7 @@ public class Leg : RobotDetail
 {
     private const string Label = "ноги";
     private const string MoveSpeed = "скорость передвижения:";
-    private const float AnimationPlaybackFactor = 1f / 12;
+    private const float AnimationPlaybackFactor = 1f / 45;
 
     [SerializeField] private float _speed;
 
@@ -41,11 +41,15 @@ public class Leg : RobotDetail
         return $"{MoveSpeed} {Speed}";
     }
 
+    public void Suspend()
+    {
+        _animator.SetFloat(CharacterAnimationController.Param.Speed, 0);
+    }
+
     private void OnMoving(float speed)
     {
         float value = Convert.ToInt32(speed > 0) * (_speed * AnimationPlaybackFactor);
 
         _animator.SetFloat(CharacterAnimationController.Param.Speed, value);
-        
     }
 }
