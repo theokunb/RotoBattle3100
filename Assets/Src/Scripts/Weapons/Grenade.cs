@@ -34,9 +34,9 @@ public class Grenade : Bullet
         Instantiate(_explosion, transform.position, Quaternion.identity);
 
         var enemies = Physics.OverlapSphere(transform.position, _radius)
-        .Where(collider => collider.TryGetComponent(out Character _) == true).ToList()
-        .Select(collider => collider.GetComponent<Character>()).ToList()
-        .Where(character => character.GetType() != Owner.GetType()).ToList()
+        .Where(collider => collider.TryGetComponent(out Character _) == true)
+        .Select(collider => collider.GetComponent<Character>())
+        .Where(character => character.GetType() != Owner.GetType())
         .ToArray();
 
         foreach (var enemy in enemies)
