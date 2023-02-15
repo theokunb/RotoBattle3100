@@ -1,6 +1,5 @@
 using UnityEngine;
 
-[RequireComponent(typeof(BoxCollider))]
 public abstract class RobotDetail : Detail
 {
     protected const string BonusHealthDescription = "дополнительное здоровье:";
