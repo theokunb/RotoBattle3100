@@ -22,6 +22,7 @@ public class InventoryPanel : MonoBehaviour
     {
         _cameraController = GetComponent<CameraController>();
         _inventoryObserver = GetComponent<InventoryObserver>();
+        _headButton.onClick.Invoke();
     }
 
     private void OnEnable()

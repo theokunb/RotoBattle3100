@@ -129,7 +129,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1bb1d29402bb32d4884369de0f38e3fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _title: "\u0423\u0441\u0438\u043B\u0435\u043D\u043D\u044B\u0435 \u043D\u043E\u0433\u0438"
+  _title: "\u0443\u0441\u0438\u043B\u0435\u043D\u043D\u044B\u0435 \u043D\u043E\u0433\u0438"
   _description: "\u043E\u043F\u0438\u0441\u0430\u043D\u0438\u0435"
   _upperPlaceOfDetail: {fileID: 6468119452273687123}
   _bonusHealth: 400
