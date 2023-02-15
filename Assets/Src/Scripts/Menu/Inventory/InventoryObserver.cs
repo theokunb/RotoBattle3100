@@ -1,19 +1,27 @@
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
+using TMPro;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class InventoryObserver : MonoBehaviour
 {
+    private const string DefaultInfo = "Информация";
+
     [SerializeField] private Player _player;
     [SerializeField] private ItemsPull _itemPull;
     [SerializeField] private GameObject _itemsContainer;
     [SerializeField] private DetailView _template;
+    [SerializeField] private GameObject _informationWindow;
+    [SerializeField] private TMP_Text _title;
+    [SerializeField] private TMP_Text _description;
 
     public void ShowItems(DetailType detailType)
     {
         ClearView();
+        InformationWindowClear();
 
         var details = GetAvailableDetails(detailType);
 
@@ -61,5 +69,23 @@ public class InventoryObserver : MonoBehaviour
         _player.SetDetail((dynamic)detail);
         _player.CorrectDetails(_player.LegPosition);
         _player.Save();
+
+        DisplayInfo(detail);
+    }
+
+    private void DisplayInfo(Detail detail)
+    {
+        StringBuilder descriptionBuilder = new StringBuilder();
+        descriptionBuilder.Append(detail.Description +"\n");
+        descriptionBuilder.Append(detail.GetStats());
+
+        _title.text = detail.Title;
+        _description.text = descriptionBuilder.ToString();
+    }
+
+    private void InformationWindowClear()
+    {
+        _title.text = DefaultInfo;
+        _description.text = string.Empty;
     }
 }

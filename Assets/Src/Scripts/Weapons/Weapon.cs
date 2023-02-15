@@ -74,7 +74,7 @@ public class Weapon : Detail
 
     public override string GetStats()
     {
-        return $"{DamageLabel} {Damage}\n{SpeedLabel} {GetSpeedLabel(_bulletSpeed)}";
+        return $"{DamageLabel} {Damage}\n{SpeedLabel} {GetSpeedLabel(_maxDelayBetweenShoot)}";
     }
 
     private string GetSpeedLabel(float speed)
@@ -85,8 +85,8 @@ public class Weapon : Detail
 
         Dictionary<string, float> speedDictionary = new Dictionary<string, float>
         {
-            { low, 1f },
-            { medium, 0.5f },
+            { low, 2f },
+            { medium, 0.7f },
             { high, 0f }
         };
 

@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.UI;
 
 public class DetailView : MonoBehaviour
@@ -14,6 +15,7 @@ public class DetailView : MonoBehaviour
     public Detail Detail { get; private set; }
     public Image Image => _image;
     public DetailShop DetailShop { get; private set; }
+
 
     private void OnEnable()
     {
