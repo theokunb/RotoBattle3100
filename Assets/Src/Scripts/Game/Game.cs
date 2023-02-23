@@ -1,7 +1,5 @@
-using UnityEngine;
 using IJunior.TypedScenes;
-using System.Runtime.InteropServices.ComTypes;
-using UnityEngine.InputSystem;
+using UnityEngine;
 
 public class Game : MonoBehaviour, ISceneLoadHandler<int>
 {
@@ -22,7 +20,7 @@ public class Game : MonoBehaviour, ISceneLoadHandler<int>
 
     private void OnEnable()
     {
-        _spawner.PlayerDied+= OnPlayerDied;
+        _spawner.PlayerDied += OnPlayerDied;
     }
 
     private void OnDisable()
@@ -56,7 +54,7 @@ public class Game : MonoBehaviour, ISceneLoadHandler<int>
         _playerLoader.PlayerProgress.PlayedLevel(_currentLevel.Id);
 
         Bag playerBag = _player.GetComponent<Bag>();
-        
+
         _menuBackground.gameObject.SetActive(true);
         _finishMenu.SetRewards(playerBag);
         _menuBackground.OnepMenu(_finishMenu);
