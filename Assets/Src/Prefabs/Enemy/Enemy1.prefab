@@ -142,7 +142,9 @@ MonoBehaviour:
   _newLeg: {fileID: -1305366775570928116, guid: 353d2d4f815e4c04aae6ac0b9e466e42, type: 3}
   _newBody: {fileID: 1534790348011127116, guid: 268bc336287fe3c4c9afb2e81e8568ae, type: 3}
   _newHead: {fileID: 8123509787124463500, guid: 6878c8021b164754ca0bdb61f9ad6fef, type: 3}
-  _newWeapons: []
+  _newWeapons:
+  - {fileID: 7008777911311245525, guid: c91f9f2c51a1fa34c9a6f19714412ae2, type: 3}
+  - {fileID: 6101697449829525568, guid: d2cf8dd9f128cff4fbbdac6c12366dc1, type: 3}
 --- !u!114 &1207519048168996333
 MonoBehaviour:
   m_ObjectHideFlags: 0
