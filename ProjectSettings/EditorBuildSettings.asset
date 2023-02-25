@@ -26,4 +26,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/GUI Kit Casual Game/Scenes/DemoScene.unity
     guid: 78addc77d730f4f38a4a7d5e73530376
-  m_configObjects: {}
+  m_configObjects:
+    com.unity.addressableassets: {fileID: 11400000, guid: 0526716e467de8a45b07aa4fd0ad7610, type: 2}
+    com.unity.localization.settings: {fileID: 11400000, guid: 332fa90abbd347945a7c53ede1a3cc3f, type: 2}

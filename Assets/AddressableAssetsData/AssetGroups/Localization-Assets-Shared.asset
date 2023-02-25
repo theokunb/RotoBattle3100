@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Localization-Assets-Shared
+  m_EditorClassIdentifier: 
+  m_GroupName: Localization-Assets-Shared
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 9f6c0599f29416d41a886315a03151f6
+  m_SerializeEntries:
+  - m_GUID: 23c46fd520aef6f4b95efec4d8a879a1
+    m_Address: Assets/Localization/Tables/UI_text Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+  - m_GUID: d8ce7813bc5e4d249b233be2ac2db378
+    m_Address: Assets/Localization/Tables/Details Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+  - m_GUID: f99491e03c86ffe4fa19dee685c2763c
+    m_Address: Assets/Localization/Tables/DetailDescription Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+  - m_GUID: 6ae1e96e9a3d4a142980cf0984613658
+    m_Address: Assets/Localization/Tables/RoboDetail Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+  - m_GUID: 54480629967ff544489c64cd0874ee31
+    m_Address: Assets/Localization/Tables/LevelTable Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+  m_ReadOnly: 1
+  m_Settings: {fileID: 11400000, guid: 685808bd13b0aeb46bb5e378f3478d14, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 36883dbdf3db718428d1b93abd9f77e7, type: 2}
+    - {fileID: 11400000, guid: 52af7d7ce99ab304e82406a8390f05a6, type: 2}

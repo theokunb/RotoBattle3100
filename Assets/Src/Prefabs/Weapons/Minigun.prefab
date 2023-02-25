@@ -367,9 +367,9 @@ MonoBehaviour:
   _prices:
   - _currencyType: 0
     _count: 12
-  - _currencyType: 0
+  - _currencyType: 1
     _count: 42
-  - _currencyType: 0
+  - _currencyType: 2
     _count: 23
 --- !u!114 &5333138342143441856
 MonoBehaviour:
@@ -383,7 +383,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 384fbedb2df7d71449ce05d6a354f625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _isAvailable: 1
+  _isAvailable: 0
   _inShop: 1
 --- !u!114 &5333138342143441859
 MonoBehaviour:
@@ -410,11 +410,57 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 360bab905e69cda439fb14133446829e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _title: "\u043C\u0438\u043D\u0438\u0433\u0430\u043D"
-  _description: "\u043E\u043F\u0438\u0441\u0430\u043D\u0438\u0435"
+  _title:
+    m_TableReference:
+      m_TableCollectionName: GUID:d8ce7813bc5e4d249b233be2ac2db378
+    m_TableEntryReference:
+      m_KeyId: 5948382810112
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  _description:
+    m_TableReference:
+      m_TableCollectionName: GUID:f99491e03c86ffe4fa19dee685c2763c
+    m_TableEntryReference:
+      m_KeyId: 729569726464
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  _label:
+    m_TableReference:
+      m_TableCollectionName: GUID:6ae1e96e9a3d4a142980cf0984613658
+    m_TableEntryReference:
+      m_KeyId: 559054491648
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   _damage: 20
   _maxDelayBetweenShoot: 0.2
   _minDelayBetweenShoot: 0.3
   _shootPlace: {fileID: 5333138342084062600}
   _template: {fileID: 1090492303719371573, guid: 6dd69cfe8005d4c4a911d65a76ca5cc4, type: 3}
   _bulletSpeed: 75
+  _damageLabel:
+    m_TableReference:
+      m_TableCollectionName: GUID:6ae1e96e9a3d4a142980cf0984613658
+    m_TableEntryReference:
+      m_KeyId: 599982510080
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  _attackSpeedLabel:
+    m_TableReference:
+      m_TableCollectionName: GUID:6ae1e96e9a3d4a142980cf0984613658
+    m_TableEntryReference:
+      m_KeyId: 645603954688
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []

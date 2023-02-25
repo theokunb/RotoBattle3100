@@ -1,11 +1,10 @@
-using System;
 using System.Collections.Generic;
-using System.Linq;
+using UnityEngine;
+using UnityEngine.Localization;
 
 public class Body : RobotDetail
 {
-    private const string Label = "Тело";
-    private const string WeaponSlots = "ячеек оружий:";
+    [SerializeField] private LocalizedString _weaponsSlots;
 
     private List<Weapon> _weapons = new List<Weapon>();
     private WeaponPlace[] _weaponPlaces;
@@ -42,13 +41,8 @@ public class Body : RobotDetail
         newWeapons.Clear();
     }
 
-    public override string GetLabel()
-    {
-        return Label;
-    }
-
     public override string GetSpecialStats()
     {
-        return $"{WeaponSlots} {GetComponentsInChildren<WeaponPlace>().Length}";
+        return $"{_weaponsSlots.GetLocalizedString()}: {GetComponentsInChildren<WeaponPlace>().Length}";
     }
 }

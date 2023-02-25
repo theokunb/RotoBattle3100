@@ -1,14 +1,13 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Localization;
+using UnityEngine.Localization.Components;
 using UnityEngine.UI;
 
 public class WeaponView : MonoBehaviour
 {
     [SerializeField] private Image _image;
-    [SerializeField] private TMP_Text _title;
     [SerializeField] private TMP_Text _description;
     [SerializeField] private Button _removeButton;
 
@@ -32,8 +31,7 @@ public class WeaponView : MonoBehaviour
     {
         _weapon = weapon;
         _image.sprite = detailShop.Icon;
-        _title.text = weapon.Title;
-        _description.text = $"Урон: {weapon.Damage}";
+        _description.GetComponent<LocalizeStringEvent>().RefreshString();
     }
 
     private void OnRemoveClicked()

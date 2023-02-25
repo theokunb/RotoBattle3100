@@ -671,14 +671,60 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 360bab905e69cda439fb14133446829e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _title: "\u0440\u0430\u043A\u0435\u0442\u0430"
-  _description: "\u0422\u043E\u043B\u0441\u0442\u044F\u043A \u0438\u0437 \u0444\u0430\u043B\u043B\u0430\u0443\u0442\u0430"
+  _title:
+    m_TableReference:
+      m_TableCollectionName: GUID:d8ce7813bc5e4d249b233be2ac2db378
+    m_TableEntryReference:
+      m_KeyId: 6399174021120
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  _description:
+    m_TableReference:
+      m_TableCollectionName: GUID:f99491e03c86ffe4fa19dee685c2763c
+    m_TableEntryReference:
+      m_KeyId: 734711943168
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  _label:
+    m_TableReference:
+      m_TableCollectionName: GUID:6ae1e96e9a3d4a142980cf0984613658
+    m_TableEntryReference:
+      m_KeyId: 559054491648
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   _damage: 400
   _maxDelayBetweenShoot: 0.7
   _minDelayBetweenShoot: 0.6
   _shootPlace: {fileID: 6101697449490679859}
   _template: {fileID: 2128408239695785493, guid: bab48a2c186d8c148a8e7f8fa9251a46, type: 3}
   _bulletSpeed: 50
+  _damageLabel:
+    m_TableReference:
+      m_TableCollectionName: GUID:6ae1e96e9a3d4a142980cf0984613658
+    m_TableEntryReference:
+      m_KeyId: 599982510080
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  _attackSpeedLabel:
+    m_TableReference:
+      m_TableCollectionName: GUID:6ae1e96e9a3d4a142980cf0984613658
+    m_TableEntryReference:
+      m_KeyId: 645603954688
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []
 --- !u!114 &4359724272195913460
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -711,7 +757,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 384fbedb2df7d71449ce05d6a354f625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _isAvailable: 1
+  _isAvailable: 0
   _inShop: 1
 --- !u!114 &6729893955618771888
 MonoBehaviour:

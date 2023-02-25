@@ -69,7 +69,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 384fbedb2df7d71449ce05d6a354f625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _isAvailable: 1
+  _isAvailable: 0
   _inShop: 1
 --- !u!114 &3958939098601930268
 MonoBehaviour:
@@ -96,15 +96,60 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 360bab905e69cda439fb14133446829e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _title: "\u043C\u0438\u043D\u0438\u0433\u0430\u043D \"\u041F\u0430\u0434\u0435\u043D\u0438\u0435
-    \u043D\u0435\u0431\u0435\u0441\""
-  _description: "\u043E\u043F\u0438\u0441\u0430\u043D\u0438\u0435"
+  _title:
+    m_TableReference:
+      m_TableCollectionName: GUID:d8ce7813bc5e4d249b233be2ac2db378
+    m_TableEntryReference:
+      m_KeyId: 6065559080960
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  _description:
+    m_TableReference:
+      m_TableCollectionName: GUID:f99491e03c86ffe4fa19dee685c2763c
+    m_TableEntryReference:
+      m_KeyId: 731884982272
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  _label:
+    m_TableReference:
+      m_TableCollectionName: GUID:6ae1e96e9a3d4a142980cf0984613658
+    m_TableEntryReference:
+      m_KeyId: 559054491648
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   _damage: 44
   _maxDelayBetweenShoot: 0.25
   _minDelayBetweenShoot: 0.15
   _shootPlace: {fileID: 3958939099290575415}
   _template: {fileID: 1090492303719371573, guid: 6dd69cfe8005d4c4a911d65a76ca5cc4, type: 3}
   _bulletSpeed: 80
+  _damageLabel:
+    m_TableReference:
+      m_TableCollectionName: GUID:6ae1e96e9a3d4a142980cf0984613658
+    m_TableEntryReference:
+      m_KeyId: 599982510080
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  _attackSpeedLabel:
+    m_TableReference:
+      m_TableCollectionName: GUID:6ae1e96e9a3d4a142980cf0984613658
+    m_TableEntryReference:
+      m_KeyId: 645603954688
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []
 --- !u!1 &3958939098636316498
 GameObject:
   m_ObjectHideFlags: 0

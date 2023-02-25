@@ -3,20 +3,22 @@ using System.Collections.Generic;
 using System.Linq;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Localization.Components;
 using UnityEngine.UI;
 
 public class WeaponManager : MonoBehaviour
 {
-    private const string LabelStatus = "свободных слотов:";
-
     [SerializeField] private Player _player;
     [SerializeField] private WeaponView _template;
     [SerializeField] private Button _closeButton;
-    [SerializeField] private TMP_Text _weaponsStatus;
+    [SerializeField] private LocalizeStringEvent _weaponsStatus;
     [SerializeField] private GameObject _weaponContainer;
 
-    private int _allWeaponsCount;
-    private int _currentWeaponsCount;
+    private int _allWeaponsCount = 0;
+    private int _currentWeaponsCount = 0;
+
+    public string AllWeaponsCount => _allWeaponsCount.ToString();
+    public string CurrentWeaponsCount => _currentWeaponsCount.ToString();
 
     private void OnEnable()
     {
@@ -35,7 +37,7 @@ public class WeaponManager : MonoBehaviour
 
         _allWeaponsCount = _player.WeaponPlaces.Count();
         _currentWeaponsCount = _player.WeaponPlaces.Where(weapon => weapon.IsBusy == false).Count();
-        DisplayStatus();
+        _weaponsStatus.RefreshString();
     }
 
     private void CloseButtonClicked()
@@ -50,13 +52,9 @@ public class WeaponManager : MonoBehaviour
         _currentWeaponsCount++;
         weaponView.RemoveClicked -= OnRemoveClicked;
 
-        Destroy(weaponView.gameObject);
-        DisplayStatus();
-    }
+        _weaponsStatus.RefreshString();
 
-    private void DisplayStatus()
-    {
-        _weaponsStatus.text = $"{LabelStatus} {_currentWeaponsCount}/{_allWeaponsCount}";
+        Destroy(weaponView.gameObject);
     }
 
     private void ClearView()

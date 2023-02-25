@@ -1,0 +1,80 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: DetailStats Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: DetailStats
+  m_TableCollectionNameGuidString: 6ae1e96e9a3d4a142980cf0984613658
+  m_Entries:
+  - m_Id: 21386661888
+    m_Key: bonusHealth
+    m_Metadata:
+      m_Items: []
+  - m_Id: 167247777792
+    m_Key: scannerRadius
+    m_Metadata:
+      m_Items: []
+  - m_Id: 242908827648
+    m_Key: weaponSlots
+    m_Metadata:
+      m_Items: []
+  - m_Id: 303503937536
+    m_Key: moveSpeed
+    m_Metadata:
+      m_Items: []
+  - m_Id: 329949024256
+    m_Key: LabelHead
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372470878208
+    m_Key: LabelBody
+    m_Metadata:
+      m_Items: []
+  - m_Id: 398668500992
+    m_Key: LabelLeg
+    m_Metadata:
+      m_Items: []
+  - m_Id: 559054491648
+    m_Key: LabelWeapon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 599982510080
+    m_Key: Damage
+    m_Metadata:
+      m_Items: []
+  - m_Id: 645603954688
+    m_Key: AttackSpeed
+    m_Metadata:
+      m_Items: []
+  - m_Id: 792547201024
+    m_Key: LowAttackSpeed
+    m_Metadata:
+      m_Items: []
+  - m_Id: 830878945280
+    m_Key: MediumAttackSpeed
+    m_Metadata:
+      m_Items: []
+  - m_Id: 870066327552
+    m_Key: HighAttackSpeed
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 2549057746233196561
+  references:
+    version: 2
+    RefIds:
+    - rid: 2549057746233196561
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1677288571047

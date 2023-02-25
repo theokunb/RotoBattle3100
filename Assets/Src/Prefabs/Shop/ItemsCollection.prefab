@@ -427,7 +427,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _template: {fileID: 5701434451764740345, guid: 3da7a8ce96f96a54180e31a23d3f8484, type: 3}
   _container: {fileID: 3925612299597526156}
-  _label: {fileID: 3925612298498080201}
+  _labelText: {fileID: 3925612298498080201}
 --- !u!1 &3925612299597526156
 GameObject:
   m_ObjectHideFlags: 0

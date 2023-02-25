@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: LevelTable_tr
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: tr
+  m_SharedData: {fileID: 11400000, guid: 54480629967ff544489c64cd0874ee31, type: 2}
+  m_Metadata:
+    m_Items:
+    - rid: 2549057753512149002
+  m_TableData:
+  - m_Id: 24528195584
+    m_Localized: "E\u011Fitim"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1116037091328
+    m_Localized: "kolay g\xF6rev"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1119023435776
+    m_Localized: "Kara Ta\u015Fta G\xFCr\xFClt\xFC"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1121896534016
+    m_Localized: Sabotaj
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1125142925312
+    m_Localized: hainlerin yok edilmesi
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1128838107136
+    m_Localized: "Yeni D\xFC\u015Fmanlar"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1132009000960
+    m_Localized: "Kara Ta\u015Fta G\xFCr\xFClt\xFC: 2. K\u0131s\u0131m"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6871532343296
+    m_Localized: "{level.LevelView.LevelLabel}\n{level.LevelView.LevelStatusLabel}
+      kez tamamland\u0131"
+    m_Metadata:
+      m_Items:
+      - rid: 2549057753512149002
+  references:
+    version: 2
+    RefIds:
+    - rid: 2549057753512149002
+      type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_Entries: 00903ee73f060000

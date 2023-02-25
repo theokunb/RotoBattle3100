@@ -3,14 +3,16 @@ using System.Collections.Generic;
 using System.Linq;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Localization;
 
 public class ItemsCollectionView : MonoBehaviour
 {
     [SerializeField] private DetailView _template;
     [SerializeField] private GameObject _container;
-    [SerializeField] private TMP_Text _label;
+    [SerializeField] private TMP_Text _labelText;
 
     private List<DetailView> _items;
+    private LocalizedString _label;
 
     public event Action<DetailView> ItemSelected;
 
@@ -25,6 +27,11 @@ public class ItemsCollectionView : MonoBehaviour
         {
             item.ButtonClicked -= DetailBuyButtonClicked;
         }
+
+        if(_label != null)
+        {
+            _label.StringChanged -= OnLabelStringChanged;
+        }
     }
 
     private void Awake()
@@ -38,7 +45,7 @@ public class ItemsCollectionView : MonoBehaviour
         
         if(firstDetail != null)
         {
-            _label.text = firstDetail.GetComponent<Detail>().GetLabel();
+            _label = firstDetail.GetComponent<Detail>().Label;
         }
 
         foreach(var detail in details)
@@ -62,5 +69,15 @@ public class ItemsCollectionView : MonoBehaviour
         {
             item.ButtonClicked += DetailBuyButtonClicked;
         }
+
+        if(_label != null)
+        {
+            _label.StringChanged += OnLabelStringChanged;
+        }
+    }
+
+    private void OnLabelStringChanged(string value)
+    {
+        _labelText.text = value;
     }
 }
