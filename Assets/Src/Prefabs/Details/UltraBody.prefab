@@ -264,7 +264,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 384fbedb2df7d71449ce05d6a354f625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _isAvailable: 1
+  _isAvailable: 0
   _inShop: 1
 --- !u!114 &8052082016771849787
 MonoBehaviour:
@@ -291,10 +291,56 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44831f9b33411ab479a0c5c1183c7be5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _title: "\u0443\u043B\u044C\u0442\u0440\u0430 \u0433\u0440\u0443\u0434\u044C"
-  _description: "\u043F\u0440\u043E\u0431\u043E\u0439\u043D\u0438\u043A"
+  _title:
+    m_TableReference:
+      m_TableCollectionName: GUID:d8ce7813bc5e4d249b233be2ac2db378
+    m_TableEntryReference:
+      m_KeyId: 3977299005440
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  _description:
+    m_TableReference:
+      m_TableCollectionName: GUID:f99491e03c86ffe4fa19dee685c2763c
+    m_TableEntryReference:
+      m_KeyId: 145017966592
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  _label:
+    m_TableReference:
+      m_TableCollectionName: GUID:6ae1e96e9a3d4a142980cf0984613658
+    m_TableEntryReference:
+      m_KeyId: 372470878208
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   _upperPlaceOfDetail: {fileID: 1573883868597022262}
   _bonusHealth: 1500
+  _bonusHealthDescription:
+    m_TableReference:
+      m_TableCollectionName: GUID:6ae1e96e9a3d4a142980cf0984613658
+    m_TableEntryReference:
+      m_KeyId: 21386661888
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  _weaponsSlots:
+    m_TableReference:
+      m_TableCollectionName: GUID:6ae1e96e9a3d4a142980cf0984613658
+    m_TableEntryReference:
+      m_KeyId: 242908827648
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []
 --- !u!1 &1573883868163150846
 GameObject:
   m_ObjectHideFlags: 0

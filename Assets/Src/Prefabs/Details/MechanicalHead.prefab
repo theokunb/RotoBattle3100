@@ -193,9 +193,54 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8728a9d2a74e2844d8c5d500af6bfb78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _title: "\u043C\u0435\u0445\u0430\u043D\u0438\u0447\u0435\u0441\u043A\u0430\u044F
-    \u0433\u043E\u043B\u043E\u0432\u0430"
-  _description: "\u043E\u043F\u0438\u0441\u0430\u043D\u0438\u0435"
+  _title:
+    m_TableReference:
+      m_TableCollectionName: GUID:d8ce7813bc5e4d249b233be2ac2db378
+    m_TableEntryReference:
+      m_KeyId: 3355472465920
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  _description:
+    m_TableReference:
+      m_TableCollectionName: GUID:f99491e03c86ffe4fa19dee685c2763c
+    m_TableEntryReference:
+      m_KeyId: 143491239936
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  _label:
+    m_TableReference:
+      m_TableCollectionName: GUID:6ae1e96e9a3d4a142980cf0984613658
+    m_TableEntryReference:
+      m_KeyId: 329949024256
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   _upperPlaceOfDetail: {fileID: 0}
   _bonusHealth: 90
+  _bonusHealthDescription:
+    m_TableReference:
+      m_TableCollectionName: GUID:6ae1e96e9a3d4a142980cf0984613658
+    m_TableEntryReference:
+      m_KeyId: 21386661888
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   _scannerRadius: 6.5
+  _visionRange:
+    m_TableReference:
+      m_TableCollectionName: GUID:6ae1e96e9a3d4a142980cf0984613658
+    m_TableEntryReference:
+      m_KeyId: 167247777792
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []

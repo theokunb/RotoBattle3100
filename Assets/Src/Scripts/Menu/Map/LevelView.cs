@@ -1,6 +1,7 @@
 using System;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Localization.Components;
 using UnityEngine.UI;
 
 public class LevelView : MonoBehaviour
@@ -9,9 +10,13 @@ public class LevelView : MonoBehaviour
     [SerializeField] private Button _button;
     [SerializeField] private TMP_Text _text;
 
+    private Level _level;
+    private LevelStatus _levelStatus;
+
     public event Action<Level> LevelSelected;
 
-    public Level Level { get;private set; }
+    public string LevelLabel => _level?.Title;
+    public string LevelStatusLabel => _levelStatus?.TodayCompletedTimes.ToString();
 
     private void OnEnable()
     {
@@ -25,14 +30,16 @@ public class LevelView : MonoBehaviour
 
     public void Render(Level level, LevelStatus status)
     {
-        Level = level;
+        _level = level;
+        _levelStatus = status;
         _image.sprite = level.Icon;
-        _text.text = $"{level.Title}\nпройдено {status.TodayCompletedTimes} раз";
         _button.interactable = status.IsCompleted;
+
+        _text.GetComponent<LocalizeStringEvent>().RefreshString();
     }
 
     private void OnButtonClicked()
     {
-        LevelSelected?.Invoke(Level);
+        LevelSelected?.Invoke(_level);
     }
 }

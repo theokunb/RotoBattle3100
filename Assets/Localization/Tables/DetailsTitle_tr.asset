@@ -1,0 +1,113 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: DetailsTitle_tr
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: tr
+  m_SharedData: {fileID: 11400000, guid: d8ce7813bc5e4d249b233be2ac2db378, type: 2}
+  m_Metadata:
+    m_Items:
+    - rid: 2549057753512149007
+  m_TableData:
+  - m_Id: 50990059520
+    m_Localized: "geli\u015Fmi\u015F z\u0131rh"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 361582465024
+    m_Localized: "geli\u015Ftirilmi\u015F kafa taray\u0131c\u0131"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 728995106816
+    m_Localized: "geli\u015Fmi\u015F robotik bacaklar"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1768863731712
+    m_Localized: elit defans oyuncusu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1959385796608
+    m_Localized: abble
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2652368703488
+    m_Localized: elit bacaklar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3149179817984
+    m_Localized: "mekanik \xF6nl\xFCk"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3355472465920
+    m_Localized: mekanik kask
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3862488322048
+    m_Localized: mekanik bacaklar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3977299005440
+    m_Localized: "gladyat\xF6r z\u0131rh\u0131"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4142881738752
+    m_Localized: abble max x pro s
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4905645281280
+    m_Localized: "gladyat\xF6r bacaklar\u0131"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5445708058624
+    m_Localized: "atom makineli t\xFCfek"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5705998176256
+    m_Localized: "el bombas\u0131 f\u0131rlat\u0131c\u0131"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5826311786496
+    m_Localized: "makineli t\xFCfek"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5948382810112
+    m_Localized: minigun
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6065559080960
+    m_Localized: "minigun \"Cennetin D\xFC\u015F\xFC\u015F\xFC\""
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6228558123008
+    m_Localized: roketatar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6399174021120
+    m_Localized: "\"\u015Fi\u015Fman adam\""
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6626903756800
+    m_Localized: "\u015Fok edici"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 136378520080384
+    m_Localized: '{weapon.Description}'
+    m_Metadata:
+      m_Items:
+      - rid: 2549057753512149007
+  references:
+    version: 2
+    RefIds:
+    - rid: 2549057753512149007
+      type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_Entries: 00903eee017b000000903e19097c0000

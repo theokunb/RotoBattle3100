@@ -1,14 +1,14 @@
 using System;
 using UnityEngine;
+using UnityEngine.Localization;
 
 [RequireComponent(typeof(Animator))]
 public class Leg : RobotDetail
 {
-    private const string Label = "ноги";
-    private const string MoveSpeed = "скорость передвижения:";
     private const float AnimationPlaybackFactor = 1f / 45;
 
     [SerializeField] private float _speed;
+    [SerializeField] private LocalizedString _moveSteed;
 
     private Animator _animator;
     private Character _character;
@@ -31,14 +31,9 @@ public class Leg : RobotDetail
         _character.Moving.RemoveListener(OnMoving);
     }
 
-    public override string GetLabel()
-    {
-        return Label;
-    }
-
     public override string GetSpecialStats()
     {
-        return $"{MoveSpeed} {Speed}";
+        return $"{_moveSteed.GetLocalizedString()}: {Speed}";
     }
 
     public void Suspend()

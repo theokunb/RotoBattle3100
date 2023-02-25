@@ -4,12 +4,9 @@ using System.Linq;
 using System.Text;
 using TMPro;
 using UnityEngine;
-using UnityEngine.InputSystem;
 
 public class InventoryObserver : MonoBehaviour
 {
-    private const string DefaultInfo = "Информация";
-
     [SerializeField] private Player _player;
     [SerializeField] private ItemsPull _itemPull;
     [SerializeField] private GameObject _itemsContainer;
@@ -21,7 +18,6 @@ public class InventoryObserver : MonoBehaviour
     public void ShowItems(DetailType detailType)
     {
         ClearView();
-        InformationWindowClear();
 
         var details = GetAvailableDetails(detailType);
 
@@ -81,11 +77,5 @@ public class InventoryObserver : MonoBehaviour
 
         _title.text = detail.Title;
         _description.text = descriptionBuilder.ToString();
-    }
-
-    private void InformationWindowClear()
-    {
-        _title.text = DefaultInfo;
-        _description.text = string.Empty;
     }
 }

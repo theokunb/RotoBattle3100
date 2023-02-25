@@ -13,7 +13,15 @@ MonoBehaviour:
   m_Name: Level 0
   m_EditorClassIdentifier: 
   _id: 0
-  _title: "\u043E\u0431\u0443\u0447\u0435\u043D\u0438\u0435"
+  _title:
+    m_TableReference:
+      m_TableCollectionName: GUID:54480629967ff544489c64cd0874ee31
+    m_TableEntryReference:
+      m_KeyId: 24528195584
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   _width: 10
   _lenght: 30
   _enemies:
@@ -30,3 +38,6 @@ MonoBehaviour:
     _count: 50
   - _currencyType: 1
     _count: 40
+  references:
+    version: 2
+    RefIds: []

@@ -5,21 +5,26 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using DG.Tweening;
+using UnityEngine.Localization.Components;
 
 public class BuyWindow : MonoBehaviour
 {
     [SerializeField] private Image _image;
-    [SerializeField] private TMP_Text _title;
-    [SerializeField] private TMP_Text _stats;
-    [SerializeField] private TMP_Text _description;
     [SerializeField] private PriceView _priceView;
     [SerializeField] private Button _buyButton;
     [SerializeField] private Button _closeButton;
     [SerializeField] private PlayerWallet _playerWallet;
+    [SerializeField] private TMP_Text _title;
+    [SerializeField] private TMP_Text _description;
+    [SerializeField] private TMP_Text _stats;
 
     private DetailView _item;
 
     public event Action<DetailView, bool> DialogResult;
+
+    public string ItemTitle => _item?.Detail?.Title;
+    public string ItemDescription => _item?.Detail?.Description;
+    public string ItemStats => _item?.Detail?.GetStats();
 
     private void OnEnable()
     {
@@ -37,23 +42,12 @@ public class BuyWindow : MonoBehaviour
     {
         _item = item;
         _image.sprite = item.Image.sprite;
-        _title.text = item.Detail.Title;
-        _stats.text = item.Detail.GetStats();
-        _description.text = $"{item.Detail.Description}";
         _priceView.Display(item.FullPrice);
         _buyButton.interactable = _playerWallet.CanBuy(item.FullPrice);
-    }
 
-    private string GetPriceDescription(IEnumerable<Currency> price)
-    {
-        StringBuilder builder = new StringBuilder("стоимость:\n");
-
-        foreach (Currency currency in price)
-        {
-            builder.Append($"{currency.Title}: {currency.Count}\n");
-        }
-
-        return builder.ToString();
+        _title.GetComponent<LocalizeStringEvent>().RefreshString();
+        _description.GetComponent<LocalizeStringEvent>().RefreshString();
+        _stats.GetComponent<LocalizeStringEvent>().RefreshString();
     }
 
     private void OnBuyClicked()

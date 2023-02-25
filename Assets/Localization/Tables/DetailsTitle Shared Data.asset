@@ -1,0 +1,112 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: DetailsTitle Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: DetailsTitle
+  m_TableCollectionNameGuidString: d8ce7813bc5e4d249b233be2ac2db378
+  m_Entries:
+  - m_Id: 50990059520
+    m_Key: AdvancedArmor
+    m_Metadata:
+      m_Items: []
+  - m_Id: 361582465024
+    m_Key: AdvancedHead
+    m_Metadata:
+      m_Items: []
+  - m_Id: 728995106816
+    m_Key: AdvancedRoboticLegs
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1768863731712
+    m_Key: eliteBody
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1959385796608
+    m_Key: eliteHead
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2652368703488
+    m_Key: eliteLeg
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3149179817984
+    m_Key: MechanicalBody
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3355472465920
+    m_Key: MechanicalHead
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3862488322048
+    m_Key: MechanicalLeg
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3977299005440
+    m_Key: UltraBody
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4142881738752
+    m_Key: UltraHead
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4905645281280
+    m_Key: UltraLeg
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5445708058624
+    m_Key: AtomicMachingun
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5705998176256
+    m_Key: Grenadegun
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5826311786496
+    m_Key: machingun
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5948382810112
+    m_Key: minigun
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6065559080960
+    m_Key: MinigunFallofHeaven
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6228558123008
+    m_Key: Rocket
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6399174021120
+    m_Key: RocketV2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6626903756800
+    m_Key: Shoker
+    m_Metadata:
+      m_Items: []
+  - m_Id: 136378520080384
+    m_Key: WeaponDescription
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 2549057746233196546
+  references:
+    version: 2
+    RefIds:
+    - rid: 2549057746233196546
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1677282921529

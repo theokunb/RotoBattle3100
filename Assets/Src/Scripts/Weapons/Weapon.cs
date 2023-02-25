@@ -1,13 +1,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.Localization;
 
 public class Weapon : Detail
 {
     private const int BulletsCount = 5;
-    private const string Label = "оружие";
-    private const string DamageLabel = "наносимый урон:";
-    private const string SpeedLabel = "скорость:";
 
     [SerializeField] private int _damage;
     [SerializeField] private float _maxDelayBetweenShoot;
@@ -15,6 +13,8 @@ public class Weapon : Detail
     [SerializeField] private Transform _shootPlace;
     [SerializeField] private Bullet _template;
     [SerializeField] private float _bulletSpeed;
+    [SerializeField] private LocalizedString _damageLabel;
+    [SerializeField] private LocalizedString _attackSpeedLabel;
 
     private Character _owner;
     private float _elapsedTime;
@@ -67,27 +67,22 @@ public class Weapon : Detail
         _delayBetweenShoot = Random.Range(_minDelayBetweenShoot, _maxDelayBetweenShoot);
     }
 
-    public override string GetLabel()
-    {
-        return Label;
-    }
-
     public override string GetStats()
     {
-        return $"{DamageLabel} {Damage}\n{SpeedLabel} {GetSpeedLabel(_maxDelayBetweenShoot)}";
+        return $"{_damageLabel.GetLocalizedString()}: {Damage}\n{_attackSpeedLabel.GetLocalizedString()}: {GetSpeedLabel(_maxDelayBetweenShoot)}";
     }
 
     private string GetSpeedLabel(float speed)
     {
-        const string low = "низкая";
-        const string medium = "средняя";
-        const string high = "высокая";
+        LocalizedString low = new LocalizedString("DetailStats", "LowAttackSpeed");
+        LocalizedString medium = new LocalizedString("DetailStats", "MediumAttackSpeed");
+        LocalizedString high = new LocalizedString("DetailStats", "HighAttackSpeed");
 
         Dictionary<string, float> speedDictionary = new Dictionary<string, float>
         {
-            { low, 2f },
-            { medium, 0.7f },
-            { high, 0f }
+            { low.GetLocalizedString(), 2f },
+            { medium.GetLocalizedString(), 0.7f },
+            { high.GetLocalizedString(), 0f }
         };
 
         return speedDictionary.Where(element => speed > element.Value).First().Key;
