@@ -59,6 +59,22 @@ MonoBehaviour:
     m_Key: FreeSlotsKey
     m_Metadata:
       m_Items: []
+  - m_Id: 562895846805504
+    m_Key: LoseHeaderKey
+    m_Metadata:
+      m_Items: []
+  - m_Id: 563439915143168
+    m_Key: WinHeaderKey
+    m_Metadata:
+      m_Items: []
+  - m_Id: 563909769465856
+    m_Key: PauseHeaderKey
+    m_Metadata:
+      m_Items: []
+  - m_Id: 564641709068288
+    m_Key: ItemReceivedKey
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

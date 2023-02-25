@@ -64,6 +64,22 @@ MonoBehaviour:
     m_Metadata:
       m_Items:
       - rid: 2549057749735964677
+  - m_Id: 562895846805504
+    m_Localized: died!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 563439915143168
+    m_Localized: level completed!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 563909769465856
+    m_Localized: pause
+    m_Metadata:
+      m_Items: []
+  - m_Id: 564641709068288
+    m_Localized: item received
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds:

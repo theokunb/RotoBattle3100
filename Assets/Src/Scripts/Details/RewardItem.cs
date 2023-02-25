@@ -2,6 +2,7 @@ using System;
 using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.Localization.Components;
 using UnityEngine.UI;
 
 public class RewardItem : MonoBehaviour
@@ -10,8 +11,11 @@ public class RewardItem : MonoBehaviour
     [SerializeField] private TMP_Text _title;
 
     private PlayerInput _playerInput;
+    private Detail _detail;
 
     public event Action<RewardItem> Tapped;
+
+    public string DetailTitle => _detail?.Title;
 
     private void Awake()
     {
@@ -32,8 +36,10 @@ public class RewardItem : MonoBehaviour
 
     public void Render(Detail detail)
     {
+        _detail = detail;
         _image.sprite = detail.GetComponent<DetailShop>().Icon;
-        _title.text = detail.Title;
+
+        _title.GetComponent<LocalizeStringEvent>().RefreshString();
     }
 
     private void OnTouch(InputAction.CallbackContext ctx)
