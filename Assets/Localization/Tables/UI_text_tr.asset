@@ -64,6 +64,22 @@ MonoBehaviour:
     m_Metadata:
       m_Items:
       - rid: 2549057749735964679
+  - m_Id: 562895846805504
+    m_Localized: "\xF6l\xFC!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 563439915143168
+    m_Localized: "Seviye tamamland\u0131!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 563909769465856
+    m_Localized: Duraklat
+    m_Metadata:
+      m_Items: []
+  - m_Id: 564641709068288
+    m_Localized: "e\u015Fya al\u0131nd\u0131"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds:
