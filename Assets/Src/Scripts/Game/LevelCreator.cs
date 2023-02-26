@@ -69,8 +69,8 @@ public class LevelCreator : MonoBehaviour
 
     private void CreateBackground()
     {
-        const float maxSideHeight = 15;
-        const float minSideHeight = 10;
+        const float maxSideHeight = 20;
+        const float minSideHeight = 15;
         const float maxFarHeight = 40;
         const float minFarHeight = 25;
 
@@ -103,7 +103,7 @@ public class LevelCreator : MonoBehaviour
 
     private void CreateFarBoxes(float size, int blocksCount, float minHeight, float maxHeight)
     {
-        MyRectangle rect = new MyRectangle(new Vector3(_platformWidth + size * blocksCount + size / 2, -_platformHeight, _platformLenght + size / 2),
+        MyRectangle rect = new MyRectangle(new Vector3(_platformWidth + size * blocksCount + size / 2, -_platformHeight, _platformLenght + size),
             new Vector3(-size * blocksCount - size / 2, -_platformHeight, _platformLenght + size * blocksCount + size / 2));
 
         CreateBoxes(rect, size, minHeight, maxHeight);
