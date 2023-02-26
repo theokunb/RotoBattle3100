@@ -1663,7 +1663,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _game: {fileID: 175325471}
-  _template: {fileID: 83338035688409688, guid: c14b6c4d0c306ed41b912fd3b01e69ab, type: 3}
+  _rewardItemTemplate: {fileID: 83338035688409688, guid: c14b6c4d0c306ed41b912fd3b01e69ab, type: 3}
+  _rewardCurrencyTemplate: {fileID: 6514675331962834393, guid: afac7ed74cec0b5428b79dcadf499ba0, type: 3}
   _menuBackground: {fileID: 821804940}
   _homeButton: {fileID: 1189783190}
   _replayButton: {fileID: 136884475}

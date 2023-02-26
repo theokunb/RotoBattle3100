@@ -75,6 +75,18 @@ MonoBehaviour:
     m_Key: ItemReceivedKey
     m_Metadata:
       m_Items: []
+  - m_Id: 654955220209664
+    m_Key: CurrencyRecievedKey
+    m_Metadata:
+      m_Items: []
+  - m_Id: 702890129657856
+    m_Key: LevelRewardKey
+    m_Metadata:
+      m_Items: []
+  - m_Id: 702925940625408
+    m_Key: CollectedRewardKey
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

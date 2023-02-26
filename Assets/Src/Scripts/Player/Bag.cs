@@ -6,12 +6,12 @@ using UnityEngine;
 public class Bag : MonoBehaviour
 {
     private List<DetailDropped> _detailsDropped;
-    private List<DroppedCurrency> _currenciesDropped;
+    private Wallet _wallet;
 
     private void Awake()
     {
         _detailsDropped = new List<DetailDropped>();
-        _currenciesDropped = new List<DroppedCurrency>();
+        _wallet = new Wallet();
     }
 
     public void Put(DetailDropped detailDropped)
@@ -21,10 +21,10 @@ public class Bag : MonoBehaviour
 
     public void Put(DroppedCurrency currencyDropped)
     {
-        _currenciesDropped.Add(currencyDropped);
+        _wallet.Increase(currencyDropped.Currency);
     }
 
     public IEnumerable<DetailDropped> GetDetails() => _detailsDropped;
 
-    public IEnumerable<DroppedCurrency> GetCurrencies() => _currenciesDropped;
+    public IEnumerable<Currency> GetCurrencies() => _wallet.GetCurrencies();
 }
