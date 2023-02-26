@@ -80,6 +80,18 @@ MonoBehaviour:
     m_Localized: "e\u015Fya al\u0131nd\u0131"
     m_Metadata:
       m_Items: []
+  - m_Id: 654955220209664
+    m_Localized: "al\u0131nan kaynaklar"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 702890129657856
+    m_Localized: "ge\xE7it"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 702925940625408
+    m_Localized: "toplanm\u0131\u015F"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds:

@@ -2,19 +2,24 @@ using System;
 using System.Collections.Generic;
 
 [Serializable]
-public class Wallet : IWallet
+public class Wallet
 {
-    private const int StartValue = 2000;
-
     private Currency _metal;
     private Currency _energy;
     private Currency _fuel;
 
     public Wallet()
     {
-        _metal = new Metal(StartValue);
-        _energy = new Energy(StartValue);
-        _fuel= new Fuel(StartValue);
+        _metal = new Metal(0);
+        _energy = new Energy(0);
+        _fuel= new Fuel(0);
+    }
+
+    public Wallet(int startValue)
+    {
+        _metal = new Metal(startValue);
+        _energy = new Energy(startValue);
+        _fuel = new Fuel(startValue);
     }
 
     public Currency Metal => _metal;
@@ -70,43 +75,33 @@ public class Wallet : IWallet
         Reduce((dynamic)currency);
     }
 
-    public void Add(Metal metal)
+    private void Add(Metal metal)
     {
         _metal.Increase(metal);
     }
 
-    public void Add(Energy energy)
+    private void Add(Energy energy)
     {
         _energy.Increase(energy);
     }
 
-    public void Reduce(Metal metal)
+    private void Reduce(Metal metal)
     {
         _metal.Reduce(metal);
     }
 
-    public void Reduce(Energy energy)
+    private void Reduce(Energy energy)
     {
         _energy.Reduce(energy);
     }
 
-    public void Add(Fuel fuel)
+    private void Add(Fuel fuel)
     {
         _fuel.Increase(fuel);
     }
 
-    public void Reduce(Fuel fuel)
+    private void Reduce(Fuel fuel)
     {
         _fuel.Reduce(fuel);
     }
-}
-
-public interface IWallet
-{
-    void Add(Metal metal);
-    void Add(Energy energy);
-    void Add(Fuel fuel);
-    void Reduce(Metal metal);
-    void Reduce(Energy energy);
-    void Reduce(Fuel fuel);
 }

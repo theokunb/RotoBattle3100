@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.Localization;
 
@@ -20,5 +21,5 @@ public class Level : ScriptableObject
     public int Width => _width;
     public int Lenght => _lenght;
     public Sprite Icon => _icon;
-    public IEnumerable<Price> Reward => _reward;
+    public IEnumerable<Currency> Reward => _reward.Select(element => element.ToCurrency());
 }

@@ -11,13 +11,14 @@ using UnityEngine.UI;
 public class FinishMenu : Menu
 {
     [SerializeField] private Game _game;
-    [SerializeField] private RewardItem _template;
+    [SerializeField] private RewardItem _rewardItemTemplate;
+    [SerializeField] private RewardCurrencyView _rewardCurrencyTemplate;
     [SerializeField] private MenuBackground _menuBackground;
     [SerializeField] private Button _homeButton;
     [SerializeField] private Button _replayButton;
     [SerializeField] private Button _nextButton;
 
-    private Queue<RewardItem> _rewardItems= new Queue<RewardItem>();
+    private Queue<RewardView> _rewardItems= new Queue<RewardView>();
     private Bag _bag;
 
     private void OnEnable()
@@ -42,14 +43,13 @@ public class FinishMenu : Menu
     public void SetRewards(Bag playerBag)
     {
         _bag = playerBag;
-        DisplayCurrencies(playerBag.GetCurrencies());
     }
 
     private void DisplayItems(IEnumerable<DetailDropped> _items)
     {
         foreach(var item in _items)
         {
-            var createdDisplayItem = Instantiate(_template, transform);
+            var createdDisplayItem = Instantiate(_rewardItemTemplate, transform);
             createdDisplayItem.Render(item.GetDetail());
             createdDisplayItem.transform.localScale = Vector3.zero;
             createdDisplayItem.gameObject.SetActive(false);
@@ -58,7 +58,9 @@ public class FinishMenu : Menu
             _rewardItems.Enqueue(createdDisplayItem);
         }
 
-        if(_rewardItems.Count > 0 )
+        CreateRewardCurrency(_game.CurrentLevel.Reward, _bag.GetCurrencies());
+
+        if (_rewardItems.Count > 0 )
         {
             var firstreward = _rewardItems.Dequeue();
             firstreward.gameObject.SetActive(true);
@@ -66,7 +68,20 @@ public class FinishMenu : Menu
         }
     }
 
-    private void OnTapped(RewardItem rewardItem)
+    private void CreateRewardCurrency(IEnumerable<Currency> levelReward, IEnumerable<Currency> collectedReward)
+    {
+        var rewardWindow = Instantiate(_rewardCurrencyTemplate, transform);
+        rewardWindow.RenderLevelReward(levelReward);
+        rewardWindow.RenderCollectedReward(collectedReward);
+
+        rewardWindow.transform.localScale = Vector3.zero;
+        rewardWindow.gameObject.SetActive(false);
+        rewardWindow.Tapped += OnTapped;
+
+        _rewardItems.Enqueue(rewardWindow);
+    }
+
+    private void OnTapped(RewardView rewardItem)
     {
         rewardItem.transform.DOScale(0, 0.2f).SetUpdate(true).OnComplete(() =>
         {
@@ -82,12 +97,6 @@ public class FinishMenu : Menu
                 ChangeInteractionButtons(true, _homeButton, _replayButton, _nextButton);
             }
         });
-    }
-
-    private void DisplayCurrencies(IEnumerable<DroppedCurrency> _currencies)
-    {
-        var levelReward = _game.CurrentLevel.Reward;
-        var droppedReward = _currencies.ToList();
     }
 
     private void OnHomeClicked()

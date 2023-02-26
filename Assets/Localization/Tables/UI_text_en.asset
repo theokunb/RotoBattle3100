@@ -80,6 +80,18 @@ MonoBehaviour:
     m_Localized: item received
     m_Metadata:
       m_Items: []
+  - m_Id: 654955220209664
+    m_Localized: resources received
+    m_Metadata:
+      m_Items: []
+  - m_Id: 702890129657856
+    m_Localized: passage
+    m_Metadata:
+      m_Items: []
+  - m_Id: 702925940625408
+    m_Localized: collected
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds:
