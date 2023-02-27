@@ -37,7 +37,15 @@ public class PlayerLoader : MonoBehaviour
 
     private Detail FindDetail(DetailData detailData)
     {
-        return _itemsPull.Details.Where(detail => detail.Title == detailData.Title).FirstOrDefault();
+        foreach(var item in _itemsPull.Details)
+        {
+            if(item.Id == detailData.Id)
+            {
+                return item;
+            }
+        }
+
+        return null;
     }
 
     private void ProccessPlayerData()
