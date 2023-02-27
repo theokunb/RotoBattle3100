@@ -3,10 +3,10 @@ using System;
 [Serializable]
 public class DetailData
 {
-    public string Title { get; private set; }
+    public long Id { get; private set; }
 
-    public DetailData(string title)
+    public DetailData(long id)
     {
-        Title = title;
+        Id = id;
     }
 }

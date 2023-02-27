@@ -50,7 +50,7 @@ public class Character : MonoBehaviour
 
         foreach (var detail in details)
         {
-            yield return new DetailData(detail.Title);
+            yield return new DetailData(detail.Id);
         }
     }
 

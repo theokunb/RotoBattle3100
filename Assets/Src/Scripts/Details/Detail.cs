@@ -14,6 +14,7 @@ public abstract class Detail : MonoBehaviour
     public string Description => _description.GetLocalizedString();
     public bool IsAvailable => GetComponent<DetailStatus>().IsAvailable;
     public bool CanBuyInShop => GetComponent<DetailStatus>().CanBuyInShop;
+    public long Id => _title.TableEntryReference.KeyId;
 
     public void SetPosition(Transform target)
     {
