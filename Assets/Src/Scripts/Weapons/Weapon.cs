@@ -3,6 +3,7 @@ using System.Linq;
 using UnityEngine;
 using UnityEngine.Localization;
 
+[RequireComponent(typeof(WeaponSound))]
 public class Weapon : Detail
 {
     private const int BulletsCount = 5;
@@ -20,11 +21,13 @@ public class Weapon : Detail
     private float _elapsedTime;
     private List<Bullet> _bullets;
     private float _delayBetweenShoot;
+    private WeaponSound _weaponSound;
 
     public int Damage => _damage;
 
     private void Start()
     {
+        _weaponSound = GetComponent<WeaponSound>();
         _owner = GetComponentInParent<Character>();
         _bullets = new List<Bullet>();
         _delayBetweenShoot = Random.Range(_minDelayBetweenShoot, _maxDelayBetweenShoot);
@@ -61,6 +64,7 @@ public class Weapon : Detail
             bullet.transform.position = _shootPlace.position;
             bullet.transform.LookAt(target.transform);
             bullet.gameObject.SetActive(true);
+            _weaponSound.Play();
         }
 
         _elapsedTime = 0;
