@@ -13,10 +13,12 @@ public class EnemyStunner : Stunner
     protected override void Resume()
     {
         _enemy.ResumeMovement();
+        _enemy.enabled = true;
     }
 
     protected override void Suspend()
     {
         _enemy.SuspendMovement();
+        _enemy.enabled = false;
     }
 }
