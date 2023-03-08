@@ -44,6 +44,12 @@ public class PlayerWallet : MonoBehaviour
         return true;
     }
 
+    public void Add(IEnumerable<Currency> currincies)
+    {
+        var temp = currincies.ToList();
+        _wallet.Increase(currincies);
+    }
+
     private void Pay(IEnumerable<Currency> currincies)
     {
         _wallet.Decrease(currincies);

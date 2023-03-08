@@ -1,4 +1,5 @@
 using IJunior.TypedScenes;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class Game : MonoBehaviour, ISceneLoadHandler<int>
@@ -55,16 +56,31 @@ public class Game : MonoBehaviour, ISceneLoadHandler<int>
 
         Bag playerBag = _player.GetComponent<Bag>();
 
+        AddRewards(playerBag, CurrentLevel.Reward);
+        Save();
+
         _menuBackground.gameObject.SetActive(true);
         _finishMenu.SetRewards(playerBag);
         _menuBackground.OnepMenu(_finishMenu);
-        Save();
     }
 
     private void Save()
     {
         GameStorage.Save(new PlayerData(_player), GameStorage.PlayerData);
         GameStorage.Save(_playerLoader.PlayerProgress, GameStorage.PlayerProgress);
+    }
+
+    private void AddRewards(Bag bag, IEnumerable<Currency> levelReward)
+    {
+        foreach(var detail in bag.GetDetails())
+        {
+            detail.Unlock();
+        }
+
+        var playerWallet = _player.GetComponent<PlayerWallet>();
+
+        playerWallet.Add(bag.GetCurrencies());
+        playerWallet.Add(CurrentLevel.Reward);
     }
 
     private void OnPlayerDied()

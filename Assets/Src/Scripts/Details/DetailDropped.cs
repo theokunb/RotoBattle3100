@@ -40,4 +40,9 @@ public class DetailDropped : MonoBehaviour
     {
         _detail = detail;
     }
+
+    public void Unlock()
+    {
+        _detail?.Unlock();
+    }
 }
