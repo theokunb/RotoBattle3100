@@ -28,7 +28,7 @@ public class GameAudioPlayer : BackgroundAudioPlayer
     {
         var audioSource = Sounds.GetAudioSource();
 
-        audioSource.PlayOneShot(_levelCompleted);
+        audioSource?.PlayOneShot(_levelCompleted);
     }
 
     private void OnFinish(Finish finish)

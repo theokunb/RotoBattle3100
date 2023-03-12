@@ -92,6 +92,10 @@ MonoBehaviour:
     m_Localized: collected
     m_Metadata:
       m_Items: []
+  - m_Id: 5646294378778624
+    m_Localized: loading
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds:

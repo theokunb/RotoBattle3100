@@ -43,7 +43,7 @@ public class Leg : RobotDetail
 
     private void OnMoving(float speed)
     {
-        float value = Convert.ToInt32(speed > 0) * (_speed * AnimationPlaybackFactor);
+        float value = Convert.ToInt32(speed > 0) * _speed/10;
 
         _animator.SetFloat(CharacterAnimationController.Param.Speed, value);
     }

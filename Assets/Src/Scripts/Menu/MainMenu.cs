@@ -1,5 +1,5 @@
 using IJunior.TypedScenes;
-using System.Collections.Generic;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -9,6 +9,7 @@ public class MainMenu : MonoBehaviour
     [SerializeField] private Button _playButton;
     [SerializeField] private Map _map;
     [SerializeField] private PlayerLoader _loader;
+    [SerializeField] private LoadingPanel _loadingPanel;
 
     private int _levelId;
 
@@ -36,7 +37,8 @@ public class MainMenu : MonoBehaviour
 
     private void OnPlayClicked()
     {
-        GameScene.Load(_levelId);
+        _loadingPanel.gameObject.SetActive(true);
+        _loadingPanel.Open(GameScene.LoadAsync(_levelId));
     }
 
     private void OnCurrentLevelChanged(Level level)

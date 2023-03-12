@@ -8,6 +8,7 @@ public class LoseMenu : Menu
     [SerializeField] private Button _homeButton;
     [SerializeField] private Button _replayButton;
     [SerializeField] private Game _game;
+    [SerializeField] private LoadingPanel _loadingPanel;
 
     private void OnEnable()
     {
@@ -24,13 +25,17 @@ public class LoseMenu : Menu
     private void OnHomeClicked()
     {
         _menuBackground.CloseMenu(this);
-        MenuScene.Load();
+
+        _loadingPanel.gameObject.SetActive(true);
+        _loadingPanel.Open(MenuScene.LoadAsync());
     }
 
     private void OnReplayClicked()
     {
         _menuBackground.CloseMenu(this);
-        GameScene.Load(_game.CurrentLevel.Id);
+
+        _loadingPanel.gameObject.SetActive(true);
+        _loadingPanel.Open(GameScene.LoadAsync(_game.CurrentLevel.Id));
     }
 
     public override void Activated()

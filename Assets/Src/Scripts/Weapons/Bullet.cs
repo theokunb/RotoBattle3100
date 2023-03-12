@@ -16,7 +16,7 @@ public abstract class Bullet : MonoBehaviour
         Rigidbody = GetComponent<Rigidbody>();
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
         Fly();
         ElapsedTime += Time.deltaTime;
