@@ -87,6 +87,10 @@ MonoBehaviour:
     m_Key: CollectedRewardKey
     m_Metadata:
       m_Items: []
+  - m_Id: 5646294378778624
+    m_Key: LoadingKey
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

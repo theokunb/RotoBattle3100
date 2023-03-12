@@ -7,6 +7,7 @@ public class GameMenu : Menu
     [SerializeField] private MenuBackground _menuBackground;
     [SerializeField] private Button _resumeButton;
     [SerializeField] private Button _exitButton;
+    [SerializeField] private LoadingPanel _loadingPanel;
 
     private void OnEnable()
     {
@@ -28,7 +29,9 @@ public class GameMenu : Menu
     private void OnExitClicked()
     {
         Time.timeScale = 1;
-        MenuScene.Load();
+
+        _loadingPanel.gameObject.SetActive(true);
+        _loadingPanel.Open(MenuScene.LoadAsync());
     }
 
     public override void Activated()

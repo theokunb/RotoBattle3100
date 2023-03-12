@@ -35,7 +35,7 @@ public class PlayerMover : MonoBehaviour
         _speed = leg != null ? leg.Speed : 0;
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
         var value = _playerInput.PlayerMap.Move.ReadValue<Vector2>();
         _character.Moving?.Invoke(value.sqrMagnitude);
@@ -68,8 +68,8 @@ public class PlayerMover : MonoBehaviour
 
     private void Move(Vector2 value)
     {
-        Vector3 movement = new Vector3(value.x, 0, value.y);
+        Vector3 movement = new Vector3(value.x, 0, value.y) * Time.deltaTime;
 
-        _rigidbody.MovePosition(transform.position + movement * _speed * Time.deltaTime);
+        _rigidbody.MovePosition(transform.position + movement * _speed);
     }
 }

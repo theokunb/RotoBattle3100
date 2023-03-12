@@ -17,6 +17,7 @@ public class FinishMenu : Menu
     [SerializeField] private Button _homeButton;
     [SerializeField] private Button _replayButton;
     [SerializeField] private Button _nextButton;
+    [SerializeField] private LoadingPanel _loadingPanel;
 
     private Queue<RewardView> _rewardItems= new Queue<RewardView>();
     private Bag _bag;
@@ -102,19 +103,25 @@ public class FinishMenu : Menu
     private void OnHomeClicked()
     {
         _menuBackground.CloseMenu(this);
-        MenuScene.Load();
+
+        _loadingPanel.gameObject.SetActive(true);
+        _loadingPanel.Open(MenuScene.LoadAsync());
     }
 
     private void OnReplayClicked()
     {
         _menuBackground.CloseMenu(this);
-        GameScene.Load(_game.CurrentLevel.Id);
+
+        _loadingPanel.gameObject.SetActive(true);
+        _loadingPanel.Open(GameScene.LoadAsync(_game.CurrentLevel.Id));
     }
 
     private void OnNextClicked()
     {
         _menuBackground.CloseMenu(this);
-        GameScene.Load(_game.CurrentLevel.Id + 1);
+
+        _loadingPanel.gameObject.SetActive(true);
+        _loadingPanel.Open(GameScene.LoadAsync(_game.CurrentLevel.Id + 1));
     }
 
     public override void Activated()

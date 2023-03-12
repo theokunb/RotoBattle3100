@@ -385,7 +385,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 384fbedb2df7d71449ce05d6a354f625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _isAvailable: 1
+  _isAvailable: 0
   _inShop: 1
 --- !u!114 &5333138342143441859
 MonoBehaviour:
@@ -444,7 +444,7 @@ MonoBehaviour:
   _minDelayBetweenShoot: 0.3
   _shootPlace: {fileID: 5333138342084062600}
   _template: {fileID: 1090492303719371573, guid: 6dd69cfe8005d4c4a911d65a76ca5cc4, type: 3}
-  _bulletSpeed: 75
+  _bulletSpeed: 12
   _damageLabel:
     m_TableReference:
       m_TableCollectionName: GUID:6ae1e96e9a3d4a142980cf0984613658
