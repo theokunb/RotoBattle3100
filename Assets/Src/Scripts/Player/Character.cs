@@ -24,7 +24,7 @@ public class Character : MonoBehaviour
     public Transform LegPosition => _legPosition;
     public IEnumerable<WeaponPlace> WeaponPlaces => _body.WeaponPlaces;
 
-    private void Update()
+    private void FixedUpdate()
     {
         var target = Scanner.GetNearestEnemy();
 
