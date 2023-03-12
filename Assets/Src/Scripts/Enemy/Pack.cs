@@ -8,6 +8,7 @@ public class Pack
     [SerializeField] private Enemy[] _enemies;
 
     private List<Enemy> _createdEnemies;
+    private Quaternion _angle = new Quaternion(0, 180, 0, 0);
 
     public event Action<Character> EnemyDied;
 
@@ -19,6 +20,8 @@ public class Pack
         for (int i = 0; i < _enemies.Length; i++)
         {
             var createdEnemy = _enemies[i].Create(new Vector2(step / 2 + i * step, position));
+            createdEnemy.transform.rotation = _angle;
+
             createdEnemy.EnemyDetected += OnEnemyDetected;
             var health = createdEnemy.GetComponent<Health>();
             health.Die += OnDie;

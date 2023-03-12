@@ -326,6 +326,8 @@ MonoBehaviour:
   _image: {fileID: 8539328622561075516}
   _button: {fileID: 8539328622561075517}
   _text: {fileID: 8539328623608344298}
+  _colorForUnlocked: {r: 1, g: 1, b: 1, a: 1}
+  _colorForLocked: {r: 0.3301887, g: 0.3301887, b: 0.3301887, a: 1}
 --- !u!1 &8539328623608344296
 GameObject:
   m_ObjectHideFlags: 0

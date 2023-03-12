@@ -10,7 +10,7 @@ public class Reward : MonoBehaviour
 
     public GameObject GetReward()
     {
-        int dropChance = 100;
+        int dropChance = 20;
 
         int roll = Random.Range(0, AllProbability);
 

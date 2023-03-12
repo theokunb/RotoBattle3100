@@ -9,6 +9,8 @@ public class LevelView : MonoBehaviour
     [SerializeField] private Image _image;
     [SerializeField] private Button _button;
     [SerializeField] private TMP_Text _text;
+    [SerializeField] private Color _colorForUnlocked;
+    [SerializeField] private Color _colorForLocked;
 
     private Level _level;
     private LevelStatus _levelStatus;
@@ -36,6 +38,7 @@ public class LevelView : MonoBehaviour
         _button.interactable = status.IsCompleted;
 
         _text.GetComponent<LocalizeStringEvent>().RefreshString();
+        _text.color = _levelStatus.IsCompleted ? _colorForUnlocked : _colorForLocked;
     }
 
     private void OnButtonClicked()
