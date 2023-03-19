@@ -32,6 +32,7 @@ public class PlayerLoader : MonoBehaviour
             _player.SetDetail((dynamic)detail);
         }
 
+        _player.SetExperience(playerData.Experience);
         _player.GetComponent<PlayerWallet>().SetWallet(playerData.Wallet);
     }
 
