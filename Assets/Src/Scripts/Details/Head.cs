@@ -15,9 +15,9 @@ public class Head : RobotDetail
     public event Action<Character> EnemyDetected;
     public event Action<Character> EnemyLost;
 
-    public int ScannerRadius => (int)_scannerRadius;
+    public float ScannerRadius => _scannerCollider.radius;
 
-    private void Start()
+    private void Awake()
     {
         _scannerCollider = GetComponent<CapsuleCollider>();
         _scannerCollider.radius = _scannerRadius * (1f / transform.localScale.y);
