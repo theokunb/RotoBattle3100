@@ -86,6 +86,11 @@ public class PlayerScanner : MonoBehaviour
 
     private void RemoveDied()
     {
+        if(_enemies.Count == 0)
+        {
+            return;
+        }
+
         var aliveEnemies = _enemies.Where(character => character.GetComponent<Health>().IsAlive).ToList();
         _enemies = aliveEnemies;
     }
