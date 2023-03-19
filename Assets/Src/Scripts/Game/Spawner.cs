@@ -71,6 +71,13 @@ public class Spawner : MonoBehaviour
             }
         }
 
+        var enemy = character as Enemy;
+
+        if (enemy != null)
+        {
+            _player.AddExperience(enemy);
+        }
+
         EnemyDied?.Invoke();
     }
 

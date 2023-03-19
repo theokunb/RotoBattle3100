@@ -15,6 +15,7 @@ public class PrimaryPlayerCreator : MonoBehaviour
         _player.SetDetail(_defaultBody);
         _player.SetDetail(_defaultHead);
         CreateDefaultWallet();
+        CreateDefaultExperiecne();
 
         foreach (var weaponPlace in _player.WeaponPlaces)
         {
@@ -25,5 +26,10 @@ public class PrimaryPlayerCreator : MonoBehaviour
     private void CreateDefaultWallet()
     {
         _playerWallet.CreateDefault();
+    }
+
+    private void CreateDefaultExperiecne()
+    {
+        _player.SetExperience(new Experience(1, 0));
     }
 }
