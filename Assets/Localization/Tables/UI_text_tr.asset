@@ -101,6 +101,10 @@ MonoBehaviour:
     m_Metadata:
       m_Items:
       - rid: 2549057749735964679
+  - m_Id: 9849070466011136
+    m_Localized: seviye atlamak!
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds:

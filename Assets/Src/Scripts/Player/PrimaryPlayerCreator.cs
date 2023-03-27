@@ -16,6 +16,7 @@ public class PrimaryPlayerCreator : MonoBehaviour
         _player.SetDetail(_defaultHead);
         CreateDefaultWallet();
         CreateDefaultExperiecne();
+        CreateDefaultUpgrades();
 
         foreach (var weaponPlace in _player.WeaponPlaces)
         {
@@ -31,5 +32,10 @@ public class PrimaryPlayerCreator : MonoBehaviour
     private void CreateDefaultExperiecne()
     {
         _player.SetExperience(new Experience(1, 0));
+    }
+
+    private void CreateDefaultUpgrades()
+    {
+        _player.SetUpgrade(new Upgrade());
     }
 }

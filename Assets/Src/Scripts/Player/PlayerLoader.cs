@@ -1,4 +1,3 @@
-using System.Linq;
 using UnityEngine;
 
 public class PlayerLoader : MonoBehaviour
@@ -17,7 +16,7 @@ public class PlayerLoader : MonoBehaviour
         ProccessPlayerProgress();
     }
 
-    public bool TryLoadData<T>(out T data,string fileName)
+    public bool TryLoadData<T>(out T data, string fileName)
     {
         data = GameStorage.LoadData<T>(fileName);
 
@@ -33,14 +32,15 @@ public class PlayerLoader : MonoBehaviour
         }
 
         _player.SetExperience(playerData.Experience);
+        _player.SetUpgrade(playerData.Upgrades);
         _player.GetComponent<PlayerWallet>().SetWallet(playerData.Wallet);
     }
 
     private Detail FindDetail(DetailData detailData)
     {
-        foreach(var item in _itemsPull.Details)
+        foreach (var item in _itemsPull.Details)
         {
-            if(item.Id == detailData.Id)
+            if (item.Id == detailData.Id)
             {
                 return item;
             }
@@ -63,7 +63,7 @@ public class PlayerLoader : MonoBehaviour
 
     private void ProccessPlayerProgress()
     {
-        if(TryLoadData(out _playerProgress, GameStorage.PlayerProgress))
+        if (TryLoadData(out _playerProgress, GameStorage.PlayerProgress))
         {
 
         }

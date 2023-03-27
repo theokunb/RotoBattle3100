@@ -6,8 +6,6 @@ public class DisplayExperience : MonoBehaviour
     [SerializeField] private Player _player;
     [SerializeField] private Image _progressBar;
 
-    public int Level => _player.Level;
-
     private void Start()
     {
         OnValueChanged();

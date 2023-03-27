@@ -2,6 +2,7 @@ using System;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody))]
+[RequireComponent(typeof(Player))]
 public class PlayerMover : MonoBehaviour
 {
     private const float DeltaStick = 0.1f;
@@ -9,36 +10,37 @@ public class PlayerMover : MonoBehaviour
 
     private PlayerInput _playerInput;
     private float _speed;
-    private Character _character;
     private Rigidbody _rigidbody;
+    private Player _player;
 
     private void Awake()
     {
         _playerInput = new PlayerInput();
-        _character = GetComponent<Character>();
         _rigidbody= GetComponent<Rigidbody>();
+        _player = GetComponent<Player>();
     }
 
     private void OnEnable()
     {
         _playerInput.Enable();
+        _player.SpeedUpgraded += SetSpeed;
     }
 
     private void OnDisable()
     {
         _playerInput.Disable();
+        _player.SpeedUpgraded -= SetSpeed;
     }
 
     private void Start()
     {
-        var leg = GetComponentInChildren<Leg>();
-        _speed = leg != null ? leg.Speed : 0;
+        SetSpeed();
     }
 
     private void FixedUpdate()
     {
         var value = _playerInput.PlayerMap.Move.ReadValue<Vector2>();
-        _character.Moving?.Invoke(value.sqrMagnitude);
+        _player.Moving?.Invoke(value.sqrMagnitude);
 
         if (value.sqrMagnitude < DeltaStick)
         {
@@ -49,15 +51,32 @@ public class PlayerMover : MonoBehaviour
         Move(value);
     }
 
+    private void SetSpeed()
+    {
+        var leg = GetComponentInChildren<Leg>();
+        float baseSpeed = leg != null ? leg.Speed : 0;
+
+        _speed = baseSpeed + GetBonusSpeed();
+    }
+
+    private float GetBonusSpeed()
+    {
+        const float SpeedPerLevel = 0.05f;
+
+        int upgradesCount = _player.Upgrade.GetUpgradesCount(Upgrades.Speed);
+
+        return upgradesCount * SpeedPerLevel;
+    }
+
     public void Suspend()
     {
-        _character.Moving?.Invoke(0);
-        _character.enabled = false;
+        _player.Moving?.Invoke(0);
+        _player.enabled = false;
     }
 
     public void Resume()
     {
-        _character.enabled = true;
+        _player.enabled = true;
     }
 
     private void Rotate(Vector2 value)

@@ -95,6 +95,10 @@ MonoBehaviour:
     m_Key: LevelKey
     m_Metadata:
       m_Items: []
+  - m_Id: 9849070466011136
+    m_Key: LevelUpKey
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

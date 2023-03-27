@@ -1,10 +1,13 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
+using DG.Tweening;
+using System;
 
 public class HealthBar : MonoBehaviour
 {
-    [SerializeField] private Image _healthBar;
+    [SerializeField] private Image _foreground;
+    [SerializeField] private Image _background;
     [SerializeField] private Color _color;
     [SerializeField] private float _changeValueSpeed = 2;
 
@@ -14,13 +17,19 @@ public class HealthBar : MonoBehaviour
 
     private void Start()
     {
-        _healthBar.color = _color;
+        _foreground.color = _color;
         _camera = Camera.main;
     }
 
     private void Update()
     {
         transform.rotation = Quaternion.LookRotation(transform.position -_camera.transform.position);
+    }
+
+    public void Fade(bool status, float fadeTime)
+    {
+        _foreground.DOFade(Convert.ToInt32(status), fadeTime);
+        _background.DOFade(Convert.ToInt32(status), fadeTime);
     }
 
     public void UpdateHealthBarValue(int maxHealth, int currentHealth)
@@ -40,9 +49,9 @@ public class HealthBar : MonoBehaviour
 
     private IEnumerator ChangeValueTask(float targetHealth)
     {
-        while (_healthBar.fillAmount != targetHealth)
+        while (_foreground.fillAmount != targetHealth)
         {
-            _healthBar.fillAmount = Mathf.MoveTowards(_healthBar.fillAmount, targetHealth, _changeValueSpeed * Time.deltaTime);
+            _foreground.fillAmount = Mathf.MoveTowards(_foreground.fillAmount, targetHealth, _changeValueSpeed * Time.deltaTime);
             yield return null;
         }
     }

@@ -7,6 +7,7 @@ using UnityEngine.Localization;
 public class Weapon : Detail
 {
     private const int BulletsCount = 5;
+    private const float AttackSteedPerLevel = 0.95f;
 
     [SerializeField] private int _damage;
     [SerializeField] private float _maxDelayBetweenShoot;
@@ -30,7 +31,8 @@ public class Weapon : Detail
         _weaponSound = GetComponent<WeaponSound>();
         _owner = GetComponentInParent<Character>();
         _bullets = new List<Bullet>();
-        _delayBetweenShoot = Random.Range(_minDelayBetweenShoot, _maxDelayBetweenShoot);
+
+        CalculateDelayBetweenShoot();
 
         for (int i = 0; i < BulletsCount; i++)
         {
@@ -68,7 +70,7 @@ public class Weapon : Detail
         }
 
         _elapsedTime = 0;
-        _delayBetweenShoot = Random.Range(_minDelayBetweenShoot, _maxDelayBetweenShoot);
+        CalculateDelayBetweenShoot();
     }
 
     public override string GetStats()
@@ -90,5 +92,17 @@ public class Weapon : Detail
         };
 
         return speedDictionary.Where(element => speed > element.Value).First().Key;
+    }
+
+    private void CalculateDelayBetweenShoot()
+    {
+        _delayBetweenShoot = Random.Range(_minDelayBetweenShoot, _maxDelayBetweenShoot);
+
+        if (_owner is Player)
+        {
+            var upgradesCount = (_owner as Player).Upgrade.GetUpgradesCount(Upgrades.Speed);
+
+            _delayBetweenShoot *= Mathf.Pow(AttackSteedPerLevel, upgradesCount);
+        }
     }
 }
