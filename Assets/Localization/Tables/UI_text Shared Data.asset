@@ -99,6 +99,30 @@ MonoBehaviour:
     m_Key: LevelUpKey
     m_Metadata:
       m_Items: []
+  - m_Id: 13619767407448064
+    m_Key: ExtraHealthTitle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13619835715883008
+    m_Key: ShieldTitle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13619859782799360
+    m_Key: ExtraSpeedTitle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13619905903366144
+    m_Key: ExtraHealthDescription
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13620025365532672
+    m_Key: ShieldDescription
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13620061868560384
+    m_Key: ExtraSpeedDescription
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

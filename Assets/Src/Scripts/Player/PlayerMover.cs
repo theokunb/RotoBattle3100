@@ -61,7 +61,7 @@ public class PlayerMover : MonoBehaviour
 
     private float GetBonusSpeed()
     {
-        const float SpeedPerLevel = 0.05f;
+        const float SpeedPerLevel = 0.1f;
 
         int upgradesCount = _player.Upgrade.GetUpgradesCount(Upgrades.Speed);
 

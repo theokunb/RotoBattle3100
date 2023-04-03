@@ -105,6 +105,30 @@ MonoBehaviour:
     m_Localized: level up!
     m_Metadata:
       m_Items: []
+  - m_Id: 13619767407448064
+    m_Localized: vitality
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13619835715883008
+    m_Localized: shield
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13619859782799360
+    m_Localized: speed
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13619905903366144
+    m_Localized: increases maximum health by 300
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13620025365532672
+    m_Localized: increases shield absorption efficiency by 100
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13620061868560384
+    m_Localized: Increases movement and attack speed by 10%
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds:

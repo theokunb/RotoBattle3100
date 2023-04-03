@@ -3,18 +3,17 @@ using UnityEngine;
 public class Reward : MonoBehaviour
 {
     private const int AllProbability = 100;
-    private const int CurrencyDropChance = 60;
+    private const int DropChance = 40;
+    private const int ItemDropChance = 35;
 
     [SerializeField] private ItemsPull _dropItems;
     [SerializeField] private CurrencyPull _currencyPull;
 
     public GameObject GetReward()
     {
-        int dropChance = 20;
-
         int roll = Random.Range(0, AllProbability);
 
-        if(roll > dropChance)
+        if(roll > DropChance)
         {
             return null;
         }
@@ -22,7 +21,7 @@ public class Reward : MonoBehaviour
         {
             roll = Random.Range(0, AllProbability);
 
-            if(roll > CurrencyDropChance)
+            if(roll > ItemDropChance)
             {
                 return GetRandomCurrency();
             }

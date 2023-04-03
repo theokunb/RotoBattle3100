@@ -115,6 +115,22 @@ MonoBehaviour:
     m_Metadata:
       m_Items:
       - rid: 2549057768154202114
+  - m_Id: 12690946428669952
+    m_Localized: "T\xFCm d\xFC\u015Fmanlara hasar verir"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12740005872963584
+    m_Localized: "Yak\u0131ndaki d\xFC\u015Fmanlara s\u0131\xE7rayan lazer \u0131\u015F\u0131n\u0131"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12838109959852032
+    m_Localized: "\xD6r\xFCmcek"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13061388331028480
+    m_Localized: SuperPsix
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds:

@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76ab28a7efb36844fba983a69a90a39f, type: 3}
+  m_Name: HighCurrencies
+  m_EditorClassIdentifier: 
+  _dropCurrency:
+  - {fileID: 8761377370531647267, guid: 73dcd86aada62b646b15a2aacea0889c, type: 3}
+  - {fileID: 8677714630013430097, guid: 43030aad396141246aed6e8e3359603e, type: 3}
+  - {fileID: 7765670844076433252, guid: aabede3303f14eb49aaf9ba97251cd82, type: 3}

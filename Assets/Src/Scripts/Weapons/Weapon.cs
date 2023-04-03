@@ -7,7 +7,7 @@ using UnityEngine.Localization;
 public class Weapon : Detail
 {
     private const int BulletsCount = 5;
-    private const float AttackSteedPerLevel = 0.95f;
+    private const float AttackSpeedPerLevel = 0.9f;
 
     [SerializeField] private int _damage;
     [SerializeField] private float _maxDelayBetweenShoot;
@@ -102,7 +102,7 @@ public class Weapon : Detail
         {
             var upgradesCount = (_owner as Player).Upgrade.GetUpgradesCount(Upgrades.Speed);
 
-            _delayBetweenShoot *= Mathf.Pow(AttackSteedPerLevel, upgradesCount);
+            _delayBetweenShoot *= Mathf.Pow(AttackSpeedPerLevel, upgradesCount);
         }
     }
 }

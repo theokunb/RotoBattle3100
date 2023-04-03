@@ -2,7 +2,7 @@ using System;
 
 public class Player : Character
 {
-    private const int ExtraHealthPerLevel = 100;
+    private const int ExtraHealthPerLevel = 300;
 
     private Experience _exp;
     private Upgrade _upgrade;

@@ -6,15 +6,12 @@ using UnityEngine;
 public class DroppedCurrency : MonoBehaviour
 {
     [SerializeField] private CurrencyType _currencyType;
-    [SerializeField] private Sprite _icon;
     [SerializeField] private int _minValue;
     [SerializeField] private int _maxValue;
 
     private BoxCollider _boxCollider;
     private Price _price;
     private Coroutine _animationTask;
-
-    public Sprite Icon => _icon;
     public Currency Currency => _price.ToCurrency();
 
     private void Awake()

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.16443202, g: 0.34302187, b: 0.4760486, a: 1}
+  m_IndirectSpecularColor: {r: 0.44572568, g: 0.62473226, b: 0.7240137, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -639,6 +639,22 @@ PrefabInstance:
       propertyPath: _renderTexture
       value: 
       objectReference: {fileID: 8400000, guid: 690b22c87ddcf3f48b2fb346629fc605, type: 2}
+    - target: {fileID: 7611607212849357540, guid: 8e7ffe642c7e538438b460002459dca1, type: 3}
+      propertyPath: _title.m_TableEntryReference.m_KeyId
+      value: 13619835715883008
+      objectReference: {fileID: 0}
+    - target: {fileID: 7611607212849357540, guid: 8e7ffe642c7e538438b460002459dca1, type: 3}
+      propertyPath: _description.m_TableEntryReference.m_KeyId
+      value: 13620025365532672
+      objectReference: {fileID: 0}
+    - target: {fileID: 7611607212849357540, guid: 8e7ffe642c7e538438b460002459dca1, type: 3}
+      propertyPath: _title.m_TableReference.m_TableCollectionName
+      value: GUID:23c46fd520aef6f4b95efec4d8a879a1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7611607212849357540, guid: 8e7ffe642c7e538438b460002459dca1, type: 3}
+      propertyPath: _description.m_TableReference.m_TableCollectionName
+      value: GUID:23c46fd520aef6f4b95efec4d8a879a1
+      objectReference: {fileID: 0}
     - target: {fileID: 7611607212849357541, guid: 8e7ffe642c7e538438b460002459dca1, type: 3}
       propertyPath: m_RootOrder
       value: 13
@@ -1416,10 +1432,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _upgradePanel: {fileID: 261644727}
   _player: {fileID: 380437127}
-  _cards:
-  - {fileID: 1611860869}
-  - {fileID: 2143615053}
-  - {fileID: 756363434}
   _cardHandlers:
   - {fileID: 1308255831}
   - {fileID: 627551468}
@@ -1456,6 +1468,22 @@ PrefabInstance:
       propertyPath: _renderTexture
       value: 
       objectReference: {fileID: 8400000, guid: c0bc23aa212608245bbc6dbd22e72643, type: 2}
+    - target: {fileID: 7611607212849357540, guid: 8e7ffe642c7e538438b460002459dca1, type: 3}
+      propertyPath: _title.m_TableEntryReference.m_KeyId
+      value: 13619767407448064
+      objectReference: {fileID: 0}
+    - target: {fileID: 7611607212849357540, guid: 8e7ffe642c7e538438b460002459dca1, type: 3}
+      propertyPath: _description.m_TableEntryReference.m_KeyId
+      value: 13619905903366144
+      objectReference: {fileID: 0}
+    - target: {fileID: 7611607212849357540, guid: 8e7ffe642c7e538438b460002459dca1, type: 3}
+      propertyPath: _title.m_TableReference.m_TableCollectionName
+      value: GUID:23c46fd520aef6f4b95efec4d8a879a1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7611607212849357540, guid: 8e7ffe642c7e538438b460002459dca1, type: 3}
+      propertyPath: _description.m_TableReference.m_TableCollectionName
+      value: GUID:23c46fd520aef6f4b95efec4d8a879a1
+      objectReference: {fileID: 0}
     - target: {fileID: 7611607212849357541, guid: 8e7ffe642c7e538438b460002459dca1, type: 3}
       propertyPath: m_RootOrder
       value: 12
@@ -2867,13 +2895,13 @@ Light:
   m_Type: 1
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 1
+  m_Intensity: 1.2
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 2
+    m_Type: 0
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -2901,12 +2929,12 @@ Light:
   m_Cookie: {fileID: 0}
   m_DrawHalo: 0
   m_Flare: {fileID: 0}
-  m_RenderMode: 0
+  m_RenderMode: 2
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
@@ -2925,7 +2953,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 705507993}
   m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
-  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalPosition: {x: 7, y: 10, z: -3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6514,6 +6542,22 @@ PrefabInstance:
       propertyPath: _renderTexture
       value: 
       objectReference: {fileID: 8400000, guid: 7bf50a51d7eb41347b453e8154eac564, type: 2}
+    - target: {fileID: 7611607212849357540, guid: 8e7ffe642c7e538438b460002459dca1, type: 3}
+      propertyPath: _title.m_TableEntryReference.m_KeyId
+      value: 13619859782799360
+      objectReference: {fileID: 0}
+    - target: {fileID: 7611607212849357540, guid: 8e7ffe642c7e538438b460002459dca1, type: 3}
+      propertyPath: _description.m_TableEntryReference.m_KeyId
+      value: 13620061868560384
+      objectReference: {fileID: 0}
+    - target: {fileID: 7611607212849357540, guid: 8e7ffe642c7e538438b460002459dca1, type: 3}
+      propertyPath: _title.m_TableReference.m_TableCollectionName
+      value: GUID:23c46fd520aef6f4b95efec4d8a879a1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7611607212849357540, guid: 8e7ffe642c7e538438b460002459dca1, type: 3}
+      propertyPath: _description.m_TableReference.m_TableCollectionName
+      value: GUID:23c46fd520aef6f4b95efec4d8a879a1
+      objectReference: {fileID: 0}
     - target: {fileID: 7611607212849357541, guid: 8e7ffe642c7e538438b460002459dca1, type: 3}
       propertyPath: m_RootOrder
       value: 14

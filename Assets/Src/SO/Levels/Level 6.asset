@@ -23,29 +23,33 @@ MonoBehaviour:
     m_WaitForCompletion: 0
     m_LocalVariables: []
   _width: 10
-  _lenght: 60
+  _lenght: 70
   _enemies:
   - _enemies:
-    - {fileID: 6271963157667777218, guid: e69e2bfa9cf7e2a498a71ba6cbc3c146, type: 3}
-    - {fileID: 6271963157667777218, guid: e69e2bfa9cf7e2a498a71ba6cbc3c146, type: 3}
-    - {fileID: 6271963157667777218, guid: e69e2bfa9cf7e2a498a71ba6cbc3c146, type: 3}
+    - {fileID: 6271963157667777218, guid: c09963c0ed59d144ebb7fca3b35df5b5, type: 3}
+    - {fileID: 6271963157667777218, guid: 58e6f602860c4ef4dbf748dde170df79, type: 3}
+    - {fileID: 6271963157667777218, guid: c09963c0ed59d144ebb7fca3b35df5b5, type: 3}
   - _enemies:
-    - {fileID: 6271963157667777218, guid: e69e2bfa9cf7e2a498a71ba6cbc3c146, type: 3}
-    - {fileID: 6271963157667777218, guid: e69e2bfa9cf7e2a498a71ba6cbc3c146, type: 3}
+    - {fileID: 6271963157667777218, guid: 818da7a3682bb4b46951bf88f2f130f4, type: 3}
+    - {fileID: 6271963157667777218, guid: 818da7a3682bb4b46951bf88f2f130f4, type: 3}
   - _enemies:
-    - {fileID: 6271963157667777218, guid: e69e2bfa9cf7e2a498a71ba6cbc3c146, type: 3}
-    - {fileID: 6271963157667777218, guid: e69e2bfa9cf7e2a498a71ba6cbc3c146, type: 3}
-    - {fileID: 6271963157667777218, guid: e69e2bfa9cf7e2a498a71ba6cbc3c146, type: 3}
-    - {fileID: 6271963157667777218, guid: e69e2bfa9cf7e2a498a71ba6cbc3c146, type: 3}
+    - {fileID: 6271963157667777218, guid: 818da7a3682bb4b46951bf88f2f130f4, type: 3}
+    - {fileID: 6271963157667777218, guid: 4e8a3c410100a2448843860bb18e8ac6, type: 3}
+    - {fileID: 6271963157667777218, guid: 818da7a3682bb4b46951bf88f2f130f4, type: 3}
   - _enemies:
-    - {fileID: 6271963157667777218, guid: e69e2bfa9cf7e2a498a71ba6cbc3c146, type: 3}
-    - {fileID: 6271963157667777218, guid: e69e2bfa9cf7e2a498a71ba6cbc3c146, type: 3}
-    - {fileID: 6271963157667777218, guid: e69e2bfa9cf7e2a498a71ba6cbc3c146, type: 3}
+    - {fileID: 6271963157667777218, guid: 58e6f602860c4ef4dbf748dde170df79, type: 3}
+  - _enemies:
+    - {fileID: 6271963157667777218, guid: 4e8a3c410100a2448843860bb18e8ac6, type: 3}
+    - {fileID: 6271963157667777218, guid: 4e8a3c410100a2448843860bb18e8ac6, type: 3}
   _rewardCountInDay: 3
   _icon: {fileID: 21300000, guid: 7a7bcb81ddf60fc48a12fe7416eac697, type: 3}
   _reward:
   - _currencyType: 0
-    _count: 0
+    _count: 400
+  - _currencyType: 1
+    _count: 400
+  - _currencyType: 2
+    _count: 400
   references:
     version: 2
     RefIds: []

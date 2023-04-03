@@ -8,13 +8,13 @@ public class LevelsContainer : ScriptableObject
 
     public Level GetLevel(int id)
     {
-        if (id < _levels.Length)
+        if (id >= _levels.Length)
         {
-            return _levels[id];
+            return _levels[_levels.Length -1];
         }
         else
         {
-            return null;
+            return _levels[id];
         }
     }
 

@@ -99,6 +99,22 @@ MonoBehaviour:
     m_Key: WeaponDescription
     m_Metadata:
       m_Items: []
+  - m_Id: 12699993567563776
+    m_Key: Vertix
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12749088122376192
+    m_Key: Multiresonator
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13056723228987392
+    m_Key: Spider
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13070751263264768
+    m_Key: SuperPsix
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

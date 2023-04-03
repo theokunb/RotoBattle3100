@@ -144,7 +144,6 @@ MonoBehaviour:
   _newHead: {fileID: 8123509787124463500, guid: 6878c8021b164754ca0bdb61f9ad6fef, type: 3}
   _newWeapons:
   - {fileID: 7008777911311245525, guid: c91f9f2c51a1fa34c9a6f19714412ae2, type: 3}
-  - {fileID: 7425045554632412595, guid: 871c748807db6b149b0dded3b309f157, type: 3}
 --- !u!114 &1207519048168996333
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -157,6 +156,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cbf656f629cbca438c5c1b69bb838a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _visionCanvas: {fileID: 0}
 --- !u!114 &7484638206864652310
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -182,7 +182,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e43e6de3e976c6e4496f265e13e5b918, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _dropItems: {fileID: 11400000, guid: d849344793b796543a0a1897df590f90, type: 2}
+  _dropItems: {fileID: 11400000, guid: f73a9cd344e2a11429afbbfbac0e8415, type: 2}
   _currencyPull: {fileID: 11400000, guid: dddf23d60ae644c4ab73bee66caf6d6d, type: 2}
 --- !u!114 &-2802965568556278828
 MonoBehaviour:
