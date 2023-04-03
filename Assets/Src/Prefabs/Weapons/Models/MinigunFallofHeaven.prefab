@@ -129,7 +129,7 @@ MonoBehaviour:
   _maxDelayBetweenShoot: 0.25
   _minDelayBetweenShoot: 0.15
   _shootPlace: {fileID: 3958939099290575415}
-  _template: {fileID: 1090492303719371573, guid: 6dd69cfe8005d4c4a911d65a76ca5cc4, type: 3}
+  _template: {fileID: 6471960732959314179, guid: 44402c801bb589e419021279eef312ee, type: 3}
   _bulletSpeed: 13
   _damageLabel:
     m_TableReference:

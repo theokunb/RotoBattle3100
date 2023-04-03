@@ -183,8 +183,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e43e6de3e976c6e4496f265e13e5b918, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _dropItems: {fileID: 11400000, guid: d849344793b796543a0a1897df590f90, type: 2}
-  _currencyPull: {fileID: 11400000, guid: dddf23d60ae644c4ab73bee66caf6d6d, type: 2}
+  _dropItems: {fileID: 11400000, guid: 926bc17bf908ac34fa75afcab2e79537, type: 2}
+  _currencyPull: {fileID: 11400000, guid: c0ba0b8ba7e6cf74bbbc7b6c3fb99487, type: 2}
 --- !u!114 &-2802965568556278828
 MonoBehaviour:
   m_ObjectHideFlags: 0
