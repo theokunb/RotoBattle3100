@@ -1289,6 +1289,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2117148246160241006, guid: 58646c87a7abfe14fa8dd6ead3d10223, type: 3}
+      propertyPath: _player
+      value: 
+      objectReference: {fileID: 1459856717}
+    - target: {fileID: 2117148246160241006, guid: 58646c87a7abfe14fa8dd6ead3d10223, type: 3}
       propertyPath: _playerWallet
       value: 
       objectReference: {fileID: 1459856723}
@@ -2416,7 +2420,7 @@ MonoBehaviour:
   _rootPanel: {fileID: 1726537763}
   _playButton: {fileID: 1602755238}
   _map: {fileID: 1007927950}
-  _loader: {fileID: 385759742}
+  _player: {fileID: 1459856717}
   _loadingPanel: {fileID: 2145213838}
 --- !u!114 &399968097
 MonoBehaviour:
@@ -5179,7 +5183,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _levelContainer: {fileID: 11400000, guid: a4bc4a9b5e6d76940a1d0e4f30cd4cef, type: 2}
-  _loader: {fileID: 385759742}
+  _player: {fileID: 1459856717}
   _template: {fileID: 1530923864, guid: 02abc50db15335049880d869d3ab6622, type: 3}
   _container: {fileID: 1438809950}
   _backButton: {fileID: 1302317905}
@@ -7014,6 +7018,7 @@ MonoBehaviour:
   Moving:
     m_PersistentCalls:
       m_Calls: []
+  _loader: {fileID: 385759742}
 --- !u!114 &1459856718
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12378,6 +12383,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2117148246160241006, guid: 58646c87a7abfe14fa8dd6ead3d10223, type: 3}
+      propertyPath: _player
+      value: 
+      objectReference: {fileID: 1459856717}
     - target: {fileID: 2117148246160241006, guid: 58646c87a7abfe14fa8dd6ead3d10223, type: 3}
       propertyPath: _playerWallet
       value: 

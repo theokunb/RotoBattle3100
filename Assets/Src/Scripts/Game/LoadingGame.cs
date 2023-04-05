@@ -1,19 +1,23 @@
+using Agava.YandexGames;
 using IJunior.TypedScenes;
 using System.Collections;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class LoadingGame : MonoBehaviour
 {
     [SerializeField] private GameObject _loadminScreen;
     [SerializeField] private Image _loadingProgress;
-    
-    private const float LoadingTime = 1f;
 
-    public void Start()
+    public IEnumerator Start()
     {
-        StartCoroutine(LoadGameAsync());
+#if UNITY_WEBGL && !UNITY_EDITOR
+        yield return YandexGamesSdk.Initialize(() =>
+        {
+            Debug.Log("sdk inited");
+        });
+#endif
+        yield return LoadGameAsync();
     }
 
     private IEnumerator LoadGameAsync()

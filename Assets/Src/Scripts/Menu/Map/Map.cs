@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class Map : MonoBehaviour
 {
     [SerializeField] private LevelsContainer _levelContainer;
-    [SerializeField] private PlayerLoader _loader;
+    [SerializeField] private Player _player;
     [SerializeField] private LevelView _template;
     [SerializeField] private GameObject _container;
     [SerializeField] private Button _backButton;
@@ -30,7 +30,7 @@ public class Map : MonoBehaviour
         foreach (var level in _levelContainer.Levels)
         {
             var createdLevel = Instantiate(_template, _container.transform);
-            createdLevel.Render(level, _loader.PlayerProgress.GetStatus(level.Id));
+            createdLevel.Render(level, _player.Progress.GetStatus(level.Id));
 
             _levels.Add(createdLevel);
         }

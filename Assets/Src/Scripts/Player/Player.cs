@@ -1,11 +1,15 @@
 using System;
+using UnityEngine;
 
 public class Player : Character
 {
     private const int ExtraHealthPerLevel = 300;
 
+    [SerializeField] private PlayerLoader _loader;
+
     private Experience _exp;
     private Upgrade _upgrade;
+    private PlayerProgress _progress;
 
     public event Action ExperiencChanged;
     public event Action LevelChanged;
@@ -17,6 +21,7 @@ public class Player : Character
     public int CurrentValue => _exp.CurrentValue;
     public int MaxValue => _exp.MaxValue;
     public Upgrade Upgrade => _upgrade;
+    public PlayerProgress Progress => _progress;
 
     private void OnEnable()
     {
@@ -36,7 +41,7 @@ public class Player : Character
 
     public void Save()
     {
-        GameStorage.Save(new PlayerData(this), GameStorage.PlayerData);
+        GameStorage.Storage.Save(new PlayerData(this));
     }
 
     public void DropWeapon(Weapon weapon)
@@ -52,6 +57,11 @@ public class Player : Character
     public void SetUpgrade(Upgrade upgrades)
     {
         _upgrade = upgrades;
+    }
+
+    public void SetProgress(PlayerProgress playerProgress)
+    {
+        _progress = playerProgress;
     }
 
     public void AddExperience(Enemy enemy)

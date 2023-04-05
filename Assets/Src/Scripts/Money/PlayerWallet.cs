@@ -26,7 +26,7 @@ public class PlayerWallet : MonoBehaviour
         Pay(item.FullPrice);
         item.Detail.Unlock();
 
-        GameStorage.Save(new PlayerData(GetComponent<Player>()), GameStorage.PlayerData);
+        GameStorage.Storage.Save(new PlayerData(GetComponent<Player>()));
     }
 
     public bool CanBuy(IEnumerable<Currency> fullPrice)

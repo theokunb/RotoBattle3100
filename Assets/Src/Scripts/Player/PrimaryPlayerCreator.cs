@@ -14,28 +14,15 @@ public class PrimaryPlayerCreator : MonoBehaviour
         _player.SetDetail(_defaultLeg);
         _player.SetDetail(_defaultBody);
         _player.SetDetail(_defaultHead);
-        CreateDefaultWallet();
-        CreateDefaultExperiecne();
-        CreateDefaultUpgrades();
+
+        _playerWallet.CreateDefault();
+        _player.SetExperience(new Experience(1, 0));
+        _player.SetUpgrade(new Upgrade());
+        _player.SetProgress(new PlayerProgress());
 
         foreach (var weaponPlace in _player.WeaponPlaces)
         {
             _player.SetDetail(_defaultWeapon);
         }
-    }
-
-    private void CreateDefaultWallet()
-    {
-        _playerWallet.CreateDefault();
-    }
-
-    private void CreateDefaultExperiecne()
-    {
-        _player.SetExperience(new Experience(1, 0));
-    }
-
-    private void CreateDefaultUpgrades()
-    {
-        _player.SetUpgrade(new Upgrade());
     }
 }

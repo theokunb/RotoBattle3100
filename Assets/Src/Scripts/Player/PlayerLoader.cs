@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class PlayerLoader : MonoBehaviour
@@ -6,34 +7,30 @@ public class PlayerLoader : MonoBehaviour
     [SerializeField] private PrimaryPlayerCreator _primaryCreator;
     [SerializeField] private ItemsPull _itemsPull;
 
-    private PlayerProgress _playerProgress;
-
-    public PlayerProgress PlayerProgress => _playerProgress;
-
     private void Awake()
     {
         ProccessPlayerData();
-        ProccessPlayerProgress();
     }
 
-    public bool TryLoadData<T>(out T data, string fileName)
+    public bool TryLoadData(out PlayerData data)
     {
-        data = GameStorage.LoadData<T>(fileName);
+        data = GameStorage.Storage.Load();
 
         return data != null;
     }
 
     public void LoadPlayer(PlayerData playerData)
     {
-        foreach (var detailData in playerData.DetailDatas)
+        foreach (var detailData in playerData.GetDetailDatas())
         {
             var detail = FindDetail(detailData);
             _player.SetDetail((dynamic)detail);
         }
 
-        _player.SetExperience(playerData.Experience);
-        _player.SetUpgrade(playerData.Upgrades);
-        _player.GetComponent<PlayerWallet>().SetWallet(playerData.Wallet);
+        _player.SetExperience(playerData.GetExperience());
+        _player.SetUpgrade(playerData.GetUpgrades());
+        _player.GetComponent<PlayerWallet>().SetWallet(playerData.GetWallet());
+        _player.SetProgress(playerData.GetProgress());
     }
 
     private Detail FindDetail(DetailData detailData)
@@ -51,28 +48,15 @@ public class PlayerLoader : MonoBehaviour
 
     private void ProccessPlayerData()
     {
-        if (TryLoadData(out PlayerData playerData, GameStorage.PlayerData))
+        if (TryLoadData(out PlayerData playerData))
         {
+            Debug.Log("we got data");
             LoadPlayer(playerData);
         }
         else
         {
+            Debug.Log("we not got data");
             _primaryCreator.CreateDefaultPlayer();
         }
-    }
-
-    private void ProccessPlayerProgress()
-    {
-        if (TryLoadData(out _playerProgress, GameStorage.PlayerProgress))
-        {
-
-        }
-        else
-        {
-            _playerProgress = new PlayerProgress();
-            GameStorage.Save(_playerProgress, GameStorage.PlayerProgress);
-        }
-
-        _playerProgress.VisitGame();
     }
 }

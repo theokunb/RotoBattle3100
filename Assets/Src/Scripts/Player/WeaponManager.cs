@@ -42,7 +42,7 @@ public class WeaponManager : MonoBehaviour
 
     private void CloseButtonClicked()
     {
-        GameStorage.Save(new PlayerData(_player), GameStorage.PlayerData);
+        GameStorage.Storage.Save(new PlayerData(_player));
         gameObject.SetActive(false);
     }
 

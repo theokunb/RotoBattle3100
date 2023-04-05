@@ -49,8 +49,6 @@ public class PlayerProgress
 
         AddProgress(idLevel);
         VisitGame();
-
-        GameStorage.Save(this, GameStorage.PlayerProgress);
     }
 
     public void VisitGame()

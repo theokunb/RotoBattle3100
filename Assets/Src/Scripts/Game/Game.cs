@@ -8,7 +8,6 @@ public class Game : MonoBehaviour, ISceneLoadHandler<int>
 
     [SerializeField] private LevelCreator _levelCreator;
     [SerializeField] private Spawner _spawner;
-    [SerializeField] private PlayerLoader _playerLoader;
     [SerializeField] private Player _player;
     [SerializeField] private LevelsContainer _levelContainer;
     [SerializeField] private MenuBackground _menuBackground;
@@ -31,7 +30,7 @@ public class Game : MonoBehaviour, ISceneLoadHandler<int>
 
     private void Start()
     {
-        //_currentLevel = _levelContainer.GetLevel(0);
+        _currentLevel = _levelContainer.GetLevel(0);
         _levelCreator.Create(_currentLevel.Width, _currentLevel.Lenght, HeightPlatform);
         _spawner.CreateEnemyPacks(_currentLevel.Enemies, new Rectangle(_currentLevel.Width, _currentLevel.Lenght));
         _spawner.PutToStartPosition(_player, new Rectangle(_currentLevel.Width, _currentLevel.Lenght));
@@ -52,7 +51,7 @@ public class Game : MonoBehaviour, ISceneLoadHandler<int>
     private void OnLevelEnded(Finish finish)
     {
         finish.LevelEnded -= OnLevelEnded;
-        _playerLoader.PlayerProgress.PlayedLevel(_currentLevel.Id);
+        _player.Progress.PlayedLevel(_currentLevel.Id);
 
         Bag playerBag = _player.GetComponent<Bag>();
 
@@ -66,8 +65,7 @@ public class Game : MonoBehaviour, ISceneLoadHandler<int>
 
     private void Save()
     {
-        GameStorage.Save(new PlayerData(_player), GameStorage.PlayerData);
-        GameStorage.Save(_playerLoader.PlayerProgress, GameStorage.PlayerProgress);
+        GameStorage.Storage.Save(new PlayerData(_player));
     }
 
     private void AddRewards(Bag bag, IEnumerable<Currency> levelReward)

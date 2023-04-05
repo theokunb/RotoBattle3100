@@ -1393,7 +1393,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _levelCreator: {fileID: 1268795726}
   _spawner: {fileID: 1579422381}
-  _playerLoader: {fileID: 242894087}
   _player: {fileID: 380437127}
   _levelContainer: {fileID: 11400000, guid: a4bc4a9b5e6d76940a1d0e4f30cd4cef, type: 2}
   _menuBackground: {fileID: 821804940}
@@ -2088,6 +2087,10 @@ PrefabInstance:
       propertyPath: _visionCircle
       value: 
       objectReference: {fileID: 1344777247}
+    - target: {fileID: 3475672772661074126, guid: 2478e04d2c12c4048ada7b54d1bad6ba, type: 3}
+      propertyPath: _loader
+      value: 
+      objectReference: {fileID: 242894087}
     - target: {fileID: 3475672772661074127, guid: 2478e04d2c12c4048ada7b54d1bad6ba, type: 3}
       propertyPath: m_RootOrder
       value: 7

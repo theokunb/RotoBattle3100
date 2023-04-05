@@ -8,14 +8,14 @@ public class MainMenu : MonoBehaviour
     [SerializeField] private Subpanel _rootPanel;
     [SerializeField] private Button _playButton;
     [SerializeField] private Map _map;
-    [SerializeField] private PlayerLoader _loader;
+    [SerializeField] private Player _player;
     [SerializeField] private LoadingPanel _loadingPanel;
 
     private int _levelId;
 
-    private void Awake()
+    private void Start()
     {
-        _levelId = _loader.PlayerProgress.CompletedLevels;
+        _levelId = _player.Progress.CompletedLevels;
     }
 
     private void OnEnable()
