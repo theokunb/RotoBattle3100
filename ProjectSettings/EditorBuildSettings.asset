@@ -15,14 +15,14 @@ EditorBuildSettings:
     path: Assets/Scenes/GameScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 0
+    path: Assets/Scenes/TestScene.unity
+    guid: a67961043076c554faa3562f17b1b718
+  - enabled: 0
     path: Assets/Mech_Constructor_Heavy/Demo_scene.unity
     guid: eaf6546484c6e4f4584d2d1379b6b52c
   - enabled: 0
     path: Assets/Mech_Constructor_LtMed/Demo_scene.unity
     guid: a76a783f04d7fcc4dae10ae1a0b83648
-  - enabled: 0
-    path: Assets/Scenes/TestScene.unity
-    guid: a67961043076c554faa3562f17b1b718
   - enabled: 0
     path: Assets/FarlandSkies/Demo/DemoScene.unity
     guid: 47cd513b8c4397e4ca272a1ff269d933

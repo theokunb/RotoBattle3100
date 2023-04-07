@@ -27,8 +27,11 @@ public class PlayerScanner : MonoBehaviour
 
     private void OnDisable()
     {
-        _head.EnemyDetected -= OnEnemyDetected;
-        _head.EnemyLost -= OnEnemyLost;
+        if (_head != null)
+        {
+            _head.EnemyDetected -= OnEnemyDetected;
+            _head.EnemyLost -= OnEnemyLost;
+        }
     }
 
     public Character GetNearestEnemy()

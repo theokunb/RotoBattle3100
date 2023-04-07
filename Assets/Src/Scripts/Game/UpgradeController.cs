@@ -1,7 +1,6 @@
-using UnityEngine;
 using DG.Tweening;
+using UnityEngine;
 using UnityEngine.UI;
-using System.Collections;
 
 public class UpgradeController : MonoBehaviour
 {
@@ -77,7 +76,7 @@ public class UpgradeController : MonoBehaviour
     private void CloseCards()
     {
         foreach (var cardHandler in _cardHandlers)
-        { 
+        {
             cardHandler.CloseCard();
         }
     }

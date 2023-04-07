@@ -13,37 +13,18 @@ public class YandexCloudStorage : IStorage
 {
     public PlayerData Load()
     {
-        Debug.Log("trying get data");
-
-        PlayerData playerData = null;
-
-        PlayerAccount.GetPlayerData((data) =>
-        {
-            Debug.Log($"data: {data}");
-            playerData = JsonConvert.DeserializeObject<PlayerData>(data);
-        },
-        (error) =>
-        {
-            Debug.Log($"error: {error}");
-        });
-
-        return playerData;
+        return null;
     }
 
     public void Save(PlayerData data)
     {
-        Debug.Log("trying set data");
-
         string content = JsonConvert.SerializeObject(data);
 
-        PlayerAccount.SetPlayerData(content, () =>
-        {
-            Debug.Log($"saved: {content}");
-        },
-        (error) =>
-        {
-            Debug.Log($"error: {error}");
-        });
+        PlayerPrefs.SetString(PlayerPrefsKeys.PlayerData, content);
+
+#if UNITY_WEBGL
+        PlayerAccount.SetPlayerData(content);
+#endif
     }
 }
 
@@ -65,7 +46,7 @@ public class FileStorage : IStorage
         }
         else
         {
-            return default;
+            return null;
         }
     }
 

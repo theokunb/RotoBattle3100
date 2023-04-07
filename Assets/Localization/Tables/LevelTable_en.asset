@@ -48,10 +48,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6871532343296
-    m_Localized: '{level.LevelView.LevelLabel}
-
-      completed {level.LevelView.LevelStatusLabel}
-      times'
+    m_Localized: '{level.LevelView.LevelLabel}'
     m_Metadata:
       m_Items:
       - rid: 2549057753512149000

@@ -1,4 +1,6 @@
 using UnityEngine;
+using static TMPro.SpriteAssetUtilities.TexturePacker_JsonArray;
+using static UnityEngine.EventSystems.EventTrigger;
 
 public class DisplayWallet : MonoBehaviour
 {
@@ -10,16 +12,11 @@ public class DisplayWallet : MonoBehaviour
     [SerializeField] private Sprite _energyIcon;
     [SerializeField] private Sprite _fuelIcon;
 
-    private Wallet _wallet;
-
     private void OnEnable()
     {
-        if(_wallet != null)
-        {
-            RenderAll();
-        }
-
         _playerWallet.ValueChanged += OnCurrencyChanged;
+
+        RenderAll();
     }
 
     private void OnDisable()
@@ -27,21 +24,14 @@ public class DisplayWallet : MonoBehaviour
         _playerWallet.ValueChanged -= OnCurrencyChanged;
     }
 
-    public void Start()
-    {
-        _wallet = _playerWallet.Wallet;
-
-        RenderAll();
-    }
-
-    private void OnCurrencyChanged(Wallet wallet)
+    private void OnCurrencyChanged()
     {
         RenderAll();
     }
 
     private void RenderAll()
     {
-        foreach (var currency in _wallet.GetCurrencies())
+        foreach (var currency in _playerWallet.Wallet.GetCurrencies())
         {
             Render(currency);
         }
@@ -49,21 +39,17 @@ public class DisplayWallet : MonoBehaviour
 
     private void Render(Currency currency)
     {
-        Render((dynamic)currency);
-    }
-
-    private void Render(Metal metal)
-    {
-        _currencyMetal.Render(_metalIcon, metal);
-    }
-
-    private void Render(Energy energy)
-    {
-        _currencyEnergy.Render(_energyIcon, energy);
-    }
-
-    private void Render(Fuel fuel)
-    {
-        _currencyFuel.Render(_fuelIcon, fuel);
+        if(currency is Metal)
+        {
+            _currencyMetal.Render(_metalIcon, currency as Metal);
+        }
+        else if (currency is Energy)
+        {
+            _currencyEnergy.Render(_energyIcon, currency as Energy);
+        }
+        else if(currency is Fuel)
+        {
+            _currencyFuel.Render(_fuelIcon, currency as Fuel);
+        }
     }
 }

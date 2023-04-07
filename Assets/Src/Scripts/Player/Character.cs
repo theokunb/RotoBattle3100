@@ -26,7 +26,7 @@ public class Character : MonoBehaviour
 
     private void FixedUpdate()
     {
-        var target = Scanner.GetNearestEnemy();
+        var target = Scanner?.GetNearestEnemy();
 
         if (target != null)
         {
@@ -54,30 +54,24 @@ public class Character : MonoBehaviour
         }
     }
 
-    public void SetDetail(Leg leg)
+    public void SetDetail(Detail detail)
     {
-        Destroy(_leg?.gameObject);
-        _leg = Instantiate(leg, transform);
-    }
-
-    public void SetDetail(Body body)
-    {
-        Destroy(_body?.gameObject);
-        _body = Instantiate(body, transform);
-    }
-
-    public void SetDetail(Head head)
-    {
-        Destroy(_head?.gameObject);
-        Scanner = GetComponent<PlayerScanner>();
-
-        _head = Instantiate(head, transform);
-        Scanner.InitializeHead(_head);
-    }
-
-    public void SetDetail(Weapon weapon)
-    {
-        Weapons.Insert(0, weapon);
+        if(detail is Leg)
+        {
+            SetLeg(detail as Leg);
+        }
+        else if (detail is Body)
+        {
+            SetBody(detail as Body);
+        }
+        else if (detail is Head)
+        {
+            SetHead(detail as Head);
+        }
+        else if (detail is Weapon)
+        {
+            SetWeapon(detail as Weapon);
+        }
     }
 
     public virtual int CalculateHealth()
@@ -92,4 +86,41 @@ public class Character : MonoBehaviour
     public virtual void SuspendMovement() { }
 
     public virtual void ResumeMovement() { }
+
+    private void SetLeg(Leg leg)
+    {
+        if (_leg != null)
+        {
+            Destroy(_leg.gameObject);
+        }
+        _leg = Instantiate(leg, transform);
+    }
+
+    private void SetBody(Body body)
+    {
+        if (_body != null)
+        {
+            Destroy(_body.gameObject);
+        }
+
+        _body = Instantiate(body, transform);
+    }
+
+    private void SetHead(Head head)
+    {
+        if (_head != null)
+        {
+            Destroy(_head.gameObject);
+        }
+
+        Scanner = GetComponent<PlayerScanner>();
+
+        _head = Instantiate(head, transform);
+        Scanner.InitializeHead(_head);
+    }
+
+    private void SetWeapon(Weapon weapon)
+    {
+        Weapons.Insert(0, weapon);
+    }
 }

@@ -62,7 +62,7 @@ public class InventoryObserver : MonoBehaviour
     private void OnItemClicked(DetailView detailView)
     {
         var detail = detailView.DetailShop.GetComponent<Detail>();
-        _player.SetDetail((dynamic)detail);
+        _player.SetDetail(detail);
         _player.CorrectDetails(_player.LegPosition);
         _player.Save();
 

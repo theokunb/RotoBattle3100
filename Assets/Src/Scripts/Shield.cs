@@ -30,11 +30,6 @@ public class Shield : MonoBehaviour
         _player.ShieldUpgraded -= OnShieldUpgraded;
     }
 
-    private void Start()
-    {
-        CreateShield();
-    }
-
     private void FixedUpdate()
     {
         _elapsedTime += Time.deltaTime;
@@ -57,8 +52,8 @@ public class Shield : MonoBehaviour
         _maxValue = shieldsCount * AbsorbPerLevel;
 
         _currentValue = _maxValue;
-        _healthBar.UpdateHealthBarValue(_maxValue, _currentValue);
-        _healthBar.Fade(_currentValue > 0, fadeDuration);
+        _healthBar?.UpdateHealthBarValue(_maxValue, _currentValue);
+        _healthBar?.Fade(_currentValue > 0, fadeDuration);
     }
 
     public int AbsorbDamage(int damage)

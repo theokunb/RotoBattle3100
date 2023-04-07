@@ -18,7 +18,6 @@ public class LevelView : MonoBehaviour
     public event Action<Level> LevelSelected;
 
     public string LevelLabel => _level?.Title;
-    public string LevelStatusLabel => _levelStatus?.TodayCompletedTimes.ToString();
 
     private void OnEnable()
     {

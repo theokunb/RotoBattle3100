@@ -1,32 +1,46 @@
-using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 [Serializable]
 public class PlayerData
 {
-    [JsonProperty("DetailDatas")] private List<DetailData> _detailDatas = new List<DetailData>();
-    [JsonProperty("Wallet")] private Wallet _wallet = new Wallet();
-    [JsonProperty("Exp")] private Experience _exp;
-    [JsonProperty("Upgrade")] private Upgrade _upgrade;
-    [JsonProperty("PlayerProgress")] private PlayerProgress _playerProgress;
+    public List<DetailData> DetailDatas = new List<DetailData>();
+    public int Metal;
+    public int Energy;
+    public int Fuel;
+    public int PlayerLevel;
+    public int PlayerExperience;
+    public List<Upgrades> Upgrades = new List<Upgrades>();
+    public int CompletedLevels;
+    public DateTime LastGamedDay;
 
     public PlayerData(Player player)
     {
         foreach (var detail in player.GetAllDetails())
         {
-            _detailDatas.Add(detail);
+            DetailDatas.Add(detail);
         }
 
-        _exp = new Experience(player.Level, player.CurrentValue);
-        _wallet = player.GetComponent<PlayerWallet>().Wallet;
-        _upgrade = player.Upgrade;
-        _playerProgress = player.Progress;
+        Upgrades = player.Upgrade.GetUpgrades().ToList();
+
+        var playerWallet = player.GetComponent<PlayerWallet>().Wallet;
+        Metal = playerWallet.Metal.Count;
+        Energy = playerWallet.Energy.Count;
+        Fuel = playerWallet.Fuel.Count;
+
+        PlayerLevel = player.Level;
+        PlayerExperience = player.CurrentValue;
+
+        CompletedLevels = player.Progress.GetCompletedLevels();
+        LastGamedDay = player.Progress.GetLastGamedDay();
     }
 
-    public IEnumerable<DetailData> GetDetailDatas() => _detailDatas;
-    public Wallet GetWallet() => _wallet;
-    public Experience GetExperience() => _exp;
-    public Upgrade GetUpgrades() => _upgrade;
-    public PlayerProgress GetProgress() => _playerProgress;
+    public PlayerData() { }
+
+    public IEnumerable<DetailData> GetDetailDatas() => DetailDatas;
+    public Wallet GetWallet() => new Wallet(new Metal(Metal), new Energy(Energy), new Fuel(Fuel));
+    public Experience GetExperience() => new Experience(PlayerLevel, PlayerExperience);
+    public Upgrade GetUpgrades() => new Upgrade(Upgrades.ToArray());
+    public PlayerProgress GetProgress() => new PlayerProgress(CompletedLevels, LastGamedDay);
 }

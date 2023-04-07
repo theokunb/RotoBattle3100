@@ -7,8 +7,6 @@ public class Upgrade
 {
     private List<Upgrades> _upgrades;
 
-    
-
     public Upgrade()
     {
         _upgrades = new List<Upgrades>();
@@ -33,6 +31,8 @@ public class Upgrade
     {
         return _upgrades.Where(element => element == upgrade).Count();
     }
+
+    public IEnumerable<Upgrades> GetUpgrades() => _upgrades;
 }
 
 [Serializable]

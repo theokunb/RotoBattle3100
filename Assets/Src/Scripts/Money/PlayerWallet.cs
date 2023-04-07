@@ -7,14 +7,9 @@ public class PlayerWallet : MonoBehaviour
 {
     private Wallet _wallet;
 
-    public event Action<Wallet> ValueChanged;
+    public event Action ValueChanged;
 
     public Wallet Wallet => _wallet;
-
-    public void CreateDefault()
-    {
-        _wallet = new Wallet();
-    }
 
     public void SetWallet(Wallet wallet)
     {
@@ -53,6 +48,6 @@ public class PlayerWallet : MonoBehaviour
     private void Pay(IEnumerable<Currency> currincies)
     {
         _wallet.Decrease(currincies);
-        ValueChanged?.Invoke(_wallet);
+        ValueChanged?.Invoke();
     }
 }

@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -17,7 +15,7 @@ public class ButtonWithSound : MonoBehaviour
         _button = GetComponent<Button>();
         _audioSource = GetComponent<AudioSource>();
 
-        if(_sounds == null)
+        if (_sounds == null)
         {
             _sounds = FindObjectOfType<SoundController>();
         }

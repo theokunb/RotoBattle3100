@@ -1,5 +1,6 @@
 using Agava.YandexGames;
 using IJunior.TypedScenes;
+using Newtonsoft.Json;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
@@ -11,13 +12,32 @@ public class LoadingGame : MonoBehaviour
 
     public IEnumerator Start()
     {
-#if UNITY_WEBGL && !UNITY_EDITOR
+#if UNITY_WEBGL
         yield return YandexGamesSdk.Initialize(() =>
         {
             Debug.Log("sdk inited");
+            PlayerAccount.GetPlayerData((data) =>
+            {
+                Debug.Log($"data= {data}");
+                PlayerPrefs.SetString(PlayerPrefsKeys.PlayerData, data);
+                StartCoroutine(LoadGameAsync());
+            },
+            (error) =>
+            {
+                Debug.Log($"error= {error}");
+                StartCoroutine(LoadGameAsync());
+            });
         });
 #endif
+
+
+#if !UNITY_WEBGL
+        PlayerData playerData = GameStorage.Storage.Load();
+        string data = JsonConvert.SerializeObject(playerData);
+
+        PlayerPrefs.SetString(PlayerPrefsKeys.PlayerData, data);
         yield return LoadGameAsync();
+#endif
     }
 
     private IEnumerator LoadGameAsync()

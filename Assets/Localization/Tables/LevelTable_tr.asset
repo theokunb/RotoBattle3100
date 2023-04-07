@@ -48,8 +48,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6871532343296
-    m_Localized: "{level.LevelView.LevelLabel}\n{level.LevelView.LevelStatusLabel}
-      kez tamamland\u0131"
+    m_Localized: '{level.LevelView.LevelLabel}'
     m_Metadata:
       m_Items:
       - rid: 2549057753512149002

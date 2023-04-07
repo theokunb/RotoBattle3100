@@ -5,13 +5,10 @@ public class Player : Character
 {
     private const int ExtraHealthPerLevel = 300;
 
-    [SerializeField] private PlayerLoader _loader;
+    private Experience _exp = new Experience();
+    private Upgrade _upgrade = new Upgrade();
+    private PlayerProgress _progress = new PlayerProgress();
 
-    private Experience _exp;
-    private Upgrade _upgrade;
-    private PlayerProgress _progress;
-
-    public event Action ExperiencChanged;
     public event Action LevelChanged;
     public event Action HealthUpgraded;
     public event Action ShieldUpgraded;
@@ -67,7 +64,6 @@ public class Player : Character
     public void AddExperience(Enemy enemy)
     {
         _exp.AddExp(enemy);
-        ExperiencChanged?.Invoke();
     }
 
     public void AddUpgrade(Upgrades upgrade)

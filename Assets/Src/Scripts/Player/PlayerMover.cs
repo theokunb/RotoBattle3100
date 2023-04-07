@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody))]
@@ -16,7 +15,7 @@ public class PlayerMover : MonoBehaviour
     private void Awake()
     {
         _playerInput = new PlayerInput();
-        _rigidbody= GetComponent<Rigidbody>();
+        _rigidbody = GetComponent<Rigidbody>();
         _player = GetComponent<Player>();
     }
 

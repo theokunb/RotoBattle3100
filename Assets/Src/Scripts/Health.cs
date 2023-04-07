@@ -22,7 +22,7 @@ public class Health : MonoBehaviour
 
     private void OnEnable()
     {
-        if(_character is Player)
+        if (_character is Player)
         {
             (_character as Player).HealthUpgraded += SetHealth;
         }
@@ -39,8 +39,6 @@ public class Health : MonoBehaviour
     private void Start()
     {
         _shield = GetComponent<Shield>();
-
-        SetHealth();
     }
 
     private void SetHealth()

@@ -6,16 +6,6 @@ public class DisplayExperience : MonoBehaviour
     [SerializeField] private Player _player;
     [SerializeField] private Image _progressBar;
 
-    private void OnEnable()
-    {
-        _player.ExperiencChanged += OnValueChanged;
-    }
-
-    private void OnDisable()
-    {
-        _player.ExperiencChanged -= OnValueChanged;
-    }
-
     private void Start()
     {
         OnValueChanged();

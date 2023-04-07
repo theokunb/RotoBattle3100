@@ -1,4 +1,4 @@
-using System;
+using Newtonsoft.Json;
 using UnityEngine;
 
 public class PlayerLoader : MonoBehaviour
@@ -9,14 +9,9 @@ public class PlayerLoader : MonoBehaviour
 
     private void Awake()
     {
-        ProccessPlayerData();
-    }
+        string content = PlayerPrefs.GetString(PlayerPrefsKeys.PlayerData, string.Empty);
 
-    public bool TryLoadData(out PlayerData data)
-    {
-        data = GameStorage.Storage.Load();
-
-        return data != null;
+        MakePlayer(content);
     }
 
     public void LoadPlayer(PlayerData playerData)
@@ -24,7 +19,7 @@ public class PlayerLoader : MonoBehaviour
         foreach (var detailData in playerData.GetDetailDatas())
         {
             var detail = FindDetail(detailData);
-            _player.SetDetail((dynamic)detail);
+            _player.SetDetail(detail);
         }
 
         _player.SetExperience(playerData.GetExperience());
@@ -46,17 +41,16 @@ public class PlayerLoader : MonoBehaviour
         return null;
     }
 
-    private void ProccessPlayerData()
+    private void MakePlayer(string json)
     {
-        if (TryLoadData(out PlayerData playerData))
+        if (json == string.Empty || json == "{}")
         {
-            Debug.Log("we got data");
-            LoadPlayer(playerData);
+            _primaryCreator.CreateDefaultPlayer();
         }
         else
         {
-            Debug.Log("we not got data");
-            _primaryCreator.CreateDefaultPlayer();
+            PlayerData playerData = JsonConvert.DeserializeObject<PlayerData>(json);
+            LoadPlayer(playerData);
         }
     }
 }

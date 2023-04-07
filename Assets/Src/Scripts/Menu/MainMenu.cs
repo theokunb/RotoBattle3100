@@ -1,5 +1,4 @@
 using IJunior.TypedScenes;
-using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -13,11 +12,6 @@ public class MainMenu : MonoBehaviour
 
     private int _levelId;
 
-    private void Start()
-    {
-        _levelId = _player.Progress.CompletedLevels;
-    }
-
     private void OnEnable()
     {
         _playButton.onClick.AddListener(OnPlayClicked);
@@ -28,6 +22,11 @@ public class MainMenu : MonoBehaviour
     {
         _playButton.onClick.RemoveListener(OnPlayClicked);
         _map.CurrentLevelChanged -= OnCurrentLevelChanged;
+    }
+
+    private void Start()
+    {
+        _levelId = _player.Progress.GetCompletedLevels();
     }
 
     public void OpenMenu(Subpanel subpanel)

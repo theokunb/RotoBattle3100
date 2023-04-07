@@ -15,11 +15,11 @@ public class Wallet
         _fuel= new Fuel(0);
     }
 
-    public Wallet(int startValue)
+    public Wallet(Currency metal, Currency energy, Currency fuel)
     {
-        _metal = new Metal(startValue);
-        _energy = new Energy(startValue);
-        _fuel = new Fuel(startValue);
+        _metal = metal;
+        _energy = energy;
+        _fuel = fuel;
     }
 
     public Currency Metal => _metal;
@@ -67,12 +67,34 @@ public class Wallet
 
     public void Increase(Currency currency)
     {
-        Add((dynamic)currency);
+        if(currency is Metal)
+        {
+            Add(currency as Metal);
+        }
+        else if(currency is Energy)
+        {
+            Add(currency as Energy);
+        }
+        else if (currency is Fuel)
+        {
+            Add(currency as Fuel);
+        }
     }
 
     public void Decrease(Currency currency)
     {
-        Reduce((dynamic)currency);
+        if (currency is Metal)
+        {
+            Reduce(currency as Metal);
+        }
+        else if (currency is Energy)
+        {
+            Reduce(currency as Energy);
+        }
+        else if (currency is Fuel)
+        {
+            Reduce(currency as Fuel);
+        }
     }
 
     private void Add(Metal metal)
