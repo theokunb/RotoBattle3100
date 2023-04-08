@@ -8,12 +8,7 @@ public class DisplayLevel : MonoBehaviour
 
     private LocalizeStringEvent _text;
 
-    public int Level => _player.Level;
-
-    private void Awake()
-    {
-        _text = GetComponent<LocalizeStringEvent>();
-    }
+    public int Level => _player.Experience.Level;
 
     private void OnEnable()
     {
@@ -23,6 +18,12 @@ public class DisplayLevel : MonoBehaviour
     private void OnDisable()
     {
         _player.LevelChanged -= OnLevelChanged;
+    }
+
+    private void Start()
+    {
+        _text = GetComponent<LocalizeStringEvent>();
+        OnLevelChanged();
     }
 
     private void OnLevelChanged()

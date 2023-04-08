@@ -18,6 +18,8 @@ public class CameraFollow : MonoBehaviour
     {
         while (true)
         {
+            transform.position = new Vector3(_player.transform.position.x, transform.position.y, transform.position.z);
+
             float newZ = player.transform.position.z - transform.position.z;
 
             if (Mathf.Abs(newZ - _zPosition) > _offset)
@@ -26,6 +28,7 @@ public class CameraFollow : MonoBehaviour
 
                 transform.position += movement * Time.deltaTime;
             }
+
             yield return null;
         }
     }

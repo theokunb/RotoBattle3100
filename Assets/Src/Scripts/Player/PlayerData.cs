@@ -29,8 +29,8 @@ public class PlayerData
         Energy = playerWallet.Energy.Count;
         Fuel = playerWallet.Fuel.Count;
 
-        PlayerLevel = player.Level;
-        PlayerExperience = player.CurrentValue;
+        PlayerLevel = player.Experience.Level;
+        PlayerExperience = player.Experience.CurrentValue;
 
         CompletedLevels = player.Progress.GetCompletedLevels();
         LastGamedDay = player.Progress.GetLastGamedDay();

@@ -39,6 +39,7 @@ public class Health : MonoBehaviour
     private void Start()
     {
         _shield = GetComponent<Shield>();
+        SetHealth();
     }
 
     private void SetHealth()

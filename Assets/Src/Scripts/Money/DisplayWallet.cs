@@ -1,6 +1,4 @@
 using UnityEngine;
-using static TMPro.SpriteAssetUtilities.TexturePacker_JsonArray;
-using static UnityEngine.EventSystems.EventTrigger;
 
 public class DisplayWallet : MonoBehaviour
 {
@@ -16,12 +14,16 @@ public class DisplayWallet : MonoBehaviour
     {
         _playerWallet.ValueChanged += OnCurrencyChanged;
 
-        RenderAll();
     }
 
     private void OnDisable()
     {
         _playerWallet.ValueChanged -= OnCurrencyChanged;
+    }
+
+    private void Start()
+    {
+        RenderAll();
     }
 
     private void OnCurrencyChanged()

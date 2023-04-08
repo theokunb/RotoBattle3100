@@ -5,7 +5,7 @@ using UnityEngine;
 public class Spawner : MonoBehaviour
 {
     private const int AllSpace = 100;
-    private const int PlayerSpawn = 5;
+    private const int PlayerSpawn = 4;
     private const int StartFreeSpace = 25;
     private const int EndFreeSpace = 15;
 
@@ -90,5 +90,6 @@ public class Spawner : MonoBehaviour
     private void OnLevelCompleted()
     {
         _levelCreator.Finish.OpenDoor();
+        _levelCreator.TerrainController.VisionCircleFadeOut();
     }
 }

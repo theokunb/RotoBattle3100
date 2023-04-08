@@ -30,6 +30,11 @@ public class Shield : MonoBehaviour
         _player.ShieldUpgraded -= OnShieldUpgraded;
     }
 
+    private void Start()
+    {
+        CreateShield(FadeTime);
+    }
+
     private void FixedUpdate()
     {
         _elapsedTime += Time.deltaTime;

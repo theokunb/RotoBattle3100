@@ -16,8 +16,10 @@ public class LevelCreator : MonoBehaviour
     private int _platformWidth;
     private int _platformLenght;
     private int _platformHeight;
+    private TerrainController _terrain;
 
     public Finish Finish { get; private set; }
+    public TerrainController TerrainController => _terrain;
 
     private void CreateGround()
     {
@@ -25,6 +27,8 @@ public class LevelCreator : MonoBehaviour
         var terrain = Instantiate(_terrains[randomIndex]);
         terrain.terrainData.size = new Vector3(_platformWidth, _platformHeight, _platformLenght);
         _navMesh.BuildNavMesh();
+
+        _terrain = terrain.GetComponent<TerrainController>();
     }
 
     private void CreateBounds()

@@ -1,37 +1,35 @@
 using System;
-using UnityEngine;
 
 public class Player : Character
 {
     private const int ExtraHealthPerLevel = 300;
 
-    private Experience _exp = new Experience();
-    private Upgrade _upgrade = new Upgrade();
-    private PlayerProgress _progress = new PlayerProgress();
-
-    public event Action LevelChanged;
     public event Action HealthUpgraded;
     public event Action ShieldUpgraded;
     public event Action SpeedUpgraded;
+    public event Action LevelChanged;
+    public event Action ExperienceChanged;
 
-    public int Level => _exp.Level;
-    public int CurrentValue => _exp.CurrentValue;
-    public int MaxValue => _exp.MaxValue;
-    public Upgrade Upgrade => _upgrade;
-    public PlayerProgress Progress => _progress;
+    public Upgrade Upgrade { get; private set; }
+    public PlayerProgress Progress { get; private set; }
+    public Experience Experience { get; private set; }
 
     private void OnEnable()
     {
-        _exp.LevelUp += OnLevelUp;
+        if(Experience!= null)
+        {
+            Experience.LevelUp += OnLevelUp;
+        }
     }
 
     private void OnDisable()
     {
-        _exp.LevelUp -= OnLevelUp;
+        Experience.LevelUp -= OnLevelUp;
     }
 
     private void Start()
     {
+        Experience.LevelUp += OnLevelUp;
         CorrectDetails(LegPosition);
         Save();
     }
@@ -48,27 +46,28 @@ public class Player : Character
 
     public void SetExperience(Experience exp)
     {
-        _exp = exp;
+        Experience = exp;
     }
 
     public void SetUpgrade(Upgrade upgrades)
     {
-        _upgrade = upgrades;
+        Upgrade = upgrades;
     }
 
     public void SetProgress(PlayerProgress playerProgress)
     {
-        _progress = playerProgress;
+        Progress = playerProgress;
     }
 
     public void AddExperience(Enemy enemy)
     {
-        _exp.AddExp(enemy);
+        Experience.AddExp(enemy);
+        ExperienceChanged?.Invoke();
     }
 
     public void AddUpgrade(Upgrades upgrade)
     {
-        _upgrade.AddUpgrade(upgrade);
+        Upgrade.AddUpgrade(upgrade);
 
         switch (upgrade)
         {

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Game : MonoBehaviour, ISceneLoadHandler<int>
 {
-    private const int HeightPlatform = 10;
+    private const int HeightPlatform = 11;
 
     [SerializeField] private LevelCreator _levelCreator;
     [SerializeField] private Spawner _spawner;
@@ -30,12 +30,19 @@ public class Game : MonoBehaviour, ISceneLoadHandler<int>
 
     private void Start()
     {
-        _currentLevel = _levelContainer.GetLevel(0);
+        //_currentLevel = _levelContainer.GetLevel(0);
         _levelCreator.Create(_currentLevel.Width, _currentLevel.Lenght, HeightPlatform);
         _spawner.CreateEnemyPacks(_currentLevel.Enemies, new Rectangle(_currentLevel.Width, _currentLevel.Lenght));
         _spawner.PutToStartPosition(_player, new Rectangle(_currentLevel.Width, _currentLevel.Lenght));
 
         _levelCreator.Finish.LevelEnded += OnLevelEnded;
+
+        PlayerScanner playerScanner = _player.GetComponent<PlayerScanner>();
+
+        if(playerScanner != null )
+        {
+            _levelCreator.TerrainController?.SetVisionSize(playerScanner);
+        }
     }
 
     public void OnSceneLoaded(int argument)

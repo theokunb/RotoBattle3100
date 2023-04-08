@@ -22,7 +22,7 @@ MonoBehaviour:
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
-  _width: 10
+  _width: 15
   _lenght: 40
   _enemies:
   - _enemies:
