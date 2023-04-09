@@ -35,17 +35,17 @@ public class Enemy : Character
         }
     }
 
-    private void Awake()
+    protected void Awake()
     {
         _agent = GetComponent<NavMeshAgent>();
         SetDetail(_newLeg);
         SetDetail(_newBody);
         SetDetail(_newHead);
         InitializeWeapons(_newWeapons);
-        CorrectDetails(LegPosition);
+        CorrectDetails();
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
         DetectEnemy();
 
@@ -73,7 +73,7 @@ public class Enemy : Character
     public override void SuspendMovement()
     {
         _agent.isStopped = true;
-        Leg.Suspend();
+        Armory.Leg.Suspend();
     }
 
     public override void ResumeMovement()
@@ -91,12 +91,12 @@ public class Enemy : Character
 
     private void DetectEnemy()
     {
-        _detectedTarget = Scanner.GetNearestEnemy();
+        _detectedTarget = Armory.Scanner.GetNearestEnemy();
 
         if (_detectedTarget != null)
         {
-            Body.transform.LookAt(_detectedTarget.transform);
-            Body.Attack(_detectedTarget);
+            Armory.Body.transform.LookAt(_detectedTarget.transform);
+            Armory.Body.Attack(_detectedTarget);
             EnemyDetected?.Invoke(_detectedTarget);
         }
     }
@@ -105,7 +105,7 @@ public class Enemy : Character
     {
         if(character != null)
         {
-            Body.transform.LookAt(character.transform);
+            Armory.Body.transform.LookAt(character.transform);
             _agent.SetDestination(character.transform.position);
             Moving?.Invoke(_agent.velocity.sqrMagnitude);
         }

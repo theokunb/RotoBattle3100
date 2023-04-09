@@ -45,4 +45,9 @@ public class Body : RobotDetail
     {
         return $"{_weaponsSlots.GetLocalizedString()}: {GetComponentsInChildren<WeaponPlace>().Length}";
     }
+
+    public override void Accept(IDetailCreator creator, Transform parent)
+    {
+        creator.Create(this, parent);
+    }
 }

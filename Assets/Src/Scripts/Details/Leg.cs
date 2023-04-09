@@ -23,12 +23,12 @@ public class Leg : RobotDetail
 
     private void OnEnable()
     {
-        _character.Moving.AddListener(OnMoving);
+        _character?.Moving?.AddListener(OnMoving);
     }
 
     private void OnDisable()
     {
-        _character.Moving.RemoveListener(OnMoving);
+        _character?.Moving?.RemoveListener(OnMoving);
     }
 
     public override string GetSpecialStats()
@@ -46,5 +46,10 @@ public class Leg : RobotDetail
         float value = Convert.ToInt32(speed > 0) * _speed/10;
 
         _animator.SetFloat(CharacterAnimationController.Param.Speed, value);
+    }
+
+    public override void Accept(IDetailCreator creator, Transform parent)
+    {
+        creator.Create(this, parent);
     }
 }

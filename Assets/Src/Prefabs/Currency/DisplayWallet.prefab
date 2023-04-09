@@ -93,9 +93,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _playerWallet: {fileID: 0}
-  _currencyMetal: {fileID: 4097743654255480305}
-  _currencyEnergy: {fileID: 4097743654114271004}
-  _currencyFuel: {fileID: 4097743654122827973}
+  _displayPlaces:
+  - {fileID: 4097743654255480305}
+  - {fileID: 4097743654114271004}
+  - {fileID: 4097743654122827973}
   _metalIcon: {fileID: 21300000, guid: b6a36b9f93c335149ad75519111fe1a5, type: 3}
   _energyIcon: {fileID: 21300000, guid: 0709457a2e7773a41ab41cf3afb83e72, type: 3}
   _fuelIcon: {fileID: 21300000, guid: 6f1ed8e9fad65734ba9fb4b86ed90455, type: 3}
@@ -120,7 +121,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6125784115630637157, guid: 5f2e7e37fb9b7c64facd8b1b3281380e, type: 3}
       propertyPath: m_fontSize
-      value: 44.25
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 6125784115826951903, guid: 5f2e7e37fb9b7c64facd8b1b3281380e, type: 3}
       propertyPath: m_AnchorMax.x
@@ -269,7 +270,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6125784115630637157, guid: 5f2e7e37fb9b7c64facd8b1b3281380e, type: 3}
       propertyPath: m_fontSize
-      value: 44.25
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 6125784115826951903, guid: 5f2e7e37fb9b7c64facd8b1b3281380e, type: 3}
       propertyPath: m_AnchorMax.x
@@ -418,7 +419,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6125784115630637157, guid: 5f2e7e37fb9b7c64facd8b1b3281380e, type: 3}
       propertyPath: m_fontSize
-      value: 44.4
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 6125784115826951903, guid: 5f2e7e37fb9b7c64facd8b1b3281380e, type: 3}
       propertyPath: m_AnchorMax.x

@@ -9,6 +9,13 @@ public class PriceView : MonoBehaviour
     [SerializeField] private DisplayCurrency _template;
     [SerializeField] private Transform _container;
 
+    private ICurrencyRenderer _currencyRenderer;
+
+    private void Awake()
+    {
+        _currencyRenderer = new CurrencyRenderer(_metal, _energy, _fuel);
+    }
+
     public void Display(IEnumerable<Currency> currencies)
     {
         ClearChilds();
@@ -16,7 +23,7 @@ public class PriceView : MonoBehaviour
         foreach (Currency currency in currencies)
         {
             var displayCurrency = Instantiate(_template, _container);
-            displayCurrency.Render(GetSprite(currency), currency);
+            currency.Accept(_currencyRenderer, displayCurrency);
         }
     }
 
@@ -25,26 +32,6 @@ public class PriceView : MonoBehaviour
         foreach(Transform child in _container)
         {
             Destroy(child.gameObject);
-        }
-    }
-
-    private Sprite GetSprite(Currency currency)
-    {
-        if(currency is Metal)
-        {
-            return _metal;
-        }
-        else if(currency is Energy)
-        {
-            return _energy;
-        }
-        else if(currency is Fuel)
-        {
-            return _fuel;
-        }
-        else
-        {
-            return null;
         }
     }
 }

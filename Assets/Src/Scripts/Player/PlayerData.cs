@@ -25,9 +25,9 @@ public class PlayerData
         Upgrades = player.Upgrade.GetUpgrades().ToList();
 
         var playerWallet = player.GetComponent<PlayerWallet>().Wallet;
-        Metal = playerWallet.Metal.Count;
-        Energy = playerWallet.Energy.Count;
-        Fuel = playerWallet.Fuel.Count;
+        Metal = playerWallet.MetalCount;
+        Energy = playerWallet.EnergyCount;
+        Fuel = playerWallet.FuelCount;
 
         PlayerLevel = player.Experience.Level;
         PlayerExperience = player.Experience.CurrentValue;

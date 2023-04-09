@@ -10,17 +10,23 @@ public class RewardCurrencyView : RewardView
     [SerializeField] private GameObject _levelRewards;
     [SerializeField] private GameObject _collectedRewards;
 
+    private ICurrencyRenderer _currencyRenderer;
+
     public void RenderLevelReward(IEnumerable<Currency> currencies)
     {
+        _currencyRenderer = new CurrencyRenderer(_metal, _fuel, _energy);
+
         foreach (var currency in currencies)
         {
             var displayCurrency = Instantiate(_template, _levelRewards.transform);
-            displayCurrency.Render(GetSprite(currency), currency);
+            currency.Accept(_currencyRenderer, displayCurrency);
         }
     }
 
     public void RenderCollectedReward(IEnumerable<Currency> currencies)
     {
+        _currencyRenderer = new CurrencyRenderer(_metal, _fuel, _energy);
+
         foreach (var currency in currencies)
         {
             if(currency.Count == 0)
@@ -29,20 +35,7 @@ public class RewardCurrencyView : RewardView
             }
 
             var displayCurrency = Instantiate(_template, _collectedRewards.transform);
-            displayCurrency.Render(GetSprite(currency), currency);
+            currency.Accept(_currencyRenderer, displayCurrency);
         }
-    }
-
-    private Sprite GetSprite(Currency currency)
-    {
-        if (currency is Metal)
-        {
-            return _metal;
-        }
-        else if (currency is Fuel)
-        {
-            return _fuel;
-        }
-        return _energy;
     }
 }

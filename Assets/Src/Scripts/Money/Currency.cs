@@ -28,6 +28,10 @@ public abstract class Currency
             _count -= currency.Count;
         }
     }
+
+    public abstract void Accept(IWalletIncreaser increaser);
+    public abstract void Accept(IWalletReducer reducer);
+    public abstract void Accept(ICurrencyRenderer renderer, DisplayCurrency displayCurrency);
 }
 
 [Serializable]
@@ -40,6 +44,21 @@ public class Metal : Currency
     }
 
     public override string Title => CurrencyTitle;
+
+    public override void Accept(IWalletIncreaser increaser)
+    {
+        increaser.Increase(this);
+    }
+
+    public override void Accept(IWalletReducer reducer)
+    {
+        reducer.Reduce(this);
+    }
+
+    public override void Accept(ICurrencyRenderer renderer, DisplayCurrency displayCurrency)
+    {
+        renderer.Render(displayCurrency, this);
+    }
 }
 
 [Serializable]
@@ -52,6 +71,20 @@ public class Energy : Currency
     }
 
     public override string Title => CurrencyTitle;
+
+    public override void Accept(IWalletIncreaser increaser)
+    {
+        increaser.Increase(this);
+    }
+    public override void Accept(IWalletReducer reducer)
+    {
+        reducer.Reduce(this);
+    }
+
+    public override void Accept(ICurrencyRenderer renderer, DisplayCurrency displayCurrency)
+    {
+        renderer.Render(displayCurrency, this);
+    }
 }
 
 [Serializable]
@@ -64,4 +97,18 @@ public class Fuel : Currency
     }
 
     public override string Title => CurrencyTitle;
+
+    public override void Accept(IWalletIncreaser increaser)
+    {
+        increaser.Increase(this);
+    }
+    public override void Accept(IWalletReducer reducer)
+    {
+        reducer.Reduce(this);
+    }
+
+    public override void Accept(ICurrencyRenderer renderer, DisplayCurrency displayCurrency)
+    {
+        renderer.Render(displayCurrency, this);
+    }
 }

@@ -9,39 +9,23 @@ public class Character : MonoBehaviour
 {
     [SerializeField] private Transform _legPosition;
 
-    private Leg _leg;
-    private Body _body;
-    private Head _head;
-
-    protected PlayerScanner Scanner;
-    protected List<Weapon> Weapons = new List<Weapon>();
-    protected Leg Leg => _leg;
-    protected Body Body => _body;
-    protected Head Head => _head;
+    protected ArmoryVisitor Armory = new ArmoryVisitor();
 
     public UnityEvent<float> Moving;
 
     public Transform LegPosition => _legPosition;
-    public IEnumerable<WeaponPlace> WeaponPlaces => _body.WeaponPlaces;
+    public IEnumerable<WeaponPlace> WeaponPlaces => Armory.Body.WeaponPlaces;
 
     private void FixedUpdate()
     {
-        var target = Scanner?.GetNearestEnemy();
+        var target = Armory.Scanner?.GetNearestEnemy();
 
         if (target != null)
         {
-            _body.transform.LookAt(target.transform);
-            _head.transform.LookAt(target.transform);
-            _body.Attack(target);
+            Armory.Body.transform.LookAt(target.transform);
+            Armory.Head.transform.LookAt(target.transform);
+            Armory.Body.Attack(target);
         }
-    }
-
-    public void CorrectDetails(Transform legPosition)
-    {
-        _leg.SetPosition(legPosition);
-        _body.SetPosition(_leg.UpperPlaceOfDetail);
-        _head.SetPosition(_body.UpperPlaceOfDetail);
-        _body.TryAddWeapons(Weapons);
     }
 
     public IEnumerable<DetailData> GetAllDetails()
@@ -56,27 +40,17 @@ public class Character : MonoBehaviour
 
     public void SetDetail(Detail detail)
     {
-        if(detail is Leg)
-        {
-            SetLeg(detail as Leg);
-        }
-        else if (detail is Body)
-        {
-            SetBody(detail as Body);
-        }
-        else if (detail is Head)
-        {
-            SetHead(detail as Head);
-        }
-        else if (detail is Weapon)
-        {
-            SetWeapon(detail as Weapon);
-        }
+        detail?.Accept(Armory, transform);
+    }
+
+    public void CorrectDetails()
+    {
+        Armory?.CorrectDetails(this);
     }
 
     public virtual int CalculateHealth()
     {
-        return Leg.BonusHealth + Body.BonusHealth + Head.BonusHealth;
+        return Armory.Leg.BonusHealth + Armory.Body.BonusHealth + Armory.Head.BonusHealth;
     }
 
     public virtual void SetWhoAttacked(Character character)
@@ -87,40 +61,73 @@ public class Character : MonoBehaviour
 
     public virtual void ResumeMovement() { }
 
-    private void SetLeg(Leg leg)
+    public class ArmoryVisitor : IDetailCreator
     {
-        if (_leg != null)
-        {
-            Destroy(_leg.gameObject);
-        }
-        _leg = Instantiate(leg, transform);
-    }
+        private List<Weapon> _weapons;
 
-    private void SetBody(Body body)
-    {
-        if (_body != null)
-        {
-            Destroy(_body.gameObject);
-        }
+        public Head Head { get; private set; }
+        public Body Body { get; private set; }
+        public Leg Leg { get; private set; }
+        public PlayerScanner Scanner { get; private set; }
+        public IEnumerable<Weapon> Weapons => _weapons;
 
-        _body = Instantiate(body, transform);
-    }
-
-    private void SetHead(Head head)
-    {
-        if (_head != null)
+        public ArmoryVisitor()
         {
-            Destroy(_head.gameObject);
+            _weapons = new List<Weapon>();
         }
 
-        Scanner = GetComponent<PlayerScanner>();
+        public void CorrectDetails(Character parent)
+        {
+            Leg?.SetPosition(parent.LegPosition);
+            Body?.SetPosition(Leg?.UpperPlaceOfDetail);
+            Head?.SetPosition(Body?.UpperPlaceOfDetail);
+            Body?.TryAddWeapons(_weapons);
+        }
 
-        _head = Instantiate(head, transform);
-        Scanner.InitializeHead(_head);
-    }
+        public void Create(Head head, Transform parent)
+        {
+            if (Head != null)
+            {
+                Destroy(Head.gameObject);
+            }
 
-    private void SetWeapon(Weapon weapon)
-    {
-        Weapons.Insert(0, weapon);
+            Head = Instantiate(head, parent);
+            Scanner = parent.GetComponent<PlayerScanner>();
+            Scanner?.InitializeHead(Head);
+        }
+
+        public void Create(Body body, Transform parent)
+        {
+            if (Body != null)
+            {
+                Destroy(Body.gameObject);
+            }
+
+            Body = Instantiate(body, parent);
+        }
+
+        public void Create(Leg leg, Transform parent)
+        {
+            if (Leg != null)
+            {
+                Destroy(Leg.gameObject);
+            }
+
+            Leg = Instantiate(leg, parent);
+        }
+
+        public void Create(Weapon weapon, Transform parent)
+        {
+            _weapons.Insert(0, weapon);
+        }
     }
+}
+
+
+public interface IDetailCreator
+{
+    void Create(Head head,Transform parent);
+    void Create(Body body, Transform parent);
+    void Create(Leg leg, Transform parent);
+    void Create(Weapon weapon, Transform parent);
 }

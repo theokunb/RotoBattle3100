@@ -6,6 +6,8 @@ using UnityEngine;
 public class PlayerWallet : MonoBehaviour
 {
     private Wallet _wallet;
+    private IWalletIncreaser _walletIncreaser => _wallet;
+    private IWalletReducer _walletReducer => _wallet;
 
     public event Action ValueChanged;
 
@@ -41,13 +43,19 @@ public class PlayerWallet : MonoBehaviour
 
     public void Add(IEnumerable<Currency> currincies)
     {
-        var temp = currincies.ToList();
-        _wallet.Increase(currincies);
+        foreach(var currency in currincies)
+        {
+            currency.Accept(_walletIncreaser);
+        }
     }
 
     private void Pay(IEnumerable<Currency> currincies)
     {
-        _wallet.Decrease(currincies);
+        foreach(var currency in currincies)
+        {
+            currency.Accept(_walletReducer);
+        }
+
         ValueChanged?.Invoke();
     }
 }

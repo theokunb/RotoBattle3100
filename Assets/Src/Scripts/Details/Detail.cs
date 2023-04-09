@@ -29,4 +29,5 @@ public abstract class Detail : MonoBehaviour
     public LocalizedString Label => _label;
 
     public abstract string GetStats();
+    public abstract void Accept(IDetailCreator creator, Transform parent);
 }

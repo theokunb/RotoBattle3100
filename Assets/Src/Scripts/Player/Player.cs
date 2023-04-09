@@ -30,7 +30,7 @@ public class Player : Character
     private void Start()
     {
         Experience.LevelUp += OnLevelUp;
-        CorrectDetails(LegPosition);
+        CorrectDetails();
         Save();
     }
 

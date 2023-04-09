@@ -44,4 +44,9 @@ public class Head : RobotDetail
     {
         return $"{_visionRange.GetLocalizedString()}: {_scannerRadius}m";
     }
+
+    public override void Accept(IDetailCreator visitor, Transform parent)
+    {
+        visitor.Create(this, parent);
+    }
 }

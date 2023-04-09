@@ -12,7 +12,7 @@ public class LoadingGame : MonoBehaviour
 
     public IEnumerator Start()
     {
-#if UNITY_WEBGL
+#if UNITY_WEBGL && !UNITY_EDITOR
         yield return YandexGamesSdk.Initialize(() =>
         {
             Debug.Log("sdk inited");
@@ -31,13 +31,15 @@ public class LoadingGame : MonoBehaviour
 #endif
 
 
-#if !UNITY_WEBGL
+#if UNITY_EDITOR
         PlayerData playerData = GameStorage.Storage.Load();
         string data = JsonConvert.SerializeObject(playerData);
 
         PlayerPrefs.SetString(PlayerPrefsKeys.PlayerData, data);
         yield return LoadGameAsync();
 #endif
+
+        yield return null;
     }
 
     private IEnumerator LoadGameAsync()

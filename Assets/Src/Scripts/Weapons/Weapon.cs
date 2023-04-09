@@ -105,4 +105,9 @@ public class Weapon : Detail
             _delayBetweenShoot *= Mathf.Pow(AttackSpeedPerLevel, upgradesCount);
         }
     }
+
+    public override void Accept(IDetailCreator creator, Transform parent)
+    {
+        creator.Create(this, parent);
+    }
 }

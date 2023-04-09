@@ -6,7 +6,7 @@ using UnityEngine;
 
 public static class GameStorage
 {
-    public static IStorage Storage { get; private set; } = new YandexCloudStorage();
+    public static IStorage Storage { get; private set; } = new FileStorage();
 }
 
 public class YandexCloudStorage : IStorage
@@ -52,6 +52,9 @@ public class FileStorage : IStorage
 
     public void Save(PlayerData data)
     {
+        string content = JsonConvert.SerializeObject(data);
+        PlayerPrefs.SetString(PlayerPrefsKeys.PlayerData, content);
+
         BinaryFormatter formatter = new BinaryFormatter();
         string path = Application.persistentDataPath + "/playerDetails.dat";
         FileStream stream = new FileStream(path, FileMode.Create);

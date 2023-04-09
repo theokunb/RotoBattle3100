@@ -1,19 +1,29 @@
+using System.Linq;
 using UnityEngine;
 
 public class DisplayWallet : MonoBehaviour
 {
     [SerializeField] private PlayerWallet _playerWallet;
-    [SerializeField] private DisplayCurrency _currencyMetal;
-    [SerializeField] private DisplayCurrency _currencyEnergy;
-    [SerializeField] private DisplayCurrency _currencyFuel;
+    [SerializeField] private DisplayCurrency[] _displayPlaces;
     [SerializeField] private Sprite _metalIcon;
     [SerializeField] private Sprite _energyIcon;
     [SerializeField] private Sprite _fuelIcon;
+
+    private ICurrencyRenderer _currencyRenderer;
+
+    private void Awake()
+    {
+        _currencyRenderer = new CurrencyRenderer(_metalIcon, _energyIcon, _fuelIcon);
+    }
 
     private void OnEnable()
     {
         _playerWallet.ValueChanged += OnCurrencyChanged;
 
+        if (_playerWallet.Wallet != null)
+        {
+            RenderAll();
+        }
     }
 
     private void OnDisable()
@@ -33,25 +43,52 @@ public class DisplayWallet : MonoBehaviour
 
     private void RenderAll()
     {
-        foreach (var currency in _playerWallet.Wallet.GetCurrencies())
+        Currency[] currenciesInWallet = _playerWallet.Wallet.GetCurrencies().ToArray();
+
+        for (int i = 0; i < currenciesInWallet.Length; i++)
         {
-            Render(currency);
+            Render(currenciesInWallet[i], _displayPlaces[i]);
         }
     }
 
-    private void Render(Currency currency)
+    private void Render(Currency currency, DisplayCurrency displayCurrency)
     {
-        if(currency is Metal)
-        {
-            _currencyMetal.Render(_metalIcon, currency as Metal);
-        }
-        else if (currency is Energy)
-        {
-            _currencyEnergy.Render(_energyIcon, currency as Energy);
-        }
-        else if(currency is Fuel)
-        {
-            _currencyFuel.Render(_fuelIcon, currency as Fuel);
-        }
+        currency.Accept(_currencyRenderer, displayCurrency);
     }
+}
+
+public class CurrencyRenderer : ICurrencyRenderer
+{
+    private Sprite _metalSprite;
+    private Sprite _energySprite;
+    private Sprite _fuelSprite;
+
+    public CurrencyRenderer(Sprite metalSprite, Sprite energySprite, Sprite fuelSprite)
+    {
+        _metalSprite = metalSprite;
+        _energySprite = energySprite;
+        _fuelSprite = fuelSprite;
+    }
+
+    public void Render(DisplayCurrency displayCurrency, Metal metal)
+    {
+        displayCurrency.Render(_metalSprite, metal);
+    }
+
+    public void Render(DisplayCurrency displayCurrency, Energy energy)
+    {
+        displayCurrency.Render(_energySprite, energy);
+    }
+
+    public void Render(DisplayCurrency displayCurrency, Fuel fuel)
+    {
+        displayCurrency.Render(_fuelSprite, fuel);
+    }
+}
+
+public interface ICurrencyRenderer
+{
+    void Render(DisplayCurrency displayCurrency, Metal metal);
+    void Render(DisplayCurrency displayCurrency, Energy energy);
+    void Render(DisplayCurrency displayCurrency, Fuel fuel);
 }

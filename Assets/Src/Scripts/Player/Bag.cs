@@ -7,6 +7,7 @@ public class Bag : MonoBehaviour
 {
     private List<DetailDropped> _detailsDropped;
     private Wallet _wallet;
+    private IWalletIncreaser _walletIncreaser => _wallet;
 
     private void Awake()
     {
@@ -21,7 +22,7 @@ public class Bag : MonoBehaviour
 
     public void Put(DroppedCurrency currencyDropped)
     {
-        _wallet.Increase(currencyDropped.Currency);
+        currencyDropped.Currency.Accept(_walletIncreaser);
     }
 
     public IEnumerable<DetailDropped> GetDetails() => _detailsDropped;
