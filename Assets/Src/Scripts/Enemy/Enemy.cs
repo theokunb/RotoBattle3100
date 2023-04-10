@@ -47,6 +47,7 @@ public class Enemy : Character
 
     private void FixedUpdate()
     {
+        StartFreeBie();
         DetectEnemy();
 
         Follow(Target);
@@ -95,6 +96,8 @@ public class Enemy : Character
 
         if (_detectedTarget != null)
         {
+            StopFreeBie();
+
             Armory.Body.transform.LookAt(_detectedTarget.transform);
             Armory.Body.Attack(_detectedTarget);
             EnemyDetected?.Invoke(_detectedTarget);

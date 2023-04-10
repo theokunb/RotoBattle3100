@@ -6587,6 +6587,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eee865abca69e6d4fbefeceb63301358, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _freeBieSpeed: 10
   _legPosition: {fileID: 2127417298}
   Moving:
     m_PersistentCalls:

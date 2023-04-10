@@ -135,6 +135,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 911a9406601284147bac05633f0813fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _freeBieSpeed: 5
   _legPosition: {fileID: 7842299130724231396}
   Moving:
     m_PersistentCalls:
@@ -157,7 +158,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cbf656f629cbca438c5c1b69bb838a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _visionCanvas: {fileID: 0}
 --- !u!114 &7484638206864652310
 MonoBehaviour:
   m_ObjectHideFlags: 0
