@@ -24,27 +24,27 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1116037091328
-    m_Localized: "kolay g\xF6rev"
+    m_Localized: Yeni umut
     m_Metadata:
       m_Items: []
   - m_Id: 1119023435776
-    m_Localized: "Kara Ta\u015Fta G\xFCr\xFClt\xFC"
+    m_Localized: "\u0130mparatorluk Kar\u015F\u0131l\u0131k Veriyor"
     m_Metadata:
       m_Items: []
   - m_Id: 1121896534016
-    m_Localized: Sabotaj
+    m_Localized: "Jedi'\u0131n d\xF6n\xFC\u015F\xFC"
     m_Metadata:
       m_Items: []
   - m_Id: 1125142925312
-    m_Localized: hainlerin yok edilmesi
+    m_Localized: gizli tehdit
     m_Metadata:
       m_Items: []
   - m_Id: 1128838107136
-    m_Localized: "Yeni D\xFC\u015Fmanlar"
+    m_Localized: "klonlar\u0131n sald\u0131r\u0131s\u0131"
     m_Metadata:
       m_Items: []
   - m_Id: 1132009000960
-    m_Localized: "Kara Ta\u015Fta G\xFCr\xFClt\xFC: 2. K\u0131s\u0131m"
+    m_Localized: "Sith'in intikam\u0131"
     m_Metadata:
       m_Items: []
   - m_Id: 6871532343296
@@ -52,6 +52,34 @@ MonoBehaviour:
     m_Metadata:
       m_Items:
       - rid: 2549057753512149002
+  - m_Id: 15962206705192960
+    m_Localized: "\xD6r\xFCmcekler!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15962053994778624
+    m_Localized: "G\xFC\xE7 Uyan\u0131yor"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15962086580326400
+    m_Localized: Son Jedi
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15962118012440576
+    m_Localized: "Skywalker. g\xFCndo\u011Fumu"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15962178439778304
+    m_Localized: "Klon sava\u015Flar\u0131"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15962219644620800
+    m_Localized: haydut bir
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15962229920665600
+    m_Localized: Han Solo
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds:

@@ -2052,6 +2052,10 @@ PrefabInstance:
       propertyPath: _loader
       value: 
       objectReference: {fileID: 403427216}
+    - target: {fileID: 3475672772661074126, guid: 2478e04d2c12c4048ada7b54d1bad6ba, type: 3}
+      propertyPath: _freeBieSpeed
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 3475672772661074127, guid: 2478e04d2c12c4048ada7b54d1bad6ba, type: 3}
       propertyPath: m_RootOrder
       value: 3

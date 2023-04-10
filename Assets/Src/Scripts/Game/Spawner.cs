@@ -5,9 +5,9 @@ using UnityEngine;
 public class Spawner : MonoBehaviour
 {
     private const int AllSpace = 100;
-    private const int PlayerSpawn = 4;
-    private const int StartFreeSpace = 25;
-    private const int EndFreeSpace = 15;
+    private const int PlayerSpawn = 1;
+    private const int StartFreeSpace = 30;
+    private const int EndFreeSpace = 12;
 
     [SerializeField] private Player _player;
     [SerializeField] private LevelCreator _levelCreator;
@@ -53,7 +53,7 @@ public class Spawner : MonoBehaviour
 
     public void PutToStartPosition(Player player, Rectangle platform)
     {
-        var position = new Vector3(platform.Width / 2, 1, platform.Lenght * PlayerSpawn / AllSpace);
+        var position = new Vector3(platform.Width / 2, PlayerSpawn, PlayerSpawn);
         player.transform.position = position;
     }
 

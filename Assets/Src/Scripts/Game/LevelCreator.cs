@@ -5,9 +5,6 @@ public class LevelCreator : MonoBehaviour
 {
     private const float FinishPosition = 0.85f;
 
-    [SerializeField] private Terrain[] _terrains;
-    [SerializeField] private GameObject _boundTemplate;
-    [SerializeField] private Finish _finishTemplate;
     [SerializeField] private GameObject _stand;
     [SerializeField] private float _boundWidth;
     [SerializeField] private float _boundHeight;
@@ -16,27 +13,26 @@ public class LevelCreator : MonoBehaviour
     private int _platformWidth;
     private int _platformLenght;
     private int _platformHeight;
-    private TerrainController _terrain;
+    private TerrainController _terrainController;
 
     public Finish Finish { get; private set; }
-    public TerrainController TerrainController => _terrain;
+    public TerrainController TerrainController => _terrainController;
 
-    private void CreateGround()
+    private void CreateGround(Terrain template)
     {
-        var randomIndex = Random.Range(0, _terrains.Length);
-        var terrain = Instantiate(_terrains[randomIndex]);
-        terrain.terrainData.size = new Vector3(_platformWidth, _platformHeight, _platformLenght);
+        var createdTerrain = Instantiate(template);
+        createdTerrain.terrainData.size = new Vector3(_platformWidth, _platformHeight, _platformLenght);
         _navMesh.BuildNavMesh();
 
-        _terrain = terrain.GetComponent<TerrainController>();
+        _terrainController = createdTerrain.GetComponent<TerrainController>();
     }
 
-    private void CreateBounds()
+    private void CreateBounds(GameObject boundTemplate)
     {
-        var bound1 = Instantiate(_boundTemplate);
-        var bound2 = Instantiate(_boundTemplate);
-        var bound3 = Instantiate(_boundTemplate);
-        var bound4 = Instantiate(_boundTemplate);
+        var bound1 = Instantiate(boundTemplate);
+        var bound2 = Instantiate(boundTemplate);
+        var bound3 = Instantiate(boundTemplate);
+        var bound4 = Instantiate(boundTemplate);
         SetUpBound(bound1,
             new Vector3(_platformWidth / 2, _boundHeight / 2, _boundWidth / 2),
             new Vector3(_platformWidth, _boundHeight, _boundWidth));
@@ -51,9 +47,9 @@ public class LevelCreator : MonoBehaviour
             new Vector3(_boundWidth, _boundHeight, _platformLenght));
     }
 
-    private void CreateFinish()
+    private void CreateFinish(Finish finishTemplate)
     {
-        Finish = Instantiate(_finishTemplate);
+        Finish = Instantiate(finishTemplate);
         Finish.transform.position = new Vector3(_platformWidth / 2, 0, _platformLenght * FinishPosition);
     }
 
@@ -124,17 +120,17 @@ public class LevelCreator : MonoBehaviour
         CreateBoxes(rightSide, size, minHeight, maxHeight);
     }
 
-    public void Create(int platformWidth, int platformLenght, int platformHeight)
+    public void Create(Terrain terrainTemplate, GameObject boundTemplate, Finish finishTemplate, int platformWidth, int platformLenght, int platformHeight)
     {
         _platformWidth = platformWidth;
         _platformHeight = platformHeight;
         _platformLenght = platformLenght;
 
-        CreateGround();
+        CreateGround(terrainTemplate);
         CreateStand(new Vector3(_platformWidth / 2, -platformHeight / 2f - 0.1f, _platformLenght / 2),
             new Vector3(_platformWidth, platformHeight, _platformLenght));
-        CreateBounds();
-        CreateFinish();
+        CreateBounds(boundTemplate);
+        CreateFinish(finishTemplate);
         CreateBackground();
     }
 }

@@ -13,6 +13,9 @@ MonoBehaviour:
   m_Name: Level 3
   m_EditorClassIdentifier: 
   _id: 3
+  _terrain: {fileID: 8354069678262916674, guid: e3179f8f0cc34a541b749bb0e70c36c6, type: 3}
+  _boundTemplate: {fileID: 7016779094596694859, guid: d41e5cc6971638d43aae5ba9598f1266, type: 3}
+  _finishTemplate: {fileID: -194232147711265618, guid: 9f2131d3610bd4a43ad8c7c89cc31c9b, type: 3}
   _title:
     m_TableReference:
       m_TableCollectionName: GUID:54480629967ff544489c64cd0874ee31
@@ -23,31 +26,29 @@ MonoBehaviour:
     m_WaitForCompletion: 0
     m_LocalVariables: []
   _width: 10
-  _lenght: 60
+  _lenght: 43
   _enemies:
   - _enemies:
     - {fileID: 6271963157667777218, guid: abe96811da47fd343aa060a7df375583, type: 3}
-    - {fileID: 6271963157667777218, guid: c09963c0ed59d144ebb7fca3b35df5b5, type: 3}
     - {fileID: 6271963157667777218, guid: abe96811da47fd343aa060a7df375583, type: 3}
   - _enemies:
     - {fileID: 6271963157667777218, guid: c09963c0ed59d144ebb7fca3b35df5b5, type: 3}
+  - _enemies:
+    - {fileID: 6271963157667777218, guid: c09963c0ed59d144ebb7fca3b35df5b5, type: 3}
     - {fileID: 6271963157667777218, guid: c09963c0ed59d144ebb7fca3b35df5b5, type: 3}
   - _enemies:
-    - {fileID: 6271963157667777218, guid: e69e2bfa9cf7e2a498a71ba6cbc3c146, type: 3}
-    - {fileID: 6271963157667777218, guid: 818da7a3682bb4b46951bf88f2f130f4, type: 3}
+    - {fileID: 6271963157667777218, guid: c09963c0ed59d144ebb7fca3b35df5b5, type: 3}
     - {fileID: 6271963157667777218, guid: abe96811da47fd343aa060a7df375583, type: 3}
-  - _enemies:
-    - {fileID: 6271963157667777218, guid: 818da7a3682bb4b46951bf88f2f130f4, type: 3}
-    - {fileID: 6271963157667777218, guid: 818da7a3682bb4b46951bf88f2f130f4, type: 3}
+    - {fileID: 6271963157667777218, guid: c09963c0ed59d144ebb7fca3b35df5b5, type: 3}
   _rewardCountInDay: 3
   _icon: {fileID: 21300000, guid: 679a6cbdf5976d74caa86cb9bc2b651e, type: 3}
   _reward:
   - _currencyType: 0
-    _count: 160
+    _count: 70
   - _currencyType: 1
-    _count: 200
+    _count: 110
   - _currencyType: 2
-    _count: 50
+    _count: 90
   references:
     version: 2
     RefIds: []

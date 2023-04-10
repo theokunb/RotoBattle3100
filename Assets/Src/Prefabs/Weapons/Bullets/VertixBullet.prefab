@@ -130,6 +130,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8456580722608940173, guid: f351cb26f8363464d9e397e20a77a550, type: 3}
+      propertyPath: TrailModule.colorOverLifetime.maxGradient.atime2
+      value: 61102
+      objectReference: {fileID: 0}
     - target: {fileID: 8456580722608940175, guid: f351cb26f8363464d9e397e20a77a550, type: 3}
       propertyPath: m_Name
       value: VertixEffect

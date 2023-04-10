@@ -7,6 +7,9 @@ using UnityEngine.Localization;
 public class Level : ScriptableObject
 {
     [SerializeField] private int _id;
+    [SerializeField] private Terrain _terrain;
+    [SerializeField] private GameObject _boundTemplate;
+    [SerializeField] private Finish _finishTemplate;
     [SerializeField] private LocalizedString _title;
     [SerializeField] private int _width;
     [SerializeField] private int _lenght;
@@ -16,6 +19,9 @@ public class Level : ScriptableObject
     [SerializeField] private List<Price> _reward;
 
     public int Id => _id;
+    public Terrain Terrain => _terrain;
+    public GameObject Bound => _boundTemplate;
+    public Finish Finish => _finishTemplate;
     public string Title => _title.GetLocalizedString();
     public Pack[] Enemies => _enemies;
     public int Width => _width;

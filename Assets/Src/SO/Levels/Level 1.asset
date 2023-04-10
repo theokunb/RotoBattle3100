@@ -13,6 +13,9 @@ MonoBehaviour:
   m_Name: Level 1
   m_EditorClassIdentifier: 
   _id: 1
+  _terrain: {fileID: 8354069678262916674, guid: e3179f8f0cc34a541b749bb0e70c36c6, type: 3}
+  _boundTemplate: {fileID: 7016779094596694859, guid: d41e5cc6971638d43aae5ba9598f1266, type: 3}
+  _finishTemplate: {fileID: -194232147711265618, guid: 9f2131d3610bd4a43ad8c7c89cc31c9b, type: 3}
   _title:
     m_TableReference:
       m_TableCollectionName: GUID:54480629967ff544489c64cd0874ee31
@@ -23,17 +26,16 @@ MonoBehaviour:
     m_WaitForCompletion: 0
     m_LocalVariables: []
   _width: 10
-  _lenght: 50
+  _lenght: 37
   _enemies:
   - _enemies:
     - {fileID: 6271963157667777218, guid: e69e2bfa9cf7e2a498a71ba6cbc3c146, type: 3}
     - {fileID: 6271963157667777218, guid: e69e2bfa9cf7e2a498a71ba6cbc3c146, type: 3}
   - _enemies:
-    - {fileID: 6271963157667777218, guid: e69e2bfa9cf7e2a498a71ba6cbc3c146, type: 3}
-    - {fileID: 6271963157667777218, guid: e69e2bfa9cf7e2a498a71ba6cbc3c146, type: 3}
-    - {fileID: 6271963157667777218, guid: e69e2bfa9cf7e2a498a71ba6cbc3c146, type: 3}
+    - {fileID: 6271963157667777218, guid: abe96811da47fd343aa060a7df375583, type: 3}
+    - {fileID: 6271963157667777218, guid: abe96811da47fd343aa060a7df375583, type: 3}
   - _enemies:
-    - {fileID: 6271963157667777218, guid: c09963c0ed59d144ebb7fca3b35df5b5, type: 3}
+    - {fileID: 6271963157667777218, guid: abe96811da47fd343aa060a7df375583, type: 3}
   _rewardCountInDay: 3
   _icon: {fileID: 21300000, guid: 35cc488c0091ff84f8e35d7862412980, type: 3}
   _reward:
@@ -41,6 +43,8 @@ MonoBehaviour:
     _count: 30
   - _currencyType: 1
     _count: 40
+  - _currencyType: 2
+    _count: 25
   references:
     version: 2
     RefIds: []

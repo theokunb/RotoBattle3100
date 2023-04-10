@@ -1,21 +1,21 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.InputSystem;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class DetailView : MonoBehaviour
+public class DetailView : MonoBehaviour, IPointerEnterHandler
 {
     [SerializeField] private Button _button;
     [SerializeField] private Image _image;
 
     public event Action<DetailView> ButtonClicked;
+    public event Action<DetailView> ButtonHighlited;
 
     public IEnumerable<Currency> FullPrice { get; private set; }
     public Detail Detail { get; private set; }
     public Image Image => _image;
     public DetailShop DetailShop { get; private set; }
-
 
     private void OnEnable()
     {
@@ -38,5 +38,10 @@ public class DetailView : MonoBehaviour
     private void OnButtonClicked()
     {
         ButtonClicked?.Invoke(this);
+    }
+
+    public void OnPointerEnter(PointerEventData eventData)
+    {
+        ButtonHighlited?.Invoke(this);
     }
 }

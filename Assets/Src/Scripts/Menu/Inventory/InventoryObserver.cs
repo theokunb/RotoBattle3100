@@ -18,7 +18,6 @@ public class InventoryObserver : MonoBehaviour
     public void ShowItems(DetailType detailType)
     {
         ClearView();
-
         var details = GetAvailableDetails(detailType);
 
         foreach (var detailShop in details)
@@ -26,6 +25,7 @@ public class InventoryObserver : MonoBehaviour
             var detailView = Instantiate(_template, _itemsContainer.transform);
             detailView.Render(detailShop);
             detailView.ButtonClicked += OnItemClicked;
+            detailView.ButtonHighlited += DetailView_ButtonHighlited;
         }
     }
 
@@ -77,5 +77,11 @@ public class InventoryObserver : MonoBehaviour
 
         _title.text = detail.Title;
         _description.text = descriptionBuilder.ToString();
+    }
+
+    private void DetailView_ButtonHighlited(DetailView detailView)
+    {
+        var detail = detailView.DetailShop.GetComponent<Detail>();
+        DisplayInfo(detail);
     }
 }
