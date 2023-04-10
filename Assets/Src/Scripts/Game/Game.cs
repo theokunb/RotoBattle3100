@@ -79,6 +79,7 @@ public class Game : MonoBehaviour, ISceneLoadHandler<int>
     {
         foreach(var detail in bag.GetDetails())
         {
+            _player.AddItem(detail.GetDetail().Id);
             detail.Unlock();
         }
 

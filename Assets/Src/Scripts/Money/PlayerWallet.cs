@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
+[RequireComponent(typeof(Player))]
 public class PlayerWallet : MonoBehaviour
 {
     private Wallet _wallet;
@@ -22,6 +23,9 @@ public class PlayerWallet : MonoBehaviour
     {
         Pay(item.FullPrice);
         item.Detail.Unlock();
+        
+        Player player = GetComponent<Player>();
+        player.AddItem(item.Detail.Id);
 
         GameStorage.Storage.Save(new PlayerData(GetComponent<Player>()));
     }

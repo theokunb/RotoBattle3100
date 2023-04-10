@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class PrimaryPlayerCreator : MonoBehaviour
@@ -19,6 +20,14 @@ public class PrimaryPlayerCreator : MonoBehaviour
         _player.SetUpgrade(new Upgrade());
         _player.SetProgress(new PlayerProgress());
         _playerWallet.SetWallet(new Wallet());
+
+        _player.SetUnlockedItems(new List<long>()
+        {
+            _defaultBody.Id,
+            _defaultHead.Id,
+            _defaultWeapon.Id,
+            _defaultLeg.Id
+        });
 
         foreach (var weaponPlace in _player.WeaponPlaces)
         {

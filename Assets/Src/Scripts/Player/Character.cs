@@ -28,13 +28,13 @@ public class Character : MonoBehaviour
         }
     }
 
-    public IEnumerable<DetailData> GetAllDetails()
+    public IEnumerable<long> GetAllDetails()
     {
         var details = GetComponentsInChildren<Detail>();
 
         foreach (var detail in details)
         {
-            yield return new DetailData(detail.Id);
+            yield return detail.Id;
         }
     }
 

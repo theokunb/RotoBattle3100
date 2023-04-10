@@ -1,8 +1,11 @@
 using System;
+using System.Collections.Generic;
 
 public class Player : Character
 {
     private const int ExtraHealthPerLevel = 300;
+
+    private List<long> _unlockedItems;
 
     public event Action HealthUpgraded;
     public event Action ShieldUpgraded;
@@ -13,6 +16,8 @@ public class Player : Character
     public Upgrade Upgrade { get; private set; }
     public PlayerProgress Progress { get; private set; }
     public Experience Experience { get; private set; }
+    public IEnumerable<long> UnlockedItems => _unlockedItems;
+
 
     private void OnEnable()
     {
@@ -59,6 +64,16 @@ public class Player : Character
         Progress = playerProgress;
     }
 
+    public void SetUnlockedItems(IEnumerable<long> unlockedItems)
+    {
+        _unlockedItems = new List<long>();
+
+        foreach(var itemId in unlockedItems)
+        {
+            _unlockedItems.Add(itemId);
+        }
+    }
+
     public void AddExperience(Enemy enemy)
     {
         Experience.AddExp(enemy);
@@ -90,6 +105,11 @@ public class Player : Character
         int healthCount = Upgrade.GetUpgradesCount(Upgrades.Health);
 
         return base.CalculateHealth() + healthCount * ExtraHealthPerLevel;
+    }
+
+    public void AddItem(long itemId)
+    {
+        _unlockedItems?.Add(itemId);
     }
 
     private void OnLevelUp()
