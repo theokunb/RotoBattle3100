@@ -129,6 +129,10 @@ MonoBehaviour:
     m_Localized: Increases movement and attack speed by 10%
     m_Metadata:
       m_Items: []
+  - m_Id: 16734648037969920
+    m_Localized: Goods are out of stock, we are waiting for new deliveries
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds:

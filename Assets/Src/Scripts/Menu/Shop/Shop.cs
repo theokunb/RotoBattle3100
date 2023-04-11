@@ -9,15 +9,21 @@ public class Shop : MonoBehaviour
     [SerializeField] private GameObject _container;
     [SerializeField] private ItemsPull _items;
     [SerializeField] private BuyWindow _buyWindow;
+    [SerializeField] private GameObject _emptyShopTemplate;
 
     private Type[] _detailTypes = { typeof(Head), typeof(Body), typeof(Leg), typeof(Weapon) };
     private List<ItemsCollectionView> _collections;
-
+    private List<Detail> _details => _items.Details
+            .Select(element => element.GetComponent<DetailStatus>())
+            .Where(element => element.IsAvailable == false && element.CanBuyInShop == true)
+            .Select(element => element.GetComponent<Detail>())
+            .ToList();
 
     private void Awake()
     {
         _collections = new List<ItemsCollectionView>();
     }
+
     private void OnEnable()
     {
         Subscribe();
@@ -33,15 +39,15 @@ public class Shop : MonoBehaviour
 
     private void Start()
     {
-        var items = _items.Details
-            .Select(element => element.GetComponent<DetailStatus>())
-            .Where(element => element.IsAvailable == false && element.CanBuyInShop == true)
-            .Select(element => element.GetComponent<Detail>())
-            .ToList();
+        if(_details.Count == 0)
+        {
+            Instantiate(_emptyShopTemplate, _container.transform);
+            return;
+        }
 
         foreach(var type in _detailTypes)
         {
-            var selectedItems = items
+            var selectedItems = _details
                 .TakeByType(type)
                 .Select(element => element.GetComponent<DetailShop>())
                 .ToList();
@@ -80,8 +86,28 @@ public class Shop : MonoBehaviour
         {
             return;
         }
-        
+
+        var collection = item.GetComponentInParent<ItemsCollectionView>();
+        collection.Remove(item);
         Destroy(item.gameObject);
+        ClearEmptyCollections();
+    }
+
+    private void ClearEmptyCollections()
+    {
+        foreach(var collection in _collections)
+        {
+            if(collection.Count == 0)
+            {
+                Destroy(collection.gameObject);
+            }
+        }
+
+        if (_details.Count == 0)
+        {
+            Instantiate(_emptyShopTemplate, _container.transform);
+            return;
+        }
     }
 }
 

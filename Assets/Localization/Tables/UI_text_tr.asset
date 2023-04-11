@@ -129,6 +129,10 @@ MonoBehaviour:
     m_Localized: "Hareket ve sald\u0131r\u0131 h\u0131z\u0131n\u0131 %10 art\u0131r\u0131r"
     m_Metadata:
       m_Items: []
+  - m_Id: 16734648037969920
+    m_Localized: "\xDCr\xFCnler stokta yok, yeni teslimatlar bekliyoruz"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds:

@@ -13,7 +13,6 @@ public class InventoryPanel : MonoBehaviour
     [SerializeField] private Button _weaponsButton;
     [SerializeField] private WeaponManager _weaponManager;
     [SerializeField] private Button _playerWeapons;
-    [SerializeField] private ButtonActivator _buttonActivator;
 
     private CameraController _cameraController;
     private InventoryObserver _inventoryObserver;
@@ -47,7 +46,6 @@ public class InventoryPanel : MonoBehaviour
 
     private void OnBackButtonClicked()
     {
-        _buttonActivator.ResetAll();
         _inventoryObserver.ClearView();
         _scrollView.SetActive(false);
         _cameraController.ResetPosition();

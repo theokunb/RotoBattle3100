@@ -16,6 +16,8 @@ public class ItemsCollectionView : MonoBehaviour
 
     public event Action<DetailView> ItemSelected;
 
+    public int Count => _items.Count;
+
     private void OnEnable()
     {
         Subscribe();
@@ -79,5 +81,10 @@ public class ItemsCollectionView : MonoBehaviour
     private void OnLabelStringChanged(string value)
     {
         _labelText.text = value;
+    }
+
+    public void Remove(DetailView detailView)
+    {
+        _items.Remove(detailView);
     }
 }

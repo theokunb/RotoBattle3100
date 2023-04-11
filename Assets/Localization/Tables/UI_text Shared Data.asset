@@ -123,6 +123,10 @@ MonoBehaviour:
     m_Key: ExtraSpeedDescription
     m_Metadata:
       m_Items: []
+  - m_Id: 16734648037969920
+    m_Key: EmpyShop
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
