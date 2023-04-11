@@ -2,7 +2,6 @@ using System.Collections;
 using UnityEngine;
 using DG.Tweening;
 
-[RequireComponent(typeof(BoxCollider))]
 public class DetailDropped : MonoBehaviour
 {
     private Detail _detail;

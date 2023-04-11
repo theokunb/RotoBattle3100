@@ -66,7 +66,7 @@ public class Spawner : MonoBehaviour
             if (randomReward != null)
             {
                 randomReward.transform.position = new Vector3(character.transform.position.x,
-                    character.transform.GetComponent<BoxCollider>().size.y,
+                    character.transform.GetComponent<CapsuleCollider>().height,
                     character.transform.position.z);
             }
         }

@@ -2,23 +2,15 @@ using DG.Tweening;
 using System.Collections;
 using UnityEngine;
 
-[RequireComponent(typeof(BoxCollider))]
 public class DroppedCurrency : MonoBehaviour
 {
     [SerializeField] private CurrencyType _currencyType;
     [SerializeField] private int _minValue;
     [SerializeField] private int _maxValue;
 
-    private BoxCollider _boxCollider;
     private Price _price;
     private Coroutine _animationTask;
     public Currency Currency => _price.ToCurrency();
-
-    private void Awake()
-    {
-        _boxCollider = GetComponent<BoxCollider>();
-        _boxCollider.isTrigger = true;
-    }
 
     private void Start()
     {

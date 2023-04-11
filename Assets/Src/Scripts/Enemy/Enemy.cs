@@ -1,11 +1,8 @@
 using System;
 using System.Collections.Generic;
-using System.Drawing;
 using UnityEngine;
 using UnityEngine.AI;
-using UnityEngine.TextCore.Text;
 
-[RequireComponent(typeof(BoxCollider))]
 [RequireComponent(typeof(NavMeshAgent))]
 [RequireComponent(typeof(Reward))]
 public class Enemy : Character
@@ -55,8 +52,8 @@ public class Enemy : Character
 
     public Enemy Create(Vector2 position)
     {
-        var collider = GetComponent<BoxCollider>();
-        Vector3 spawnPosition = new Vector3(position.x, collider.size.y / 2, position.y);
+        var collider = GetComponent<CapsuleCollider>();
+        Vector3 spawnPosition = new Vector3(position.x, collider.radius / 2, position.y);
 
         return Instantiate(this, spawnPosition, Quaternion.identity);
     }
@@ -68,7 +65,7 @@ public class Enemy : Character
 
     public override int CalculateHealth()
     {
-        return base.CalculateHealth() / 2;
+        return (base.CalculateHealth() / 2);
     }
 
     public override void SuspendMovement()

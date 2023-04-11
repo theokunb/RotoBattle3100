@@ -33,6 +33,30 @@ public class PlayerData
     public Upgrade GetUpgrades() => new Upgrade(Upgrades.ToArray());
     public PlayerProgress GetProgress() => new PlayerProgress(CompletedLevels, LastGamedDay);
 
+    public void CorrectingData(PrimaryPlayerCreator creator)
+    {
+        if(PlayerLevel == 0)
+        {
+            FillExperience(creator.CreateDefaultExperience());
+        }
+        if(EquipedDetails == null)
+        {
+            FillEquipedDetails(creator.CreateDefaultDetails());
+        }
+        if(UnlockedDetails== null)
+        {
+            FillUnlockedDetails(creator.CreateDefaultDetails());
+        }
+        if(Upgrades == null)
+        {
+            FillUpgrades(creator.CreateDefaultUpgrades());
+        }
+        if(Upgrades.Count >= PlayerLevel)
+        {
+            Upgrades.RemoveRange(PlayerLevel, Upgrades.Count - 1);
+        }
+    }
+
     private void FillEquipedDetails(IEnumerable<long> detailsId)
     {
         EquipedDetails = new List<long>();

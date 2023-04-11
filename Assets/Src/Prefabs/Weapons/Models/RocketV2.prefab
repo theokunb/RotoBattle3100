@@ -700,7 +700,7 @@ MonoBehaviour:
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
-  _damage: 400
+  _damage: 350
   _maxDelayBetweenShoot: 0.7
   _minDelayBetweenShoot: 0.6
   _shootPlace: {fileID: 6101697449490679859}

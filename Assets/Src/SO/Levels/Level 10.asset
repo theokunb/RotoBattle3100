@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: 10
   _terrain: {fileID: 8354069678262916674, guid: e3179f8f0cc34a541b749bb0e70c36c6, type: 3}
-  _boundTemplate: {fileID: 7016779094596694859, guid: d41e5cc6971638d43aae5ba9598f1266, type: 3}
+  _boundTemplate: {fileID: 3505604342049137824, guid: a73becd4cbcc54140aabe10af2457066, type: 3}
   _finishTemplate: {fileID: -194232147711265618, guid: 9f2131d3610bd4a43ad8c7c89cc31c9b, type: 3}
   _title:
     m_TableReference:

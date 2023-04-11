@@ -55,14 +55,14 @@ public class PlayerLoader : MonoBehaviour
 
     private void MakePlayer(string json)
     {
-        if (json == string.Empty || json == "{}" || json == "null")
+        PlayerData playerData = JsonConvert.DeserializeObject<PlayerData>(json);
+
+        if(playerData == null)
         {
-            _primaryCreator.CreateDefaultPlayer();
+            playerData= new PlayerData();
         }
-        else
-        {
-            PlayerData playerData = JsonConvert.DeserializeObject<PlayerData>(json);
-            LoadPlayer(playerData);
-        }
+
+        playerData.CorrectingData(_primaryCreator);
+        LoadPlayer(playerData);
     }
 }

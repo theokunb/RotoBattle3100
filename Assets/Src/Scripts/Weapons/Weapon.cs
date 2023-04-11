@@ -64,7 +64,7 @@ public class Weapon : Detail
         else
         {
             bullet.transform.position = _shootPlace.position;
-            bullet.transform.LookAt(target.transform);
+            bullet.transform.rotation = transform.rotation;
             bullet.gameObject.SetActive(true);
             _weaponSound.Play();
         }

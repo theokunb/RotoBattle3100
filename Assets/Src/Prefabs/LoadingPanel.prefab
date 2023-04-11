@@ -239,11 +239,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _progress: {fileID: 7984908491768718384}
   _wallpapers:
-  - {fileID: 21300000, guid: 0e2114bd98dedc242b7e6af710957686, type: 3}
-  - {fileID: 21300000, guid: d635a9c7efd725944a0a7cb9a1a7f331, type: 3}
-  - {fileID: 21300000, guid: f086488ee5cd2d141bad91815d7b7bcf, type: 3}
-  - {fileID: 21300000, guid: 49ece3b2dd81bd741a3c04b00dbf1b20, type: 3}
-  - {fileID: 21300000, guid: 0b24e9c5b15b4f04b81fc531baf59fa9, type: 3}
+  - {fileID: 21300000, guid: 5571c2f6fa6b8294c874c7b6243f4810, type: 3}
+  - {fileID: 21300000, guid: e1627411688c8c944b570d5ed66a495a, type: 3}
+  - {fileID: 21300000, guid: 95c5d15084445fb4baf3546d918ea3ee, type: 3}
+  - {fileID: 21300000, guid: 71909931ed89b17468408fce2fdaced1, type: 3}
+  - {fileID: 21300000, guid: a29d25cf66e9cd849917f423dd5e8409, type: 3}
+  - {fileID: 21300000, guid: dd534346b8ff8e74ebb6ce6f4ba4e9a7, type: 3}
+  - {fileID: 21300000, guid: 66a4ccbf38f01c849ad7474d9c960eaf, type: 3}
+  - {fileID: 21300000, guid: 4e5f277af52b53c4c88ac1b0e8924871, type: 3}
 --- !u!114 &7984908491331549324
 MonoBehaviour:
   m_ObjectHideFlags: 0

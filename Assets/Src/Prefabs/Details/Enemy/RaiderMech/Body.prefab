@@ -528,7 +528,7 @@ MonoBehaviour:
     m_WaitForCompletion: 0
     m_LocalVariables: []
   _upperPlaceOfDetail: {fileID: 1465746370476179007}
-  _bonusHealth: 400
+  _bonusHealth: 490
   _bonusHealthDescription:
     m_TableReference:
       m_TableCollectionName: 

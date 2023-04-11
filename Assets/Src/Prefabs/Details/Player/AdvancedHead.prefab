@@ -83,7 +83,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 384fbedb2df7d71449ce05d6a354f625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _isAvailable: 1
+  _isAvailable: 0
   _inShop: 1
 --- !u!114 &4537311147865895099
 MonoBehaviour:
@@ -148,7 +148,7 @@ MonoBehaviour:
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
-  _scannerRadius: 5.5
+  _scannerRadius: 6.2
   _visionRange:
     m_TableReference:
       m_TableCollectionName: GUID:6ae1e96e9a3d4a142980cf0984613658

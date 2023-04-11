@@ -198,7 +198,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _lifeTime: 2
-  _radius: 3.5
+  _radius: 4
   _explosion: {fileID: 7143800565156231911, guid: beace23eb016779439493c0cf531751c, type: 3}
 --- !u!54 &227460686020420761
 Rigidbody:
