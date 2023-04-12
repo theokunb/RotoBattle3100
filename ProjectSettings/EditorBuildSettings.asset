@@ -29,6 +29,18 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/GUI Kit Casual Game/Scenes/DemoScene.unity
     guid: 78addc77d730f4f38a4a7d5e73530376
+  - enabled: 1
+    path: Assets/RPG_FPS_game_assets_industrial/Assets_showcase_scene.unity
+    guid: a8f7c31154bcc5e409be7f1bb14f0b08
+  - enabled: 1
+    path: Assets/RPG_FPS_game_assets_industrial/Map_v2.unity
+    guid: 1d35c8ff8df44934ab0d5619746c0699
+  - enabled: 1
+    path: Assets/RPG_FPS_game_assets_industrial/Map_v1.unity
+    guid: 5a463281e6e238742a45430f11e82829
+  - enabled: 1
+    path: Assets/RoofTop_SafeHouse/RTSH.unity
+    guid: eeabfdba185b5434a9eebab754a9ac66
   m_configObjects:
     com.unity.addressableassets: {fileID: 11400000, guid: 0526716e467de8a45b07aa4fd0ad7610, type: 2}
     com.unity.localization.settings: {fileID: 11400000, guid: 332fa90abbd347945a7c53ede1a3cc3f, type: 2}
