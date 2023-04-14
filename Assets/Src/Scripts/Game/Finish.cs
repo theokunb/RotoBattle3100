@@ -1,5 +1,4 @@
 using System;
-using System.Collections;
 using UnityEngine;
 
 public class Finish : MonoBehaviour
@@ -7,61 +6,27 @@ public class Finish : MonoBehaviour
     [SerializeField] private GameObject _door;
     [SerializeField] private float _doorSpeed = 2;
 
-    private Coroutine _doorTask;
-    private float _openedPosition;
-    private float _closedPosition;
+    private Animator _animator;
 
     public event Action<Finish> LevelEnded;
 
     private void Start()
     {
-        _closedPosition = _door.transform.localScale.y / 2;
-        _openedPosition = -_door.transform.localScale.y / 2;
+        _animator = GetComponent<Animator>();
     }
 
     public void OpenDoor()
     {
-        if(_doorTask == null)
-        {
-            _doorTask = StartCoroutine(OpenDoorTask());
-        }
-        else
-        {
-            StopCoroutine(_doorTask);
-            _doorTask = StartCoroutine(OpenDoorTask());
-        }
+        _animator.SetTrigger(SpaceShipAnimationController.Params.Open);
     }
 
     public void CloseDoor()
     {
-        if(_doorTask == null)
-        {
-            _doorTask = StartCoroutine(CloseDoorTask());
-        }
-        else
-        {
-            StopCoroutine(_doorTask);
-            _doorTask = StartCoroutine(CloseDoorTask());
-        }
+        _animator.SetTrigger(SpaceShipAnimationController.Params.Close);
     }
 
-    private IEnumerator OpenDoorTask()
+    public void OnClosed()
     {
-        while (_door.transform.position.y > _openedPosition)
-        {
-            _door.transform.Translate(-_door.transform.up * _doorSpeed * Time.deltaTime);
-            yield return null;
-        }
-    }
-
-    private IEnumerator CloseDoorTask()
-    {
-        while (_door.transform.position.y < _closedPosition)
-        {
-            _door.transform.Translate(_door.transform.up * _doorSpeed * Time.deltaTime);
-            yield return null;
-        }
-
         LevelEnded?.Invoke(this);
     }
 }

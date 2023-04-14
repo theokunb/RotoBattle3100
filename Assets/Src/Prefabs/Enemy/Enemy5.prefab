@@ -129,7 +129,7 @@ MonoBehaviour:
       m_Calls: []
   _newLeg: {fileID: -9041044160585038950, guid: 155eaf15f6384224894af28e932177a5, type: 3}
   _newBody: {fileID: 6726554158069200943, guid: c327af47a035bdb43b0eb1a1f557a863, type: 3}
-  _newHead: {fileID: 7777228163648907829, guid: 9643c8644bf51654aa14b8ab052a7eb1, type: 3}
+  _newHead: {fileID: 4537311147865895096, guid: 2a760adf58e7d2b49a933e24163d2ccc, type: 3}
   _newWeapons:
   - {fileID: 3958939098601930271, guid: 89b667814433d324f8234287f8e5f377, type: 3}
   - {fileID: 6101697449829525568, guid: d2cf8dd9f128cff4fbbdac6c12366dc1, type: 3}
