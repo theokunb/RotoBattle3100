@@ -39,7 +39,7 @@ public class PlayerData
         {
             FillExperience(creator.CreateDefaultExperience());
         }
-        if(EquipedDetails == null)
+        if(EquipedDetails == null || EquipedDetails.Count == 0)
         {
             FillEquipedDetails(creator.CreateDefaultDetails());
         }

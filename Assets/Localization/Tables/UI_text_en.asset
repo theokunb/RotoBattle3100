@@ -133,6 +133,18 @@ MonoBehaviour:
     m_Localized: Goods are out of stock, we are waiting for new deliveries
     m_Metadata:
       m_Items: []
+  - m_Id: 18348854956953600
+    m_Localized: Leaderboard
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18363454435790848
+    m_Localized: no name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18364965509304320
+    m_Localized: error getting leaderboard
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds:

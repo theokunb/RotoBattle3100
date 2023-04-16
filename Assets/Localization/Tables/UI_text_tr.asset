@@ -133,6 +133,18 @@ MonoBehaviour:
     m_Localized: "\xDCr\xFCnler stokta yok, yeni teslimatlar bekliyoruz"
     m_Metadata:
       m_Items: []
+  - m_Id: 18348854956953600
+    m_Localized: "Liderler S\u0131ralamas\u0131"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18363454435790848
+    m_Localized: isimsiz
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18364965509304320
+    m_Localized: "puan tablosu al\u0131n\u0131rken hata olu\u015Ftu"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds:

@@ -17,7 +17,7 @@ public class PlayerLoader : MonoBehaviour
         UnlockDetails(_player.UnlockedItems);
     }
 
-    public void LoadPlayer(PlayerData playerData)
+    private void SetupPlayer(PlayerData playerData)
     {
         foreach (var detailData in playerData.EquipedDetails)
         {
@@ -29,14 +29,15 @@ public class PlayerLoader : MonoBehaviour
         _player.SetUpgrade(playerData.GetUpgrades());
         _player.GetComponent<PlayerWallet>().SetWallet(playerData.GetWallet());
         _player.SetProgress(playerData.GetProgress());
-        _player.SetUnlockedItems(playerData.UnlockedDetails);
+        _player.SetUnlockedItems(playerData.UnlockedDetails.Distinct());
     }
 
     private void UnlockDetails(IEnumerable<long> detailsId)
     {
-        foreach(var id in detailsId)
+        foreach(long id in detailsId)
         {
-            _itemsPull.Details.Where(detail => detail.Id == id).FirstOrDefault()?.Unlock();
+            Detail detail = _itemsPull.Details.Where(detail => detail.Id == id).FirstOrDefault();
+            detail?.Unlock();
         }
     }
 
@@ -63,6 +64,6 @@ public class PlayerLoader : MonoBehaviour
         }
 
         playerData.CorrectingData(_primaryCreator);
-        LoadPlayer(playerData);
+        SetupPlayer(playerData);
     }
 }

@@ -127,6 +127,18 @@ MonoBehaviour:
     m_Key: EmpyShop
     m_Metadata:
       m_Items: []
+  - m_Id: 18348854956953600
+    m_Key: LeaderboardKey
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18363454435790848
+    m_Key: UnknownNameKey
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18364965509304320
+    m_Key: LeaderboardError
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

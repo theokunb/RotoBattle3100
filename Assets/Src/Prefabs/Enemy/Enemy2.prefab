@@ -127,7 +127,7 @@ MonoBehaviour:
   Moving:
     m_PersistentCalls:
       m_Calls: []
-  _newLeg: {fileID: 6468119451863120787, guid: c33599f2f7157e542afd98e5106274c7, type: 3}
+  _newLeg: {fileID: -1305366775570928116, guid: 353d2d4f815e4c04aae6ac0b9e466e42, type: 3}
   _newBody: {fileID: 2236250299207672062, guid: cca27a0ac32e17948850d5d0473742c9, type: 3}
   _newHead: {fileID: 8123509787124463500, guid: 6878c8021b164754ca0bdb61f9ad6fef, type: 3}
   _newWeapons:

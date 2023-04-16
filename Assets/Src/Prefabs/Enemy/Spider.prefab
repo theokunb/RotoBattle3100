@@ -170,7 +170,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e43e6de3e976c6e4496f265e13e5b918, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _dropItems: {fileID: 11400000, guid: 926bc17bf908ac34fa75afcab2e79537, type: 2}
+  _dropItems: {fileID: 11400000, guid: 5f7fd501e5dd6e2459040f084b6dde10, type: 2}
   _currencyPull: {fileID: 11400000, guid: c0ba0b8ba7e6cf74bbbc7b6c3fb99487, type: 2}
 --- !u!114 &-2802965568556278828
 MonoBehaviour:

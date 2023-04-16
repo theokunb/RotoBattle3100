@@ -4,7 +4,6 @@ using UnityEngine;
 public class Finish : MonoBehaviour
 {
     [SerializeField] private GameObject _door;
-    [SerializeField] private float _doorSpeed = 2;
 
     private Animator _animator;
 

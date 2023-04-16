@@ -47,18 +47,18 @@ MonoBehaviour:
     m_LocalVariables: []
   _enemies:
   - _enemies:
-    - {fileID: 6271963157667777218, guid: 4e8a3c410100a2448843860bb18e8ac6, type: 3}
+    - {fileID: 6271963157667777218, guid: 818da7a3682bb4b46951bf88f2f130f4, type: 3}
   - _enemies:
-    - {fileID: 6271963157667777218, guid: 72f72a3cc7460744a8c0f3e6f53b9c08, type: 3}
-    - {fileID: 6271963157667777218, guid: 4e8a3c410100a2448843860bb18e8ac6, type: 3}
-    - {fileID: 6271963157667777218, guid: 72f72a3cc7460744a8c0f3e6f53b9c08, type: 3}
+    - {fileID: 6271963157667777218, guid: f1d1e6a52cd6328409e66c63ef2a4630, type: 3}
+    - {fileID: 6271963157667777218, guid: 6e0d7d5ec258fb846b6821873625510d, type: 3}
+    - {fileID: 6271963157667777218, guid: f1d1e6a52cd6328409e66c63ef2a4630, type: 3}
   - _enemies:
     - {fileID: 6271963157667777218, guid: 6e0d7d5ec258fb846b6821873625510d, type: 3}
-    - {fileID: 6271963157667777218, guid: 4e8a3c410100a2448843860bb18e8ac6, type: 3}
+    - {fileID: 6271963157667777218, guid: 818da7a3682bb4b46951bf88f2f130f4, type: 3}
     - {fileID: 6271963157667777218, guid: 6e0d7d5ec258fb846b6821873625510d, type: 3}
   - _enemies:
     - {fileID: 6271963157667777218, guid: 818da7a3682bb4b46951bf88f2f130f4, type: 3}
-    - {fileID: 6271963157667777218, guid: 4e8a3c410100a2448843860bb18e8ac6, type: 3}
+    - {fileID: 6271963157667777218, guid: f1d1e6a52cd6328409e66c63ef2a4630, type: 3}
     - {fileID: 6271963157667777218, guid: 818da7a3682bb4b46951bf88f2f130f4, type: 3}
   _rewardCountInDay: 3
   _icon: {fileID: 21300000, guid: e26c1819effdc8d4f947e3b384ecdb46, type: 3}

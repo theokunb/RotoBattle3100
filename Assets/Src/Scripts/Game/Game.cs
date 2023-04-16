@@ -70,7 +70,10 @@ public class Game : MonoBehaviour, ISceneLoadHandler<int>
 
     private void Save()
     {
-        GameStorage.Storage.Save(new PlayerData(_player));
+        PlayerData playerData = new PlayerData(_player);
+
+        GameStorage.Storage.Save(playerData);
+        GameStorage.Leaderboard.Record(playerData);
     }
 
     private void AddRewards(Bag bag, IEnumerable<Currency> levelReward)

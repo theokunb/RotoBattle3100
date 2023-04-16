@@ -30,4 +30,10 @@ public class SoundController : MonoBehaviour
             PlayerPrefs.SetFloat(PlayerPrefsKeys.Volume, value);
         }
     }
+
+    public float GetVolume()
+    {
+        float value = PlayerPrefs.GetFloat(PlayerPrefsKeys.Volume);
+        return value;
+    }
 }

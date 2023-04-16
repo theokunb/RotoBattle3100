@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 public class Player : Character
 {
@@ -36,7 +37,6 @@ public class Player : Character
     {
         Experience.LevelUp += OnLevelUp;
         CorrectDetails();
-        Save();
     }
 
     public void Save()
@@ -68,7 +68,7 @@ public class Player : Character
     {
         _unlockedItems = new List<long>();
 
-        foreach(var itemId in unlockedItems)
+        foreach(var itemId in unlockedItems.Distinct())
         {
             _unlockedItems.Add(itemId);
         }

@@ -66,9 +66,9 @@ MonoBehaviour:
     - {fileID: 6271963157667777218, guid: 818da7a3682bb4b46951bf88f2f130f4, type: 3}
     - {fileID: 6271963157667777218, guid: 818da7a3682bb4b46951bf88f2f130f4, type: 3}
   - _enemies:
+    - {fileID: 6271963157667777218, guid: f1d1e6a52cd6328409e66c63ef2a4630, type: 3}
     - {fileID: 6271963157667777218, guid: 818da7a3682bb4b46951bf88f2f130f4, type: 3}
-    - {fileID: 6271963157667777218, guid: 818da7a3682bb4b46951bf88f2f130f4, type: 3}
-    - {fileID: 6271963157667777218, guid: 818da7a3682bb4b46951bf88f2f130f4, type: 3}
+    - {fileID: 6271963157667777218, guid: f1d1e6a52cd6328409e66c63ef2a4630, type: 3}
   _rewardCountInDay: 3
   _icon: {fileID: 21300000, guid: a11e6518dce492b4c94b5e59f697969f, type: 3}
   _reward:
