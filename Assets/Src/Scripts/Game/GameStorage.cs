@@ -16,7 +16,7 @@ public class YandexLeaderboard : ILeaderboardRecorder
     {
         Leaderboard.GetPlayerEntry(LeaderboardTables.BestPlayers, (response) =>
         {
-            if(response.score < data.PlayerLevel)
+            if(response == null || response.score < data.PlayerLevel)
             {
                 Leaderboard.SetScore(LeaderboardTables.BestPlayers, data.PlayerLevel);
             }

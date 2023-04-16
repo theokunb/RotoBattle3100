@@ -14,17 +14,27 @@ public class LeaderboardPanel : MonoBehaviour
 
     public void OnEnable()
     {
-        ShowTop();
-        ShowPlayer();
+        PlayerAccount.RequestPersonalProfileDataPermission(() =>
+        {
+            ShowTop();
+            ShowPlayer();
+        }
+        ,(error) =>
+        {
+            ShowTop();
+            ShowPlayer();
+        });
     }
 
-    public void OnDisable()
+
+    private void OnDisable()
     {
         foreach (Transform child in _container)
         {
             Destroy(child.gameObject);
         }
     }
+
 
     private void ShowPlayer()
     {

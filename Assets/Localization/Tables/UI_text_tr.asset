@@ -145,6 +145,10 @@ MonoBehaviour:
     m_Localized: "puan tablosu al\u0131n\u0131rken hata olu\u015Ftu"
     m_Metadata:
       m_Items: []
+  - m_Id: 18423959900819456
+    m_Localized: seviye
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds:
