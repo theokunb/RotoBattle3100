@@ -22,6 +22,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
+                },
+                {
+                    "name": "KeyPress",
+                    "type": "Button",
+                    "id": "e7e3ffe5-cfe9-47d4-87c8-d3174da4b177",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -110,6 +119,17 @@
                     "processors": "",
                     "groups": "Player",
                     "action": "Touch",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "66a8502a-c696-4a16-aa5f-c5b30fe03048",
+                    "path": "<Keyboard>/anyKey",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Player",
+                    "action": "KeyPress",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: Tips Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: Tips
+  m_TableCollectionNameGuidString: db6bef6a1908a2b4bacf366839119480
+  m_Entries:
+  - m_Id: 29385199616
+    m_Key: InventoryTip
+    m_Metadata:
+      m_Items: []
+  - m_Id: 80794783744
+    m_Key: ShopTip
+    m_Metadata:
+      m_Items: []
+  - m_Id: 143818395648
+    m_Key: MapTip
+    m_Metadata:
+      m_Items: []
+  - m_Id: 179348344832
+    m_Key: WalletTip
+    m_Metadata:
+      m_Items: []
+  - m_Id: 225703792640
+    m_Key: PlayTip
+    m_Metadata:
+      m_Items: []
+  - m_Id: 254451552256
+    m_Key: SoundTip
+    m_Metadata:
+      m_Items: []
+  - m_Id: 288647712768
+    m_Key: LeaderboardTip
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3804720173056
+    m_Key: TutorailTip
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 4686687392046514182
+  references:
+    version: 2
+    RefIds:
+    - rid: 4686687392046514182
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1681700726512

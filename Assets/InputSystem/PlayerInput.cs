@@ -44,6 +44,15 @@ public partial class @PlayerInput : IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""KeyPress"",
+                    ""type"": ""Button"",
+                    ""id"": ""e7e3ffe5-cfe9-47d4-87c8-d3174da4b177"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -134,6 +143,17 @@ public partial class @PlayerInput : IInputActionCollection2, IDisposable
                     ""action"": ""Touch"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""66a8502a-c696-4a16-aa5f-c5b30fe03048"",
+                    ""path"": ""<Keyboard>/anyKey"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Player"",
+                    ""action"": ""KeyPress"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -156,6 +176,7 @@ public partial class @PlayerInput : IInputActionCollection2, IDisposable
         m_PlayerMap = asset.FindActionMap("PlayerMap", throwIfNotFound: true);
         m_PlayerMap_Move = m_PlayerMap.FindAction("Move", throwIfNotFound: true);
         m_PlayerMap_Touch = m_PlayerMap.FindAction("Touch", throwIfNotFound: true);
+        m_PlayerMap_KeyPress = m_PlayerMap.FindAction("KeyPress", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -217,12 +238,14 @@ public partial class @PlayerInput : IInputActionCollection2, IDisposable
     private IPlayerMapActions m_PlayerMapActionsCallbackInterface;
     private readonly InputAction m_PlayerMap_Move;
     private readonly InputAction m_PlayerMap_Touch;
+    private readonly InputAction m_PlayerMap_KeyPress;
     public struct PlayerMapActions
     {
         private @PlayerInput m_Wrapper;
         public PlayerMapActions(@PlayerInput wrapper) { m_Wrapper = wrapper; }
         public InputAction @Move => m_Wrapper.m_PlayerMap_Move;
         public InputAction @Touch => m_Wrapper.m_PlayerMap_Touch;
+        public InputAction @KeyPress => m_Wrapper.m_PlayerMap_KeyPress;
         public InputActionMap Get() { return m_Wrapper.m_PlayerMap; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -238,6 +261,9 @@ public partial class @PlayerInput : IInputActionCollection2, IDisposable
                 @Touch.started -= m_Wrapper.m_PlayerMapActionsCallbackInterface.OnTouch;
                 @Touch.performed -= m_Wrapper.m_PlayerMapActionsCallbackInterface.OnTouch;
                 @Touch.canceled -= m_Wrapper.m_PlayerMapActionsCallbackInterface.OnTouch;
+                @KeyPress.started -= m_Wrapper.m_PlayerMapActionsCallbackInterface.OnKeyPress;
+                @KeyPress.performed -= m_Wrapper.m_PlayerMapActionsCallbackInterface.OnKeyPress;
+                @KeyPress.canceled -= m_Wrapper.m_PlayerMapActionsCallbackInterface.OnKeyPress;
             }
             m_Wrapper.m_PlayerMapActionsCallbackInterface = instance;
             if (instance != null)
@@ -248,6 +274,9 @@ public partial class @PlayerInput : IInputActionCollection2, IDisposable
                 @Touch.started += instance.OnTouch;
                 @Touch.performed += instance.OnTouch;
                 @Touch.canceled += instance.OnTouch;
+                @KeyPress.started += instance.OnKeyPress;
+                @KeyPress.performed += instance.OnKeyPress;
+                @KeyPress.canceled += instance.OnKeyPress;
             }
         }
     }
@@ -265,5 +294,6 @@ public partial class @PlayerInput : IInputActionCollection2, IDisposable
     {
         void OnMove(InputAction.CallbackContext context);
         void OnTouch(InputAction.CallbackContext context);
+        void OnKeyPress(InputAction.CallbackContext context);
     }
 }

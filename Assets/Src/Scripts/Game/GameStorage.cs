@@ -6,7 +6,7 @@ using UnityEngine;
 
 public static class GameStorage
 {
-    public static IStorage Storage { get; private set; } = new YandexCloudStorage();
+    public static IStorage Storage { get; private set; } = new FileStorage();
     public static ILeaderboardRecorder Leaderboard { get; private set; } = new YandexLeaderboard();
 }
 
@@ -14,6 +14,7 @@ public class YandexLeaderboard : ILeaderboardRecorder
 {
     public void Record(PlayerData data)
     {
+#if UNITY_WEBGL && !UNITY_EDITOR
         Leaderboard.GetPlayerEntry(LeaderboardTables.BestPlayers, (response) =>
         {
             if(response == null || response.score < data.PlayerLevel)
@@ -21,6 +22,7 @@ public class YandexLeaderboard : ILeaderboardRecorder
                 Leaderboard.SetScore(LeaderboardTables.BestPlayers, data.PlayerLevel);
             }
         });
+#endif
     }
 }
 

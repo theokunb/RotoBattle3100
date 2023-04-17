@@ -13,7 +13,7 @@ public class BackgroundAudioPlayer : MonoBehaviour
 
     protected virtual void Start()
     {
-        float volume = PlayerPrefs.GetFloat(PlayerPrefsKeys.Volume, 1);
+        float volume = PlayerPrefs.GetFloat(PlayerPrefsKeys.Volume, 0.1f);
 
         if (_slider != null)
         {

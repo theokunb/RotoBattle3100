@@ -12,7 +12,7 @@ public class LoadingGame : MonoBehaviour
 
     public IEnumerator Start()
     {
-        //PlayerPrefs.DeleteAll();
+        PlayerPrefs.DeleteAll();
 
 #if UNITY_WEBGL && !UNITY_EDITOR
         yield return YandexGamesSdk.Initialize(() =>

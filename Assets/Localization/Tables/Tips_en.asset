@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Tips_en
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: db6bef6a1908a2b4bacf366839119480, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 3804720173056
+    m_Localized: Hello, my name is Eva. I conduct briefings for new visitors. Click
+      on any button to continue.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 29385199616
+    m_Localized: Here is the inventory. It contains all the available items for your
+      robot. I advise you to inspect your equipment before the fight.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 80794783744
+    m_Localized: There is a shop here. In it you can buy weapons and parts for your
+      robot.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 143818395648
+    m_Localized: Next on the list is the level map. It allows you to track your progress
+      in passing tests. I want to note that the completed levels can be replayed
+      in order to get the loot again.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 179348344832
+    m_Localized: Your resources are displayed here. They can be spent in the store,
+      and they are earned by completing challenges.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 225703792640
+    m_Localized: This big button sends your robot into battle. Good luck!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 254451552256
+    m_Localized: In the game, you can adjust the volume with this button
+    m_Metadata:
+      m_Items: []
+  - m_Id: 288647712768
+    m_Localized: Here is the leaderboard. You can see where you are. In order for
+      other people to see your rank, you must allow the provision of personal data
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []
