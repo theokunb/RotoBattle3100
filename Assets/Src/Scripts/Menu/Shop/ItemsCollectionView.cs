@@ -4,16 +4,18 @@ using System.Linq;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Localization;
+using UnityEngine.UI;
 
 public class ItemsCollectionView : MonoBehaviour
 {
     [SerializeField] private DetailView _template;
     [SerializeField] private GameObject _container;
     [SerializeField] private TMP_Text _labelText;
+    [SerializeField] private ScrollRectNested _scrollRect;
 
     private List<DetailView> _items;
     private LocalizedString _label;
-
+    
     public event Action<DetailView> ItemSelected;
 
     public int Count => _items.Count;
@@ -58,6 +60,11 @@ public class ItemsCollectionView : MonoBehaviour
         }
 
         Subscribe();
+    }
+
+    public void SetParent(ScrollRect parent)
+    {
+        _scrollRect.SetParentScroll(parent);
     }
 
     private void DetailBuyButtonClicked(DetailView obj)

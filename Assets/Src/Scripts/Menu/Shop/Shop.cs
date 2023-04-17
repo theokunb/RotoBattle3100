@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Shop : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public class Shop : MonoBehaviour
     [SerializeField] private ItemsPull _items;
     [SerializeField] private BuyWindow _buyWindow;
     [SerializeField] private GameObject _emptyShopTemplate;
+    [SerializeField] private ScrollRect _scrollRect;
 
     private Type[] _detailTypes = { typeof(Head), typeof(Body), typeof(Leg), typeof(Weapon) };
     private List<ItemsCollectionView> _collections;
@@ -56,6 +58,7 @@ public class Shop : MonoBehaviour
             {
                 var collection = Instantiate(_template, _container.transform);
                 collection.Render(selectedItems);
+                collection.SetParent(_scrollRect);
                 _collections.Add(collection);
             }
         }

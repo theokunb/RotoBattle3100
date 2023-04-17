@@ -83,4 +83,9 @@ public class ScrollRectNested : ScrollRect
         }
         routeToParent = false;
     }
+
+    public void SetParentScroll(ScrollRect parent)
+    {
+        parentScrollRect = parent;
+    }
 }

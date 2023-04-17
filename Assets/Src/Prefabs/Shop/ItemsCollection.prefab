@@ -102,7 +102,7 @@ GameObject:
   - component: {fileID: 3925612298031694442}
   - component: {fileID: 3925612298031694445}
   - component: {fileID: 3925612298031694444}
-  - component: {fileID: 3925612298031694443}
+  - component: {fileID: 5881271429420478864}
   m_Layer: 5
   m_Name: Items
   m_TagString: Untagged
@@ -169,7 +169,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &3925612298031694443
+--- !u!114 &5881271429420478864
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -178,27 +178,28 @@ MonoBehaviour:
   m_GameObject: {fileID: 3925612298031694441}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1aa08ab6e0800fa44ae55d278d1423e3, type: 3}
+  m_Script: {fileID: 11500000, guid: 716be1c9fd365fb4d8fb7e06405fa713, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Content: {fileID: 3925612299597526157}
   m_Horizontal: 1
-  m_Vertical: 1
+  m_Vertical: 0
   m_MovementType: 2
   m_Elasticity: 0.1
   m_Inertia: 1
   m_DecelerationRate: 0.135
   m_ScrollSensitivity: 1
-  m_Viewport: {fileID: 3925612297676602388}
+  m_Viewport: {fileID: 0}
   m_HorizontalScrollbar: {fileID: 0}
   m_VerticalScrollbar: {fileID: 0}
-  m_HorizontalScrollbarVisibility: 2
-  m_VerticalScrollbarVisibility: 2
-  m_HorizontalScrollbarSpacing: -3
-  m_VerticalScrollbarSpacing: -3
+  m_HorizontalScrollbarVisibility: 0
+  m_VerticalScrollbarVisibility: 0
+  m_HorizontalScrollbarSpacing: 0
+  m_VerticalScrollbarSpacing: 0
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+  parentScrollRect: {fileID: 0}
 --- !u!1 &3925612298498080247
 GameObject:
   m_ObjectHideFlags: 0
@@ -428,6 +429,7 @@ MonoBehaviour:
   _template: {fileID: 5701434451764740345, guid: 3da7a8ce96f96a54180e31a23d3f8484, type: 3}
   _container: {fileID: 3925612299597526156}
   _labelText: {fileID: 3925612298498080201}
+  _scrollRect: {fileID: 5881271429420478864}
 --- !u!1 &3925612299597526156
 GameObject:
   m_ObjectHideFlags: 0
@@ -464,7 +466,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0.00012207031, y: -0.000030517578}
-  m_SizeDelta: {x: 0, y: 323.94}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &3925612299597526159
 MonoBehaviour:
@@ -479,7 +481,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_HorizontalFit: 2
-  m_VerticalFit: 0
+  m_VerticalFit: 2
 --- !u!114 &3925612299597526158
 MonoBehaviour:
   m_ObjectHideFlags: 0
