@@ -46,6 +46,7 @@ public class InventoryPanel : MonoBehaviour
 
     private void OnBackButtonClicked()
     {
+        
         _inventoryObserver.ClearView();
         _scrollView.SetActive(false);
         _cameraController.ResetPosition();

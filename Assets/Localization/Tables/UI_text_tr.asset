@@ -52,20 +52,20 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 273306636685312
-    m_Localized: bilgi
+    m_Localized: Bilgi
     m_Metadata:
       m_Items: []
   - m_Id: 273352895664128
-    m_Localized: "ne kullan\u0131laca\u011F\u0131n\u0131 se\xE7in"
+    m_Localized: "Ne kullan\u0131laca\u011F\u0131n\u0131 se\xE7in"
     m_Metadata:
       m_Items: []
   - m_Id: 275339884269568
-    m_Localized: "bo\u015F alan: {weaponManager.WeaponManager.CurrentWeaponsCount}/{weaponManager.WeaponManager.AllWeaponsCount}"
+    m_Localized: "Bo\u015F alan: {weaponManager.WeaponManager.CurrentWeaponsCount}/{weaponManager.WeaponManager.AllWeaponsCount}"
     m_Metadata:
       m_Items:
       - rid: 2549057749735964679
   - m_Id: 562895846805504
-    m_Localized: "\xF6l\xFC!"
+    m_Localized: "\xD6l\xFC!"
     m_Metadata:
       m_Items: []
   - m_Id: 563439915143168
@@ -77,23 +77,23 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 564641709068288
-    m_Localized: "e\u015Fya al\u0131nd\u0131"
+    m_Localized: "E\u015Fya al\u0131nd\u0131"
     m_Metadata:
       m_Items: []
   - m_Id: 654955220209664
-    m_Localized: "al\u0131nan kaynaklar"
+    m_Localized: "Al\u0131nan kaynaklar"
     m_Metadata:
       m_Items: []
   - m_Id: 702890129657856
-    m_Localized: "ge\xE7it"
+    m_Localized: "Ge\xE7it"
     m_Metadata:
       m_Items: []
   - m_Id: 702925940625408
-    m_Localized: "toplanm\u0131\u015F"
+    m_Localized: "Toplanm\u0131\u015F"
     m_Metadata:
       m_Items: []
   - m_Id: 5646294378778624
-    m_Localized: "y\xFCkleniyor"
+    m_Localized: "Y\xFCkleniyor"
     m_Metadata:
       m_Items: []
   - m_Id: 8331240184647680
@@ -102,23 +102,23 @@ MonoBehaviour:
       m_Items:
       - rid: 2549057749735964679
   - m_Id: 9849070466011136
-    m_Localized: seviye atlamak!
+    m_Localized: Seviye atlamak!
     m_Metadata:
       m_Items: []
   - m_Id: 13619767407448064
-    m_Localized: "canl\u0131l\u0131k"
+    m_Localized: "Canl\u0131l\u0131k"
     m_Metadata:
       m_Items: []
   - m_Id: 13619835715883008
-    m_Localized: kalkan
+    m_Localized: Kalkan
     m_Metadata:
       m_Items: []
   - m_Id: 13619859782799360
-    m_Localized: "h\u0131z"
+    m_Localized: "H\u0131z"
     m_Metadata:
       m_Items: []
   - m_Id: 13619905903366144
-    m_Localized: "maksimum sa\u011Fl\u0131\u011F\u0131 300 art\u0131r\u0131r"
+    m_Localized: "Maksimum sa\u011Fl\u0131\u011F\u0131 300 art\u0131r\u0131r"
     m_Metadata:
       m_Items: []
   - m_Id: 13620025365532672
@@ -130,7 +130,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 16734648037969920
-    m_Localized: "\xDCr\xFCnler stokta yok, yeni teslimatlar bekliyoruz"
+    m_Localized: "\xDCr\xFCnler stokta yok, yeni teslimatlar bekliyoruz..."
     m_Metadata:
       m_Items: []
   - m_Id: 18348854956953600
@@ -138,15 +138,23 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 18363454435790848
-    m_Localized: isimsiz
+    m_Localized: Isimsiz
     m_Metadata:
       m_Items: []
   - m_Id: 18364965509304320
-    m_Localized: "puan tablosu al\u0131n\u0131rken hata olu\u015Ftu"
+    m_Localized: "Puan tablosu al\u0131n\u0131rken hata olu\u015Ftu."
     m_Metadata:
       m_Items: []
   - m_Id: 18423959900819456
-    m_Localized: seviye
+    m_Localized: Seviye
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19880345264361472
+    m_Localized: Bilgilendirme
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19886923245850624
+    m_Localized: "Kapal\u0131"
     m_Metadata:
       m_Items: []
   references:

@@ -52,48 +52,48 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 273306636685312
-    m_Localized: information
+    m_Localized: Information
     m_Metadata:
       m_Items: []
   - m_Id: 273352895664128
-    m_Localized: choose what to use
+    m_Localized: Shoose what to use
     m_Metadata:
       m_Items: []
   - m_Id: 275339884269568
-    m_Localized: 'free slots: {weaponManager.WeaponManager.CurrentWeaponsCount}/{weaponManager.WeaponManager.AllWeaponsCount}'
+    m_Localized: 'Free slots: {weaponManager.WeaponManager.CurrentWeaponsCount}/{weaponManager.WeaponManager.AllWeaponsCount}'
     m_Metadata:
       m_Items:
       - rid: 2549057749735964677
   - m_Id: 562895846805504
-    m_Localized: died!
+    m_Localized: Died!
     m_Metadata:
       m_Items: []
   - m_Id: 563439915143168
-    m_Localized: level completed!
+    m_Localized: Level completed!
     m_Metadata:
       m_Items: []
   - m_Id: 563909769465856
-    m_Localized: pause
+    m_Localized: Pause
     m_Metadata:
       m_Items: []
   - m_Id: 564641709068288
-    m_Localized: item received
+    m_Localized: Item received
     m_Metadata:
       m_Items: []
   - m_Id: 654955220209664
-    m_Localized: resources received
+    m_Localized: Resources received
     m_Metadata:
       m_Items: []
   - m_Id: 702890129657856
-    m_Localized: passage
+    m_Localized: Passage
     m_Metadata:
       m_Items: []
   - m_Id: 702925940625408
-    m_Localized: collected
+    m_Localized: Collected
     m_Metadata:
       m_Items: []
   - m_Id: 5646294378778624
-    m_Localized: loading
+    m_Localized: Loading
     m_Metadata:
       m_Items: []
   - m_Id: 8331240184647680
@@ -102,27 +102,27 @@ MonoBehaviour:
       m_Items:
       - rid: 2549057749735964677
   - m_Id: 9849070466011136
-    m_Localized: level up!
+    m_Localized: Level up!
     m_Metadata:
       m_Items: []
   - m_Id: 13619767407448064
-    m_Localized: vitality
+    m_Localized: Vitality
     m_Metadata:
       m_Items: []
   - m_Id: 13619835715883008
-    m_Localized: shield
+    m_Localized: Shield
     m_Metadata:
       m_Items: []
   - m_Id: 13619859782799360
-    m_Localized: speed
+    m_Localized: Speed
     m_Metadata:
       m_Items: []
   - m_Id: 13619905903366144
-    m_Localized: increases maximum health by 300
+    m_Localized: Increases maximum health by 300
     m_Metadata:
       m_Items: []
   - m_Id: 13620025365532672
-    m_Localized: increases shield absorption efficiency by 100
+    m_Localized: Increases shield absorption efficiency by 100
     m_Metadata:
       m_Items: []
   - m_Id: 13620061868560384
@@ -130,7 +130,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 16734648037969920
-    m_Localized: Goods are out of stock, we are waiting for new deliveries
+    m_Localized: Goods are out of stock, we are waiting for new deliveries...
     m_Metadata:
       m_Items: []
   - m_Id: 18348854956953600
@@ -138,15 +138,23 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 18363454435790848
-    m_Localized: no name
+    m_Localized: No name
     m_Metadata:
       m_Items: []
   - m_Id: 18364965509304320
-    m_Localized: error getting leaderboard
+    m_Localized: Error getting leaderboard.
     m_Metadata:
       m_Items: []
   - m_Id: 18423959900819456
-    m_Localized: level
+    m_Localized: Level
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19880345264361472
+    m_Localized: Briefing
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19886923245850624
+    m_Localized: Close
     m_Metadata:
       m_Items: []
   references:

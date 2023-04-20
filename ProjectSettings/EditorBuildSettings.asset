@@ -41,6 +41,18 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/RoofTop_SafeHouse/RTSH.unity
     guid: eeabfdba185b5434a9eebab754a9ac66
+  - enabled: 0
+    path: Assets/Plugins/TypedScenes/Samples/SampleScene.unity
+    guid: c34395be315645b4dad3e0dd6fc940aa
+  - enabled: 0
+    path: Assets/Plugins/Demigiant/DOTweenPro Examples/DOTweenPath.unity
+    guid: a351b59ca54a0bc4083c35844da13a61
+  - enabled: 0
+    path: Assets/Plugins/Demigiant/DOTweenPro Examples/DOTweenAnimation_Advanced.unity
+    guid: a5f7a56d339da84449899ecf95fbe33d
+  - enabled: 0
+    path: Assets/Plugins/Demigiant/DOTweenPro Examples/DOTweenAnimation_Basics.unity
+    guid: 6a2ad353325ffe64983c28d69a8738f5
   m_configObjects:
     com.unity.addressableassets: {fileID: 11400000, guid: 0526716e467de8a45b07aa4fd0ad7610, type: 2}
     com.unity.localization.settings: {fileID: 11400000, guid: 332fa90abbd347945a7c53ede1a3cc3f, type: 2}

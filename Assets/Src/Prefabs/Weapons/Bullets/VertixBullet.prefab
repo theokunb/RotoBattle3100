@@ -78,7 +78,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _lifeTime: 3
   _radius: 8
-  _rotationSpeed: 45
+  _rotationSpeed: 25
 --- !u!1001 &6681602833188544113
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -26,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1500378031061711957}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -0.08, y: -0.11, z: 0}
+  m_LocalPosition: {x: -0.012, y: -0.036, z: -0}
   m_LocalScale: {x: 0.1, y: 0.2, z: 0.4}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -92,12 +92,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1734730346171666039}
-  - component: {fileID: 1734730346171666041}
-  - component: {fileID: 1734730346171666042}
   - component: {fileID: 1734730346171666043}
   - component: {fileID: 1734730346171666036}
   - component: {fileID: 1734730346171666037}
   - component: {fileID: 1734730346171666038}
+  - component: {fileID: 1734730346171666041}
+  - component: {fileID: 1734730346171666042}
   m_Layer: 0
   m_Name: Vertix
   m_TagString: Untagged
@@ -122,6 +122,115 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1734730346171666043
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1734730346171666032}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97333bca735dfc8488f4f28b3cad1778, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _icon: {fileID: 21300000, guid: 79f9ea94d1de4ae4396c8b556533a632, type: 3}
+  _prices:
+  - _currencyType: 2
+    _count: 1000
+--- !u!114 &1734730346171666036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1734730346171666032}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 384fbedb2df7d71449ce05d6a354f625, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _isAvailable: 0
+  _inShop: 0
+--- !u!114 &1734730346171666037
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1734730346171666032}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6bf333a59434db458c956e84747310c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _template: {fileID: 26395586268075764, guid: 28aa94b45eb702742863b0b32c668d5f, type: 3}
+--- !u!114 &1734730346171666038
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1734730346171666032}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 360bab905e69cda439fb14133446829e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _title:
+    m_TableReference:
+      m_TableCollectionName: GUID:d8ce7813bc5e4d249b233be2ac2db378
+    m_TableEntryReference:
+      m_KeyId: 12699993567563776
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  _description:
+    m_TableReference:
+      m_TableCollectionName: GUID:f99491e03c86ffe4fa19dee685c2763c
+    m_TableEntryReference:
+      m_KeyId: 12690946428669952
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  _label:
+    m_TableReference:
+      m_TableCollectionName: GUID:6ae1e96e9a3d4a142980cf0984613658
+    m_TableEntryReference:
+      m_KeyId: 559054491648
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  _damage: 650
+  _maxDelayBetweenShoot: 2
+  _minDelayBetweenShoot: 3.5
+  _shootPlace: {fileID: 1734730347736990611}
+  _template: {fileID: 6681602832587000348, guid: 95b60eca81fbb8f499921ccd8143973e, type: 3}
+  _bulletSpeed: 6
+  _damageLabel:
+    m_TableReference:
+      m_TableCollectionName: GUID:6ae1e96e9a3d4a142980cf0984613658
+    m_TableEntryReference:
+      m_KeyId: 599982510080
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  _attackSpeedLabel:
+    m_TableReference:
+      m_TableCollectionName: GUID:6ae1e96e9a3d4a142980cf0984613658
+    m_TableEntryReference:
+      m_KeyId: 645603954688
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []
 --- !u!82 &1734730346171666041
 AudioSource:
   m_ObjectHideFlags: 0
@@ -230,115 +339,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62c60427cb9d0144584c29ebe2e8a27e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1734730346171666043
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1734730346171666032}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 97333bca735dfc8488f4f28b3cad1778, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _icon: {fileID: 21300000, guid: a41302e085b14b74cb40060540cd0663, type: 3}
-  _prices:
-  - _currencyType: 2
-    _count: 1000
---- !u!114 &1734730346171666036
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1734730346171666032}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 384fbedb2df7d71449ce05d6a354f625, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isAvailable: 0
-  _inShop: 0
---- !u!114 &1734730346171666037
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1734730346171666032}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b6bf333a59434db458c956e84747310c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _template: {fileID: 26395586268075764, guid: 28aa94b45eb702742863b0b32c668d5f, type: 3}
---- !u!114 &1734730346171666038
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1734730346171666032}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 360bab905e69cda439fb14133446829e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _title:
-    m_TableReference:
-      m_TableCollectionName: GUID:d8ce7813bc5e4d249b233be2ac2db378
-    m_TableEntryReference:
-      m_KeyId: 12699993567563776
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  _description:
-    m_TableReference:
-      m_TableCollectionName: GUID:f99491e03c86ffe4fa19dee685c2763c
-    m_TableEntryReference:
-      m_KeyId: 12690946428669952
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  _label:
-    m_TableReference:
-      m_TableCollectionName: GUID:6ae1e96e9a3d4a142980cf0984613658
-    m_TableEntryReference:
-      m_KeyId: 559054491648
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  _damage: 650
-  _maxDelayBetweenShoot: 2
-  _minDelayBetweenShoot: 3.5
-  _shootPlace: {fileID: 1734730347736990611}
-  _template: {fileID: 6681602832587000348, guid: 95b60eca81fbb8f499921ccd8143973e, type: 3}
-  _bulletSpeed: 6
-  _damageLabel:
-    m_TableReference:
-      m_TableCollectionName: GUID:6ae1e96e9a3d4a142980cf0984613658
-    m_TableEntryReference:
-      m_KeyId: 599982510080
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  _attackSpeedLabel:
-    m_TableReference:
-      m_TableCollectionName: GUID:6ae1e96e9a3d4a142980cf0984613658
-    m_TableEntryReference:
-      m_KeyId: 645603954688
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  references:
-    version: 2
-    RefIds: []
 --- !u!1 &1734730347736990636
 GameObject:
   m_ObjectHideFlags: 0

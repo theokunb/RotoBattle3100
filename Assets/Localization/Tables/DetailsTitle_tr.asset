@@ -20,75 +20,75 @@ MonoBehaviour:
     - rid: 2549057753512149007
   m_TableData:
   - m_Id: 50990059520
-    m_Localized: "geli\u015Fmi\u015F z\u0131rh"
+    m_Localized: "Geli\u015Fmi\u015F z\u0131rh"
     m_Metadata:
       m_Items: []
   - m_Id: 361582465024
-    m_Localized: "geli\u015Ftirilmi\u015F kafa taray\u0131c\u0131"
+    m_Localized: "Geli\u015Ftirilmi\u015F kafa taray\u0131c\u0131"
     m_Metadata:
       m_Items: []
   - m_Id: 728995106816
-    m_Localized: "geli\u015Fmi\u015F robotik bacaklar"
+    m_Localized: "Geli\u015Fmi\u015F robotik bacaklar"
     m_Metadata:
       m_Items: []
   - m_Id: 1768863731712
-    m_Localized: elit defans oyuncusu
+    m_Localized: Elit defans oyuncusu
     m_Metadata:
       m_Items: []
   - m_Id: 1959385796608
-    m_Localized: abble
+    m_Localized: "Elit Taray\u0131c\u0131 Kafas\u0131"
     m_Metadata:
       m_Items: []
   - m_Id: 2652368703488
-    m_Localized: elit bacaklar
+    m_Localized: Elit bacaklar
     m_Metadata:
       m_Items: []
   - m_Id: 3149179817984
-    m_Localized: "mekanik \xF6nl\xFCk"
+    m_Localized: "Mekanik \xF6nl\xFCk"
     m_Metadata:
       m_Items: []
   - m_Id: 3355472465920
-    m_Localized: mekanik kask
+    m_Localized: Mekanik kask
     m_Metadata:
       m_Items: []
   - m_Id: 3862488322048
-    m_Localized: mekanik bacaklar
+    m_Localized: Mekanik bacaklar
     m_Metadata:
       m_Items: []
   - m_Id: 3977299005440
-    m_Localized: "gladyat\xF6r z\u0131rh\u0131"
+    m_Localized: "Gladyat\xF6r z\u0131rh\u0131"
     m_Metadata:
       m_Items: []
   - m_Id: 4142881738752
-    m_Localized: abble max x pro s
+    m_Localized: "Elit Taray\u0131c\u0131 Kafas\u0131 max x pro s"
     m_Metadata:
       m_Items: []
   - m_Id: 4905645281280
-    m_Localized: "gladyat\xF6r bacaklar\u0131"
+    m_Localized: "Gladyat\xF6r bacaklar\u0131"
     m_Metadata:
       m_Items: []
   - m_Id: 5445708058624
-    m_Localized: "atom makineli t\xFCfek"
+    m_Localized: "Atom makineli t\xFCfek"
     m_Metadata:
       m_Items: []
   - m_Id: 5705998176256
-    m_Localized: "el bombas\u0131 f\u0131rlat\u0131c\u0131"
+    m_Localized: "El bombas\u0131 f\u0131rlat\u0131c\u0131"
     m_Metadata:
       m_Items: []
   - m_Id: 5826311786496
-    m_Localized: "makineli t\xFCfek"
+    m_Localized: "Makineli t\xFCfek"
     m_Metadata:
       m_Items: []
   - m_Id: 5948382810112
-    m_Localized: minigun
+    m_Localized: Minigun
     m_Metadata:
       m_Items: []
   - m_Id: 6065559080960
-    m_Localized: "minigun \"Cennetin D\xFC\u015F\xFC\u015F\xFC\""
+    m_Localized: "Minigun \"Cennetin D\xFC\u015F\xFC\u015F\xFC\""
     m_Metadata:
       m_Items: []
   - m_Id: 6228558123008
-    m_Localized: roketatar
+    m_Localized: Roketatar
     m_Metadata:
       m_Items: []
   - m_Id: 6399174021120
@@ -109,7 +109,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 12749088122376192
-    m_Localized: multiresonator
+    m_Localized: Multiresonator
     m_Metadata:
       m_Items: []
   - m_Id: 13056723228987392
@@ -118,6 +118,30 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 13070751263264768
     m_Localized: Bender
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19015420618903552
+    m_Localized: Jet bacaklar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19641875547721728
+    m_Localized: Bender
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19641895621660672
+    m_Localized: Bender
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19642238128525312
+    m_Localized: Raider
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19642263688613888
+    m_Localized: Raider
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19642281602486272
+    m_Localized: Raider
     m_Metadata:
       m_Items: []
   references:

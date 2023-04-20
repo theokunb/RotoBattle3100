@@ -112,7 +112,31 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 13070751263264768
-    m_Key: Bender
+    m_Key: BenderHead
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19015420618903552
+    m_Key: JetLegs
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19641875547721728
+    m_Key: BenderBody
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19641895621660672
+    m_Key: BenderLeg
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19642238128525312
+    m_Key: RaiderHead
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19642263688613888
+    m_Key: RaiderBody
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19642281602486272
+    m_Key: RaiderLeg
     m_Metadata:
       m_Items: []
   m_Metadata:

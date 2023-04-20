@@ -20,83 +20,83 @@ MonoBehaviour:
     - rid: 2549057753512149005
   m_TableData:
   - m_Id: 50990059520
-    m_Localized: advanced armor
+    m_Localized: Advanced armor
     m_Metadata:
       m_Items: []
   - m_Id: 361582465024
-    m_Localized: advanced head scanner
+    m_Localized: Advanced head scanner
     m_Metadata:
       m_Items: []
   - m_Id: 728995106816
-    m_Localized: advanced robotic legs
+    m_Localized: Advanced robotic legs
     m_Metadata:
       m_Items: []
   - m_Id: 1768863731712
-    m_Localized: elite defender
+    m_Localized: Elite defender
     m_Metadata:
       m_Items: []
   - m_Id: 1959385796608
-    m_Localized: abble
+    m_Localized: Elite Scanner Head
     m_Metadata:
       m_Items: []
   - m_Id: 2652368703488
-    m_Localized: elite legs
+    m_Localized: Elite legs
     m_Metadata:
       m_Items: []
   - m_Id: 3149179817984
-    m_Localized: mechanical bib
+    m_Localized: Mechanical bib
     m_Metadata:
       m_Items: []
   - m_Id: 3355472465920
-    m_Localized: mechanical helmet
+    m_Localized: Mechanical helmet
     m_Metadata:
       m_Items: []
   - m_Id: 3862488322048
-    m_Localized: mechanical legs
+    m_Localized: Mechanical legs
     m_Metadata:
       m_Items: []
   - m_Id: 3977299005440
-    m_Localized: gladiator breastplate
+    m_Localized: Gladiator breastplate
     m_Metadata:
       m_Items: []
   - m_Id: 4142881738752
-    m_Localized: abble max x pro s
+    m_Localized: Elite Scanner Head max x pro s
     m_Metadata:
       m_Items: []
   - m_Id: 4905645281280
-    m_Localized: gladiator legs
+    m_Localized: Gladiator legs
     m_Metadata:
       m_Items: []
   - m_Id: 5445708058624
-    m_Localized: atomic machine gun
+    m_Localized: Atomic machine gun
     m_Metadata:
       m_Items: []
   - m_Id: 5705998176256
-    m_Localized: grenade launcher
+    m_Localized: Grenade launcher
     m_Metadata:
       m_Items: []
   - m_Id: 5826311786496
-    m_Localized: machine gun
+    m_Localized: Machine gun
     m_Metadata:
       m_Items: []
   - m_Id: 5948382810112
-    m_Localized: minigun
+    m_Localized: Minigun
     m_Metadata:
       m_Items: []
   - m_Id: 6065559080960
-    m_Localized: minigun "Fall of Heaven"
+    m_Localized: Minigun "Fall of Heaven"
     m_Metadata:
       m_Items: []
   - m_Id: 6228558123008
-    m_Localized: rocket launcher
+    m_Localized: Rocket launcher
     m_Metadata:
       m_Items: []
   - m_Id: 6399174021120
-    m_Localized: '"fat man"'
+    m_Localized: '"Fat man"'
     m_Metadata:
       m_Items: []
   - m_Id: 6626903756800
-    m_Localized: shocker
+    m_Localized: Shocker
     m_Metadata:
       m_Items: []
   - m_Id: 136378520080384
@@ -109,7 +109,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 12749088122376192
-    m_Localized: multiresonator
+    m_Localized: Multiresonator
     m_Metadata:
       m_Items: []
   - m_Id: 13056723228987392
@@ -118,6 +118,30 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 13070751263264768
     m_Localized: Bender
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19015420618903552
+    m_Localized: Jet legs
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19641875547721728
+    m_Localized: Bender
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19641895621660672
+    m_Localized: Bender
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19642238128525312
+    m_Localized: Raider
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19642263688613888
+    m_Localized: Raider
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19642281602486272
+    m_Localized: Raider
     m_Metadata:
       m_Items: []
   references:

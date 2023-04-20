@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -73,14 +74,11 @@ public class Character : MonoBehaviour
         }
     }
 
-    public IEnumerable<long> GetAllDetails()
+    public IEnumerable<string> GetAllDetails()
     {
         var details = GetComponentsInChildren<Detail>();
 
-        foreach (var detail in details)
-        {
-            yield return detail.Id;
-        }
+        return details.Select(detail => detail.Id);
     }
 
     public void SetDetail(Detail detail)
@@ -133,6 +131,7 @@ public class Character : MonoBehaviour
         {
             if (Head != null)
             {
+                Head.gameObject.transform.parent = null;
                 Destroy(Head.gameObject);
             }
 
@@ -145,6 +144,7 @@ public class Character : MonoBehaviour
         {
             if (Body != null)
             {
+                Body.gameObject.transform.parent = null;
                 Destroy(Body.gameObject);
             }
 
@@ -155,6 +155,7 @@ public class Character : MonoBehaviour
         {
             if (Leg != null)
             {
+                Leg.gameObject.transform.parent = null;
                 Destroy(Leg.gameObject);
             }
 

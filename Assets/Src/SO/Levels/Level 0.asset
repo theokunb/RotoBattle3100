@@ -56,9 +56,11 @@ MonoBehaviour:
     m_LocalVariables: []
   _enemies:
   - _enemies:
-    - {fileID: 6271963157667777218, guid: e69e2bfa9cf7e2a498a71ba6cbc3c146, type: 3}
+    - {fileID: 6271963157667777218, guid: 0a14c8bda7476b0448d6a4f721b3ef02, type: 3}
   - _enemies:
-    - {fileID: 6271963157667777218, guid: e69e2bfa9cf7e2a498a71ba6cbc3c146, type: 3}
+    - {fileID: 6271963157667777218, guid: 0a14c8bda7476b0448d6a4f721b3ef02, type: 3}
+    - {fileID: 6271963157667777218, guid: 0a14c8bda7476b0448d6a4f721b3ef02, type: 3}
+  - _enemies:
     - {fileID: 6271963157667777218, guid: e69e2bfa9cf7e2a498a71ba6cbc3c146, type: 3}
   _rewardCountInDay: 3
   _icon: {fileID: 21300000, guid: 6b4665737cc93ef4f9623382a510b82a, type: 3}

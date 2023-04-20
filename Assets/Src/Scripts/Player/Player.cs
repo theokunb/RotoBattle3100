@@ -1,12 +1,13 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using UnityEngine;
 
 public class Player : Character
 {
     private const int ExtraHealthPerLevel = 300;
 
-    private List<long> _unlockedItems;
+    private List<string> _unlockedItems;
 
     public event Action HealthUpgraded;
     public event Action ShieldUpgraded;
@@ -17,7 +18,7 @@ public class Player : Character
     public Upgrade Upgrade { get; private set; }
     public PlayerProgress Progress { get; private set; }
     public Experience Experience { get; private set; }
-    public IEnumerable<long> UnlockedItems => _unlockedItems;
+    public IEnumerable<string> UnlockedItems => _unlockedItems;
 
 
     private void OnEnable()
@@ -64,9 +65,9 @@ public class Player : Character
         Progress = playerProgress;
     }
 
-    public void SetUnlockedItems(IEnumerable<long> unlockedItems)
+    public void SetUnlockedItems(IEnumerable<string> unlockedItems)
     {
-        _unlockedItems = new List<long>();
+        _unlockedItems = new List<string>();
 
         foreach(var itemId in unlockedItems.Distinct())
         {
@@ -107,9 +108,9 @@ public class Player : Character
         return base.CalculateHealth() + healthCount * ExtraHealthPerLevel;
     }
 
-    public void AddItem(long itemId)
+    public void AddItem(string itemKey)
     {
-        _unlockedItems?.Add(itemId);
+        _unlockedItems?.Add(itemKey);
     }
 
     private void OnLevelUp()

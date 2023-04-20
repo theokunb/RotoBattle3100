@@ -25,6 +25,7 @@ public class CardHandler : MonoBehaviour
     private void OnEnable()
     {
         _button.onClick.AddListener(Clicked);
+        _button.interactable = true;
     }
 
     private void OnDisable()
@@ -35,6 +36,7 @@ public class CardHandler : MonoBehaviour
     private void Clicked()
     {
         OnClick?.Invoke(_card.Upgrade);
+        _button.interactable = false;
     }
 
     public void OpenCard()

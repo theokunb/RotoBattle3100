@@ -153,6 +153,14 @@ PrefabInstance:
       propertyPath: InitialModule.startSize.minScalar
       value: 0.1
       objectReference: {fileID: 0}
+    - target: {fileID: 84892939563443978, guid: f4674d71c9e919241b0556280acb2d1b, type: 3}
+      propertyPath: InitialModule.startLifetime.scalar
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 84892939563443978, guid: f4674d71c9e919241b0556280acb2d1b, type: 3}
+      propertyPath: InitialModule.startLifetime.minScalar
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 84892939563443979, guid: f4674d71c9e919241b0556280acb2d1b, type: 3}
       propertyPath: m_RootOrder
       value: 0

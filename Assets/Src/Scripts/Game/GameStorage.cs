@@ -14,7 +14,6 @@ public class YandexLeaderboard : ILeaderboardRecorder
 {
     public void Record(PlayerData data)
     {
-#if UNITY_WEBGL && !UNITY_EDITOR
         Leaderboard.GetPlayerEntry(LeaderboardTables.BestPlayers, (response) =>
         {
             if(response == null || response.score < data.PlayerLevel)
@@ -22,7 +21,6 @@ public class YandexLeaderboard : ILeaderboardRecorder
                 Leaderboard.SetScore(LeaderboardTables.BestPlayers, data.PlayerLevel);
             }
         });
-#endif
     }
 }
 
@@ -38,10 +36,8 @@ public class YandexCloudStorage : IStorage
         string content = JsonConvert.SerializeObject(data);
 
         PlayerPrefs.SetString(PlayerPrefsKeys.PlayerData, content);
-
-#if UNITY_WEBGL
         PlayerAccount.SetPlayerData(content);
-#endif
+        GameStorage.Leaderboard.Record(data);
     }
 }
 

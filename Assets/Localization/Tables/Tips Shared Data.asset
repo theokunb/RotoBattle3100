@@ -47,6 +47,26 @@ MonoBehaviour:
     m_Key: TutorailTip
     m_Metadata:
       m_Items: []
+  - m_Id: 127650903265280
+    m_Key: GameTip
+    m_Metadata:
+      m_Items: []
+  - m_Id: 127679961403392
+    m_Key: InputTip
+    m_Metadata:
+      m_Items: []
+  - m_Id: 127737784078336
+    m_Key: EnemyCounterTip
+    m_Metadata:
+      m_Items: []
+  - m_Id: 127778514964480
+    m_Key: ExperienceTip
+    m_Metadata:
+      m_Items: []
+  - m_Id: 127804129579008
+    m_Key: PauseButtonTip
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

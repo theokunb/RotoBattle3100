@@ -5,8 +5,6 @@ using UnityEngine.Localization;
 [RequireComponent(typeof(Animator))]
 public class Leg : RobotDetail
 {
-    private const float AnimationPlaybackFactor = 1f / 45;
-
     [SerializeField] private float _speed;
     [SerializeField] private LocalizedString _moveSteed;
 

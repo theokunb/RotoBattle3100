@@ -15,6 +15,11 @@ public class InventoryObserver : MonoBehaviour
     [SerializeField] private TMP_Text _title;
     [SerializeField] private TMP_Text _description;
 
+    private void OnDisable()
+    {
+        _player.Save();
+    }
+
     public void ShowItems(DetailType detailType)
     {
         ClearView();
@@ -64,7 +69,6 @@ public class InventoryObserver : MonoBehaviour
         var detail = detailView.DetailShop.GetComponent<Detail>();
         _player.SetDetail(detail);
         _player?.CorrectDetails();
-        _player.Save();
 
         DisplayInfo(detail);
     }

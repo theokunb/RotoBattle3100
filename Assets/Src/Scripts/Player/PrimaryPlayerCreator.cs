@@ -13,9 +13,9 @@ public class PrimaryPlayerCreator : MonoBehaviour
         return new Experience(1, 0);
     }
 
-    public IEnumerable<long> CreateDefaultDetails()
+    public IEnumerable<string> CreateDefaultDetails()
     {
-        List<long> details = new List<long>
+        List<string> details = new List<string>
         {
             _defaultLeg.Id,
             _defaultBody.Id,

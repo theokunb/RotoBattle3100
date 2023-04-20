@@ -19,55 +19,55 @@ MonoBehaviour:
     m_Items: []
   m_TableData:
   - m_Id: 21386661888
-    m_Localized: extra health
+    m_Localized: Extra health
     m_Metadata:
       m_Items: []
   - m_Id: 167247777792
-    m_Localized: visibility range
+    m_Localized: Visibility range
     m_Metadata:
       m_Items: []
   - m_Id: 242908827648
-    m_Localized: weapon slots
+    m_Localized: Weapon slots
     m_Metadata:
       m_Items: []
   - m_Id: 303503937536
-    m_Localized: movement speed
+    m_Localized: Movement speed
     m_Metadata:
       m_Items: []
   - m_Id: 329949024256
-    m_Localized: helmets
+    m_Localized: Helmets
     m_Metadata:
       m_Items: []
   - m_Id: 372470878208
-    m_Localized: chests
+    m_Localized: Chests
     m_Metadata:
       m_Items: []
   - m_Id: 398668500992
-    m_Localized: legs
+    m_Localized: Legs
     m_Metadata:
       m_Items: []
   - m_Id: 559054491648
-    m_Localized: weapons
+    m_Localized: Weapons
     m_Metadata:
       m_Items: []
   - m_Id: 599982510080
-    m_Localized: damage
+    m_Localized: Damage
     m_Metadata:
       m_Items: []
   - m_Id: 645603954688
-    m_Localized: attack speed
+    m_Localized: Attack speed
     m_Metadata:
       m_Items: []
   - m_Id: 792547201024
-    m_Localized: low
+    m_Localized: Low
     m_Metadata:
       m_Items: []
   - m_Id: 830878945280
-    m_Localized: medium
+    m_Localized: Medium
     m_Metadata:
       m_Items: []
   - m_Id: 870066327552
-    m_Localized: high
+    m_Localized: High
     m_Metadata:
       m_Items: []
   references:

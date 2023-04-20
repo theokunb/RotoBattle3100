@@ -10,10 +10,12 @@ public class PlayerData
     public int PlayerLevel;
     public int PlayerExperience;
     public int CompletedLevels;
-    public List<long> EquipedDetails;
-    public List <long> UnlockedDetails;
+    public List<string> EquipedDetails;
+    public List <string> UnlockedDetails;
     public List<Upgrades> Upgrades;
     public DateTime LastGamedDay;
+    public bool IsMenuTutorialCompleted;
+    public bool IsGameTutorialCompleted;
 
     public PlayerData(Player player)
     {
@@ -24,6 +26,8 @@ public class PlayerData
         FillEquipedDetails(player.GetAllDetails());
         FillUnlockedDetails(player.UnlockedItems);
         FillUpgrades(player.Upgrade.GetUpgrades());
+        IsMenuTutorialCompleted = player.GetComponent<PlayerTutorial>().IsMenuTutorialCompleted;
+        IsGameTutorialCompleted = player.GetComponent<PlayerTutorial>().IsGameTutorialCompleted;
     }
 
     public PlayerData() { }
@@ -53,13 +57,16 @@ public class PlayerData
         }
         if(Upgrades.Count >= PlayerLevel)
         {
-            Upgrades.RemoveRange(PlayerLevel, Upgrades.Count - 1);
+            while(Upgrades.Count >= PlayerLevel)
+            {
+                Upgrades.RemoveAt(Upgrades.Count - 1);
+            }
         }
     }
 
-    private void FillEquipedDetails(IEnumerable<long> detailsId)
+    private void FillEquipedDetails(IEnumerable<string> detailsId)
     {
-        EquipedDetails = new List<long>();
+        EquipedDetails = new List<string>();
 
         foreach (var detail in detailsId)
         {
@@ -96,9 +103,9 @@ public class PlayerData
         LastGamedDay = playerProgress.GetLastGamedDay();
     }
 
-    private void FillUnlockedDetails(IEnumerable<long> detailsId)
+    private void FillUnlockedDetails(IEnumerable<string> detailsId)
     {
-        UnlockedDetails = new List<long>();
+        UnlockedDetails = new List<string>();
 
         foreach(var detailId in detailsId)
         {

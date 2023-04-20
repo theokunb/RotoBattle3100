@@ -229,7 +229,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97333bca735dfc8488f4f28b3cad1778, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _icon: {fileID: 0}
+  _icon: {fileID: 21300000, guid: 475bc40fc15956942be5e2eef2462378, type: 3}
   _prices: []
 --- !u!114 &4186555441481648004
 MonoBehaviour:
@@ -243,7 +243,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 384fbedb2df7d71449ce05d6a354f625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _isAvailable: 0
+  _isAvailable: 1
   _inShop: 0
 --- !u!114 &6970347716890817469
 MonoBehaviour:
@@ -272,27 +272,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _title:
     m_TableReference:
-      m_TableCollectionName: 
+      m_TableCollectionName: GUID:d8ce7813bc5e4d249b233be2ac2db378
     m_TableEntryReference:
-      m_KeyId: 0
+      m_KeyId: 19642238128525312
       m_Key: 
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
   _description:
     m_TableReference:
-      m_TableCollectionName: 
+      m_TableCollectionName: GUID:f99491e03c86ffe4fa19dee685c2763c
     m_TableEntryReference:
-      m_KeyId: 0
+      m_KeyId: 19633810823876608
       m_Key: 
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
   _label:
     m_TableReference:
-      m_TableCollectionName: 
+      m_TableCollectionName: GUID:6ae1e96e9a3d4a142980cf0984613658
     m_TableEntryReference:
-      m_KeyId: 0
+      m_KeyId: 329949024256
       m_Key: 
     m_FallbackState: 0
     m_WaitForCompletion: 0
@@ -301,9 +301,9 @@ MonoBehaviour:
   _bonusHealth: 350
   _bonusHealthDescription:
     m_TableReference:
-      m_TableCollectionName: 
+      m_TableCollectionName: GUID:6ae1e96e9a3d4a142980cf0984613658
     m_TableEntryReference:
-      m_KeyId: 0
+      m_KeyId: 21386661888
       m_Key: 
     m_FallbackState: 0
     m_WaitForCompletion: 0
@@ -311,9 +311,9 @@ MonoBehaviour:
   _scannerRadius: 6
   _visionRange:
     m_TableReference:
-      m_TableCollectionName: 
+      m_TableCollectionName: GUID:6ae1e96e9a3d4a142980cf0984613658
     m_TableEntryReference:
-      m_KeyId: 0
+      m_KeyId: 167247777792
       m_Key: 
     m_FallbackState: 0
     m_WaitForCompletion: 0

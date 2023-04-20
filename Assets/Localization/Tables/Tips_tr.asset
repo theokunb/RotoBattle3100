@@ -20,7 +20,7 @@ MonoBehaviour:
   m_TableData:
   - m_Id: 3804720173056
     m_Localized: "Merhaba, benim ad\u0131m Eva. Yeni ziyaret\xE7iler i\xE7in brifingler
-      yap\u0131yorum. Devam etmek i\xE7in herhangi bir d\xFC\u011Fmeye t\u0131klay\u0131n."
+      yap\u0131yorum. Devam etmek i\xE7in herhangi bir d\xFC\u011Fmeye t\u0131klay\u0131n..."
     m_Metadata:
       m_Items: []
   - m_Id: 29385199616
@@ -35,9 +35,9 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 143818395648
-    m_Localized: "Listede bir sonraki seviye haritas\u0131d\u0131r. Testleri ge\xE7medeki
-      ilerlemenizi izlemenizi sa\u011Flar. Ganimetleri tekrar almak i\xE7in tamamlanan
-      seviyelerin tekrar oynanabilece\u011Fini belirtmek isterim."
+    m_Localized: "Ard\u0131ndan, seviye haritas\u0131. Testleri ge\xE7medeki ilerlemenizi
+      izlemenizi sa\u011Flar. Ganimetleri tekrar almak i\xE7in tamamlanan seviyelerin
+      tekrar oynanabilece\u011Fini belirtmek isterim."
     m_Metadata:
       m_Items: []
   - m_Id: 179348344832
@@ -58,6 +58,32 @@ MonoBehaviour:
     m_Localized: "\u0130\u015Fte liderlik tablosu. Nerede oldu\u011Funuzu g\xF6rebilirsiniz.
       Di\u011Fer ki\u015Filerin s\u0131ralaman\u0131z\u0131 g\xF6rebilmesi i\xE7in
       ki\u015Fisel verilerin sa\u011Flanmas\u0131na izin vermelisiniz."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 127650903265280
+    m_Localized: "Merhaba, yine ben. \u015Eimdi sava\u015F alan\u0131ndas\u0131n,
+      sana burada ne oldu\u011Funu s\xF6yl\xFCyorum..."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 127679961403392
+    m_Localized: "Bu \xE7ubuk kontrolden sorumludur, W - ileri, A - sola, S - geri
+      ve D - sa\u011Fa d\xFC\u011Fmelerini kullanarak da y\xFCr\xFCyebilirsiniz."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 127737784078336
+    m_Localized: "Rakiplerin say\u0131s\u0131 burada g\xF6sterilir."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 127778514964480
+    m_Localized: "Seviyeniz burada g\xF6r\xFCnt\xFClenir, \xF6l\xE7ek doldu\u011Funda
+      bir kazan\xE7 se\xE7ebilirsiniz."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 127804129579008
+    m_Localized: "Sa\u011Fl\u0131\u011F\u0131n\u0131z\u0131 s\u0131f\u0131r\u0131n
+      \xFCzerinde tutmaya \xE7al\u0131\u015F\u0131n ve rakiplerinizin sa\u011Fl\u0131\u011F\u0131n\u0131
+      s\u0131f\u0131ra indirin. Duraklat d\xFC\u011Fmesi burada. Ba\u011Flant\u0131
+      sonu..."
     m_Metadata:
       m_Items: []
   references:

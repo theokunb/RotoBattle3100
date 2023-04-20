@@ -30,22 +30,31 @@ public class PlayerLoader : MonoBehaviour
         _player.GetComponent<PlayerWallet>().SetWallet(playerData.GetWallet());
         _player.SetProgress(playerData.GetProgress());
         _player.SetUnlockedItems(playerData.UnlockedDetails.Distinct());
+
+        PlayerTutorial playerTutorial = _player.GetComponent<PlayerTutorial>();
+        playerTutorial.IsMenuTutorialCompleted = playerData.IsMenuTutorialCompleted;
+        playerTutorial.IsGameTutorialCompleted = playerData.IsGameTutorialCompleted;
     }
 
-    private void UnlockDetails(IEnumerable<long> detailsId)
+    private void UnlockDetails(IEnumerable<string> detailsKey)
     {
-        foreach(long id in detailsId)
+        //foreach(long id in detailsId)
+        //{
+        //    Detail detail = _itemsPull.Details.Where(detail => detail.Id == id).FirstOrDefault();
+        //    detail?.Unlock();
+        //}
+
+        foreach(var detail in _itemsPull.Details)
         {
-            Detail detail = _itemsPull.Details.Where(detail => detail.Id == id).FirstOrDefault();
-            detail?.Unlock();
+            detail.Unlock();
         }
     }
 
-    private Detail FindDetail(long detailId)
+    private Detail FindDetail(string detailKey)
     {
         foreach (var item in _itemsPull.Details)
         {
-            if (item.Id == detailId)
+            if (item.Id == detailKey)
             {
                 return item;
             }

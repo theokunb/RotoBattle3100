@@ -20,7 +20,7 @@ MonoBehaviour:
   m_TableData:
   - m_Id: 3804720173056
     m_Localized: Hello, my name is Eva. I conduct briefings for new visitors. Click
-      on any button to continue.
+      on any button to continue...
     m_Metadata:
       m_Items: []
   - m_Id: 29385199616
@@ -34,9 +34,9 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 143818395648
-    m_Localized: Next on the list is the level map. It allows you to track your progress
-      in passing tests. I want to note that the completed levels can be replayed
-      in order to get the loot again.
+    m_Localized: Next, the level map. It allows you to track your progress in passing
+      tests. I want to note that the completed levels can be replayed in order to
+      get the loot again.
     m_Metadata:
       m_Items: []
   - m_Id: 179348344832
@@ -49,12 +49,36 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 254451552256
-    m_Localized: In the game, you can adjust the volume with this button
+    m_Localized: In the game, you can adjust the volume with this button.
     m_Metadata:
       m_Items: []
   - m_Id: 288647712768
     m_Localized: Here is the leaderboard. You can see where you are. In order for
       other people to see your rank, you must allow the provision of personal data
+    m_Metadata:
+      m_Items: []
+  - m_Id: 127650903265280
+    m_Localized: Hello, it's me again. You're in combat territory now I tell you
+      what's here...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 127679961403392
+    m_Localized: This stick is responsible for control, you can also walk using the
+      buttons W - forward, A - to the left, S - back and D - to the right.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 127737784078336
+    m_Localized: The number of opponents is displayed here.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 127778514964480
+    m_Localized: Your level is displayed here, when the scale is full you can select
+      a gain.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 127804129579008
+    m_Localized: Try to keep your health above zero, and reduce the health of your
+      opponents to zero. The pause button is here. End of connection...
     m_Metadata:
       m_Items: []
   references:

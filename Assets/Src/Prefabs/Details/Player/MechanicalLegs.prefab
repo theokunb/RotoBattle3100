@@ -774,7 +774,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97333bca735dfc8488f4f28b3cad1778, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _icon: {fileID: 21300000, guid: 0640f986821fa3a46aba705bf4d2948e, type: 3}
+  _icon: {fileID: 21300000, guid: 4b934fa2bd939694aaeb6c8d22ce4ee2, type: 3}
   _prices:
   - _currencyType: 0
     _count: 90

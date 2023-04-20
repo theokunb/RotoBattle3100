@@ -20,51 +20,51 @@ MonoBehaviour:
     - rid: 2549057768154202112
   m_TableData:
   - m_Id: 16408023040
-    m_Localized: armor developed by USR
+    m_Localized: Armor developed by USR
     m_Metadata:
       m_Items: []
   - m_Id: 121609555968
-    m_Localized: scanner developed by USR
+    m_Localized: Scanner developed by USR
     m_Metadata:
       m_Items: []
   - m_Id: 128081367040
-    m_Localized: durable legs designed by USR
+    m_Localized: Durable legs designed by USR
     m_Metadata:
       m_Items: []
   - m_Id: 130656669696
-    m_Localized: the latest achievement of military technology
+    m_Localized: The latest achievement of military technology
     m_Metadata:
       m_Items: []
   - m_Id: 136327368704
-    m_Localized: the latest achievement of military technology
+    m_Localized: The latest achievement of military technology
     m_Metadata:
       m_Items: []
   - m_Id: 139842195456
-    m_Localized: the latest achievement of military technology
+    m_Localized: The latest achievement of military technology
     m_Metadata:
       m_Items: []
   - m_Id: 142090342400
-    m_Localized: star wars starter kit
+    m_Localized: Star wars starter kit
     m_Metadata:
       m_Items: []
   - m_Id: 143491239936
-    m_Localized: star wars starter kit
+    m_Localized: Star wars starter kit
     m_Metadata:
       m_Items: []
   - m_Id: 144271380480
-    m_Localized: star wars starter kit
+    m_Localized: Star wars starter kit
     m_Metadata:
       m_Items: []
   - m_Id: 145017966592
-    m_Localized: true gladiator
+    m_Localized: True gladiator
     m_Metadata:
       m_Items: []
   - m_Id: 145705832448
-    m_Localized: true gladiator
+    m_Localized: True gladiator
     m_Metadata:
       m_Items: []
   - m_Id: 146465001472
-    m_Localized: true gladiator
+    m_Localized: True gladiator
     m_Metadata:
       m_Items: []
   - m_Id: 147186421760
@@ -72,31 +72,31 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 147895259136
-    m_Localized: don't forget to say "hasta la vista" after the shot
+    m_Localized: Don't forget to say "hasta la vista" after the shot
     m_Metadata:
       m_Items: []
   - m_Id: 148671205376
-    m_Localized: light gun
+    m_Localized: Light gun
     m_Metadata:
       m_Items: []
   - m_Id: 729569726464
-    m_Localized: for those who like to make holes in enemies
+    m_Localized: For those who like to make holes in enemies
     m_Metadata:
       m_Items: []
   - m_Id: 731884982272
-    m_Localized: heavy weapon that sweeps away any threat
+    m_Localized: Heavy weapon that sweeps away any threat
     m_Metadata:
       m_Items: []
   - m_Id: 733663367168
-    m_Localized: shoots rockets
+    m_Localized: Shoots rockets
     m_Metadata:
       m_Items: []
   - m_Id: 734711943168
-    m_Localized: if you think to take or not to take, the answer is TAKE!
+    m_Localized: If you think to take or not to take, the answer is TAKE!
     m_Metadata:
       m_Items: []
   - m_Id: 735777296384
-    m_Localized: disabling shocker
+    m_Localized: Disabling shocker
     m_Metadata:
       m_Items: []
   - m_Id: 337828185542656
@@ -126,8 +126,32 @@ MonoBehaviour:
     m_Localized: Spider
     m_Metadata:
       m_Items: []
-  - m_Id: 13061388331028480
-    m_Localized: SuperPsix
+  - m_Id: 19006505688666112
+    m_Localized: Allow to float in the air, have high mobility
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19633709707595776
+    m_Localized: original bender head
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19633771179315200
+    m_Localized: original bender body
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19633790095626240
+    m_Localized: original leg bender
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19633810823876608
+    m_Localized: assembled from parts in a landfill
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19633847272378368
+    m_Localized: assembled from parts in a landfill
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19633929711423488
+    m_Localized: assembled from parts in a landfill
     m_Metadata:
       m_Items: []
   references:

@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.Localization;
+using UnityEngine.Localization.Tables;
 
 [RequireComponent(typeof(DetailShop))]
 [RequireComponent(typeof(DetailStatus))]
@@ -14,7 +15,7 @@ public abstract class Detail : MonoBehaviour
     public string Description => _description.GetLocalizedString();
     public bool IsAvailable => GetComponent<DetailStatus>().IsAvailable;
     public bool CanBuyInShop => GetComponent<DetailStatus>().CanBuyInShop;
-    public long Id => _title.TableEntryReference.KeyId;
+    public string Id => _title.TableEntryReference.KeyId.ToString();
 
     public void SetPosition(Transform target)
     {

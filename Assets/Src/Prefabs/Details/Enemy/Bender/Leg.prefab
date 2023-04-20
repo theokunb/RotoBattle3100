@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 593171810}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.718, z: 0.033}
+  m_LocalPosition: {x: 0, y: 0.718, z: 0.025}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -226,7 +226,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97333bca735dfc8488f4f28b3cad1778, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _icon: {fileID: 0}
+  _icon: {fileID: 21300000, guid: 8d175f91e17647a42932c64b40d177c3, type: 3}
   _prices: []
 --- !u!114 &1878142574
 MonoBehaviour:
@@ -240,7 +240,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 384fbedb2df7d71449ce05d6a354f625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _isAvailable: 0
+  _isAvailable: 1
   _inShop: 0
 --- !u!114 &1878142573
 MonoBehaviour:
@@ -271,16 +271,16 @@ MonoBehaviour:
     m_TableReference:
       m_TableCollectionName: GUID:d8ce7813bc5e4d249b233be2ac2db378
     m_TableEntryReference:
-      m_KeyId: 13070751263264768
+      m_KeyId: 19641895621660672
       m_Key: 
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
   _description:
     m_TableReference:
-      m_TableCollectionName: GUID:d8ce7813bc5e4d249b233be2ac2db378
+      m_TableCollectionName: GUID:f99491e03c86ffe4fa19dee685c2763c
     m_TableEntryReference:
-      m_KeyId: 13070751263264768
+      m_KeyId: 19633790095626240
       m_Key: 
     m_FallbackState: 0
     m_WaitForCompletion: 0

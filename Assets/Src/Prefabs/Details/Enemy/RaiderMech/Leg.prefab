@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 96938534237462381}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.11, y: 2.1, z: 0.28}
+  m_LocalPosition: {x: 0, y: 2.1, z: 0.28}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2546,7 +2546,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5222682439756925503}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.74}
+  m_LocalPosition: {x: 0.11, y: 0.27, z: 0.74}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3374,7 +3374,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97333bca735dfc8488f4f28b3cad1778, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _icon: {fileID: 0}
+  _icon: {fileID: 21300000, guid: 61a63586971bd794ab2ec9b5e9c52bcb, type: 3}
   _prices: []
 --- !u!114 &4169117966445852950
 MonoBehaviour:
@@ -3388,7 +3388,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 384fbedb2df7d71449ce05d6a354f625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _isAvailable: 0
+  _isAvailable: 1
   _inShop: 0
 --- !u!114 &614825622915511854
 MonoBehaviour:
@@ -3417,27 +3417,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _title:
     m_TableReference:
-      m_TableCollectionName: 
+      m_TableCollectionName: GUID:d8ce7813bc5e4d249b233be2ac2db378
     m_TableEntryReference:
-      m_KeyId: 0
+      m_KeyId: 19642281602486272
       m_Key: 
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
   _description:
     m_TableReference:
-      m_TableCollectionName: 
+      m_TableCollectionName: GUID:f99491e03c86ffe4fa19dee685c2763c
     m_TableEntryReference:
-      m_KeyId: 0
+      m_KeyId: 19633929711423488
       m_Key: 
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
   _label:
     m_TableReference:
-      m_TableCollectionName: 
+      m_TableCollectionName: GUID:6ae1e96e9a3d4a142980cf0984613658
     m_TableEntryReference:
-      m_KeyId: 0
+      m_KeyId: 398668500992
       m_Key: 
     m_FallbackState: 0
     m_WaitForCompletion: 0
@@ -3446,9 +3446,9 @@ MonoBehaviour:
   _bonusHealth: 450
   _bonusHealthDescription:
     m_TableReference:
-      m_TableCollectionName: 
+      m_TableCollectionName: GUID:6ae1e96e9a3d4a142980cf0984613658
     m_TableEntryReference:
-      m_KeyId: 0
+      m_KeyId: 21386661888
       m_Key: 
     m_FallbackState: 0
     m_WaitForCompletion: 0
@@ -3456,9 +3456,9 @@ MonoBehaviour:
   _speed: 1.8
   _moveSteed:
     m_TableReference:
-      m_TableCollectionName: 
+      m_TableCollectionName: GUID:6ae1e96e9a3d4a142980cf0984613658
     m_TableEntryReference:
-      m_KeyId: 0
+      m_KeyId: 303503937536
       m_Key: 
     m_FallbackState: 0
     m_WaitForCompletion: 0

@@ -48,10 +48,10 @@ MonoBehaviour:
   _enemies:
   - _enemies:
     - {fileID: 6271963157667777218, guid: abe96811da47fd343aa060a7df375583, type: 3}
-    - {fileID: 6271963157667777218, guid: e69e2bfa9cf7e2a498a71ba6cbc3c146, type: 3}
     - {fileID: 6271963157667777218, guid: abe96811da47fd343aa060a7df375583, type: 3}
   - _enemies:
     - {fileID: 6271963157667777218, guid: abe96811da47fd343aa060a7df375583, type: 3}
+    - {fileID: 6271963157667777218, guid: e69e2bfa9cf7e2a498a71ba6cbc3c146, type: 3}
     - {fileID: 6271963157667777218, guid: abe96811da47fd343aa060a7df375583, type: 3}
   - _enemies:
     - {fileID: 6271963157667777218, guid: e69e2bfa9cf7e2a498a71ba6cbc3c146, type: 3}
