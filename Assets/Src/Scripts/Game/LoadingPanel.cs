@@ -7,13 +7,10 @@ public class LoadingPanel : MonoBehaviour
 {
     [SerializeField] private Image _progress;
     [SerializeField] private Sprite[] _wallpapers;
-
-    private Image _backgroundImage;
+    [SerializeField] private Image _backgroundImage;
 
     public void Open(AsyncOperation operation)
     {
-        _backgroundImage = GetComponent<Image>();
-
         int index = Random.Range(0, _wallpapers.Length);
         _backgroundImage.sprite = _wallpapers[index];
 
