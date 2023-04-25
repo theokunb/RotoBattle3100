@@ -29,9 +29,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6016546848846392086}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: -0.45399034, z: 0, w: -0.8910066}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.0839015, y: 1.0839015, z: 1.0839015}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8195468299389050895}
@@ -108,6 +108,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _animationDuration: 0.5
+  _isUnscaledTime: 0
   _scaleValue: 1.1
   _loopCount: -1
   _loopType: 1
@@ -124,6 +125,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _animationDuration: 0.5
+  _isUnscaledTime: 0
   _rotationValue: {x: 0, y: 90, z: 0}
 --- !u!1001 &8518171127249520612
 PrefabInstance:

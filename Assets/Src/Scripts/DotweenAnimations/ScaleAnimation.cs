@@ -1,4 +1,5 @@
 using DG.Tweening;
+using System;
 using UnityEngine;
 
 public class ScaleAnimation : DotweenAnimation
@@ -7,10 +8,11 @@ public class ScaleAnimation : DotweenAnimation
     [SerializeField] private int _loopCount;
     [SerializeField] private LoopType _loopType;
 
-    public override void Animate()
+    public override void Animate(Action onComplete = null)
     {
         transform.DOScale(_scaleValue, Duration)
             .SetLoops(_loopCount, LoopType.Yoyo)
-            .SetUpdate(IsUnscaledTime);
+            .SetUpdate(IsUnscaledTime)
+            .OnComplete(() => onComplete());
     }
 }

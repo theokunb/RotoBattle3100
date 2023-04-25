@@ -1442,7 +1442,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07cd0f82d7f2a124c91b1afecee57893, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _upgradePanel: {fileID: 261644727}
+  _upgradePanel: {fileID: 261644733}
   _player: {fileID: 380437127}
   _cardHandlers:
   - {fileID: 1308255831}
@@ -1575,6 +1575,9 @@ GameObject:
   - component: {fileID: 261644728}
   - component: {fileID: 261644730}
   - component: {fileID: 261644729}
+  - component: {fileID: 261644733}
+  - component: {fileID: 261644732}
+  - component: {fileID: 261644731}
   m_Layer: 5
   m_Name: UpgradesPanel
   m_TagString: Untagged
@@ -1644,6 +1647,54 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 261644727}
   m_CullTransparentMesh: 1
+--- !u!114 &261644731
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 261644727}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a024354c3460c9543a44bbb7ee3cc0e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _animationDuration: 0.5
+  _isUnscaledTime: 1
+  _targetValue: 0.7
+  _loopCount: 0
+  _loopType: 0
+--- !u!114 &261644732
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 261644727}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a024354c3460c9543a44bbb7ee3cc0e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _animationDuration: 0.5
+  _isUnscaledTime: 1
+  _targetValue: 0
+  _loopCount: 0
+  _loopType: 0
+--- !u!114 &261644733
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 261644727}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92c63cd380efee443b9bf8c6dbf393c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _fadeInAnimation: {fileID: 261644731}
+  _fadeOutAnimation: {fileID: 261644732}
 --- !u!1 &282388172
 GameObject:
   m_ObjectHideFlags: 0
@@ -3300,6 +3351,7 @@ GameObject:
   - component: {fileID: 627551468}
   - component: {fileID: 627551473}
   - component: {fileID: 627551472}
+  - component: {fileID: 627551474}
   m_Layer: 5
   m_Name: Card2
   m_TagString: Untagged
@@ -3340,6 +3392,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _card: {fileID: 2143615053}
+  _scaleAnimation: {fileID: 627551474}
 --- !u!114 &627551469
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3528,6 +3581,23 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &627551474
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 627551466}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e5e6786e1e629743b4fc719a0249f35, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _animationDuration: 0.5
+  _isUnscaledTime: 1
+  _scaleValue: 1
+  _loopCount: 0
+  _loopType: 0
 --- !u!114 &634983537 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1151675314784559076, guid: 31ea92db355fd4343b50b1c53554b9cb, type: 3}
@@ -4488,7 +4558,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 180
+  m_fontSize: 36
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -6127,6 +6197,7 @@ GameObject:
   - component: {fileID: 1308255831}
   - component: {fileID: 1308255834}
   - component: {fileID: 1308255833}
+  - component: {fileID: 1308255835}
   m_Layer: 5
   m_Name: Card1
   m_TagString: Untagged
@@ -6202,6 +6273,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _card: {fileID: 1611860869}
+  _scaleAnimation: {fileID: 1308255835}
 --- !u!114 &1308255832
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6355,6 +6427,23 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1308255835
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1308255827}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e5e6786e1e629743b4fc719a0249f35, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _animationDuration: 0.5
+  _isUnscaledTime: 1
+  _scaleValue: 1
+  _loopCount: 0
+  _loopType: 0
 --- !u!1 &1309555726
 GameObject:
   m_ObjectHideFlags: 0
@@ -8982,6 +9071,7 @@ GameObject:
   - component: {fileID: 1839586229}
   - component: {fileID: 1839586234}
   - component: {fileID: 1839586233}
+  - component: {fileID: 1839586235}
   m_Layer: 5
   m_Name: Card3
   m_TagString: Untagged
@@ -9022,6 +9112,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _card: {fileID: 756363434}
+  _scaleAnimation: {fileID: 1839586235}
 --- !u!114 &1839586230
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9210,6 +9301,23 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1839586235
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1839586227}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e5e6786e1e629743b4fc719a0249f35, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _animationDuration: 0.5
+  _isUnscaledTime: 1
+  _scaleValue: 1
+  _loopCount: 0
+  _loopType: 0
 --- !u!1 &1886544840
 GameObject:
   m_ObjectHideFlags: 0

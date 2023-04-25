@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public abstract class DotweenAnimation : MonoBehaviour
@@ -8,5 +9,5 @@ public abstract class DotweenAnimation : MonoBehaviour
     protected float Duration => _animationDuration;
     protected bool IsUnscaledTime => _isUnscaledTime;
 
-    public abstract void Animate();
+    public abstract void Animate(Action onCompleteCallback = null);
 }

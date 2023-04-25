@@ -2,9 +2,9 @@ using DG.Tweening;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class UpgradeController : MonoBehaviour
+public class UpgradeHandler : MonoBehaviour
 {
-    [SerializeField] private GameObject _upgradePanel;
+    [SerializeField] private FadableImage _upgradePanel;
     [SerializeField] private Player _player;
     [SerializeField] private CardHandler[] _cardHandlers;
 
@@ -26,34 +26,23 @@ public class UpgradeController : MonoBehaviour
     private void ShowPanel()
     {
         Time.timeScale = 0f;
-        _upgradePanel.SetActive(true);
+        _upgradePanel.gameObject.SetActive(true);
         MinimizeCards();
 
-        var image = _upgradePanel.GetComponent<Image>();
-
-        if (image != null)
+        _upgradePanel.FadeIn(() =>
         {
-            image.color = new Color(0, 0, 0, 0);
-            image.DOFade(0.9f, 0.5f).SetUpdate(true).OnComplete(() =>
-            {
-                OpenCards();
-            });
-        }
+            OpenCards();
+        });
     }
 
     private void HidePanel()
     {
-        var image = _upgradePanel.GetComponent<Image>();
-
-        if (image != null)
+        _upgradePanel.FadeOut(() =>
         {
-            image.DOFade(0, 0.2f).SetUpdate(true).OnComplete(() =>
-            {
-                CloseCards();
-                _upgradePanel.SetActive(false);
-                Time.timeScale = 1f;
-            });
-        }
+            CloseCards();
+            _upgradePanel.gameObject.SetActive(false);
+            Time.timeScale = 1f;
+        });
     }
 
     private void MinimizeCards()

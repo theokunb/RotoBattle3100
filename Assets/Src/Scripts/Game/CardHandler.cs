@@ -8,6 +8,7 @@ using DG.Tweening;
 public class CardHandler : MonoBehaviour
 {
     [SerializeField] private Card _card;
+    [SerializeField] private DotweenAnimation _scaleAnimation;
 
     private Button _button;
     private RawImage _rawImage;
@@ -41,9 +42,7 @@ public class CardHandler : MonoBehaviour
 
     public void OpenCard()
     {
-        Minimize();
-
-        transform.DOScale(Vector3.one, 0.5f).SetUpdate(true).OnComplete(() =>
+        _scaleAnimation.Animate(() =>
         {
             _card?.Open();
         });
