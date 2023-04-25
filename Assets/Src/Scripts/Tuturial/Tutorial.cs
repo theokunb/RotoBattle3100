@@ -37,7 +37,15 @@ public abstract class Tutorial : MonoBehaviour
     private void OnEnable()
     {
         _input.Enable();
+    }
 
+    private void OnDisable()
+    {
+        _input.Disable();
+    }
+
+    public void Start()
+    {
         if (IsTutorialCompleted() == false)
         {
             FadePanel(0, 1, 0.5f, () =>
@@ -50,11 +58,6 @@ public abstract class Tutorial : MonoBehaviour
         {
             gameObject.SetActive(false);
         }
-    }
-
-    private void OnDisable()
-    {
-        _input.Disable();
     }
 
     public abstract bool IsTutorialCompleted();

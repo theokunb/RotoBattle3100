@@ -112,8 +112,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7381552865626569080}
-  m_LocalRotation: {x: -0, y: -0.68478775, z: -0, w: -0.72874266}
-  m_LocalPosition: {x: -0.038402885, y: 0.152, z: 0.012495137}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -122,7 +122,7 @@ Transform:
   - {fileID: 7688175529312715360}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: -273.562, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &7381552865626569075
 Animator:
   serializedVersion: 4
@@ -155,7 +155,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97333bca735dfc8488f4f28b3cad1778, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _icon: {fileID: 21300000, guid: 617b781598b84024f80508d1aae8b666, type: 3}
+  _icon: {fileID: 21300000, guid: a993b4007b3f9584b844887a76a61602, type: 3}
   _prices:
   - _currencyType: 0
     _count: 3500
@@ -230,7 +230,7 @@ MonoBehaviour:
     m_WaitForCompletion: 0
     m_LocalVariables: []
   _upperPlaceOfDetail: {fileID: 7688175529312715360}
-  _bonusHealth: 400
+  _bonusHealth: 350
   _bonusHealthDescription:
     m_TableReference:
       m_TableCollectionName: GUID:6ae1e96e9a3d4a142980cf0984613658

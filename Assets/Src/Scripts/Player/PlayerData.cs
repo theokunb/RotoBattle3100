@@ -100,7 +100,7 @@ public class PlayerData
     private void FillProgress(PlayerProgress playerProgress)
     {
         CompletedLevels = playerProgress.GetCompletedLevels();
-        LastGamedDay = playerProgress.GetLastGamedDay();
+        LastGamedDay = playerProgress.LastGamedDay;
     }
 
     private void FillUnlockedDetails(IEnumerable<string> detailsId)

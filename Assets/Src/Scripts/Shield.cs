@@ -5,7 +5,7 @@ using UnityEngine;
 public class Shield : MonoBehaviour
 {
     private const float FadeTime = 0.2f;
-    private const int AbsorbPerLevel = 100;
+    private const int AbsorbPerLevel = 200;
 
     [SerializeField] private HealthBar _healthBar;
     [SerializeField] private float _shieldUpdateTime;

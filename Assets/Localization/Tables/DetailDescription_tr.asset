@@ -156,6 +156,47 @@ MonoBehaviour:
     m_Localized: "bir \xE7\xF6pl\xFCkteki par\xE7alardan bir araya getirilmi\u015F"
     m_Metadata:
       m_Items: []
+  - m_Id: 19965753541169152
+    m_Localized: "Bu z\u0131rh, i\xE7 sava\u015F s\u0131ras\u0131nda n\xF6bet\xE7ilerle
+      donat\u0131ld\u0131."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19967235682373632
+    m_Localized: "Bu t\u0131rt\u0131llar, i\xE7 sava\u015F s\u0131ras\u0131nda n\xF6bet\xE7ilerle
+      donat\u0131ld\u0131."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19982816066310144
+    m_Localized: "Kahramanca par\xE7alar, eski Mars teknolojisi kullan\u0131larak
+      in\u015Fa edildi."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19987894198243328
+    m_Localized: "Mars kral\u0131yla yap\u0131lan sava\u015Ftan sonra bu z\u0131rhlar\u0131n
+      tamam\u0131 kayboldu."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19993740743446528
+    m_Localized: "\xC7al\u0131nan askeri planlardan olu\u015Fturuldu. Korsanlar\u0131n
+      en sevdi\u011Fi oyuncak"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19997557623001088
+    m_Localized: "Ba\u015Far\u0131s\u0131z giri\u015Fimlerden sonra geli\u015Fmi\u015F
+      \xF6r\xFCmcek z\u0131rh\u0131. Buna kar\u015F\u0131 koymak i\xE7in bir deli
+      gerekir."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20003941219471360
+    m_Localized: "En tehlikeli haydutlar aras\u0131nda pop\xFCler olan nadir ka\xE7ak
+      mi\u011Ffer"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20005248785354752
+    m_Localized: "Kalabal\u0131\u011F\u0131 bast\u0131rmak i\xE7in g\xFC\xE7lendirilmi\u015F
+      taray\u0131c\u0131 kafas\u0131"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds:

@@ -144,6 +144,50 @@ MonoBehaviour:
     m_Localized: Raider
     m_Metadata:
       m_Items: []
+  - m_Id: 19974739774574592
+    m_Localized: Power armor
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19976767993188352
+    m_Localized: Heroic Chest
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19993640558301184
+    m_Localized: Spider grip
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19996849284747264
+    m_Localized: Royal breastplate
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19998596011036672
+    m_Localized: Helm of the King of Mars
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20000047533821952
+    m_Localized: Thermal scanner
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20003733253296128
+    m_Localized: Armor of the Mad Raider
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20006586730582016
+    m_Localized: Enhanced Spider Armor
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20008950485127168
+    m_Localized: Spider Grip "King of Mars"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20012984575102976
+    m_Localized: Night avenger
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20014263183511552
+    m_Localized: Reinforced police helmet
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds:

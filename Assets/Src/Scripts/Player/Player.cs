@@ -113,6 +113,15 @@ public class Player : Character
         _unlockedItems?.Add(itemKey);
     }
 
+    public void ResetUpgrades()
+    {
+        SetUpgrade(new Upgrade());
+
+        HealthUpgraded?.Invoke();
+        ShieldUpgraded?.Invoke();
+        SpeedUpgraded?.Invoke();
+    }
+
     private void OnLevelUp()
     {
         LevelChanged?.Invoke();

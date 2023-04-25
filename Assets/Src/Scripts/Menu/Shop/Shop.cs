@@ -1,3 +1,4 @@
+using DG.Tweening;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -5,12 +6,17 @@ using UnityEngine;
 
 public class Shop : MonoBehaviour
 {
+    [SerializeField] private Player _player;
     [SerializeField] private ItemsCollectionView _template;
     [SerializeField] private GameObject _container;
     [SerializeField] private ItemsPull _items;
     [SerializeField] private BuyWindow _buyWindow;
+    [SerializeField] private BackgroundAudioPlayer _backgroundAudioPlayer;
     [SerializeField] private GameObject _emptyShopTemplate;
+    [SerializeField] private SpecialGood _specialGoodTemplate;
+    [SerializeField] private RewardItem _rewardTemplate;
 
+    private SpecialGood _special;
     private Type[] _detailTypes = { typeof(Head), typeof(Body), typeof(Leg), typeof(Weapon) };
     private List<ItemsCollectionView> _collections;
     private List<Detail> _details => _items.Details
@@ -22,15 +28,20 @@ public class Shop : MonoBehaviour
     private void Awake()
     {
         _collections = new List<ItemsCollectionView>();
+
+        _special = Instantiate(_specialGoodTemplate, _container.transform);
+        _special.SetLastDate(_player.Progress.LastGamedDay);
     }
 
     private void OnEnable()
     {
         Subscribe();
+        _special.Opened += SpecialOpened;
     }
 
     private void OnDisable()
     {
+        _special.Opened -= SpecialOpened;
         foreach(var collection in _collections)
         {
             collection.ItemSelected -= OnItemSelected;
@@ -108,6 +119,39 @@ public class Shop : MonoBehaviour
             Instantiate(_emptyShopTemplate, _container.transform);
             return;
         }
+    }
+
+    private void SpecialOpened(Detail detail, DateTime dateTime)
+    {
+        _backgroundAudioPlayer.Pause();
+
+        GameStorage.Ad.ShowRewardVideo(() =>
+        {
+            detail.Unlock();
+            _player.AddItem(detail.Id);
+            _player.Progress.LastGamedDay = dateTime;
+            GameStorage.Storage.Save(new PlayerData(_player));
+
+            var rewardView = Instantiate(_rewardTemplate, transform);
+            rewardView.Render(detail);
+            rewardView.transform.localScale = Vector3.zero;
+            rewardView.Tapped += OnRewardViewTapped;
+
+            rewardView.transform.DOScale(0.7f, 0.5f).SetUpdate(true);
+            _special.SetLastDate(dateTime);
+
+            _backgroundAudioPlayer.Resume();
+        });
+    }
+
+    private void OnRewardViewTapped(RewardView rewardView)
+    {
+        rewardView.Tapped -= OnRewardViewTapped;
+
+        rewardView.transform.DOScale(0, 0.5f).SetUpdate(true).OnComplete(() =>
+        {
+            Destroy(rewardView.gameObject);
+        });
     }
 }
 

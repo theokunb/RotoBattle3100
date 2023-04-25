@@ -1,7 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(Detail))]
 public class DetailShop : MonoBehaviour
 {
     [SerializeField] private Sprite _icon;

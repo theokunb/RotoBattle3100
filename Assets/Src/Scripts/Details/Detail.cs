@@ -20,6 +20,7 @@ public abstract class Detail : MonoBehaviour
     public void SetPosition(Transform target)
     {
         transform.position = target.position;
+        transform.parent = target.transform;
     }
 
     public void Unlock()

@@ -65,7 +65,7 @@ public class Enemy : Character
 
     public override int CalculateHealth()
     {
-        return (base.CalculateHealth() / 2);
+        return Convert.ToInt32((base.CalculateHealth() / 1.5f));
     }
 
     public override void SuspendMovement()

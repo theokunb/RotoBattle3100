@@ -147,6 +147,38 @@ MonoBehaviour:
     m_Key: RaiderLegDescription
     m_Metadata:
       m_Items: []
+  - m_Id: 19965753541169152
+    m_Key: ForceBody
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19967235682373632
+    m_Key: ForceLeg
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19982816066310144
+    m_Key: HeroArmor
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19987894198243328
+    m_Key: KingArmor
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19993740743446528
+    m_Key: MadArmor
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19997557623001088
+    m_Key: NewSpiderArmor
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20003941219471360
+    m_Key: PunisherHead
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20005248785354752
+    m_Key: SuperiorHead
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

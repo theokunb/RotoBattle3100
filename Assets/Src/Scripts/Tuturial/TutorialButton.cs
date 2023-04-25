@@ -30,6 +30,7 @@ public class TutorialButton : MonoBehaviour
     {
         _playerTutorial.IsMenuTutorialCompleted = false;
         _tutotailPanel.gameObject.SetActive(true);
+        _tutotailPanel.Start();
         _skipTutorialButton.gameObject.SetActive(true);
         gameObject.SetActive(false);
     }

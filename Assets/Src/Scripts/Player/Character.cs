@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.Events;
@@ -30,11 +31,13 @@ public class Character : MonoBehaviour
         if (target != null)
         {
             StopFreeBie();
+            Armory.Body.transform.LookAt(target.Armory.Body.transform);
 
-            Armory.Body.transform.LookAt(target.transform);
-            Armory.Head.transform.LookAt(target.transform);
+            //Armory.Head.transform.LookAt(target.Armory.Head.transform);
             Armory.Body.Attack(target);
         }
+
+        
     }
 
     protected void StartFreeBie()

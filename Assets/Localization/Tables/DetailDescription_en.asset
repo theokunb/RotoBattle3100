@@ -154,6 +154,41 @@ MonoBehaviour:
     m_Localized: assembled from parts in a landfill
     m_Metadata:
       m_Items: []
+  - m_Id: 19965753541169152
+    m_Localized: This armor was equipped with sentinels during the civil war.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19967235682373632
+    m_Localized: These caterpillars were equipped with sentinels during the civil
+      war.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19982816066310144
+    m_Localized: Heroic parts were built using old Martian technology.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19987894198243328
+    m_Localized: After the war with the king of Mars, a complete set of these armors
+      was lost.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19993740743446528
+    m_Localized: Created from stolen military blueprints. Pirates' favorite toy
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19997557623001088
+    m_Localized: Advanced spider armor after failed attempts. It takes a madman to
+      counter this
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20003941219471360
+    m_Localized: Rare smuggled helmet, popular with the most dangerous bandits
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20005248785354752
+    m_Localized: Reinforced scanner head for crowd suppression
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds:

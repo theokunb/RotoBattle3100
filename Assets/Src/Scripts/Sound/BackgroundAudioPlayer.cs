@@ -43,4 +43,14 @@ public class BackgroundAudioPlayer : MonoBehaviour
         _backgroundPlayer.loop = false;
         _backgroundPlayer.Stop();
     }
+
+    public void Pause()
+    {
+        _backgroundPlayer.mute = true;
+    }
+
+    public void Resume()
+    {
+        _backgroundPlayer.mute = false;
+    }
 }

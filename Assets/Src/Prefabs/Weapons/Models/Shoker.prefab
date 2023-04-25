@@ -82,14 +82,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97333bca735dfc8488f4f28b3cad1778, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _icon: {fileID: 21300000, guid: d4e33d7e33e79b54ca860fb90569c3b4, type: 3}
+  _icon: {fileID: 21300000, guid: bb88ac41f0ac8104894b6a0e7223e788, type: 3}
   _prices:
   - _currencyType: 0
     _count: 300
   - _currencyType: 1
-    _count: 200
+    _count: 650
   - _currencyType: 2
-    _count: 400
+    _count: 700
 --- !u!114 &7425045554632412597
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -1,5 +1,6 @@
 using Agava.YandexGames;
 using Newtonsoft.Json;
+using System;
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
 using UnityEngine;
@@ -7,7 +8,59 @@ using UnityEngine;
 public static class GameStorage
 {
     public static IStorage Storage { get; private set; } = new FileStorage();
-    public static ILeaderboardRecorder Leaderboard { get; private set; } = new YandexLeaderboard();
+    public static ILeaderboardRecorder Leaderboard { get; private set; } = new MyLeaderboard();
+    public static Ad Ad { get; private set; } = new Ad();
+
+}
+
+public class Ad
+{
+    private readonly int _adDelay = 4;
+    private int _current = 0;
+    
+    public void ShowInterstitial(Action OnCloseCallback)
+    {
+        _current++;
+
+        if(_current >= _adDelay)
+        {
+            _current = 0;
+
+            InterstitialAd.Show(onCloseCallback: (status) =>
+            {
+                OnCloseCallback();
+            });
+        }
+        else
+        {
+            OnCloseCallback();
+        }
+    }
+
+    public void ShowRewardVideo(Action rewardCallback)
+    {
+        bool isRewarded = false;
+
+        VideoAd.Show(onRewardedCallback: () =>
+        {
+            isRewarded = true;
+        },
+        onCloseCallback: () =>
+        {
+            if(isRewarded)
+            {
+                rewardCallback();
+            }
+        });
+    }
+}
+
+public class MyLeaderboard : ILeaderboardRecorder
+{
+    public void Record(PlayerData data)
+    {
+
+    }
 }
 
 public class YandexLeaderboard : ILeaderboardRecorder

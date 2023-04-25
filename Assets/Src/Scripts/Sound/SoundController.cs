@@ -36,4 +36,12 @@ public class SoundController : MonoBehaviour
         float value = PlayerPrefs.GetFloat(PlayerPrefsKeys.Volume);
         return value;
     }
+
+    public void Stop()
+    {
+        foreach(var audioSource in _audioSources)
+        {
+            audioSource.Stop();
+        }
+    }
 }

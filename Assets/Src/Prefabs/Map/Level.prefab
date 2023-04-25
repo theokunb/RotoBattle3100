@@ -396,7 +396,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: No translation found for 'LevelLabel' in LevelTable
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 528472c79d79ebf49aeb92bb6ea37f27, type: 2}
   m_sharedMaterial: {fileID: -8836717355685085246, guid: 528472c79d79ebf49aeb92bb6ea37f27, type: 2}

@@ -2,7 +2,6 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
-[RequireComponent(typeof(Character))]
 public class PlayerScanner : MonoBehaviour
 {
     private List<Character> _enemies = new List<Character>();

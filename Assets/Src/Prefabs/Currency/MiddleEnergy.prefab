@@ -134,8 +134,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _currencyType: 2
-  _minValue: 30
-  _maxValue: 60
+  _minValue: 50
+  _maxValue: 90
 --- !u!54 &1126430078798320077
 Rigidbody:
   m_ObjectHideFlags: 0

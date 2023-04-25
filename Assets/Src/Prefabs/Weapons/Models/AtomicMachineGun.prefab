@@ -520,7 +520,7 @@ MonoBehaviour:
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
-  _damage: 60
+  _damage: 70
   _maxDelayBetweenShoot: 0.3
   _minDelayBetweenShoot: 0.25
   _shootPlace: {fileID: 7008777911112941734}
@@ -559,14 +559,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97333bca735dfc8488f4f28b3cad1778, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _icon: {fileID: 21300000, guid: 9e700142db77c5d44a878c62539e8e08, type: 3}
+  _icon: {fileID: 21300000, guid: 372dd316c3b8e5d4bbb5c0e7e9d61955, type: 3}
   _prices:
   - _currencyType: 0
-    _count: 100
+    _count: 350
   - _currencyType: 1
-    _count: 280
+    _count: 480
   - _currencyType: 2
-    _count: 60
+    _count: 120
 --- !u!114 &7992275215848762056
 MonoBehaviour:
   m_ObjectHideFlags: 0

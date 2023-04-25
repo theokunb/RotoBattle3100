@@ -9,14 +9,17 @@ public class GameMenu : Menu
     [SerializeField] private Button _exitButton;
     [SerializeField] private LoadingPanel _loadingPanel;
 
-    private void OnEnable()
+    protected override void OnEnable()
     {
+        base.OnEnable();
+
         _resumeButton.onClick.AddListener(OnResumeClicked);
         _exitButton.onClick.AddListener(OnExitClicked);
     }
 
-    private void OnDisable()
+    protected override void OnDisable()
     {
+        base.OnDisable();
         _resumeButton.onClick.RemoveListener(OnResumeClicked);
         _exitButton.onClick.RemoveListener(OnExitClicked);
     }
@@ -28,8 +31,6 @@ public class GameMenu : Menu
 
     private void OnExitClicked()
     {
-        Time.timeScale = 1;
-
         _loadingPanel.gameObject.SetActive(true);
         _loadingPanel.Open(MenuScene.LoadAsync());
     }

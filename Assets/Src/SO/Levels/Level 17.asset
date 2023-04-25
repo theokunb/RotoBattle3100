@@ -1,0 +1,80 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ebea7e1c5238c14591d697a92751782, type: 3}
+  m_Name: Level 17
+  m_EditorClassIdentifier: 
+  _id: 17
+  _width: 15
+  _height: 11
+  _lenght: 55
+  _terrain: {fileID: 8354069678262916674, guid: e3179f8f0cc34a541b749bb0e70c36c6, type: 3}
+  _boundTemplate: {fileID: 3505604342049137824, guid: a73becd4cbcc54140aabe10af2457066, type: 3}
+  _stand: {fileID: 7016779094596694859, guid: d41e5cc6971638d43aae5ba9598f1266, type: 3}
+  _wall: {fileID: 1273095808224248924, guid: 0c3ffba27c4a0174eb4f6e7f442f9d75, type: 3}
+  _decorations:
+  - {fileID: 8566316504453719887, guid: ddf8a91c799ccbb43b3b7641b80521f8, type: 3}
+  - {fileID: 1000012006241372, guid: 6d21e769def7d504ea22abcb06173633, type: 3}
+  - {fileID: 1000011569870456, guid: 7664aa771caa1ce42965283fa24dbbd2, type: 3}
+  - {fileID: 1072136119220180913, guid: b442dadad74653e4389981df66830934, type: 3}
+  - {fileID: 824184707848861566, guid: 9aa57307c2e7e304f8088179147650ad, type: 3}
+  - {fileID: 418564712179155744, guid: 889def913893c0f4b88246ffdd8057ba, type: 3}
+  - {fileID: 2650136437103329545, guid: b54b71c0e0186a84fb605b421730b4f1, type: 3}
+  - {fileID: 9127245728611040716, guid: 501f66748eba4cd43af14d55a3cdb32b, type: 3}
+  - {fileID: 2140978168344750626, guid: ce173e71e2b60354ba935d028cb6a83b, type: 3}
+  - {fileID: 5823815596118545755, guid: c3fa605f8fc375a448a424c2e30750ee, type: 3}
+  - {fileID: 3909457311779411837, guid: 2d13c8b2757ac89408188bf3a6287c15, type: 3}
+  - {fileID: 5421816048845986344, guid: 045c8a353ebc08a478f7214523414f67, type: 3}
+  - {fileID: 161717371712872058, guid: c338573559ce7be4eaba96c8bfe7c1fb, type: 3}
+  - {fileID: 1165015888352307100, guid: 34540442bea49bc4a80d18c89504bf9e, type: 3}
+  _finishTemplate: {fileID: 4417443279275761885, guid: 8860ecf5ccd00fc44a78a3bc52bfdf6f, type: 3}
+  _title:
+    m_TableReference:
+      m_TableCollectionName: GUID:54480629967ff544489c64cd0874ee31
+    m_TableEntryReference:
+      m_KeyId: 19953327844265984
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  _enemies:
+  - _enemies:
+    - {fileID: 6271963157667777218, guid: 26dcedbb13b7b8441aec4e59586654bc, type: 3}
+  - _enemies:
+    - {fileID: 6271963157667777218, guid: 9000c16d63aa0854aa2f94b74c7c0fb8, type: 3}
+    - {fileID: 6271963157667777218, guid: 27f42e53dde0eab44a7adc7788c593b2, type: 3}
+  - _enemies:
+    - {fileID: 6271963157667777218, guid: 8d8ffeb0916a6e742b105ae0a9cca7a2, type: 3}
+    - {fileID: 6271963157667777218, guid: b6c4f2ac37538ab428d786ca4038c37a, type: 3}
+    - {fileID: 6271963157667777218, guid: 955573e592ba1cb4cbac10e6c78f4603, type: 3}
+  - _enemies:
+    - {fileID: 6271963157667777218, guid: 1b9783116aaabdc4786d4635f2cffe62, type: 3}
+    - {fileID: 6271963157667777218, guid: 97bebda9a4ef41d408fee61c7002ba6b, type: 3}
+    - {fileID: 6271963157667777218, guid: 97bebda9a4ef41d408fee61c7002ba6b, type: 3}
+  - _enemies:
+    - {fileID: 6271963157667777218, guid: 7d0fb6feb7ef6af479bcef7b9b3402de, type: 3}
+    - {fileID: 6271963157667777218, guid: 7d0fb6feb7ef6af479bcef7b9b3402de, type: 3}
+    - {fileID: 6271963157667777218, guid: 8fe05af2ef64f3d44850ec259cfc1142, type: 3}
+    - {fileID: 6271963157667777218, guid: 8fe05af2ef64f3d44850ec259cfc1142, type: 3}
+  - _enemies:
+    - {fileID: 6271963157667777218, guid: 3e2cece96b705ed4496230a7aa2f350f, type: 3}
+  _rewardCountInDay: 3
+  _icon: {fileID: 21300000, guid: 61ce8ed88a3b64c4fb35952761455936, type: 3}
+  _reward:
+  - _currencyType: 0
+    _count: 310
+  - _currencyType: 1
+    _count: 310
+  - _currencyType: 2
+    _count: 310
+  references:
+    version: 2
+    RefIds: []

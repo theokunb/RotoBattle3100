@@ -22,15 +22,19 @@ public class FinishMenu : Menu
     private Queue<RewardView> _rewardItems= new Queue<RewardView>();
     private Bag _bag;
 
-    private void OnEnable()
+    protected override void OnEnable()
     {
+        base.OnEnable();
+
         _homeButton.onClick.AddListener(OnHomeClicked);
         _replayButton.onClick.AddListener(OnReplayClicked);
         _nextButton.onClick.AddListener(OnNextClicked);
     }
 
-    private void OnDisable()
+    protected override void OnDisable()
     {
+        base.OnDisable();
+
         _homeButton.onClick.RemoveListener(OnHomeClicked);
         _replayButton.onClick.RemoveListener(OnReplayClicked);
         _nextButton.onClick.RemoveListener(OnNextClicked);

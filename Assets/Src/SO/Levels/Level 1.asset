@@ -40,7 +40,7 @@ MonoBehaviour:
     m_TableReference:
       m_TableCollectionName: GUID:54480629967ff544489c64cd0874ee31
     m_TableEntryReference:
-      m_KeyId: 1116037091328
+      m_KeyId: 19951778950713344
       m_Key: 
     m_FallbackState: 0
     m_WaitForCompletion: 0
@@ -50,16 +50,19 @@ MonoBehaviour:
     - {fileID: 6271963157667777218, guid: e69e2bfa9cf7e2a498a71ba6cbc3c146, type: 3}
   - _enemies:
     - {fileID: 6271963157667777218, guid: e69e2bfa9cf7e2a498a71ba6cbc3c146, type: 3}
+    - {fileID: 6271963157667777218, guid: 0a14c8bda7476b0448d6a4f721b3ef02, type: 3}
+  - _enemies:
+    - {fileID: 6271963157667777218, guid: e69e2bfa9cf7e2a498a71ba6cbc3c146, type: 3}
     - {fileID: 6271963157667777218, guid: e69e2bfa9cf7e2a498a71ba6cbc3c146, type: 3}
   - _enemies:
-    - {fileID: 6271963157667777218, guid: abe96811da47fd343aa060a7df375583, type: 3}
+    - {fileID: 6271963157667777218, guid: c31640b48ec885e429c8406980a7fae2, type: 3}
   _rewardCountInDay: 3
   _icon: {fileID: 21300000, guid: 35cc488c0091ff84f8e35d7862412980, type: 3}
   _reward:
   - _currencyType: 0
-    _count: 30
+    _count: 35
   - _currencyType: 1
-    _count: 40
+    _count: 20
   - _currencyType: 2
     _count: 25
   references:

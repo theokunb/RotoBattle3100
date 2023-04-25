@@ -8,11 +8,18 @@ public class ItemsPull : ScriptableObject
 
     public IEnumerable<Detail> Details => _details;
 
-    public DetailDropped GetRandomDetail()
+    public DetailDropped CreateRandomDetail()
     {
         int index = Random.Range(0, _details.Count);
         DetailDropped detailDropped = _details[index].GetComponent<BoxDetail>().Boxing();
         detailDropped.Initialize(_details[index]);
         return detailDropped;
+    }
+
+    public Detail GetRandomDetail()
+    {
+        int index = Random.Range(0, _details.Count);
+
+        return _details[index];
     }
 }

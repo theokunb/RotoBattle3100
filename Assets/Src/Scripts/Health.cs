@@ -1,15 +1,18 @@
 using System;
+using System.Collections;
 using UnityEngine;
 
-[RequireComponent(typeof(Character))]
 public class Health : MonoBehaviour
 {
+    private const int RegenerationPerLevel = 20;
+
     [SerializeField] private HealthBar _healthBar;
 
     private int _maxHealth;
     private int _currentHealth;
     private Shield _shield;
     private Character _character;
+    private Coroutine _regenerationTask;
 
     public event Action<Character> Die;
 
@@ -40,6 +43,49 @@ public class Health : MonoBehaviour
     {
         _shield = GetComponent<Shield>();
         SetHealth();
+
+        int regeneration = GetRegenerationValue();
+        _regenerationTask = StartCoroutine(StartRegeneration(regeneration));
+    }
+
+    private IEnumerator StartRegeneration(int value)
+    {
+        float _elapsedTime = 0;
+        float _regenerationDelay = 1;
+
+        while (true)
+        {
+            _elapsedTime += Time.deltaTime;
+
+            if(_elapsedTime >= _regenerationDelay)
+            {
+                _elapsedTime = 0;
+                _currentHealth += value;
+
+                if(_currentHealth > _maxHealth)
+                {
+                    _currentHealth = _maxHealth;
+                }
+
+                _healthBar?.UpdateHealthBarValue(_maxHealth, _currentHealth);
+            }
+
+            yield return null;
+        }
+    }
+
+    private int GetRegenerationValue()
+    {
+        if(_character is Player)
+        {
+            Player player = _character as Player;
+
+            return RegenerationPerLevel * player.Upgrade.GetUpgradesCount(Upgrades.Health);
+        }
+        else
+        {
+            return 0;
+        }
     }
 
     private void SetHealth()

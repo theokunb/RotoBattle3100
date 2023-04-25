@@ -34,7 +34,7 @@ public class Reward : MonoBehaviour
 
     private GameObject GetRandomItem()
     {
-        return _dropItems?.GetRandomDetail()?.gameObject;
+        return _dropItems?.CreateRandomDetail()?.gameObject;
     }
 
     private GameObject GetRandomCurrency()

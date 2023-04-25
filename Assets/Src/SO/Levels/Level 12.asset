@@ -15,7 +15,7 @@ MonoBehaviour:
   _id: 12
   _width: 15
   _height: 11
-  _lenght: 55
+  _lenght: 42
   _terrain: {fileID: 8354069678262916674, guid: e3179f8f0cc34a541b749bb0e70c36c6, type: 3}
   _boundTemplate: {fileID: 3505604342049137824, guid: a73becd4cbcc54140aabe10af2457066, type: 3}
   _stand: {fileID: 7016779094596694859, guid: d41e5cc6971638d43aae5ba9598f1266, type: 3}
@@ -40,44 +40,35 @@ MonoBehaviour:
     m_TableReference:
       m_TableCollectionName: GUID:54480629967ff544489c64cd0874ee31
     m_TableEntryReference:
-      m_KeyId: 15962219644620800
+      m_KeyId: 19953279966285824
       m_Key: 
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
   _enemies:
   - _enemies:
-    - {fileID: 6271963157667777218, guid: 6e0d7d5ec258fb846b6821873625510d, type: 3}
+    - {fileID: 6271963157667777218, guid: 417687c5bb1954942afd2f7d40206cb5, type: 3}
+    - {fileID: 6271963157667777218, guid: 417687c5bb1954942afd2f7d40206cb5, type: 3}
   - _enemies:
-    - {fileID: 6271963157667777218, guid: 6e0d7d5ec258fb846b6821873625510d, type: 3}
-    - {fileID: 6271963157667777218, guid: 6e0d7d5ec258fb846b6821873625510d, type: 3}
+    - {fileID: 6271963157667777218, guid: b6c4f2ac37538ab428d786ca4038c37a, type: 3}
   - _enemies:
-    - {fileID: 6271963157667777218, guid: 6e0d7d5ec258fb846b6821873625510d, type: 3}
-    - {fileID: 6271963157667777218, guid: 6e0d7d5ec258fb846b6821873625510d, type: 3}
-    - {fileID: 6271963157667777218, guid: 6e0d7d5ec258fb846b6821873625510d, type: 3}
+    - {fileID: 6271963157667777218, guid: 1620345c84a9ac744af4d95dd996315f, type: 3}
+    - {fileID: 6271963157667777218, guid: 1620345c84a9ac744af4d95dd996315f, type: 3}
+    - {fileID: 6271963157667777218, guid: 1620345c84a9ac744af4d95dd996315f, type: 3}
   - _enemies:
-    - {fileID: 6271963157667777218, guid: 72f72a3cc7460744a8c0f3e6f53b9c08, type: 3}
-    - {fileID: 6271963157667777218, guid: 72f72a3cc7460744a8c0f3e6f53b9c08, type: 3}
-    - {fileID: 6271963157667777218, guid: 72f72a3cc7460744a8c0f3e6f53b9c08, type: 3}
-    - {fileID: 6271963157667777218, guid: 72f72a3cc7460744a8c0f3e6f53b9c08, type: 3}
+    - {fileID: 6271963157667777218, guid: 955573e592ba1cb4cbac10e6c78f4603, type: 3}
+    - {fileID: 6271963157667777218, guid: 955573e592ba1cb4cbac10e6c78f4603, type: 3}
   - _enemies:
-    - {fileID: 6271963157667777218, guid: 818da7a3682bb4b46951bf88f2f130f4, type: 3}
-  - _enemies:
-    - {fileID: 6271963157667777218, guid: 818da7a3682bb4b46951bf88f2f130f4, type: 3}
-    - {fileID: 6271963157667777218, guid: 818da7a3682bb4b46951bf88f2f130f4, type: 3}
-  - _enemies:
-    - {fileID: 6271963157667777218, guid: f1d1e6a52cd6328409e66c63ef2a4630, type: 3}
-    - {fileID: 6271963157667777218, guid: 818da7a3682bb4b46951bf88f2f130f4, type: 3}
-    - {fileID: 6271963157667777218, guid: f1d1e6a52cd6328409e66c63ef2a4630, type: 3}
+    - {fileID: 6271963157667777218, guid: b6c4f2ac37538ab428d786ca4038c37a, type: 3}
   _rewardCountInDay: 3
   _icon: {fileID: 21300000, guid: a11e6518dce492b4c94b5e59f697969f, type: 3}
   _reward:
   - _currencyType: 0
-    _count: 300
+    _count: 220
   - _currencyType: 1
-    _count: 300
+    _count: 180
   - _currencyType: 2
-    _count: 300
+    _count: 160
   references:
     version: 2
     RefIds: []

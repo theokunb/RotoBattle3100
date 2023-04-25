@@ -28,7 +28,7 @@ public class Game : MonoBehaviour, ISceneLoadHandler<int>
 
     private void Start()
     {
-        _currentLevel = _levelContainer.GetLevel(0);
+        //_currentLevel = _levelContainer.GetLevel(0);
         _levelCreator.Create(_currentLevel);
         _spawner.CreateEnemyPacks(_currentLevel.Enemies, new Rectangle(_currentLevel.Width, _currentLevel.Lenght));
         _spawner.PutToStartPosition(_player, new Rectangle(_currentLevel.Width, _currentLevel.Lenght));

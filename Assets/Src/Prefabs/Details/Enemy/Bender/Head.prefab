@@ -63,7 +63,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97333bca735dfc8488f4f28b3cad1778, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _icon: {fileID: 21300000, guid: 54a8df81eef00c44586c2f250539f405, type: 3}
+  _icon: {fileID: 21300000, guid: b7760b3e5df4c484ea1b17777f2fea02, type: 3}
   _prices: []
 --- !u!114 &1709543726
 MonoBehaviour:
@@ -132,7 +132,7 @@ MonoBehaviour:
     m_WaitForCompletion: 0
     m_LocalVariables: []
   _upperPlaceOfDetail: {fileID: 0}
-  _bonusHealth: 2500
+  _bonusHealth: 550
   _bonusHealthDescription:
     m_TableReference:
       m_TableCollectionName: GUID:6ae1e96e9a3d4a142980cf0984613658
@@ -142,7 +142,7 @@ MonoBehaviour:
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
-  _scannerRadius: 8.5
+  _scannerRadius: 6.1
   _visionRange:
     m_TableReference:
       m_TableCollectionName: GUID:6ae1e96e9a3d4a142980cf0984613658
@@ -181,7 +181,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7931913261072420433}
   m_LocalRotation: {x: 0.70710707, y: -0.000000042328498, z: 0.00000019609011, w: -0.7071066}
-  m_LocalPosition: {x: 0.01, y: -2.8, z: -0.01}
+  m_LocalPosition: {x: 0.01, y: -2.802, z: -0.01}
   m_LocalScale: {x: 0.6, y: 0.6, z: 0.6}
   m_ConstrainProportionsScale: 0
   m_Children: []

@@ -18,46 +18,25 @@ public class MenuBackground : MonoBehaviour
     
     public void OnepMenu(Menu menu)
     {
-        DisableMenus(menu);
+        menu.gameObject.SetActive(true);
         _canvasGroup.alpha = 0;
-        _canvasGroup.DOFade(1, _fadeTime);
+        _canvasGroup.DOFade(1, _fadeTime).SetUpdate(true);
 
         menu.transform.localPosition = new Vector3(0,-Screen.height, 0);
-        menu.GetComponent<RectTransform>().DOAnchorPosY(0, _translationTime).OnComplete(() =>
+        menu.GetComponent<RectTransform>().DOAnchorPosY(0, _translationTime).SetUpdate(true).OnComplete(() =>
         {
-            Time.timeScale = 0f;
             menu.Activated();
         });
     }
 
     public void CloseMenu(Menu menu)
     {
-        Time.timeScale = 1f;
-        _canvasGroup.DOFade(0, _fadeTime);
+        _canvasGroup.DOFade(0, _fadeTime).SetUpdate(true);
 
-        menu.GetComponent<RectTransform>().DOAnchorPosY(-Screen.height, _translationTime).OnComplete(() => 
+        menu.GetComponent<RectTransform>().DOAnchorPosY(-Screen.height, _translationTime).SetUpdate(true).OnComplete(() => 
         {
-            EnableMenus();
+            menu.gameObject.SetActive(false);
             _canvasGroup.gameObject.SetActive(false);
         });
-    }
-
-    private void DisableMenus(Menu targetMenu)
-    {
-        foreach(var menu in _menus)
-        {
-            if(menu != targetMenu)
-            {
-                menu.gameObject.SetActive(false);
-            }
-        }
-    }
-
-    private void EnableMenus()
-    {
-        foreach (var menu in _menus)
-        {
-            menu.gameObject.SetActive(true);
-        }
     }
 }

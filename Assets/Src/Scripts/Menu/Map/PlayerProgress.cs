@@ -4,25 +4,21 @@ using System;
 public class PlayerProgress
 {
     private int _completedLevels;
-    private DateTime _lastGamedDay;
-
+    
     public PlayerProgress()
     {
         _completedLevels = 0;
-        _lastGamedDay = DateTime.Now;
+        LastGamedDay = DateTime.Now;
     }
 
     public PlayerProgress(int completedLevels, DateTime lastGamedDay)
     {
         _completedLevels = completedLevels;
-        _lastGamedDay = lastGamedDay;
+        LastGamedDay = lastGamedDay;
     }
 
+    public DateTime LastGamedDay { get; set; }
     public int GetCompletedLevels() => _completedLevels;
-
-    public DateTime GetLastGamedDay() => _lastGamedDay;
-
-
 
     public LevelStatus GetStatus(int levelId)
     {
@@ -31,15 +27,6 @@ public class PlayerProgress
     public void PlayedLevel(int idLevel)
     {
         AddProgress(idLevel);
-        VisitGame();
-    }
-
-    public void VisitGame()
-    {
-        if ((DateTime.Now - _lastGamedDay.Date).Days >= 1)
-        {
-            _lastGamedDay = DateTime.Now;
-        }
     }
 
     private void AddProgress(int completedLevel)

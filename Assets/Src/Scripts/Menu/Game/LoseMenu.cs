@@ -10,14 +10,16 @@ public class LoseMenu : Menu
     [SerializeField] private Game _game;
     [SerializeField] private LoadingPanel _loadingPanel;
 
-    private void OnEnable()
+    protected override void OnEnable()
     {
+        base.OnEnable();
         _homeButton.onClick.AddListener(OnHomeClicked);
         _replayButton.onClick.AddListener(OnReplayClicked);
     }
 
-    private void OnDisable()
+    protected override void OnDisable()
     {
+        base.OnDisable();
         _homeButton.onClick.RemoveListener(OnHomeClicked);
         _replayButton.onClick.RemoveListener(OnReplayClicked);
     }

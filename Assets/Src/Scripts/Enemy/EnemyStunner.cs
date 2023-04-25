@@ -1,6 +1,5 @@
 using UnityEngine;
 
-[RequireComponent(typeof(Enemy))]
 public class EnemyStunner : Stunner
 {
     private Enemy _enemy;

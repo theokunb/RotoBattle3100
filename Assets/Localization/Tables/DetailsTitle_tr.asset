@@ -133,15 +133,59 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 19642238128525312
-    m_Localized: Raider
+    m_Localized: "Ak\u0131nc\u0131"
     m_Metadata:
       m_Items: []
   - m_Id: 19642263688613888
-    m_Localized: Raider
+    m_Localized: "Ak\u0131nc\u0131"
     m_Metadata:
       m_Items: []
   - m_Id: 19642281602486272
-    m_Localized: Raider
+    m_Localized: "Ak\u0131nc\u0131"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19974739774574592
+    m_Localized: "G\xFC\xE7 z\u0131rh\u0131"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19976767993188352
+    m_Localized: "Kahraman Sand\u0131\u011F\u0131"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19993640558301184
+    m_Localized: "\xF6r\xFCmcek tutu\u015Fu"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19996849284747264
+    m_Localized: "Kraliyet z\u0131rh\u0131"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19998596011036672
+    m_Localized: "Mars Kral\u0131n\u0131n Mi\u011Fferi"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20000047533821952
+    m_Localized: "Termal taray\u0131c\u0131"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20003733253296128
+    m_Localized: "\xC7\u0131lg\u0131n Bask\u0131nc\u0131n\u0131n Z\u0131rh\u0131"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20006586730582016
+    m_Localized: "G\xFC\xE7lendirilmi\u015F \xD6r\xFCmcek Z\u0131rh\u0131"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20008950485127168
+    m_Localized: "Spider Grip \"Mars'\u0131n Kral\u0131\""
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20012984575102976
+    m_Localized: "Gece intikamc\u0131s\u0131"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20014263183511552
+    m_Localized: "G\xFC\xE7lendirilmi\u015F polis kask\u0131"
     m_Metadata:
       m_Items: []
   references:

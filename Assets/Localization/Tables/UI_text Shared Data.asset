@@ -151,6 +151,18 @@ MonoBehaviour:
     m_Key: Skip
     m_Metadata:
       m_Items: []
+  - m_Id: 20590360795189248
+    m_Key: AvailableUpgrades
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20611907903721472
+    m_Key: Upgrades
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20724564208029696
+    m_Key: Specials
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

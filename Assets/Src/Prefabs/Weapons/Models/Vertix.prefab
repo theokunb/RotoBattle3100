@@ -204,9 +204,9 @@ MonoBehaviour:
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
-  _damage: 650
-  _maxDelayBetweenShoot: 2
-  _minDelayBetweenShoot: 3.5
+  _damage: 850
+  _maxDelayBetweenShoot: 1.8
+  _minDelayBetweenShoot: 2.5
   _shootPlace: {fileID: 1734730347736990611}
   _template: {fileID: 6681602832587000348, guid: 95b60eca81fbb8f499921ccd8143973e, type: 3}
   _bulletSpeed: 6

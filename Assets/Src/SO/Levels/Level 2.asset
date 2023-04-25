@@ -15,7 +15,7 @@ MonoBehaviour:
   _id: 2
   _width: 10
   _height: 11
-  _lenght: 45
+  _lenght: 37
   _terrain: {fileID: 8354069678262916674, guid: e3179f8f0cc34a541b749bb0e70c36c6, type: 3}
   _boundTemplate: {fileID: 3505604342049137824, guid: a73becd4cbcc54140aabe10af2457066, type: 3}
   _stand: {fileID: 7016779094596694859, guid: d41e5cc6971638d43aae5ba9598f1266, type: 3}
@@ -40,32 +40,31 @@ MonoBehaviour:
     m_TableReference:
       m_TableCollectionName: GUID:54480629967ff544489c64cd0874ee31
     m_TableEntryReference:
-      m_KeyId: 1119023435776
+      m_KeyId: 19953099825123328
       m_Key: 
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
   _enemies:
   - _enemies:
-    - {fileID: 6271963157667777218, guid: abe96811da47fd343aa060a7df375583, type: 3}
-    - {fileID: 6271963157667777218, guid: abe96811da47fd343aa060a7df375583, type: 3}
-  - _enemies:
-    - {fileID: 6271963157667777218, guid: abe96811da47fd343aa060a7df375583, type: 3}
-    - {fileID: 6271963157667777218, guid: e69e2bfa9cf7e2a498a71ba6cbc3c146, type: 3}
-    - {fileID: 6271963157667777218, guid: abe96811da47fd343aa060a7df375583, type: 3}
-  - _enemies:
     - {fileID: 6271963157667777218, guid: e69e2bfa9cf7e2a498a71ba6cbc3c146, type: 3}
   - _enemies:
-    - {fileID: 6271963157667777218, guid: c09963c0ed59d144ebb7fca3b35df5b5, type: 3}
+    - {fileID: 6271963157667777218, guid: e69e2bfa9cf7e2a498a71ba6cbc3c146, type: 3}
+    - {fileID: 6271963157667777218, guid: 0a14c8bda7476b0448d6a4f721b3ef02, type: 3}
+  - _enemies:
+    - {fileID: 6271963157667777218, guid: abe96811da47fd343aa060a7df375583, type: 3}
+    - {fileID: 6271963157667777218, guid: abe96811da47fd343aa060a7df375583, type: 3}
+  - _enemies:
+    - {fileID: 6271963157667777218, guid: c31640b48ec885e429c8406980a7fae2, type: 3}
   _rewardCountInDay: 3
   _icon: {fileID: 21300000, guid: 004e4ec24a1acf54db33e23c589a01c1, type: 3}
   _reward:
   - _currencyType: 0
-    _count: 55
+    _count: 30
   - _currencyType: 1
     _count: 40
   - _currencyType: 2
-    _count: 35
+    _count: 25
   references:
     version: 2
     RefIds: []
