@@ -112,6 +112,9 @@ GameObject:
   - component: {fileID: 3907256115618231097}
   - component: {fileID: 5930612035236308980}
   - component: {fileID: 1173973207020654370}
+  - component: {fileID: 2702043592967309094}
+  - component: {fileID: 8036261011950181463}
+  - component: {fileID: 8237443580437471178}
   m_Layer: 5
   m_Name: VisionCircle
   m_TagString: Untagged
@@ -160,7 +163,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.01685381, g: 0, b: 1, a: 1}
+  m_Color: {r: 0.01685381, g: 0, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -177,6 +180,54 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &2702043592967309094
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4834621253595578596}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a024354c3460c9543a44bbb7ee3cc0e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _animationDuration: 2
+  _isUnscaledTime: 1
+  _targetValue: 1
+  _loopCount: 0
+  _loopType: 0
+--- !u!114 &8036261011950181463
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4834621253595578596}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a024354c3460c9543a44bbb7ee3cc0e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _animationDuration: 2
+  _isUnscaledTime: 1
+  _targetValue: 0
+  _loopCount: 0
+  _loopType: 0
+--- !u!114 &8237443580437471178
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4834621253595578596}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92c63cd380efee443b9bf8c6dbf393c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _fadeInAnimation: {fileID: 2702043592967309094}
+  _fadeOutAnimation: {fileID: 8036261011950181463}
 --- !u!1 &6911505537366504101
 GameObject:
   m_ObjectHideFlags: 0
@@ -383,4 +434,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _canvas: {fileID: 1750555874669669906}
-  _visionCirecle: {fileID: 1173973207020654370}
+  _visionCirecle: {fileID: 8237443580437471178}

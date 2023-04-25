@@ -1,13 +1,9 @@
-using DG.Tweening;
 using UnityEngine;
-using UnityEngine.UI;
 
-public class TerrainController : MonoBehaviour
+public class VisionCircle : MonoBehaviour
 {
-    private const float FadeTime = 2;
-
     [SerializeField] private RectTransform _canvas;
-    [SerializeField] private Image _visionCirecle;
+    [SerializeField] private FadableImage _visionCirecle;
 
     private Terrain _terrain;
     private Transform _playerTransform;
@@ -19,10 +15,6 @@ public class TerrainController : MonoBehaviour
 
     private void Start()
     {
-        var color = _visionCirecle.color;
-        color.a = 0;
-        _visionCirecle.color = color;
-
         _canvas.localScale = new Vector3(_terrain.terrainData.size.x, _terrain.terrainData.size.z, 1);
     }
 
@@ -52,13 +44,13 @@ public class TerrainController : MonoBehaviour
         FadeIn();
     }
 
-    private void FadeIn()
-    {
-        _visionCirecle.DOFade(1, FadeTime);
-    }
-
     public void VisionCircleFadeOut()
     {
-        _visionCirecle.DOFade(0f, FadeTime);
+        _visionCirecle.FadeOut();
+    }
+
+    private void FadeIn()
+    {
+        _visionCirecle.FadeIn();
     }
 }

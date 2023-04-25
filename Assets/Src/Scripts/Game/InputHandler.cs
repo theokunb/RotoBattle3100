@@ -1,12 +1,10 @@
-using DG.Tweening;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using UnityEngine.UI;
 
 public class InputHandler : MonoBehaviour
 {
-    [SerializeField] private Stick _circle;
-    [SerializeField] private Stick _stick;
+    [SerializeField] private FadableImage _circle;
+    [SerializeField] private FadableImage _stick;
 
     private PlayerInput _playerInput;
 

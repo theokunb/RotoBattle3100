@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Stick : MonoBehaviour
+public class FadableImage : MonoBehaviour
 {
     [SerializeField] private DotweenAnimation _fadeInAnimation;
     [SerializeField] private DotweenAnimation _fadeOutAnimation;

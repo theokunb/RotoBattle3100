@@ -19,11 +19,11 @@ public class LevelCreator : MonoBehaviour
     private int _platformWidth;
     private int _platformLenght;
     private int _platformHeight;
-    private TerrainController _terrainController;
+    private VisionCircle _terrainController;
     private Level _level;
 
     public Finish Finish { get; private set; }
-    public TerrainController TerrainController => _terrainController;
+    public VisionCircle TerrainController => _terrainController;
 
     private void CreateGround(Terrain template)
     {
@@ -31,7 +31,7 @@ public class LevelCreator : MonoBehaviour
         createdTerrain.terrainData.size = new Vector3(_platformWidth, _platformHeight, _platformLenght);
         _navMesh.BuildNavMesh();
 
-        _terrainController = createdTerrain.GetComponent<TerrainController>();
+        _terrainController = createdTerrain.GetComponent<VisionCircle>();
     }
 
     private void CreateBounds(GameObject boundTemplate)
