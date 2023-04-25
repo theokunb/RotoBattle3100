@@ -8,6 +8,10 @@ public class Weapon : Detail
 {
     private const int BulletsCount = 5;
     private const float AttackSpeedPerLevel = 0.9f;
+    private const string DetailTableName = "DetailStats";
+    private const string LowAttackSpeedKey = "LowAttackSpeed";
+    private const string MediumAttackSpeedKey = "MediumAttackSpeed";
+    private const string HighAttackSpeedKey = "HighAttackSpeed";
 
     [SerializeField] private int _damage;
     [SerializeField] private float _maxDelayBetweenShoot;
@@ -80,15 +84,19 @@ public class Weapon : Detail
 
     private string GetSpeedLabel(float speed)
     {
-        LocalizedString low = new LocalizedString("DetailStats", "LowAttackSpeed");
-        LocalizedString medium = new LocalizedString("DetailStats", "MediumAttackSpeed");
-        LocalizedString high = new LocalizedString("DetailStats", "HighAttackSpeed");
+        const float LowSpeed = 1.2f;
+        const float MediumSpeed = 0.6f;
+        const float HighSpeed = 0;
+
+        LocalizedString low = new LocalizedString(DetailTableName, LowAttackSpeedKey);
+        LocalizedString medium = new LocalizedString(DetailTableName, MediumAttackSpeedKey);
+        LocalizedString high = new LocalizedString(DetailTableName, HighAttackSpeedKey);
 
         Dictionary<string, float> speedDictionary = new Dictionary<string, float>
         {
-            { low.GetLocalizedString(), 2f },
-            { medium.GetLocalizedString(), 0.7f },
-            { high.GetLocalizedString(), 0f }
+            { low.GetLocalizedString(), LowSpeed },
+            { medium.GetLocalizedString(), MediumSpeed },
+            { high.GetLocalizedString(), HighSpeed }
         };
 
         return speedDictionary.Where(element => speed > element.Value).First().Key;

@@ -13,12 +13,11 @@ public class Grenade : Bullet
 
     protected override void Fly()
     {
-        
     }
 
     protected override void Hit(Collider other)
     {
-        if(other.TryGetComponent<Character>(out Character _))
+        if(other.TryGetComponent(out Character _))
         {
             Explode();
         }
