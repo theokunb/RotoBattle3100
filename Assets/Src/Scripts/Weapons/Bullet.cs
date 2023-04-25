@@ -58,10 +58,3 @@ public abstract class Bullet : MonoBehaviour
     protected abstract void Hit(Collider other);
     protected abstract void LifeTimeExpired();
 }
-
-public interface IHitVisitor
-{
-    bool Visit(Detail detail);
-    bool Visit(Bullet bullet);
-    bool Visit(Character character);
-}
