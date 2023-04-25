@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: -2033895207168538356}
   - component: {fileID: 3565037966701106597}
   - component: {fileID: 2839518835483345599}
+  - component: {fileID: 1983552687567076369}
   m_Layer: 0
   m_Name: DroppedHead
   m_TagString: Untagged
@@ -91,6 +92,21 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 90
   m_CollisionDetection: 0
+--- !u!114 &1983552687567076369
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8136369375267306755}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3bf139b55de0334795e300b6c291aca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _animationDuration: 0.5
+  _scaleValue: 1.1
+  _rotationValue: {x: 0, y: 90, z: 0}
 --- !u!1001 &2466539329139939618
 PrefabInstance:
   m_ObjectHideFlags: 0

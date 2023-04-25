@@ -1,36 +1,32 @@
-using System.Collections;
-using UnityEngine;
 using DG.Tweening;
+using UnityEngine;
 
+[RequireComponent(typeof(DotweenAnimation))]
 public class DetailDropped : MonoBehaviour
 {
     private Detail _detail;
-    private Coroutine _animationTask;
+    private DotweenAnimation _animation;
 
     private void Start()
     {
-        _animationTask = StartCoroutine(AnimationTask());
+        _animation = GetComponent<DotweenAnimation>();
+
+        _animation.ScaleAnimation()
+            .SetLoops(-1, LoopType.Yoyo);
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.TryGetComponent(out Player player))
+        if (other.TryGetComponent(out Bag bag))
         {
-            player.GetComponent<Bag>().Put(this);
-            StopCoroutine(_animationTask);
+            bag.Put(this);
             gameObject.SetActive(false);
         }
     }
 
-    private IEnumerator AnimationTask()
+    private void FixedUpdate()
     {
-        transform.DOScale(1.1f, 0.5f).SetLoops(-1, LoopType.Yoyo);
-
-        while (true)
-        {
-            transform.Rotate(new Vector3(0, 90, 0) * Time.deltaTime);
-            yield return null;
-        }
+        _animation.Rotate();
     }
 
     public Detail GetDetail() => _detail;

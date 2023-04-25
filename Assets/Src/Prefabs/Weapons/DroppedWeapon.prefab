@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7719675478671244852}
   - component: {fileID: 5990287724344544176}
   - component: {fileID: 3215342607158474192}
+  - component: {fileID: -9040478180643420370}
   m_Layer: 0
   m_Name: DroppedWeapon
   m_TagString: Untagged
@@ -91,6 +92,21 @@ CapsuleCollider:
   m_Height: 1
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &-9040478180643420370
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6016546848846392086}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3bf139b55de0334795e300b6c291aca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _animationDuration: 0.5
+  _scaleValue: 1.1
+  _rotationValue: {x: 0, y: 90, z: 0}
 --- !u!1001 &7171071577225469541
 PrefabInstance:
   m_ObjectHideFlags: 0
