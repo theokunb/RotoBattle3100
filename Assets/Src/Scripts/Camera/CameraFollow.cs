@@ -11,25 +11,19 @@ public class CameraFollow : MonoBehaviour
     private void Start()
     {
         _zPosition = _player.transform.position.z - transform.position.z;
-        StartCoroutine(Follow(_player));
     }
 
-    private IEnumerator Follow(Player player)
+    private void FixedUpdate()
     {
-        while (true)
+        transform.position = new Vector3(_player.transform.position.x, transform.position.y, transform.position.z);
+
+        float newZ = _player.transform.position.z - transform.position.z;
+
+        if (Mathf.Abs(newZ - _zPosition) > _offset)
         {
-            transform.position = new Vector3(_player.transform.position.x, transform.position.y, transform.position.z);
+            Vector3 movement = new Vector3(0, 0, newZ - _zPosition);
 
-            float newZ = player.transform.position.z - transform.position.z;
-
-            if (Mathf.Abs(newZ - _zPosition) > _offset)
-            {
-                Vector3 movement = new Vector3(0, 0, newZ - _zPosition);
-
-                transform.position += movement * Time.deltaTime;
-            }
-
-            yield return null;
+            transform.position += movement * Time.deltaTime;
         }
     }
 }
