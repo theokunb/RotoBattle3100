@@ -9,7 +9,7 @@ public abstract class Bullet : MonoBehaviour
     protected int Damage { get; private set; }
     protected float Speed { get; private set; }
     protected float ElapsedTime { get; private set; }
-    protected Rigidbody Rigidbody;
+    protected Rigidbody Rigidbody { get; private set; }
 
     private void Awake()
     {
