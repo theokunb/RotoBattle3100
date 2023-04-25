@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-[RequireComponent(typeof(CameraController))]
+[RequireComponent(typeof(CameraMover))]
 [RequireComponent(typeof(InventoryObserver))]
 public class InventoryPanel : MonoBehaviour
 {
@@ -14,12 +14,12 @@ public class InventoryPanel : MonoBehaviour
     [SerializeField] private WeaponManager _weaponManager;
     [SerializeField] private Button _playerWeapons;
 
-    private CameraController _cameraController;
+    private CameraMover _cameraController;
     private InventoryObserver _inventoryObserver;
 
     private void Start()
     {
-        _cameraController = GetComponent<CameraController>();
+        _cameraController = GetComponent<CameraMover>();
         _inventoryObserver = GetComponent<InventoryObserver>();
         _headButton.onClick.Invoke();
     }
