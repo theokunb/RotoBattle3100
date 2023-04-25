@@ -13,7 +13,8 @@ GameObject:
   - component: {fileID: -5600308964269149721}
   - component: {fileID: 2269109941844782428}
   - component: {fileID: -6346027555617661634}
-  - component: {fileID: 1503147377018629947}
+  - component: {fileID: 1911112768855825193}
+  - component: {fileID: 6932727391589052456}
   m_Layer: 0
   m_Name: DroppedBody
   m_TagString: Untagged
@@ -49,6 +50,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd1768a6227c8fa419fed978b0457615, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _scaleAnimation: {fileID: 1911112768855825193}
+  _rotationAnimation: {fileID: 6932727391589052456}
 --- !u!135 &-5600308964269149721
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -92,7 +95,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 90
   m_CollisionDetection: 0
---- !u!114 &1503147377018629947
+--- !u!114 &1911112768855825193
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -101,11 +104,26 @@ MonoBehaviour:
   m_GameObject: {fileID: 6016546848846392086}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a3bf139b55de0334795e300b6c291aca, type: 3}
+  m_Script: {fileID: 11500000, guid: 6e5e6786e1e629743b4fc719a0249f35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _animationDuration: 0.5
   _scaleValue: 1.1
+  _loopCount: -1
+  _loopType: 1
+--- !u!114 &6932727391589052456
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6016546848846392086}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37aaa92cabbdb2340bfc208a8510cc7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _animationDuration: 0.5
   _rotationValue: {x: 0, y: 90, z: 0}
 --- !u!1001 &8518171127249520612
 PrefabInstance:

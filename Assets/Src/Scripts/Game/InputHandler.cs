@@ -3,9 +3,10 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
 
-public class StickController : MonoBehaviour
+public class InputHandler : MonoBehaviour
 {
-    [SerializeField] private GameObject _stick;
+    [SerializeField] private Stick _circle;
+    [SerializeField] private Stick _stick;
 
     private PlayerInput _playerInput;
 
@@ -29,36 +30,13 @@ public class StickController : MonoBehaviour
 
     private void OnTouch(InputAction.CallbackContext context)
     {
-        FadeOutImages();
+        _circle.FadeIn();
+        _stick.FadeIn();
     }
 
     private void OnKeyPress(InputAction.CallbackContext context)
     {
-        FadeInImages();
-    }
-
-    private void FadeInImages()
-    {
-        Image[] images = _stick.GetComponentsInChildren<Image>();
-
-        foreach(var image in images)
-        {
-            image.DOFade(0, 0.5f).OnComplete(() =>
-            {
-                _stick.SetActive(false);
-            });
-        }
-    }
-
-    private void FadeOutImages()
-    {
-        Image[] images = _stick.GetComponentsInChildren<Image>();
-
-        _stick.SetActive(true);
-
-        foreach (var image in images)
-        {
-            image.DOFade(1, 0.5f);
-        }
+        _circle.FadeOut();
+        _stick.FadeOut();
     }
 }

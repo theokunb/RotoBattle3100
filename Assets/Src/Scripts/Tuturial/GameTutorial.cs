@@ -4,7 +4,7 @@ public class GameTutorial : Tutorial
 {
     [SerializeField] private PlayerMover _mover;
     [SerializeField] private PlayerScanner _scanner;
-    [SerializeField] private StickController _stickController;
+    [SerializeField] private InputHandler _stickController;
  
     public override void Completed()
     {

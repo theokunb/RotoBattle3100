@@ -1460,7 +1460,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 271d53b020ee4f64593ca88fa0d451c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _stick: {fileID: 292104810}
+  _circle: {fileID: 292104816}
+  _stick: {fileID: 867744775}
 --- !u!1001 &179908542
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1730,6 +1731,9 @@ GameObject:
   - component: {fileID: 292104811}
   - component: {fileID: 292104813}
   - component: {fileID: 292104812}
+  - component: {fileID: 292104816}
+  - component: {fileID: 292104815}
+  - component: {fileID: 292104814}
   m_Layer: 5
   m_Name: Circle
   m_TagString: Untagged
@@ -1797,6 +1801,54 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 292104810}
   m_CullTransparentMesh: 1
+--- !u!114 &292104814
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 292104810}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a024354c3460c9543a44bbb7ee3cc0e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _animationDuration: 0.5
+  _isUnscaledTime: 1
+  _targetValue: 1
+  _loopCount: 0
+  _loopType: 0
+--- !u!114 &292104815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 292104810}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a024354c3460c9543a44bbb7ee3cc0e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _animationDuration: 0.5
+  _isUnscaledTime: 1
+  _targetValue: 0
+  _loopCount: 0
+  _loopType: 0
+--- !u!114 &292104816
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 292104810}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92c63cd380efee443b9bf8c6dbf393c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _fadeInAnimation: {fileID: 292104814}
+  _fadeOutAnimation: {fileID: 292104815}
 --- !u!1 &357601482
 GameObject:
   m_ObjectHideFlags: 0
@@ -4498,6 +4550,9 @@ GameObject:
   - component: {fileID: 867744771}
   - component: {fileID: 867744770}
   - component: {fileID: 867744772}
+  - component: {fileID: 867744775}
+  - component: {fileID: 867744774}
+  - component: {fileID: 867744773}
   m_Layer: 5
   m_Name: Stick
   m_TagString: Untagged
@@ -4577,6 +4632,54 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_MovementRange: 100
   m_ControlPath: <Gamepad>/leftStick
+--- !u!114 &867744773
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 867744768}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a024354c3460c9543a44bbb7ee3cc0e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _animationDuration: 0.5
+  _isUnscaledTime: 1
+  _targetValue: 1
+  _loopCount: 0
+  _loopType: 0
+--- !u!114 &867744774
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 867744768}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a024354c3460c9543a44bbb7ee3cc0e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _animationDuration: 0.5
+  _isUnscaledTime: 1
+  _targetValue: 0
+  _loopCount: 0
+  _loopType: 0
+--- !u!114 &867744775
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 867744768}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92c63cd380efee443b9bf8c6dbf393c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _fadeInAnimation: {fileID: 867744773}
+  _fadeOutAnimation: {fileID: 867744774}
 --- !u!1 &898985109
 GameObject:
   m_ObjectHideFlags: 0

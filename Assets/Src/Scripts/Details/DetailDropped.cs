@@ -1,18 +1,16 @@
 using DG.Tweening;
 using UnityEngine;
 
-[RequireComponent(typeof(DotweenAnimation))]
 public class DetailDropped : MonoBehaviour
 {
+    [SerializeField] private DotweenAnimation _scaleAnimation;
+    [SerializeField] private DotweenAnimation _rotationAnimation;
+
     private Detail _detail;
-    private DotweenAnimation _animation;
 
     private void Start()
     {
-        _animation = GetComponent<DotweenAnimation>();
-
-        _animation.ScaleAnimation()
-            .SetLoops(-1, LoopType.Yoyo);
+        _scaleAnimation.Animate();
     }
 
     private void OnTriggerEnter(Collider other)
@@ -26,7 +24,7 @@ public class DetailDropped : MonoBehaviour
 
     private void FixedUpdate()
     {
-        _animation.Rotate();
+        _rotationAnimation.Animate();
     }
 
     public Detail GetDetail() => _detail;

@@ -53,7 +53,7 @@ public class Spawner : MonoBehaviour
 
     public void PutToStartPosition(Player player, Rectangle platform)
     {
-        var position = new Vector3(platform.Width / 2, PlayerSpawn, PlayerSpawn);
+        var position = new Vector3(platform.Width.GetHalf(), PlayerSpawn, PlayerSpawn);
         player.transform.position = position;
     }
 
