@@ -6,7 +6,7 @@ public class SoundSwitcher : MonoBehaviour
     [SerializeField] private Sprite _active;
     [SerializeField] private Sprite _inactive;
     [SerializeField] private Image _targetImage;
-    [SerializeField] private SoundController _soundController;
+    [SerializeField] private SoundContainer _soundController;
     [SerializeField] private float _defaultVolume = 0.1f;
 
     private float _previousVolume;

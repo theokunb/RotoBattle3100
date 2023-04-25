@@ -3,13 +3,13 @@ using UnityEngine.UI;
 
 public class BackgroundAudioPlayer : MonoBehaviour
 {
-    [SerializeField] private SoundController _sounds;
+    [SerializeField] private SoundContainer _sounds;
     [SerializeField] private Slider _slider;
     [SerializeField] private AudioClip _backgroundTheme;
 
     private AudioSource _backgroundPlayer;
 
-    protected SoundController Sounds => _sounds;
+    protected SoundContainer Sounds => _sounds;
 
     protected virtual void Start()
     {

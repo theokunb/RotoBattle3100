@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class SoundController : MonoBehaviour
+public class SoundContainer : MonoBehaviour
 {
     private AudioSource[] _audioSources;
 

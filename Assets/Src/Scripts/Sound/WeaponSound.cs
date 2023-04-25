@@ -4,12 +4,12 @@ using UnityEngine;
 public class WeaponSound : MonoBehaviour
 {
     private AudioSource _audioSource;
-    private SoundController _sounds;
+    private SoundContainer _sounds;
 
     private void Awake()
     {
         _audioSource = GetComponent<AudioSource>();
-        _sounds = FindObjectOfType<SoundController>();
+        _sounds = FindObjectOfType<SoundContainer>();
     }
 
     public void Play()

@@ -5,7 +5,7 @@ using UnityEngine.UI;
 [RequireComponent(typeof(AudioSource))]
 public class ButtonWithSound : MonoBehaviour
 {
-    [SerializeField] private SoundController _sounds;
+    [SerializeField] private SoundContainer _sounds;
 
     private Button _button;
     private AudioSource _audioSource;
@@ -17,7 +17,7 @@ public class ButtonWithSound : MonoBehaviour
 
         if (_sounds == null)
         {
-            _sounds = FindObjectOfType<SoundController>();
+            _sounds = FindObjectOfType<SoundContainer>();
         }
     }
 
