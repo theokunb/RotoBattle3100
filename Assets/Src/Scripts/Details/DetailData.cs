@@ -1,11 +1,11 @@
 using System;
 
 [Serializable]
-public class DetailData1
+public class DetailData
 {
     public long Id { get; private set; }
 
-    public DetailData1(long id)
+    public DetailData(long id)
     {
         Id = id;
     }

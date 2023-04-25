@@ -5,6 +5,8 @@ using UnityEngine.Localization;
 [RequireComponent(typeof(Animator))]
 public class Leg : RobotDetail
 {
+    private const float AnimationSpeed = 1f/10;
+
     [SerializeField] private float _speed;
     [SerializeField] private LocalizedString _moveSteed;
 
@@ -41,7 +43,7 @@ public class Leg : RobotDetail
 
     protected virtual void OnMoving(float speed)
     {
-        float value = Convert.ToInt32(speed > 0) * _speed/10;
+        float value = Convert.ToInt32(speed > 0) * _speed * AnimationSpeed;
 
         _animator.SetFloat(CharacterAnimationController.Param.Speed, value);
     }
