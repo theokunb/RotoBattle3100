@@ -38,16 +38,16 @@ public class PlayerLoader : MonoBehaviour
 
     private void UnlockDetails(IEnumerable<string> detailsKey)
     {
-        //foreach (string id in detailsKey)
-        //{
-        //    Detail detail = _itemsPull.Details.Where(detail => detail.Id == id).FirstOrDefault();
-        //    detail?.Unlock();
-        //}
-
-        foreach (var detail in _itemsPull.Details)
+        foreach (string id in detailsKey)
         {
-            detail.Unlock();
+            Detail detail = _itemsPull.Details.Where(detail => detail.Id == id).FirstOrDefault();
+            detail?.Unlock();
         }
+
+        //foreach (var detail in _itemsPull.Details)
+        //{
+        //    detail.Unlock();
+        //}
     }
 
     private Detail FindDetail(string detailKey)

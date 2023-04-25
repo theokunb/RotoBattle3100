@@ -61,7 +61,10 @@ public class InventoryObserver : MonoBehaviour
 
     private IEnumerable<DetailShop> GetAvailableDetails(Type type)
     {
-        return _itemPull.Details.Where(detail => detail.IsAvailable == true && detail.GetType() == type).Select(detail => detail.GetComponent<DetailShop>()).ToList();
+        return _itemPull.Details.Where(detail => detail.GetType() == type)
+            .Select(detail => detail.GetComponent<DetailStatus>())
+            .Where(detailStatus => detailStatus.IsAvailable == true)
+            .Select(detail => detail.GetComponent<DetailShop>()).ToList();
     }
 
     private void OnItemClicked(DetailView detailView)
