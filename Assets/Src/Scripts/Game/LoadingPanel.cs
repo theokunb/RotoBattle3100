@@ -20,7 +20,7 @@ public class LoadingPanel : MonoBehaviour
         int index = Random.Range(0, _wallpapers.Length);
         _backgroundImage.sprite = _wallpapers[index];
 
-        GameStorage.Ad.ShowInterstitial(() =>
+        GameAds.Instance.ShowInterstitial(() =>
         {
             _backgroundAudio.Resume();
             operation.allowSceneActivation = true;

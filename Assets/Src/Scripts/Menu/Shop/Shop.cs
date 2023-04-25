@@ -125,7 +125,7 @@ public class Shop : MonoBehaviour
     {
         _backgroundAudioPlayer.Pause();
 
-        GameStorage.Ad.ShowRewardVideo(() =>
+        GameAds.Instance.ShowRewardVideo(() =>
         {
             detail.Unlock();
             _player.AddItem(detail.Id);
