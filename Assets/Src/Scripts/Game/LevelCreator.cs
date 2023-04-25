@@ -1,3 +1,4 @@
+using System.Drawing.Text;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -7,6 +8,9 @@ public class LevelCreator : MonoBehaviour
     private const float OffSet = 2;
     private const int DecorationCount = 10;
     private const int DecorationSize = 1;
+    private static readonly Vector3 LeftWallAngle = new Vector3(0, -90, 0);
+    private static readonly Vector3 RightWallAngle = new Vector3(0, 90, 0);
+    private static readonly Vector3 FarWallAngle = new Vector3(0, 180, 0);
 
     [SerializeField] private float _boundWidth;
     [SerializeField] private float _boundHeight;
@@ -37,23 +41,23 @@ public class LevelCreator : MonoBehaviour
         var bound3 = Instantiate(boundTemplate);
         var bound4 = Instantiate(boundTemplate);
         SetUpBound(bound1,
-            new Vector3(_platformWidth / 2f, _boundHeight / 2f, _boundWidth / 2f),
+            new Vector3(_platformWidth.GetHalf() , _boundHeight.GetHalf(), _boundWidth.GetHalf()),
             new Vector3(_platformWidth, _boundHeight, _boundWidth));
         SetUpBound(bound2,
-            new Vector3(_platformWidth / 2f, _boundHeight / 2f, _platformLenght - _boundWidth / 2f),
+            new Vector3(_platformWidth.GetHalf(), _boundHeight.GetHalf(), _platformLenght - _boundWidth.GetHalf()),
             new Vector3(_platformWidth, _boundHeight, _boundWidth));
         SetUpBound(bound3,
-            new Vector3(_boundWidth / 2f, _boundHeight / 2f, _platformLenght / 2f),
+            new Vector3(_boundWidth.GetHalf(), _boundHeight.GetHalf(), _platformLenght.GetHalf()),
             new Vector3(_boundWidth, _boundHeight, _platformLenght));
         SetUpBound(bound4,
-            new Vector3(_platformWidth - _boundWidth / 2f, _boundHeight / 2f, _platformLenght / 2f),
+            new Vector3(_platformWidth - _boundWidth.GetHalf(), _boundHeight.GetHalf(), _platformLenght.GetHalf()),
             new Vector3(_boundWidth, _boundHeight, _platformLenght));
     }
 
     private void CreateFinish(Finish finishTemplate)
     {
         Finish = Instantiate(finishTemplate);
-        Finish.transform.position = new Vector3(_platformWidth / 2, 0, _platformLenght * FinishPosition);
+        Finish.transform.position = new Vector3(_platformWidth.GetHalf(), 0, _platformLenght * FinishPosition);
     }
 
     private void SetUpBound(GameObject bound, Vector3 position, Vector3 scale)
@@ -90,11 +94,13 @@ public class LevelCreator : MonoBehaviour
 
     private void CreateBoxes(MyRectangle rect, float size)
     {
+        const int blockCreationProbability = 20;
+
         for (float positionZ = rect.Point1.z; positionZ < rect.Point3.z; positionZ += size)
         {
             for (float positionX = rect.Point4.x; positionX <= rect.Point1.x; positionX += size)
             {
-                int randomValue = Random.Range(0, 20);
+                int randomValue = Random.Range(0, blockCreationProbability);
 
                 if (randomValue == 0)
                 {
@@ -114,23 +120,23 @@ public class LevelCreator : MonoBehaviour
 
     private void CreateFarDecorations(float size, int blocksCount)
     {
-        MyRectangle rect = new MyRectangle(new Vector3(_platformWidth + size * blocksCount + size / 2, -_platformHeight, _platformLenght + size),
-            new Vector3(-size * blocksCount - size / 2, -_platformHeight, _platformLenght + size * blocksCount + size / 2));
+        MyRectangle rect = new MyRectangle(new Vector3(_platformWidth + size * blocksCount + size.GetHalf(), -_platformHeight, _platformLenght + size),
+            new Vector3(-size * blocksCount - size.GetHalf(), -_platformHeight, _platformLenght + size * blocksCount + size.GetHalf()));
 
         CreateBoxes(rect, size);
     }
 
     private void CreateWalls(Vector3 standPosition, Vector3 standScale)
     {
-        CreateWall(new Vector3(-standScale.x / 2 + standPosition.x, 0, standScale.z / 2),
-            new Vector3(0, 90, 0),
+        CreateWall(new Vector3(-standScale.x.GetHalf() + standPosition.x, 0, standScale.z.GetHalf()),
+            RightWallAngle,
             new Vector3(standScale.z, standScale.y, standScale.x));
-        CreateWall(new Vector3(standScale.x / 2 + standPosition.x, 0, standScale.z / 2),
-            new Vector3(0, -90, 0),
+        CreateWall(new Vector3(standScale.x.GetHalf() + standPosition.x, 0, standScale.z.GetHalf()),
+            LeftWallAngle,
             new Vector3(standScale.z, standScale.y, standScale.x));
 
-        CreateWall(new Vector3(standPosition.x, 0, standPosition.z + standScale.z / 2),
-            new Vector3(0, 180, 0),
+        CreateWall(new Vector3(standPosition.x, 0, standPosition.z + standScale.z.GetHalf()),
+            FarWallAngle,
             new Vector3(standScale.x, standScale.y, 1));
     }
 
@@ -145,6 +151,10 @@ public class LevelCreator : MonoBehaviour
 
     public void Create(Level level)
     {
+        const int SideDecorationsCount = 2;
+        const int SideOffsetsCount = 4;
+        const int ForwardOffsetCount = 2;
+
         float offsetY = 0.1f;
 
         _level = level;
@@ -154,13 +164,13 @@ public class LevelCreator : MonoBehaviour
 
         CreateGround(_level.Terrain);
 
-        Vector3 standPosition = new Vector3(_level.Width / 2,
-            -_level.Height / 2f - offsetY,
-            (_level.Lenght + 2 * OffSet + DecorationSize * DecorationCount) / 2);
+        Vector3 standPosition = new Vector3(_level.Width.GetHalf(),
+            -_level.Height.GetHalf() - offsetY,
+            (_level.Lenght + ForwardOffsetCount * OffSet + DecorationSize * DecorationCount).GetHalf());
 
-        Vector3 standScale = new Vector3(_level.Width + 4 * OffSet + 2 * DecorationSize * DecorationCount,
+        Vector3 standScale = new Vector3(_level.Width + SideOffsetsCount * OffSet + SideDecorationsCount * DecorationSize * DecorationCount,
             _platformHeight,
-            _level.Lenght + 2 * OffSet + DecorationSize * DecorationCount);
+            _level.Lenght + ForwardOffsetCount * OffSet + DecorationSize * DecorationCount);
         
         CreateStand(standPosition, standScale);
         CreateWalls(standPosition, standScale);
@@ -168,5 +178,18 @@ public class LevelCreator : MonoBehaviour
         CreateBounds(_level.Bound);
         CreateFinish(_level.Finish);
         CreateBackground();
+    }
+}
+
+public static class FloatExtesion
+{
+    public static float GetHalf(this float value)
+    {
+        return value / 2f;
+    }
+
+    public static float GetHalf(this int value)
+    {
+        return value / 2f;
     }
 }
