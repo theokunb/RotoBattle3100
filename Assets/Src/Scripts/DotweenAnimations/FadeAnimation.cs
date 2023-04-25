@@ -16,7 +16,7 @@ public class FadeAnimation : DotweenAnimation
             image.DOFade(_targetValue, Duration)
                 .SetLoops(_loopCount, _loopType)
                 .SetUpdate(IsUnscaledTime)
-                .OnComplete(() => onComplete());
+                .OnComplete(() => onComplete?.Invoke());
         }
     }
 }

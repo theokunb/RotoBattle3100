@@ -13,6 +13,6 @@ public class ScaleAnimation : DotweenAnimation
         transform.DOScale(_scaleValue, Duration)
             .SetLoops(_loopCount, LoopType.Yoyo)
             .SetUpdate(IsUnscaledTime)
-            .OnComplete(() => onComplete());
+            .OnComplete(() => onComplete?.Invoke());
     }
 }

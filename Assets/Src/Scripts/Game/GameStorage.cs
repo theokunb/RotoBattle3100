@@ -7,7 +7,7 @@ using UnityEngine;
 
 public static class GameStorage
 {
-    public static IStorage Storage { get; private set; } = new FileStorage();
+    public static IStorage Storage { get; private set; } = new YandexCloudStorage();
 }
 
 public class YandexCloudStorage : IStorage

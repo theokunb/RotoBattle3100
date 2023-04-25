@@ -5,7 +5,7 @@ using UnityEngine;
 
 public static class GameLeaderboard
 {
-    public static ILeaderboardRecorder Leaderboard { get; private set; } = new MyLeaderboard();
+    public static ILeaderboardRecorder Leaderboard { get; private set; } = new YandexLeaderboard();
 }
 
 
