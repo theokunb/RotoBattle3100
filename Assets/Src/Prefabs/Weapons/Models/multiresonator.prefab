@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 5250459746045695297}
   - component: {fileID: 5250459746045695298}
   - component: {fileID: 5250459746045695299}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: multiresonator
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -179,7 +179,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 384fbedb2df7d71449ce05d6a354f625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _isAvailable: 0
+  _isAvailable: 1
   _inShop: 0
 --- !u!114 &5250459746045695298
 MonoBehaviour:
@@ -269,7 +269,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5250459747191140703}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ShootPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -354,13 +354,77 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7636963557827597600, guid: ae3615bcc2aa43844a2d78b629dab311, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: -7619015397531516556, guid: ae3615bcc2aa43844a2d78b629dab311, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: -7547988612322845313, guid: ae3615bcc2aa43844a2d78b629dab311, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: -7366034597972168984, guid: ae3615bcc2aa43844a2d78b629dab311, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: -6424696975218040852, guid: ae3615bcc2aa43844a2d78b629dab311, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: -6424696975218040852, guid: ae3615bcc2aa43844a2d78b629dab311, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -5547542145952523856, guid: ae3615bcc2aa43844a2d78b629dab311, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: -3347878535258537322, guid: ae3615bcc2aa43844a2d78b629dab311, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: -2097218277451053535, guid: ae3615bcc2aa43844a2d78b629dab311, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: -1423804974527358815, guid: ae3615bcc2aa43844a2d78b629dab311, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: -715529279906520946, guid: ae3615bcc2aa43844a2d78b629dab311, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 487459384268300218, guid: ae3615bcc2aa43844a2d78b629dab311, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ae3615bcc2aa43844a2d78b629dab311, type: 3}
       propertyPath: m_Name
       value: Model
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ae3615bcc2aa43844a2d78b629dab311, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1276779827138096988, guid: ae3615bcc2aa43844a2d78b629dab311, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 2833892415248803418, guid: ae3615bcc2aa43844a2d78b629dab311, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4444558461230370346, guid: ae3615bcc2aa43844a2d78b629dab311, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8745071319094153269, guid: ae3615bcc2aa43844a2d78b629dab311, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ae3615bcc2aa43844a2d78b629dab311, type: 3}

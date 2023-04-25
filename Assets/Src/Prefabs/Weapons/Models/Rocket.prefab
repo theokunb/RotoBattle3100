@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4275078601723953601}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Rocket_cap_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43,7 +43,7 @@ GameObject:
   - component: {fileID: 4275078601723953603}
   - component: {fileID: 4275078601723150823}
   - component: {fileID: 4275078601722053415}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Geom_BigRocket_lvl1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -124,7 +124,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4275078601723953605}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Barrel_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -157,7 +157,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4275078601723953607}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Model
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -194,7 +194,7 @@ GameObject:
   - component: {fileID: 4275078601723953609}
   - component: {fileID: 4275078601723150821}
   - component: {fileID: 4275078601722053413}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Geom_Rocket_cap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -275,7 +275,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4275078601723953611}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Barrel_end_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -306,7 +306,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4275078601723953613}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Barrel_end_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -337,7 +337,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4275078601723953615}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Rocket_cap_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -371,7 +371,7 @@ GameObject:
   - component: {fileID: 4275078601723953623}
   - component: {fileID: 4275078601723150819}
   - component: {fileID: 4275078601722053411}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Geom_Rocket_cap 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -452,7 +452,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6101697449490679859}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ShootPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -489,7 +489,7 @@ GameObject:
   - component: {fileID: 6729893955618771888}
   - component: {fileID: 5327051882794687224}
   - component: {fileID: 3273166990806395136}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Rocket
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -611,7 +611,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 384fbedb2df7d71449ce05d6a354f625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _isAvailable: 0
+  _isAvailable: 1
   _inShop: 1
 --- !u!114 &6729893955618771888
 MonoBehaviour:

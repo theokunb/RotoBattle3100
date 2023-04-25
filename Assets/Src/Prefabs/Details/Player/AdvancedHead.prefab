@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4537311147865895098}
   - component: {fileID: 4537311147865895099}
   - component: {fileID: 4537311147865895096}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: AdvancedHead
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -83,7 +83,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 384fbedb2df7d71449ce05d6a354f625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _isAvailable: 0
+  _isAvailable: 1
   _inShop: 1
 --- !u!114 &4537311147865895099
 MonoBehaviour:
@@ -172,7 +172,7 @@ GameObject:
   - component: {fileID: 7644043340615029640}
   - component: {fileID: 7644043340617929642}
   - component: {fileID: 7644043340616929642}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Model
   m_TagString: Untagged
   m_Icon: {fileID: 0}

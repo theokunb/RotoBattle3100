@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 6815812442874863891}
   - component: {fileID: 8859709318522546493}
   - component: {fileID: -1919052143843817968}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Lazer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -140,7 +140,7 @@ GameObject:
   - component: {fileID: 8990449818224396180}
   - component: {fileID: 8990449818224396181}
   - component: {fileID: 8990449818224396178}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Electric
   m_TagString: Untagged
   m_Icon: {fileID: 0}

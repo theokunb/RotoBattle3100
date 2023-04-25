@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 281646038}
   - component: {fileID: 6682322017306143963}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: WeaponPlace
   m_TagString: Untagged
   m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
@@ -54,7 +54,7 @@ GameObject:
   m_Component:
   - component: {fileID: 408101012}
   - component: {fileID: 1583275550022931086}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: WeaponPlace (1)
   m_TagString: Untagged
   m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
@@ -97,7 +97,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1064740998}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: UpperPlace
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -129,7 +129,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1159790730}
   - component: {fileID: 6606078906439927129}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: WeaponPlace (2)
   m_TagString: Untagged
   m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
@@ -173,7 +173,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1927002481}
   - component: {fileID: 198764030011375073}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: WeaponPlace (3)
   m_TagString: Untagged
   m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
@@ -220,7 +220,7 @@ GameObject:
   - component: {fileID: 1272540807}
   - component: {fileID: 1272540806}
   - component: {fileID: 1272540805}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: KingBody
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -370,7 +370,7 @@ GameObject:
   - component: {fileID: 3940714049426207010}
   - component: {fileID: 3940714049423339794}
   - component: {fileID: 3940714049424438226}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Shoulder_Med_Bot_Geom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -453,7 +453,7 @@ GameObject:
   - component: {fileID: 3940714050219066262}
   - component: {fileID: 3940714050216166324}
   - component: {fileID: 3940714050217296244}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Armor_Plate_Lvl1_Geom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -536,7 +536,7 @@ GameObject:
   - component: {fileID: 3940714050497917234}
   - component: {fileID: 3940714050499244304}
   - component: {fileID: 3940714050500211664}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Armor_Plate_Lvl1_Geom
   m_TagString: Untagged
   m_Icon: {fileID: 0}

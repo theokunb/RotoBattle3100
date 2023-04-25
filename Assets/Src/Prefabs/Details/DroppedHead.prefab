@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 2839518835483345599}
   - component: {fileID: 1789562473125305463}
   - component: {fileID: 2000055505292771187}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: DroppedHead
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -108,6 +108,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _animationDuration: 0.5
+  _isUnscaledTime: 0
   _scaleValue: 1.1
   _loopCount: -1
   _loopType: 1
@@ -124,6 +125,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _animationDuration: 0.5
+  _isUnscaledTime: 0
   _rotationValue: {x: 0, y: 90, z: 0}
 --- !u!1001 &2466539329139939618
 PrefabInstance:
@@ -191,6 +193,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 13009c2a2407f4c41bdcd5aef77cacda, type: 3}
       propertyPath: m_Name
       value: Ammo_Head
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 13009c2a2407f4c41bdcd5aef77cacda, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 13009c2a2407f4c41bdcd5aef77cacda, type: 3}

@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3649531437451661741}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Barrel_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41,7 +41,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3649531437451661731}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Barrel_base_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -74,7 +74,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3649531437451661733}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Flak
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -108,7 +108,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3649531437451661735}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Model
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -142,7 +142,7 @@ GameObject:
   - component: {fileID: 3649531437451661743}
   - component: {fileID: 3649531437450334595}
   - component: {fileID: 3649531437449237315}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Geom_body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -223,7 +223,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3649531437451661729}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Barrel_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -256,7 +256,7 @@ GameObject:
   - component: {fileID: 3649531437451661739}
   - component: {fileID: 3649531437450334597}
   - component: {fileID: 3649531437449237317}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Geom_barrel_base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -339,7 +339,7 @@ GameObject:
   - component: {fileID: 3649531437451661737}
   - component: {fileID: 3649531437450334599}
   - component: {fileID: 3649531437449237319}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Geom_barrel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -420,7 +420,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7008777911112941734}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ShootPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -457,7 +457,7 @@ GameObject:
   - component: {fileID: 7533634894967462693}
   - component: {fileID: 2104640684891831187}
   - component: {fileID: 6978735478676322665}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: AtomicMachineGun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -579,7 +579,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 384fbedb2df7d71449ce05d6a354f625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _isAvailable: 0
+  _isAvailable: 1
   _inShop: 1
 --- !u!114 &7533634894967462693
 MonoBehaviour:

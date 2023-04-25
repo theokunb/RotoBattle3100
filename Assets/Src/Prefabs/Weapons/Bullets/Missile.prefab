@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1130642938314509916}
   - component: {fileID: 1130642938324099516}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Model
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -64,7 +64,7 @@ GameObject:
   - component: {fileID: 1130642938314509918}
   - component: {fileID: 1130642938317901436}
   - component: {fileID: 1130642938316934332}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Geom_BigRocket_missile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -148,7 +148,7 @@ GameObject:
   - component: {fileID: 2128408239695785489}
   - component: {fileID: 2128408239695785493}
   - component: {fileID: 227460686020420761}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Missile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -227,7 +227,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4685135869508382206}
   - component: {fileID: 2860527195905176167}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Trail
   m_TagString: Untagged
   m_Icon: {fileID: 0}

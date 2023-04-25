@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 120720703}
   - component: {fileID: 120720704}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: WeaponPlace1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -54,7 +54,7 @@ GameObject:
   m_Component:
   - component: {fileID: 205295741}
   - component: {fileID: 205295742}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: WeaponPlace1 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -98,7 +98,7 @@ GameObject:
   m_Component:
   - component: {fileID: 217826293}
   - component: {fileID: 217826294}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: WeaponPlace1 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -141,7 +141,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1064594710}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: UpperPlace
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -173,7 +173,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1072750455}
   - component: {fileID: 1072750456}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: WeaponPlace1 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -217,7 +217,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6489983360705010763}
   - component: {fileID: 8593468027242271965}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: HalfShoulder_Extender_Geom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -303,7 +303,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3283067358585202826}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Mount_Weapon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -334,7 +334,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2260938300661131348}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Extender_Base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -368,7 +368,7 @@ GameObject:
   - component: {fileID: 3204380065005698481}
   - component: {fileID: 3204380065009089939}
   - component: {fileID: 3204380065007992659}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: HalfShoulder_Cobra_Geom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -451,7 +451,7 @@ GameObject:
   - component: {fileID: 3204380065689230718}
   - component: {fileID: 3204380065685806428}
   - component: {fileID: 3204380065686806428}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Backpack_Tank_Med_Geom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -534,7 +534,7 @@ GameObject:
   - component: {fileID: 3204380065898672342}
   - component: {fileID: 3204380065895805172}
   - component: {fileID: 3204380065896772148}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: HalfShoulder_Cobra_Geom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -617,7 +617,7 @@ GameObject:
   - component: {fileID: 3204380066142855557}
   - component: {fileID: 3204380066146279847}
   - component: {fileID: 3204380066145149799}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cockpit_Gun_2x_Geom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -698,7 +698,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3204380066438505237}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Model
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -738,7 +738,7 @@ GameObject:
   - component: {fileID: 3204380066577754785}
   - component: {fileID: 3204380066574363267}
   - component: {fileID: 3204380066575329347}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Antenna_Short 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -823,7 +823,7 @@ GameObject:
   - component: {fileID: 245604174123367163}
   - component: {fileID: 7761670470077263562}
   - component: {fileID: 2867157366507976783}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: NewSpiderBody
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -969,7 +969,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4384203404872300482}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Extender_Weapon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1001,7 +1001,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1346962506444248346}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Shoulders_HalfShoulder_Extender@HalfShoulder_Extender (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1034,7 +1034,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5521806934057987648}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Extender_Base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1066,7 +1066,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5521806934057987650}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Extender_Weapon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1099,7 +1099,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5521806934057987652}
   - component: {fileID: 5521806934044819296}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: HalfShoulder_Extender_Geom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1185,7 +1185,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5521806934057987654}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Mount_Weapon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1216,7 +1216,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5521806934057987656}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Shoulders_HalfShoulder_Extender@HalfShoulder_Extender
   m_TagString: Untagged
   m_Icon: {fileID: 0}

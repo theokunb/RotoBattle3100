@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 664182238}
   - component: {fileID: 664182240}
   - component: {fileID: 664182239}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   - component: {fileID: 1112399757}
   - component: {fileID: 1112399759}
   - component: {fileID: 1112399758}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -177,7 +177,7 @@ GameObject:
   - component: {fileID: 3745622628389779901}
   - component: {fileID: 5334037119365746467}
   - component: {fileID: 4539702728361202684}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -258,7 +258,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 543450653656834776}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Ingot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -296,7 +296,7 @@ GameObject:
   - component: {fileID: 884170888373306351}
   - component: {fileID: -3505458466489257211}
   - component: {fileID: -1600484185853892673}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: LowMetal
   m_TagString: Untagged
   m_Icon: {fileID: 0}

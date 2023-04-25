@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8411892551900711851}
   - component: {fileID: 8411892551900711847}
   - component: {fileID: 5827561522011079557}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: ElectricCharge
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -220,6 +220,10 @@ PrefabInstance:
     - target: {fileID: 84892939563443980, guid: f4674d71c9e919241b0556280acb2d1b, type: 3}
       propertyPath: m_Name
       value: Electric
+      objectReference: {fileID: 0}
+    - target: {fileID: 84892939563443980, guid: f4674d71c9e919241b0556280acb2d1b, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f4674d71c9e919241b0556280acb2d1b, type: 3}

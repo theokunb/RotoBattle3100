@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1573883868162985936}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Mount_Weapon_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40,7 +40,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1573883868162985938}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Mount_Weapon_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -71,7 +71,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1573883868162985940}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Mount_Rockets_shoulder_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -102,7 +102,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1573883868162985942}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Mount_Rockets_shoulder_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -133,7 +133,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1573883868162985944}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Mount_backpack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -164,7 +164,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1573883868162985946}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Mount_cockpit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -199,7 +199,7 @@ GameObject:
   - component: {fileID: 8575902604300993774}
   - component: {fileID: 8052082016771849787}
   - component: {fileID: 6726554158069200943}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: UltraBody
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -265,7 +265,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 384fbedb2df7d71449ce05d6a354f625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _isAvailable: 0
+  _isAvailable: 1
   _inShop: 1
 --- !u!114 &8052082016771849787
 MonoBehaviour:
@@ -353,7 +353,7 @@ GameObject:
   - component: {fileID: 1573883868162985950}
   - component: {fileID: 1573883868164313084}
   - component: {fileID: 1573883868165410108}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Geom_Shoulders_heavy_holes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -434,7 +434,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1573883868597022262}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: HeadPlace
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -466,7 +466,7 @@ GameObject:
   m_Component:
   - component: {fileID: 840225599838408099}
   - component: {fileID: 5798965980819929921}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: WeaponPlace2
   m_TagString: Untagged
   m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
@@ -510,7 +510,7 @@ GameObject:
   m_Component:
   - component: {fileID: 130072012235005232}
   - component: {fileID: 5506338034620033733}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: WeaponPlace1
   m_TagString: Untagged
   m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
@@ -554,7 +554,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3798423302886294846}
   - component: {fileID: 5199142709259350716}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: WeaponPlace3
   m_TagString: Untagged
   m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
@@ -598,7 +598,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8909484829397834355}
   - component: {fileID: 7687716502285417379}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: WeaponPlace4
   m_TagString: Untagged
   m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}

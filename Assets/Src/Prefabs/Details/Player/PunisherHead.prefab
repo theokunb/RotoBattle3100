@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8653630352011255572}
   - component: {fileID: 8653630352011255578}
   - component: {fileID: 8653630352011255579}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cockpit_Gunner_Geom (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -97,7 +97,7 @@ GameObject:
   - component: {fileID: 227819669}
   - component: {fileID: 227819668}
   - component: {fileID: 227819667}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: PunisherHead
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5333138341405808422}
   - component: {fileID: 5333138341409199882}
   - component: {fileID: 5333138341408232906}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Geom_barrels
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   - component: {fileID: 5333138341405808424}
   - component: {fileID: 5333138341409199884}
   - component: {fileID: 5333138341408232908}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Geom_ammo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -175,7 +175,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5333138341405808426}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Barrel_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -208,7 +208,7 @@ GameObject:
   - component: {fileID: 5333138341405808428}
   - component: {fileID: 5333138341409199886}
   - component: {fileID: 5333138341408232910}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Model
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -292,7 +292,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5333138342084062600}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ShootPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -329,7 +329,7 @@ GameObject:
   - component: {fileID: 5333138342143441858}
   - component: {fileID: 7873433418462578776}
   - component: {fileID: 1075688618524658714}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Minigun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -385,7 +385,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 384fbedb2df7d71449ce05d6a354f625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _isAvailable: 0
+  _isAvailable: 1
   _inShop: 1
 --- !u!114 &5333138342143441859
 MonoBehaviour:

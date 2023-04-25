@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2765419964538817897}
   - component: {fileID: 2765419964539620683}
   - component: {fileID: 2765419964540718987}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Model
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -97,7 +97,7 @@ GameObject:
   - component: {fileID: 922341536}
   - component: {fileID: 922341535}
   - component: {fileID: 922341534}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: KingHead
   m_TagString: Untagged
   m_Icon: {fileID: 0}

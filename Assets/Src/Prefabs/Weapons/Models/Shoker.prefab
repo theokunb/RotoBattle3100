@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7425045554322085878}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ShootPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -46,7 +46,7 @@ GameObject:
   - component: {fileID: 7425045554632412595}
   - component: {fileID: 5911124558430659815}
   - component: {fileID: 6339299288817982599}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Shoker
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -302,7 +302,7 @@ GameObject:
   - component: {fileID: 7425045556130537183}
   - component: {fileID: 7425045556133928699}
   - component: {fileID: 7425045556132961339}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Model
   m_TagString: Untagged
   m_Icon: {fileID: 0}

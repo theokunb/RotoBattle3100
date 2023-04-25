@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 630474557}
   - component: {fileID: 630474556}
   - component: {fileID: 630474555}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: HeroHead
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -172,7 +172,7 @@ GameObject:
   - component: {fileID: 4527362502400698404}
   - component: {fileID: 4527362502403565574}
   - component: {fileID: 4527362502402599622}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cockpit_Gunbot_Geom
   m_TagString: Untagged
   m_Icon: {fileID: 0}

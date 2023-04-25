@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 878901459}
   - component: {fileID: 878901460}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: WeaponPlace
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -53,7 +53,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 959544962}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: UpperPlace
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -85,7 +85,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1920565018}
   - component: {fileID: 1920565019}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: WeaponPlace2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -128,7 +128,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7738226330315958736}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Extender_Weapon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -161,7 +161,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7738226330315958738}
   - component: {fileID: 7738226330329266422}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: HalfShoulder_Extender_Geom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -247,7 +247,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7738226330315958740}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Extender_Base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -280,7 +280,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7738226330315958742}
   - component: {fileID: 7738226330324977206}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: HalfShoulder_Extender
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -333,7 +333,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7738226330315958750}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Mount_Weapon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -364,7 +364,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7738226330441271664}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Mount_Weapon_top
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -396,7 +396,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7738226330441271666}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Mount_backpack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -430,7 +430,7 @@ GameObject:
   - component: {fileID: 7738226330441271668}
   - component: {fileID: 7738226330444138838}
   - component: {fileID: 7738226330443172758}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cockpit_Gun_2x_Geom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -515,7 +515,7 @@ GameObject:
   - component: {fileID: 1867808102}
   - component: {fileID: 1867808101}
   - component: {fileID: 1867808100}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ForceBody
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -663,7 +663,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7738226330441271676}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Mount_Weapon_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -695,7 +695,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7738226330441271678}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Mount_Weapon_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -727,7 +727,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7738226330584226400}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Mount_Shoulder_rockets_lvl1_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -758,7 +758,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7738226330584226402}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Mount_Shoulder_rockets_lvl1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -791,7 +791,7 @@ GameObject:
   - component: {fileID: 7738226330584226404}
   - component: {fileID: 7738226330587126342}
   - component: {fileID: 7738226330586126470}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: HalfShoulder_Bot_Geom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -872,7 +872,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7738226330584226406}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: HalfShoulder_Bot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -907,7 +907,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7738226330584226414}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Mount_Weapon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -939,7 +939,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7738226330831215536}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Mount_Weapon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -971,7 +971,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7738226330831215544}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: HalfShoulder_Bot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1008,7 +1008,7 @@ GameObject:
   - component: {fileID: 7738226330831215546}
   - component: {fileID: 7738226330834082712}
   - component: {fileID: 7738226330833115480}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: HalfShoulder_Bot_Geom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1089,7 +1089,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7738226330831215548}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Mount_Shoulder_rockets_lvl1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1120,7 +1120,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7738226330831215550}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Mount_Shoulder_rockets_lvl1_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1151,7 +1151,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7738226331133827030}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Mount_Weapon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1182,7 +1182,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7738226331133827032}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Extender_Weapon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1215,7 +1215,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7738226331133827034}
   - component: {fileID: 7738226331121960702}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: HalfShoulder_Extender_Geom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1301,7 +1301,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7738226331133827036}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Extender_Base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1334,7 +1334,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7738226331133827038}
   - component: {fileID: 7738226331126118462}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: HalfShoulder_Extender
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1385,6 +1385,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7738226330441271666}
     m_Modifications:
+    - target: {fileID: 100000, guid: 1333f36a066efe147a06360e1c2e498c, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 1333f36a066efe147a06360e1c2e498c, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 1333f36a066efe147a06360e1c2e498c, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: 1333f36a066efe147a06360e1c2e498c, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: 1333f36a066efe147a06360e1c2e498c, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.2847583e-19
@@ -1432,6 +1448,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7738226329477416888}
     m_Modifications:
+    - target: {fileID: 100000, guid: 329aea7e1c70d514887ed1ff90f020e4, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 329aea7e1c70d514887ed1ff90f020e4, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 329aea7e1c70d514887ed1ff90f020e4, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1469,6 +1493,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7738226330441271664}
     m_Modifications:
+    - target: {fileID: 100000, guid: c54bc877b077538459ea7285e34193ed, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: c54bc877b077538459ea7285e34193ed, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: c54bc877b077538459ea7285e34193ed, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c54bc877b077538459ea7285e34193ed, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

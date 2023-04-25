@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2277054986570163951}
   - component: {fileID: 2897612156390664522}
   - component: {fileID: 1140138232459304320}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Model
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -98,7 +98,7 @@ GameObject:
   - component: {fileID: 1734730346171666038}
   - component: {fileID: 1734730346171666041}
   - component: {fileID: 1734730346171666042}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Vertix
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -348,7 +348,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1734730347736990611}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ShootPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}

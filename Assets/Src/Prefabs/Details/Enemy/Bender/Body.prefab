@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8934181830773563853}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: LEFT ARM_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42,7 +42,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2171884830740094717}
   - component: {fileID: 2675076422999290368}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: BENDER LEFT ARM
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -134,7 +134,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1480493898315334933}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: RIGHT ARM_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -167,7 +167,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1425038039117865896}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: LEFT ARM_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -200,7 +200,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6009198534018549724}
   - component: {fileID: 939696799658740016}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: BENDER RIGHT ARM
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -292,7 +292,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3495960955345292817}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: LEFT ARM_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -324,7 +324,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5098712539371748054}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: RIGHT ARM_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -357,7 +357,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6138294258193730820}
   - component: {fileID: 3916045894669139562}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: WeaponPlace1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -400,7 +400,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6385073597447037550}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: RIGHT ARM_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -432,7 +432,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6992015033487770298}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: LEFT ARM_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -464,7 +464,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 756217261022514113}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: RIGHT ARM_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -496,7 +496,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7343983955282463377}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: RIGHT ARM_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -532,7 +532,7 @@ GameObject:
   - component: {fileID: 8026440922866753095}
   - component: {fileID: 4717622355017858500}
   - component: {fileID: 2161144013807192921}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -584,7 +584,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 384fbedb2df7d71449ce05d6a354f625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _isAvailable: 0
+  _isAvailable: 1
   _inShop: 0
 --- !u!114 &4717622355017858500
 MonoBehaviour:
@@ -671,7 +671,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6716464325157099320}
   - component: {fileID: 1395022067051765123}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: WeaponPlace1 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -714,7 +714,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7129520910978797626}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: UpperPlace
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -745,7 +745,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8126359071517672694}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: LEFT ARM_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -777,7 +777,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8078167148447496309}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: RIGHT HAND
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -808,7 +808,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4284235212905103850}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: LEFT ARM_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -842,7 +842,7 @@ GameObject:
   - component: {fileID: 4325606814156860291}
   - component: {fileID: 8787824334405504772}
   - component: {fileID: 1325530203398380023}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: BENDER BODY
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -927,7 +927,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6174793511053171080}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: LEFT HAND
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -958,7 +958,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2119920750343032939}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: RIGHT ARM_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4441140155506437019}
   - component: {fileID: 4441140155505142713}
   - component: {fileID: 4441140155504011641}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Geom_Cockpit_copter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -97,7 +97,7 @@ GameObject:
   - component: {fileID: 7777228163648907831}
   - component: {fileID: 7777228163648907828}
   - component: {fileID: 7777228163648907829}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: EliteHead
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -166,7 +166,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 384fbedb2df7d71449ce05d6a354f625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _isAvailable: 0
+  _isAvailable: 1
   _inShop: 1
 --- !u!114 &7777228163648907828
 MonoBehaviour:
@@ -253,7 +253,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7777228163814579874}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Model
   m_TagString: Untagged
   m_Icon: {fileID: 0}

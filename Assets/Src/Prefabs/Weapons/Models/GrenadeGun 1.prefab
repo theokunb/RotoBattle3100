@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 3512279371615662193}
   - component: {fileID: 4240070527591771494}
   - component: {fileID: 5162239437728441951}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: GrenadeGun 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -71,7 +71,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 384fbedb2df7d71449ce05d6a354f625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _isAvailable: 0
+  _isAvailable: 1
   _inShop: 1
 --- !u!114 &3512279371615662192
 MonoBehaviour:
@@ -271,7 +271,7 @@ GameObject:
   - component: {fileID: 3512279372103614612}
   - component: {fileID: 3512279372102844604}
   - component: {fileID: 3512279372101714556}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Geom_rocket
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -354,7 +354,7 @@ GameObject:
   - component: {fileID: 3512279372103614618}
   - component: {fileID: 3512279372102844606}
   - component: {fileID: 3512279372101714558}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Geom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -435,7 +435,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3512279372103614622}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Model
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -468,7 +468,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3512279372270431813}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ShootPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}

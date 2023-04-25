@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6689009012106017904}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Mount_backpack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40,7 +40,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6689009012106017906}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Mount_Weapon_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -76,7 +76,7 @@ GameObject:
   - component: {fileID: 3252114150530207295}
   - component: {fileID: -7422843329171647507}
   - component: {fileID: 1371424867293990127}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: UltraHead
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -149,7 +149,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 384fbedb2df7d71449ce05d6a354f625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _isAvailable: 0
+  _isAvailable: 1
   _inShop: 1
 --- !u!114 &-7422843329171647507
 MonoBehaviour:
@@ -238,7 +238,7 @@ GameObject:
   - component: {fileID: 6689009012106017910}
   - component: {fileID: 6689009012102626388}
   - component: {fileID: 6689009012103593620}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Geom_Cockpit_heavy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -319,7 +319,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6689009012106017916}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Mount_Weapon_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -350,7 +350,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6689009012106017918}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Mount_Weapon_top
   m_TagString: Untagged
   m_Icon: {fileID: 0}

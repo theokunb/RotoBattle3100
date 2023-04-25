@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 593171811}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: UpperPlace
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41,7 +41,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8526348775273268352}
   - component: {fileID: 6154202981183361529}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: BENDER LEFT LEG
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -132,7 +132,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2065663453677754153}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: RIGHT LEG_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -169,7 +169,7 @@ GameObject:
   - component: {fileID: 1878142574}
   - component: {fileID: 1878142573}
   - component: {fileID: 1878142572}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Leg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -327,7 +327,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4959413631702085513}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: RIGHT LEG_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -359,7 +359,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7925383549830551443}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: LEFT LEG_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -392,7 +392,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4632469780931729672}
   - component: {fileID: 2767704205733916565}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: BENDER RIGHT LEG
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -483,7 +483,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1347057194234754651}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: LEFT FOOT
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -514,7 +514,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6737604655006334228}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: LEFT LEG_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -546,7 +546,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3044974782015907953}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: LEFT LEG_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -579,7 +579,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6166176270243280718}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: LEFT LEG_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -611,7 +611,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9095788055401689197}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: RIGHT LEG_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -643,7 +643,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2990370338251721960}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: RIGHT LEG_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -675,7 +675,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1541665232125335590}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: RIGHT FOOT
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -706,7 +706,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7916830667117511669}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: RIGHT LEG_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -739,7 +739,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6960691282220422484}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: LEFT LEG_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 312989621606547405}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Backpack_container
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43,7 +43,7 @@ GameObject:
   - component: {fileID: 312989621606547407}
   - component: {fileID: 312989621603123181}
   - component: {fileID: 312989621604121901}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Geom_Backpack_container
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -128,7 +128,7 @@ GameObject:
   - component: {fileID: 5135612296693974667}
   - component: {fileID: 383722761174203552}
   - component: {fileID: 1534790348011127116}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: MechanicalBody
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -185,7 +185,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 384fbedb2df7d71449ce05d6a354f625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _isAvailable: 0
+  _isAvailable: 1
   _inShop: 1
 --- !u!114 &383722761174203552
 MonoBehaviour:
@@ -272,7 +272,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7345508216171785072}
   - component: {fileID: 3662387783742410961}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: WeaponPlace1
   m_TagString: Untagged
   m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
@@ -316,7 +316,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7345508216171785078}
   - component: {fileID: 8228602398147138878}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: WeaponPlace2
   m_TagString: Untagged
   m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
@@ -361,7 +361,7 @@ GameObject:
   - component: {fileID: 7345508216171785080}
   - component: {fileID: 7345508216170982234}
   - component: {fileID: 7345508216169884058}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Model
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -442,7 +442,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7345508216171785086}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: UpperPlace
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 502986190936661180}
   - component: {fileID: 502986190933236894}
   - component: {fileID: 502986190934367838}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Geom_Shoulders_lt_frame_upgrade
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -93,7 +93,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8420119578417198761}
   - component: {fileID: 8420119578417198774}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: WeaponPlace2
   m_TagString: Untagged
   m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
@@ -136,7 +136,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8420119578639976312}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Model
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -172,7 +172,7 @@ GameObject:
   - component: {fileID: 8420119578714558723}
   - component: {fileID: 8420119578715328801}
   - component: {fileID: 8420119578716328929}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Geom_Backpack_container
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -254,7 +254,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8420119578747563700}
   - component: {fileID: 8420119578747563701}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: WeaponPlace3
   m_TagString: Untagged
   m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
@@ -298,7 +298,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8420119579354785218}
   - component: {fileID: 8420119579354785219}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: WeaponPlace1
   m_TagString: Untagged
   m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
@@ -341,7 +341,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8420119579827980462}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: UpperPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -376,7 +376,7 @@ GameObject:
   - component: {fileID: 8420119580156701399}
   - component: {fileID: 8420119580156701398}
   - component: {fileID: 8420119580156701385}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: EliteBody
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -435,7 +435,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 384fbedb2df7d71449ce05d6a354f625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _isAvailable: 0
+  _isAvailable: 1
   _inShop: 1
 --- !u!114 &8420119580156701398
 MonoBehaviour:
@@ -523,7 +523,7 @@ GameObject:
   - component: {fileID: 8499463815122220991}
   - component: {fileID: 8499463815120893853}
   - component: {fileID: 8499463815119795549}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Geom_Cockpit_raiser
   m_TagString: Untagged
   m_Icon: {fileID: 0}

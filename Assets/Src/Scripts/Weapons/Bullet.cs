@@ -29,15 +29,7 @@ public abstract class Bullet : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.TryGetComponent(out Detail _))
-        {
-            return;
-        }
-        else if(other.TryGetComponent(out Bullet _))
-        {
-            return;
-        }
-        else if (other.TryGetComponent(out Character character))
+        if (other.TryGetComponent(out Character character))
         {
             if (character.GetType() == Owner.GetType())
             {
@@ -65,4 +57,11 @@ public abstract class Bullet : MonoBehaviour
     protected abstract void Fly();
     protected abstract void Hit(Collider other);
     protected abstract void LifeTimeExpired();
+}
+
+public interface IHitVisitor
+{
+    bool Visit(Detail detail);
+    bool Visit(Bullet bullet);
+    bool Visit(Character character);
 }

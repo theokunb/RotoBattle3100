@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 3958939098601930271}
   - component: {fileID: 3614364636860065298}
   - component: {fileID: 9133599705947339618}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: MinigunFallofHeaven
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -71,7 +71,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 384fbedb2df7d71449ce05d6a354f625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _isAvailable: 0
+  _isAvailable: 1
   _inShop: 1
 --- !u!114 &3958939098601930268
 MonoBehaviour:
@@ -271,7 +271,7 @@ GameObject:
   - component: {fileID: 3958939098635891570}
   - component: {fileID: 3958939098637185872}
   - component: {fileID: 3958939098638315920}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Model
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -355,7 +355,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3958939098635891572}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Barrel_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -388,7 +388,7 @@ GameObject:
   - component: {fileID: 3958939098635891574}
   - component: {fileID: 3958939098637185874}
   - component: {fileID: 3958939098638315922}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Geom_ammo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -471,7 +471,7 @@ GameObject:
   - component: {fileID: 3958939098635891576}
   - component: {fileID: 3958939098637185876}
   - component: {fileID: 3958939098638315924}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Geom_barrels
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -552,7 +552,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3958939099290575415}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ShootPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}

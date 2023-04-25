@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 780879803}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: UpperPlace
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -45,7 +45,7 @@ GameObject:
   - component: {fileID: 7171572997998332179}
   - component: {fileID: 5765765523902178987}
   - component: {fileID: 4750836231443035294}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: NewSpiderLeg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -122,7 +122,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 384fbedb2df7d71449ce05d6a354f625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _isAvailable: 0
+  _isAvailable: 1
   _inShop: 0
 --- !u!114 &5765765523902178987
 MonoBehaviour:
@@ -210,7 +210,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1915752253324770979}
   - component: {fileID: 1915752253336366977}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Legs_Transformer_Med_Geom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -328,7 +328,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1915752253324770981}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ROOT
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -360,7 +360,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1915752253324770983}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Pelvis
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -396,7 +396,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1915752253324771005}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: FL_Upper_Leg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -428,7 +428,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1915752253324771007}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: FL_Mid_Leg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -460,7 +460,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1915752253324770945}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: FL_Lower_Leg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -492,7 +492,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1915752253324770947}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: FL_Lower_Leg_End
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -526,7 +526,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1915752253324770951}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: FL_Foot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -557,7 +557,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1915752253324770953}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: FL_KneePad
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -588,7 +588,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1915752253324770949}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: FL_Wheel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -623,7 +623,7 @@ GameObject:
   - component: {fileID: 1915752253326098049}
   - component: {fileID: 1915752253327064129}
   - component: {fileID: 1915752254454463538}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: FL_Wheel_Geom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -717,7 +717,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1915752253324770955}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: FR_Upper_Leg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -749,7 +749,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1915752253324770957}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: FR_Mid_Leg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -781,7 +781,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1915752253324770959}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: FR_Lower_Leg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -813,7 +813,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1915752253324770961}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: FR_Lower_Leg_End
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -847,7 +847,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1915752253324770973}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: RR_Lower_Leg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -879,7 +879,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1915752253324770975}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: RR_Lower_Leg_End
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -914,7 +914,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1915752253324771045}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: RR_Fin_Mid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -945,7 +945,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1915752253324771047}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: RR_Fin_Up
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -976,7 +976,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1915752253324771041}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: RR_Foot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1007,7 +1007,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1915752253324771043}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: RR_Wheel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1042,7 +1042,7 @@ GameObject:
   - component: {fileID: 1915752253326098055}
   - component: {fileID: 1915752253327064135}
   - component: {fileID: 1915752252824875316}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: RR_Track_Geom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1136,7 +1136,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1915752253324770965}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: FR_Foot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1167,7 +1167,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1915752253324770967}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: FR_KneePad
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1198,7 +1198,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1915752253324770963}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: FR_Wheel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1233,7 +1233,7 @@ GameObject:
   - component: {fileID: 1915752253326098051}
   - component: {fileID: 1915752253327064131}
   - component: {fileID: 1915752254332334613}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: FR_Wheel_Geom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1327,7 +1327,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1915752253324770987}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: FrontPlate
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1358,7 +1358,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1915752253324770989}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: RL_Upper_Leg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1390,7 +1390,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1915752253324770991}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: RL_Mid_Leg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1422,7 +1422,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1915752253324770993}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: RL_Lower_Leg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1454,7 +1454,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1915752253324770995}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: RL_Lower_Leg_End
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1489,7 +1489,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1915752253324771001}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: RL_Fin_Mid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1520,7 +1520,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1915752253324771003}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: RL_Fin_Up
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1551,7 +1551,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1915752253324770997}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: RL_Foot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1582,7 +1582,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1915752253324770999}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: RL_Wheel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1617,7 +1617,7 @@ GameObject:
   - component: {fileID: 1915752253326098053}
   - component: {fileID: 1915752253327064133}
   - component: {fileID: 1915752253843953305}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: RL_Track_Geom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1711,7 +1711,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1915752253324770969}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: RR_Upper_Leg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1743,7 +1743,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1915752253324770971}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: RR_Mid_Leg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
