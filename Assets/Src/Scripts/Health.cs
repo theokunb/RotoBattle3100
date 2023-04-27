@@ -12,7 +12,9 @@ public class Health : MonoBehaviour
     private int _currentHealth;
     private Shield _shield;
     private Character _character;
-    private Coroutine _regenerationTask;
+    private int _regenerationValue = 0;
+    private float _elapsedTime = 0;
+    private float _regenerationDelay = 1;
 
     public event Action<Character> Die;
 
@@ -44,33 +46,29 @@ public class Health : MonoBehaviour
         _shield = GetComponent<Shield>();
         SetHealth();
 
-        int regeneration = GetRegenerationValue();
-        _regenerationTask = StartCoroutine(StartRegeneration(regeneration));
+        _regenerationValue = GetRegenerationValue();
     }
 
-    private IEnumerator StartRegeneration(int value)
+    private void FixedUpdate()
     {
-        float _elapsedTime = 0;
-        float _regenerationDelay = 1;
-
-        while (true)
+        if(_regenerationValue == 0)
         {
-            _elapsedTime += Time.deltaTime;
+            return;
+        }
 
-            if(_elapsedTime >= _regenerationDelay)
+        _elapsedTime += Time.deltaTime;
+
+        if(_elapsedTime >= _regenerationDelay)
+        {
+            _elapsedTime = 0;
+            _currentHealth += _regenerationValue;
+
+            if (_currentHealth > _maxHealth)
             {
-                _elapsedTime = 0;
-                _currentHealth += value;
-
-                if(_currentHealth > _maxHealth)
-                {
-                    _currentHealth = _maxHealth;
-                }
-
-                _healthBar?.UpdateHealthBarValue(_maxHealth, _currentHealth);
+                _currentHealth = _maxHealth;
             }
 
-            yield return null;
+            _healthBar?.UpdateHealthBarValue(_maxHealth, _currentHealth);
         }
     }
 

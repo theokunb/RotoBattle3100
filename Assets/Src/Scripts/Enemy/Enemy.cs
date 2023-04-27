@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-[RequireComponent(typeof(NavMeshAgent))]
 [RequireComponent(typeof(Reward))]
 public class Enemy : Character
 {
@@ -44,7 +43,6 @@ public class Enemy : Character
 
     private void FixedUpdate()
     {
-        StartFreeBie();
         DetectEnemy();
 
         Follow(Target);
@@ -93,8 +91,6 @@ public class Enemy : Character
 
         if (_detectedTarget != null)
         {
-            StopFreeBie();
-
             Armory.Body.transform.LookAt(_detectedTarget.transform);
             Armory.Body.Attack(_detectedTarget);
             EnemyDetected?.Invoke(_detectedTarget);
@@ -106,7 +102,12 @@ public class Enemy : Character
         if(character != null)
         {
             Armory.Body.transform.LookAt(character.transform);
-            _agent.SetDestination(character.transform.position);
+
+            if (_agent.isOnNavMesh == true)
+            {
+                _agent.SetDestination(character.transform.position);
+            }
+
             Moving?.Invoke(_agent.velocity.sqrMagnitude);
         }
     }

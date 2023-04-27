@@ -112,6 +112,11 @@ public class LevelCreator : MonoBehaviour
 
     private void CreateDecoration(Vector3 position)
     {
+        if(_level.Decorations.Length == 0)
+        {
+            return;
+        }
+
         int decorationId = Random.Range(0, _level.Decorations.Length);
         GameObject decoration = Instantiate(_level.Decorations[decorationId]);
 

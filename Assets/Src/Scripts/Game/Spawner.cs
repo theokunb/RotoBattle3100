@@ -5,9 +5,9 @@ using UnityEngine;
 public class Spawner : MonoBehaviour
 {
     private const int AllSpace = 100;
-    private const int PlayerSpawn = 1;
+    private const int PlayerSpawn = 2;
     private const int StartFreeSpace = 30;
-    private const int EndFreeSpace = 12;
+    private const int EndFreeSpace = 13;
 
     [SerializeField] private Player _player;
     [SerializeField] private LevelCreator _levelCreator;

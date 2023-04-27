@@ -29,8 +29,12 @@ public class Head : RobotDetail
         if(other.gameObject.TryGetComponent(out Character enemy))
         {
             EnemyDetected?.Invoke(enemy);
+
+            var health = enemy.GetComponent<Health>();
+            health.Die += OnEnemyDie;
         }
     }
+
 
     private void OnTriggerExit(Collider other)
     {
@@ -38,6 +42,14 @@ public class Head : RobotDetail
         {
             EnemyLost?.Invoke(enemy);
         }
+    }
+
+    private void OnEnemyDie(Character enemy)
+    {
+        var health = enemy.GetComponent<Health>();
+        health.Die -= OnEnemyDie;
+
+        EnemyLost?.Invoke(enemy);
     }
 
     public override string GetSpecialStats()

@@ -1,7 +1,4 @@
-using System;
-using System.Collections;
 using System.Collections.Generic;
-using System.Drawing;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.Events;
@@ -12,8 +9,6 @@ public class Character : MonoBehaviour
 {
     [SerializeField] private float _freeBieSpeed;
     [SerializeField] private Transform _legPosition;
-
-    private Coroutine _freebieTask;
 
     protected ArmoryVisitor Armory = new ArmoryVisitor();
 
@@ -26,54 +21,11 @@ public class Character : MonoBehaviour
     {
         var target = Armory.Scanner?.GetNearestEnemy();
 
-        StartFreeBie();
-
         if (target != null)
         {
-            StopFreeBie();
+
             Armory.Body.transform.LookAt(target.Armory.Body.transform);
-
-            //Armory.Head.transform.LookAt(target.Armory.Head.transform);
             Armory.Body.Attack(target);
-        }
-
-        
-    }
-
-    protected void StartFreeBie()
-    {
-        if (_freebieTask == null)
-        {
-            _freebieTask = StartCoroutine(DoFreebie());
-        }
-    }
-
-    protected void StopFreeBie()
-    {
-        if(_freebieTask != null)
-        {
-            StopCoroutine(_freebieTask);
-            _freebieTask = null;
-        }
-    }
-
-    private IEnumerator DoFreebie()
-    {
-        float angle = -20;
-        float targetY = Armory.Body.transform.rotation.y;
-        Health health = GetComponent<Health>();
-
-        while (health.IsAlive)
-        {
-            targetY = Mathf.MoveTowards(targetY, angle, _freeBieSpeed * Time.deltaTime);
-            Armory.Body.transform.localRotation = Quaternion.Euler(0, targetY, 0);
-            Armory.Head.transform.localRotation = Quaternion.Euler(0, targetY, 0);
-
-            yield return new WaitForFixedUpdate();
-            if (targetY == angle)
-            {
-                angle *= -1;
-            }
         }
     }
 
@@ -175,7 +127,7 @@ public class Character : MonoBehaviour
 
 public interface IDetailCreator
 {
-    void Create(Head head,Transform parent);
+    void Create(Head head, Transform parent);
     void Create(Body body, Transform parent);
     void Create(Leg leg, Transform parent);
     void Create(Weapon weapon, Transform parent);

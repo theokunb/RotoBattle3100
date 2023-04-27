@@ -35,8 +35,6 @@ public class PlayerScanner : MonoBehaviour
 
     public Character GetNearestEnemy()
     {
-        RemoveDied();
-
         if (_enemies.Count == 0)
             return null;
 
@@ -48,11 +46,6 @@ public class PlayerScanner : MonoBehaviour
         }
 
         return enemiesOnDistance.OrderBy(element => element.Key).First().Value;
-    }
-
-    public void RemoveEnemy(Character character)
-    {
-        _enemies.Remove(character);
     }
 
     public void InitializeHead(Head head)
@@ -74,16 +67,5 @@ public class PlayerScanner : MonoBehaviour
     private void OnEnemyLost(Character enemy)
     {
         _enemies.Remove(enemy);
-    }
-
-    private void RemoveDied()
-    {
-        if(_enemies.Count == 0)
-        {
-            return;
-        }
-
-        var aliveEnemies = _enemies.Where(character => character.GetComponent<Health>().IsAlive).ToList();
-        _enemies = aliveEnemies;
     }
 }

@@ -183,7 +183,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2373129260778090313}
-  m_Mesh: {fileID: 4811584586495191821, guid: 8e9ff9aa9c777de47b8f2487707d8a75, type: 3}
+  m_Mesh: {fileID: 4811584586495191821, guid: f6ebaa592a28b844f8b78167d43f1c61, type: 3}
 --- !u!23 &6053635443343399356
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -205,8 +205,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 1142f37755df9c14db63897c8e359309, type: 2}
-  - {fileID: 8529481535521766085, guid: 8e9ff9aa9c777de47b8f2487707d8a75, type: 3}
-  - {fileID: 2100000, guid: cd2f24c07b1bce24fa0066430da2910b, type: 2}
+  - {fileID: 2100000, guid: 65baf1cea5adfd14bb11bdb858ba0153, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -322,7 +321,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _door: {fileID: 4917817780170853347}
-  _doorSpeed: 10
 --- !u!95 &213914287453862032
 Animator:
   serializedVersion: 4
@@ -417,7 +415,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7245508631665986264}
-  m_Mesh: {fileID: 5562195423981187714, guid: 8e9ff9aa9c777de47b8f2487707d8a75, type: 3}
+  m_Mesh: {fileID: 5562195423981187714, guid: f6ebaa592a28b844f8b78167d43f1c61, type: 3}
 --- !u!23 &104010419644164610
 MeshRenderer:
   m_ObjectHideFlags: 0

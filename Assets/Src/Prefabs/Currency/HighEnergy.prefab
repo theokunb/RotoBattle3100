@@ -97,6 +97,8 @@ GameObject:
   - component: {fileID: -1854929846074515105}
   - component: {fileID: -5132530927754808327}
   - component: {fileID: -4539893270439129087}
+  - component: {fileID: 551864788340218918}
+  - component: {fileID: -3270924758196174671}
   m_Layer: 9
   m_Name: HighEnergy
   m_TagString: Untagged
@@ -136,6 +138,8 @@ MonoBehaviour:
   _currencyType: 2
   _minValue: 110
   _maxValue: 150
+  _scaleAnimation: {fileID: -3270924758196174671}
+  _rotationAnimation: {fileID: 551864788340218918}
 --- !u!54 &-1854929846074515105
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -144,14 +148,14 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8761377370531647268}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 0.0000001
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 90
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!135 &-5132530927754808327
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -175,10 +179,43 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.5
+  m_Radius: 0.05
   m_Height: 1
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &551864788340218918
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8761377370531647268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37aaa92cabbdb2340bfc208a8510cc7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _animationDuration: 3
+  _isUnscaledTime: 0
+  _rotationValue: {x: 0, y: 180, z: 0}
+  _loopCount: -1
+--- !u!114 &-3270924758196174671
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8761377370531647268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e5e6786e1e629743b4fc719a0249f35, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _animationDuration: 0.5
+  _isUnscaledTime: 1
+  _scaleValue: 1.1
+  _loopCount: -1
+  _loopType: 1
 --- !u!1001 &7188490667861981226
 PrefabInstance:
   m_ObjectHideFlags: 0

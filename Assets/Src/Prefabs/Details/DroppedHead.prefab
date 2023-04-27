@@ -50,8 +50,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd1768a6227c8fa419fed978b0457615, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _scaleAnimation: {fileID: 1911112768855825193, guid: 875f361b02a148447a530cc82def6bdf, type: 3}
-  _rotationAnimation: {fileID: 6932727391589052456, guid: 875f361b02a148447a530cc82def6bdf, type: 3}
+  _scaleAnimation: {fileID: 1789562473125305463}
+  _rotationAnimation: {fileID: 2000055505292771187}
 --- !u!135 &-2033895207168538356
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -75,7 +75,7 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.5
+  m_Radius: 0.05
   m_Height: 1
   m_Direction: 1
   m_Center: {x: 0, y: 0.15, z: 0}
@@ -87,14 +87,14 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8136369375267306755}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 0.0000001
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 90
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!114 &1789562473125305463
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -124,9 +124,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37aaa92cabbdb2340bfc208a8510cc7f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _animationDuration: 0.5
+  _animationDuration: 3
   _isUnscaledTime: 0
-  _rotationValue: {x: 0, y: 90, z: 0}
+  _rotationValue: {x: 0, y: 180, z: 0}
+  _loopCount: -1
 --- !u!1001 &2466539329139939618
 PrefabInstance:
   m_ObjectHideFlags: 0

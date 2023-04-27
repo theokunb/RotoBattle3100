@@ -11,6 +11,7 @@ public class DetailDropped : MonoBehaviour
     private void Start()
     {
         _scaleAnimation.Animate();
+        _rotationAnimation.Animate();
     }
 
     private void OnTriggerEnter(Collider other)
@@ -20,11 +21,6 @@ public class DetailDropped : MonoBehaviour
             bag.Put(this);
             gameObject.SetActive(false);
         }
-    }
-
-    private void FixedUpdate()
-    {
-        _rotationAnimation.Animate();
     }
 
     public Detail GetDetail() => _detail;

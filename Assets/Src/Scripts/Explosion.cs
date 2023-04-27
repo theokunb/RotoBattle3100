@@ -17,7 +17,7 @@ public class Explosion : MonoBehaviour
         _elapsedTime = 0;
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
         _elapsedTime += Time.deltaTime;
 
