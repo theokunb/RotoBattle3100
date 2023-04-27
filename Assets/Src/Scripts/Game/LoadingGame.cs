@@ -20,13 +20,11 @@ public class LoadingGame : MonoBehaviour
             Debug.Log("sdk inited");
             PlayerAccount.GetPlayerData((data) =>
             {
-                Debug.Log($"data= {data}");
                 PlayerPrefs.SetString(PlayerPrefsKeys.PlayerData, data);
                 StartCoroutine(LoadGameAsync());
             },
             (error) =>
             {
-                Debug.Log($"error= {error}");
                 StartCoroutine(LoadGameAsync());
             });
         });
