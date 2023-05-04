@@ -97,7 +97,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 8331240184647680
-    m_Localized: lvl {variable.Level}
+    m_Localized: "d\xFCz {variable.Level}"
     m_Metadata:
       m_Items:
       - rid: 2549057749735964679
@@ -146,7 +146,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 18423959900819456
-    m_Localized: Seviye
+    m_Localized: "d\xFCz"
     m_Metadata:
       m_Items: []
   - m_Id: 19880345264361472
